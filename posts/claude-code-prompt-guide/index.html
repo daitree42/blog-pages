@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code Prompt 编写指南 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="/blog-pages/">树</a></h1>
+            
+            <p class="site-subtitle">日常记录</p>
+            
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+            </nav>
+            
+    <main class="container">
+        
+<article class="post">
+    <header class="post-header">
+        <div class="post-breadcrumb">
+            <a href="/blog-pages/category/ai-ji-shu/">Ai技术</a>
+        </div>
+        <h1 class="post-title">Claude Code Prompt 编写指南</h1>
+        <div class="post-meta">
+            <time datetime="2026-05-25">2026年5月25日</time>
+            
+            <div class="post-tags">
+                
+                <span class="tag">Claude</span>
+                
+                <span class="tag">Code</span>
+                
+                <span class="tag">Prompt</span>
+                
+            </div>
+            
+        </div>
+    </header>
+    <div class="post-body">
+        <hr />
+<h2 id="claude-code">一、核心认知：Claude Code 不是聊天机器人</h2>
+<p>Claude Code 是一个 <strong>agentic loop</strong>（代理循环）系统。这意味着：</p>
+<table>
+<thead>
+<tr>
+<th>聊天式 Claude</th>
+<th>Claude Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>你问一句它答一句</td>
+<td>你给一个任务，它自主执行多步</td>
+</tr>
+<tr>
+<td>只能输出文字</td>
+<td>可以读文件、写代码、执行命令</td>
+</tr>
+<tr>
+<td>被动回应用户</td>
+<td>主动探索代码库、制定计划、执行操作</td>
+</tr>
+<tr>
+<td>单轮对话</td>
+<td>多步循环（思考→行动→观察→再思考）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>所以 prompt 的核心变化是：</strong> 你不是在"提问"，而是在"分配任务"。不需要一步步指导它怎么做，只需要说清楚目标，它会自己规划路径。</p>
+<hr />
+<h2 id="_1">二、三种交互模式</h2>
+<h3 id="1-approval-mode">1. Approval Mode（审批模式，默认）</h3>
+<p>Claude 每执行一个操作都先征求你的同意。提示词不需要特殊处理，Claude 会自动停下来等你确认。</p>
+<h3 id="2-auto-accept">2. Auto-Accept（自动接受模式）</h3>
+<p>Claude 可以直接执行命令和写文件，不需要逐个确认。适合你信任的、低风险的任务。</p>
+<h3 id="3-plan-mode">3. Plan Mode（计划模式）</h3>
+<p>Claude <strong>只做规划不写代码</strong>。先用 prompt 让它制定方案，你确认后再执行。</p>
+<div class="codehilite"><pre><span></span><code>如果你不确定怎么做，先进入 Plan Mode 让我看方案。
+</code></pre></div>
+
+<p>或者在启动时用 <code>/plan</code> 命令。</p>
+<hr />
+<h2 id="prompt">三、Prompt 的结构化方法</h2>
+<p>一个好的 Claude Code prompt 通常包含以下要素：</p>
+<h3 id="1-context">1. 角色 / 上下文（Context）</h3>
+<p>告诉 Claude 它在什么项目里、面对什么场景。</p>
+<div class="codehilite"><pre><span></span><code>我在一个<span class="w"> </span><span class="k">Next</span>.<span class="nv">js</span><span class="w"> </span>博客项目中，使用了<span class="w"> </span><span class="nv">Tailwind</span><span class="w"> </span><span class="nv">CSS</span>。
+</code></pre></div>
+
+<h3 id="2-goal">2. 目标（Goal）</h3>
+<p>清晰描述你要达成的结果，而不是具体步骤。</p>
+<div class="codehilite"><pre><span></span><code>❌ &quot;帮我打开 src/pages/index.tsx，找到第 42 行，把那个 button 的颜色从 blue 改成 red&quot;
+✅ &quot;把首页的按钮颜色从蓝色改成红色&quot;
+</code></pre></div>
+
+<p>后者更好，因为 Claude 会自己去找到文件、分析代码、做正确的修改。你告诉它"做什么"，它自己知道"怎么做"。</p>
+<h3 id="3-constraints">3. 约束条件（Constraints）</h3>
+<p>如果有特殊的限制，说清楚。</p>
+<div class="codehilite"><pre><span></span><code>不要修改 API 层的代码。
+使用现有的 UI 组件库，不要引入新的依赖。
+</code></pre></div>
+
+<h3 id="4-expectations">4. 输出期望（Expectations）</h3>
+<p>如果有特定的输出要求，提出来。</p>
+<div class="codehilite"><pre><span></span><code>先给出方案再执行。
+执行完后总结改了哪些文件。
+</code></pre></div>
+
+<hr />
+<h2 id="prompt-prompt">四、好 prompt 与差 prompt 的对比</h2>
+<h3 id="prompt_1">差 prompt</h3>
+<div class="codehilite"><pre><span></span><code>帮我改一下这个页面
+</code></pre></div>
+
+<p>— 太模糊，Claude 不知道该做什么。</p>
+<h3 id="prompt_2">好 prompt</h3>
+<div class="codehilite"><pre><span></span><code>在用户个人资料页面，把&quot;保存&quot;按钮移到页面右上角，点击后显示一个 toast 提示&quot;保存成功&quot;。
+
+约束：使用现有的 Button 和 Toast 组件，不要新增文件。
+</code></pre></div>
+
+<p>— 明确目标 + 约束，Claude 可以直接执行。</p>
+<hr />
+<h3 id="prompt_3">差 prompt</h3>
+<div class="codehilite"><pre><span></span><code>优化这个 API
+</code></pre></div>
+
+<p>— 目标不清晰，"优化"可以是速度、可读性、安全性……</p>
+<h3 id="prompt_4">好 prompt</h3>
+<div class="codehilite"><pre><span></span><code>分析 app/api/products.ts 中的查询性能，找出响应慢的原因并修复。优先检查数据库查询是否有 N+1 问题。
+</code></pre></div>
+
+<p>— 具体问题 + 排查方向。</p>
+<hr />
+<h3 id="prompt_5">差 prompt</h3>
+<div class="codehilite"><pre><span></span><code>搜索代码里所有的 TODO 并处理
+</code></pre></div>
+
+<p>— 范围太大，可能改到不该改的地方。</p>
+<h3 id="prompt_6">好 prompt</h3>
+<div class="codehilite"><pre><span></span><code>搜索 src/utils/ 目录下的 TODO 注释，逐个列出给我看，我决定哪些要处理。
+</code></pre></div>
+
+<p>— 先探索再决策。</p>
+<hr />
+<h2 id="prompt_7">五、结合工作流的 Prompt 策略</h2>
+<p>对应 Explore → Plan → Code → Commit，每个阶段的 prompt 写法不同：</p>
+<h3 id="explore">Explore 阶段：聚焦信息采集</h3>
+<div class="codehilite"><pre><span></span><code>帮我了解这个项目的路由结构，列出所有页面文件。
+重点是 pages/ 目录下的文件，不要看 components/。
+</code></pre></div>
+
+<h3 id="plan">Plan 阶段：聚焦方案</h3>
+<div class="codehilite"><pre><span></span><code>我想加一个搜索功能，支持按标题和标签过滤文章。
+先在 Plan Mode 下出方案，列出涉及的文件和改动点。
+</code></pre></div>
+
+<h3 id="code">Code 阶段：聚焦执行</h3>
+<div class="codehilite"><pre><span></span><code>按刚才的方案，实现搜索功能。先加后端查询接口，再改前端页面。
+</code></pre></div>
+
+<p>注意：前面已经讨论过方案了，所以这里不需要再重复所有细节。</p>
+<h3 id="commit">Commit 阶段：聚焦总结</h3>
+<div class="codehilite"><pre><span></span><code>提交当前改动，commit message 要说明改了什么、为什么改。
+</code></pre></div>
+
+<hr />
+<h2 id="prompt_8">六、复杂任务的 Prompt 技巧</h2>
+<h3 id="1">1. 分步推进，不要一口吃成胖子</h3>
+<div class="codehilite"><pre><span></span><code>第一步：帮我分析 src/auth/ 下面的代码结构，画一个简单的说明。
+# 等他回复后，再给第二步
+第二步：在 auth service 里加一个登出接口，清除 token。
+</code></pre></div>
+
+<h3 id="2-if-prompt">2. 使用「if 思维」写 prompt</h3>
+<div class="codehilite"><pre><span></span><code>如果你不确定某些文件的作用，先列出来问我，不要猜。
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>如果某个操作会删除文件，先停下来问我确认。
+</code></pre></div>
+
+<h3 id="3">3. 明确"不要做什么"</h3>
+<div class="codehilite"><pre><span></span><code>不要改动测试文件。
+不要格式化我没有指定的文件。
+不要升级依赖版本。
+</code></pre></div>
+
+<h3 id="4-few-shot">4. 给出例子（Few-shot）</h3>
+<div class="codehilite"><pre><span></span><code><span class="nt">我需要给所有的</span><span class="w"> </span><span class="nt">API</span><span class="w"> </span><span class="nt">路由加错误处理</span><span class="err">。</span><span class="nt">格式参考已有的</span><span class="w"> </span><span class="nt">getUser</span><span class="w"> </span><span class="nt">接口</span><span class="err">：</span>
+<span class="nt">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="err">//</span><span class="w"> </span><span class="err">...</span>
+<span class="p">}</span><span class="w"> </span><span class="nt">catch</span><span class="w"> </span><span class="o">(</span><span class="nt">error</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="err">console.error(&#39;操作失败:&#39;,</span><span class="w"> </span><span class="err">error)</span><span class="p">;</span>
+<span class="w">  </span><span class="err">throw</span><span class="w"> </span><span class="err">new</span><span class="w"> </span><span class="err">Error(&#39;操作失败，请稍后重试&#39;)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<hr />
+<h2 id="_2">七、常见错误</h2>
+<table>
+<thead>
+<tr>
+<th>错误</th>
+<th>说明</th>
+<th>正确做法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>太模糊</td>
+<td>"帮我优化一下"</td>
+<td>说清楚优化什么、标准是什么</td>
+</tr>
+<tr>
+<td>步骤太多</td>
+<td>一次给 10 个子任务</td>
+<td>拆成 2-3 个批次</td>
+</tr>
+<tr>
+<td>不说约束</td>
+<td>Claude 改了不该改的</td>
+<td>提前说好不要动什么</td>
+</tr>
+<tr>
+<td>假设 Claude 记得</td>
+<td>以为它还记得之前的上下文</td>
+<td>关键信息反复说，或用 CLAUDE.md</td>
+</tr>
+<tr>
+<td>把 Claude 当搜索引擎</td>
+<td>"React 18 有什么新特性"</td>
+<td>Claude Code 不适合搜文档，用 WebSearch</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">八、实战模板</h2>
+<h3 id="_4">功能开发类</h3>
+<div class="codehilite"><pre><span></span><code>在 [项目] 中，实现 [功能描述]。
+
+要求：
+- 使用现有的 [组件/工具]
+- 不要修改 [特定文件/目录]
+- [其他特殊约束]
+
+先出方案，我确认后再写代码。
+</code></pre></div>
+
+<h3 id="bug">Bug 修复类</h3>
+<div class="codehilite"><pre><span></span><code><span class="k">[描述 bug 现象]</span>
+
+<span class="na">复现步骤：</span>
+<span class="na">1. [步骤 1]</span>
+<span class="na">2. [步骤 2]</span>
+
+<span class="na">预期行为：[应该怎么样]</span>
+<span class="na">实际行为：[实际怎么样]</span>
+
+<span class="na">帮我定位原因并修复。</span>
+</code></pre></div>
+
+<h3 id="_5">代码审查类</h3>
+<div class="codehilite"><pre><span></span><code>review 当前的改动，重点关注：
+1. 有没有类型错误
+2. 有没有遗漏的边缘情况
+3. 有没有安全风险
+
+只在有问题的行上提 comment。
+</code></pre></div>
+
+<hr />
+<h2 id="prompt_9">九、总结：写好 prompt 的三条原则</h2>
+<ol>
+<li><strong>说"什么"不说"怎么"</strong> —— 告诉 Claude 目标，让它自己决定路径</li>
+<li><strong>先窄后宽</strong> —— 从小范围开始，Claude 证明能力后再扩大任务</li>
+<li><strong>关键信息前置</strong> —— 项目背景、约束条件、不要做什么，放 prompt 开头</li>
+</ol>
+<hr />
+<p><em>整理于 2026-05-25</em></p>
+    </div>
+    <nav class="post-nav">
+        <a href="/blog-pages/">← 返回首页</a>
+    </nav>
+</article>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+</body>
+</html>

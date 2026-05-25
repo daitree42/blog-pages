@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code 学习经验总结 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="/blog-pages/">树</a></h1>
+            
+            <p class="site-subtitle">日常记录</p>
+            
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+            </nav>
+            
+    <main class="container">
+        
+<article class="post">
+    <header class="post-header">
+        <div class="post-breadcrumb">
+            <a href="/blog-pages/category/ai-ji-shu/">Ai技术</a>
+        </div>
+        <h1 class="post-title">Claude Code 学习经验总结</h1>
+        <div class="post-meta">
+            <time datetime="2026-05-25">2026年5月25日</time>
+            
+            <div class="post-tags">
+                
+                <span class="tag">Claude</span>
+                
+                <span class="tag">Code</span>
+                
+                <span class="tag">AI</span>
+                
+            </div>
+            
+        </div>
+    </header>
+    <div class="post-body">
+        <hr />
+<p>来源：Anthropic Skilljar — Claude Code 101 课程</p>
+<hr />
+<h2 id="claude-code">一、核心理念：Claude Code 与普通聊天的区别</h2>
+<p>Claude Code 是一个 <strong>agentic loop</strong>（代理循环）系统，而不是简单的问答工具。它在 terminal 中运行，能够自主执行多步操作（读文件、搜索代码、运行命令），并且每一步都需要用户的 permission 控制。这意味着：</p>
+<ul>
+<li>它不是"你问它答"，而是"你给任务，它执行"</li>
+<li>它有自己的上下文窗口（context window）、工具集（tools）和权限系统（permissions）</li>
+<li>它可以看到你的文件系统，可以执行命令，可以编辑代码</li>
+</ul>
+<hr />
+<h2 id="explore-plan-code-commit">二、核心工作流：Explore → Plan → Code → Commit</h2>
+<p>这是 Claude Code 最重要的方法论，任何功能开发都应该遵循这四步：</p>
+<h3 id="1-explore">1. Explore（探索）</h3>
+<p>先让 Claude 阅读代码库，理解现有结构和模式，不要直接动手改。</p>
+<h3 id="2-plan">2. Plan（规划）</h3>
+<p>在动手之前制定实现方案，规划涉及哪些文件、需要做什么改动。</p>
+<h3 id="3-code">3. Code（编码）</h3>
+<p>执行具体的编码工作。</p>
+<h3 id="4-commit">4. Commit（提交）</h3>
+<p>完成后提交代码，附上清晰的提交信息。</p>
+<blockquote>
+<p><strong>关键经验</strong>：跳过前两步直接编码是新手最常见的错误。先理解再动手，效率反而更高。</p>
+</blockquote>
+<hr />
+<h2 id="context-management">三、上下文管理（Context Management）</h2>
+<p>Claude Code 的上下文窗口有限，随着对话增长需要主动管理：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/compact</code></td>
+<td>压缩历史，保留关键信息</td>
+<td>对话变长、响应变慢时</td>
+</tr>
+<tr>
+<td><code>/clear</code></td>
+<td>清空整个对话历史</td>
+<td>开始一个全新的任务时</td>
+</tr>
+<tr>
+<td><code>/context</code></td>
+<td>查看当前上下文中有什么</td>
+<td>不确定 Claude 还记得多少时</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>关键经验</strong>：不要把 Claude 当持久化聊天伙伴。任务结束后该 compact 就 compact，该 clear 就 clear。Claude Code 的上下文由 CLAUDE.md 和 memory 系统来保持连续性，不靠聊天历史。</p>
+</blockquote>
+<hr />
+<h2 id="claudemd">四、CLAUDE.md：项目的持久记忆</h2>
+<p>CLAUDE.md 是 Claude Code 最重要的自定义手段。它是一个位于项目根目录的 markdown 文件，每次 Claude 启动时自动读取。</p>
+<p><strong>适合放什么：</strong>
+- 项目结构和架构说明
+- 编码规范和约定（命名规则、测试要求等）
+- 常用命令和工作流
+- 项目背景和约束条件</p>
+<p><strong>使用技巧：</strong>
+- 创建 <code>.claude/CLAUDE.md</code>（项目级别，可提交到 git）
+- 也可以结合 memory 系统使用
+- 内容越精确，Claude 的行为越符合预期</p>
+<hr />
+<h2 id="subagents">五、子代理（Subagents）与委派</h2>
+<p>当任务复杂时，不要在一个对话里做所有事。可以启动子代理来并行处理独立任务。</p>
+<p><strong>适用场景：</strong>
+- 需要同时搜索多个方向
+- 有耗时较长的独立任务
+- 不希望子任务的结果污染主窗口的上下文</p>
+<blockquote>
+<p><strong>关键经验</strong>：主上下文是宝贵资源。能用子代理做的事情就交给子代理。</p>
+</blockquote>
+<hr />
+<h2 id="mcpmodel-context-protocol">六、MCP（Model Context Protocol）</h2>
+<p>MCP 允许 Claude Code 连接外部工具和数据源（如 API、数据库、文件系统等），是扩展 Claude 能力的主要方式。</p>
+<hr />
+<h2 id="hooks">七、Hooks：确定性控制</h2>
+<p>Hooks 是 shell 脚本，可以在特定事件触发时自动执行（如 tool call 之前/之后、提示提交时等）。</p>
+<p><strong>典型用途：</strong>
+- 自动格式化代码
+- 拦截特定命令
+- 发送通知
+- 在读写文件时自动执行检查</p>
+<blockquote>
+<p><strong>关键经验</strong>：Hooks 提供的是<strong>确定性</strong>控制——不依赖模型判断，每次都执行。适合做格式检查、权限控制等需要绝对可靠的事情。</p>
+</blockquote>
+<hr />
+<h2 id="_1">八、新人最需要注意的几点</h2>
+<ol>
+<li><strong>权限模式</strong>：了解 approval mode 和 auto-accept 的区别，根据任务风险级别选择合适的模式</li>
+<li><strong>Plan Mode 不是可选项</strong>：复杂任务先用 Plan Mode 让 Claude 输出方案，你再确认，再执行</li>
+<li><strong>不要把所有内容塞进提示词</strong>：把信息写在 CLAUDE.md 里，或者用 memory 系统，比写在提示词里更有效</li>
+<li><strong>隐私意识</strong>：上传到 Claude Code 的代码会被 Anthropic 处理，敏感信息要脱敏</li>
+</ol>
+<hr />
+<h2 id="_2">九、推荐学习路径</h2>
+<ol>
+<li>先跑通安装，用 <code>/init</code> 初始化 CLAUDE.md</li>
+<li>从一个简单的功能开始，完整走一遍 Explore → Plan → Code → Commit</li>
+<li>练习用 <code>/compact</code> 和 <code>/clear</code> 管理上下文</li>
+<li>为项目编写 CLAUDE.md，逐步完善</li>
+<li>尝试用子代理做并行搜索</li>
+<li>进阶：配置 hooks 实现自动化工作流</li>
+<li>高阶：通过 MCP 集成外部工具</li>
+</ol>
+<hr />
+<p><em>整理于 2026-05-25，来源：anthropic.skilljar.com/courses/claude-code-101</em></p>
+    </div>
+    <nav class="post-nav">
+        <a href="/blog-pages/">← 返回首页</a>
+    </nav>
+</article>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
