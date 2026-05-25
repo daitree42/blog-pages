@@ -7,6 +7,13 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+        <title>搭了一个零维护的静态博客</title>
+        <description>用纯 Python 搭了一个静态博客生成器，推送到 GitHub Pages。没有框架，没有数据库，没有 node_modules，目标是十年后还能用。</description>
+        <link>/blog-pages/posts/zero-maintenance-blog/</link>
+        <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>云盘保存方案总结：从本地到 Dropbox 和 Google Drive</title>
         <description>云盘保存方案总结：从本地到 Dropbox 和 Google Drive</description>
         <link>/blog-pages/posts/cloud-backup-guide/</link>

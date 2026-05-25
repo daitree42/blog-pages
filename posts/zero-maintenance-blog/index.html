@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搭了一个零维护的静态博客 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="/blog-pages/">树</a></h1>
+            
+            <p class="site-subtitle">日常记录</p>
+            
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+            </nav>
+            
+    <main class="container">
+        
+<article class="post">
+    <header class="post-header">
+        <div class="post-breadcrumb">
+            <a href="/blog-pages/category/ai-ji-shu/">Ai技术</a>
+        </div>
+        <h1 class="post-title">搭了一个零维护的静态博客</h1>
+        <div class="post-meta">
+            <time datetime="2026-05-25">2026年5月25日</time>
+            
+            <div class="post-tags">
+                
+                <span class="tag">博客</span>
+                
+                <span class="tag">静态站点</span>
+                
+                <span class="tag">Python</span>
+                
+            </div>
+            
+        </div>
+    </header>
+    <div class="post-body">
+        <hr />
+<h2 id="_1">一、为什么</h2>
+<p>一直在本地写文章，但写完的东西都躺在文件夹里，不方便分享。想搭一个博客，但有几条硬约束：</p>
+<ul>
+<li>长期不维护也不会坏。不用框架，不用数据库，不用任何需要定期升级的东西</li>
+<li>不改变现有的写作流程。文章还是用 Markdown 写，存在同一个目录结构里</li>
+<li>零成本。不买服务器，不交月费</li>
+<li>中文排版要好。读起来舒服，不花哨</li>
+</ul>
+<p>翻了一圈市面上的方案，静态站点生成器很多（Hugo、Jekyll、Hexo），但都依赖特定的运行时生态。五年后这些工具的版本可能已经面目全非，而我不想去折腾升级。</p>
+<p>于是决定自己写一个。</p>
+<hr />
+<h2 id="_2">二、方案</h2>
+<p>核心思路就一条：<strong>用纯 Python 把 Markdown 转成 HTML，推到 GitHub Pages 上。</strong></p>
+<p>整个博客是一个 Python 脚本 + 三个 Jinja2 模板 + 一个 CSS 文件，放在 <code>/blog/</code> 目录下。运行时只需要系统自带的 Python 3 和两个 apt 包（<code>python3-markdown</code>、<code>python3-jinja2</code>），没有任何需要 node_modules 或 gemfile 的东西。</p>
+<div class="codehilite"><pre><span></span><code>博客目录/
+├── publish.py         # 核心生成器
+├── deploy.sh          # 构建 + 部署
+├── templates/         # Jinja2 模板
+│   ├── base.html
+│   ├── index.html
+│   └── post.html
+├── static/
+│   └── style.css      # 中文排版样式
+└── dist/              # 构建输出，推送到 Pages
+</code></pre></div>
+
+<h3 id="_3">文章解析</h3>
+<p>文章的目录结构保持了写作时的原样：</p>
+<div class="codehilite"><pre><span></span><code>articles/&lt;slug&gt;/
+├── draft.md           # 正文（Markdown）
+├── outline.md         # 大纲
+├── notes/             # 采访笔记
+└── sources/           # 参考资料
+</code></pre></div>
+
+<p><code>publish.py</code> 遍历 <code>articles/</code> 目录，从每个 <code>draft.md</code> 中解析元数据和正文。元数据写在标题后的 blockquote 里：</p>
+<div class="codehilite"><pre><span></span><code><span class="gh"># 文章标题</span>
+
+<span class="k">&gt; </span><span class="ge">栏目：Ai技术</span>
+<span class="k">&gt; </span><span class="ge">日期：2026-05-25</span>
+<span class="k">&gt; </span><span class="ge">标签：标签1，标签2</span>
+<span class="k">&gt; </span><span class="ge">摘要：一段简短的描述</span>
+
+正文从这里开始……
+</code></pre></div>
+
+<p>用 blockquote 做元数据的好处是：即使解析器出了问题，它在 Markdown 渲染后看起来仍然是一段正常的引用文字，不会破坏页面。</p>
+<h3 id="_4">构建流程</h3>
+<p><code>publish.py</code> 做的事情很简单：</p>
+<ol>
+<li>扫描所有文章目录，解析 <code>draft.md</code></li>
+<li>用 <code>python3-markdown</code> 把正文转成 HTML</li>
+<li>填入 Jinja2 模板，生成首页和文章页面</li>
+<li>把模板、样式、静态资源复制到 <code>dist/</code></li>
+</ol>
+<p>整个脚本不到 200 行。</p>
+<h3 id="_5">部署</h3>
+<p>构建完成后，<code>dist/</code> 目录就是一个完整的静态站点。<code>deploy.sh</code> 把这个目录推送到 GitHub Pages 仓库，Pages 自动托管——不需要自己配 Nginx，不需要管 HTTPS 证书，不需要担心服务器宕机。</p>
+<p>还加了一个监控脚本，用 <code>inotifywait</code> 监听 <code>draft.md</code> 的修改，检测到变动后自动构建部署。这样写完文章保存文件，博客就自动更新了。</p>
+<hr />
+<h2 id="_6">三、设计上的几个选择</h2>
+<h3 id="_7">不用前端框架</h3>
+<p>一个静态博客不需要 React 或 Vue。纯 HTML + CSS 的页面加载最快，且不会因为依赖升级而突然不能用了。CSS 里用了衬线字体栈、合适的行距（1.9）和字号（18px），针对中文阅读做了优化。</p>
+<h3 id="_8">路径用子目录</h3>
+<p>GitHub Pages 的项目站点托管在 <code>username.github.io/repo-name/</code> 下，路径里多一级子目录。模板中所有链接都用 <code>site_prefix</code> 变量控制，切换根路径或自定义域名只需改一个配置项。</p>
+<h3 id="git">保留 .git</h3>
+<p>每次构建会清空 <code>dist/</code> 目录，但保留了 <code>.git</code>，这样每次部署都是增量推送，不用重新初始化仓库。</p>
+<h3 id="_9">封面图可选</h3>
+<p>如果有 <code>cover.jpg</code> 放在文章目录下，构建时会自动复制到页面目录。没有也不影响，属于渐进增强。</p>
+<hr />
+<h2 id="_10">四、感受</h2>
+<p>写这个生成器的过程比预期的愉快。一方面是因为需求很明确，不需要纠结"万一以后要加评论怎么办"（答案是真的需要再说）；另一方面是因为纯 Python 加模板的方案几乎没有心智负担，改起来很快。</p>
+<p>相比于用现成的博客框架，自己写生成器的好处是<strong>完全可控</strong>。想加一个栏目分类页面，改几行代码就行。想调整 RSS 格式，直接改 XML 模板。没有插件系统的学习成本，也没有框架版本的迁移焦虑。</p>
+<p>当然，它缺的东西也很明显：没有评论区（目前用不着），没有搜索功能（文章多了再加），没有统计分析（我也不想看）。一个博客最核心的东西还是内容本身，工具只要能稳定地把文字发布出去就够了。</p>
+<p>这种极简的体感很好。工具应该隐身，而不是刷存在感。</p>
+<hr />
+<h2 id="_11">五、结果</h2>
+<p>现在这个博客就运行在这个生成器上。写完这篇文章，保存文件，监控脚本检测到变动，十秒后站点自动更新。</p>
+<p>整个系统依赖列表：</p>
+<ul>
+<li>Python 3（系统自带）</li>
+<li>python3-markdown（apt 安装）</li>
+<li>python3-jinja2（apt 安装）</li>
+<li>GitHub Pages（免费托管）</li>
+</ul>
+<p>没有 Docker，没有 node_modules，没有数据库，没有 Nginx 配置。理论上十年后回来，装两个 apt 包就能重新跑起来。</p>
+<p>这大概就是"零维护"的最终含义——不是不用管，而是想管的时候，也不必操什么心。</p>
+    </div>
+    <nav class="post-nav">
+        <a href="/blog-pages/">← 返回首页</a>
+    </nav>
+</article>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
