@@ -1,4 +1,51 @@
-/* ===== 基础重置 ===== */
+/* ===== 主题变量 ===== */
+:root {
+    --color-bg: #fafaf8;
+    --color-bg-card: #ffffff;
+    --color-text: #2c2c2c;
+    --color-text-secondary: #666;
+    --color-text-muted: #999;
+    --color-text-dim: #bbb;
+    --color-border: #e8e6e0;
+    --color-accent: #2c6b9e;
+    --color-accent-light: #dce6ef;
+    --header-bg-start: #f4f0ea;
+    --header-bg-end: #fafaf8;
+    --color-tag-text: #2c6b9e;
+    --color-tag-bg: #eef3f8;
+    --color-nav-border: #e0ddd8;
+    --color-blockquote-bg: #f5f4f0;
+    --color-blockquote-border: #d4d0c8;
+    --color-code-bg: #f0eee8;
+    --color-card-shadow: rgba(0,0,0,0.06);
+    --color-card-shadow-hover: rgba(0,0,0,0.1);
+    --color-hr: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #181818;
+        --color-bg-card: #242424;
+        --color-text: #d4d4d4;
+        --color-text-secondary: #999;
+        --color-text-muted: #666;
+        --color-text-dim: #555;
+        --color-border: #333;
+        --color-accent: #7bb3e0;
+        --color-accent-light: #1e2a38;
+        --header-bg-start: #2a2520;
+        --header-bg-end: #181818;
+        --color-tag-text: #7bb3e0;
+        --color-tag-bg: #1a2533;
+        --color-nav-border: #444;
+        --color-blockquote-bg: #222;
+        --color-blockquote-border: #444;
+        --color-code-bg: #2a2a2a;
+        --color-card-shadow: rgba(0,0,0,0.2);
+        --color-card-shadow-hover: rgba(0,0,0,0.35);
+        --color-hr: #333;
+    }
+}
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -9,13 +56,14 @@ body {
     font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", Georgia, serif;
     font-size: 18px;
     line-height: 1.9;
-    color: #2c2c2c;
-    background: #fafaf8;
+    color: var(--color-text);
+    background: var(--color-bg);
     -webkit-font-smoothing: antialiased;
+    transition: background 0.3s, color 0.3s;
 }
 
 a {
-    color: #2c6b9e;
+    color: var(--color-accent);
     text-decoration: none;
 }
 a:hover {
@@ -36,7 +84,7 @@ img {
 
 /* ===== 导航 ===== */
 .site-nav {
-    margin-top: 16px;
+    margin-top: 20px;
     display: flex;
     gap: 8px;
     flex-wrap: nowrap;
@@ -51,21 +99,21 @@ img {
 .nav-link {
     display: inline-block;
     font-size: 14px;
-    color: #666;
+    color: var(--color-text-secondary);
     padding: 4px 14px;
     border-radius: 20px;
-    border: 1px solid #e0ddd8;
+    border: 1px solid var(--color-nav-border);
     transition: all 0.15s ease;
 }
 .nav-link:hover {
-    color: #2c6b9e;
-    border-color: #2c6b9e;
+    color: var(--color-accent);
+    border-color: var(--color-accent);
     text-decoration: none;
 }
 .nav-link.active {
     color: #fff;
-    background: #2c6b9e;
-    border-color: #2c6b9e;
+    background: var(--color-accent);
+    border-color: var(--color-accent);
 }
 
 /* ===== 文章元信息行 ===== */
@@ -82,29 +130,56 @@ img {
     margin-bottom: 8px;
 }
 .post-breadcrumb a {
-    color: #2c6b9e;
+    color: var(--color-accent);
 }
 
 /* ===== 头部 ===== */
 .site-header {
-    padding: 48px 0 32px;
-    border-bottom: 1px solid #e8e6e0;
+    padding: 48px 0 28px;
     margin-bottom: 48px;
+    background: linear-gradient(180deg, var(--header-bg-start) 0%, var(--color-bg) 100%);
+    border-bottom: 1px solid var(--color-border);
+}
+.header-brand {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 .site-title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 700;
 }
 .site-title a {
-    color: #2c2c2c;
+    color: var(--color-text);
 }
 .site-title a:hover {
     text-decoration: none;
 }
-.site-subtitle {
+.site-tagline {
     font-size: 15px;
-    color: #888;
-    margin-top: 6px;
+    color: var(--color-text-muted);
+}
+.header-social {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: var(--color-text-muted);
+    transition: all 0.2s ease;
+}
+.social-link:hover {
+    color: var(--color-accent);
+    background: var(--color-accent-light);
+    text-decoration: none;
 }
 
 /* ===== 文章列表 ===== */
@@ -114,14 +189,14 @@ img {
     gap: 24px;
 }
 .article-item {
-    background: #fff;
+    background: var(--color-bg-card);
     border-radius: 12px;
     padding: 28px 32px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    transition: box-shadow 0.2s ease;
+    box-shadow: 0 2px 8px var(--color-card-shadow);
+    transition: box-shadow 0.2s ease, background 0.3s;
 }
 .article-item:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 16px var(--color-card-shadow-hover);
 }
 .article-title {
     font-size: 22px;
@@ -138,21 +213,21 @@ img {
     line-height: 1.4;
 }
 .article-title a {
-    color: #2c2c2c;
+    color: var(--color-text);
     flex: 1;
 }
 .article-title a:hover {
-    color: #2c6b9e;
+    color: var(--color-accent);
     text-decoration: none;
 }
 .article-date {
     font-size: 14px;
-    color: #999;
+    color: var(--color-text-muted);
     font-style: italic;
 }
 .reading-time {
     font-size: 13px;
-    color: #bbb;
+    color: var(--color-text-dim);
 }
 .reading-time::before {
     content: "·";
@@ -164,7 +239,7 @@ img {
 .article-description {
     margin-top: 10px;
     font-size: 16px;
-    color: #666;
+    color: var(--color-text-secondary);
     line-height: 1.7;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -176,8 +251,8 @@ img {
 .tag {
     display: inline-block;
     font-size: 12px;
-    color: #2c6b9e;
-    background: #eef3f8;
+    color: var(--color-tag-text);
+    background: var(--color-tag-bg);
     padding: 2px 10px;
     border-radius: 3px;
     margin-right: 6px;
@@ -195,7 +270,7 @@ img {
 }
 .post-meta {
     font-size: 14px;
-    color: #999;
+    color: var(--color-text-muted);
 }
 .post-tags {
     margin-top: 8px;
@@ -209,7 +284,7 @@ img {
     font-weight: 600;
     margin: 36px 0 16px;
     padding-bottom: 8px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--color-hr);
 }
 .post-body h3 {
     font-size: 20px;
@@ -229,9 +304,9 @@ img {
 .post-body blockquote {
     margin: 20px 0;
     padding: 12px 20px;
-    border-left: 4px solid #d4d0c8;
-    background: #f5f4f0;
-    color: #555;
+    border-left: 4px solid var(--color-blockquote-border);
+    background: var(--color-blockquote-bg);
+    color: var(--color-text-secondary);
     font-style: normal;
 }
 .post-body blockquote p {
@@ -240,7 +315,7 @@ img {
 .post-body code {
     font-family: "SF Mono", "Fira Code", "Noto Sans Mono", Consolas, monospace;
     font-size: 15px;
-    background: #f0eee8;
+    background: var(--color-code-bg);
     padding: 2px 6px;
     border-radius: 3px;
 }
@@ -261,7 +336,7 @@ img {
 .post-body hr {
     margin: 36px 0;
     border: none;
-    border-top: 1px solid #e8e6e0;
+    border-top: 1px solid var(--color-border);
 }
 .post-body table {
     width: 100%;
@@ -271,11 +346,11 @@ img {
 }
 .post-body th, .post-body td {
     padding: 8px 12px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border);
     text-align: left;
 }
 .post-body th {
-    background: #f5f4f0;
+    background: var(--color-blockquote-bg);
     font-weight: 600;
 }
 
@@ -283,7 +358,7 @@ img {
 .post-nav {
     margin-top: 48px;
     padding-top: 24px;
-    border-top: 1px solid #e8e6e0;
+    border-top: 1px solid var(--color-border);
     font-size: 15px;
 }
 
@@ -291,17 +366,17 @@ img {
 .site-footer {
     margin-top: 64px;
     padding: 24px 0 48px;
-    border-top: 1px solid #e8e6e0;
+    border-top: 1px solid var(--color-border);
     text-align: center;
     font-size: 13px;
-    color: #aaa;
+    color: var(--color-text-muted);
 }
 
 /* ===== 空状态 ===== */
 .empty-state {
     text-align: center;
     padding: 64px 0;
-    color: #aaa;
+    color: var(--color-text-muted);
     font-size: 16px;
 }
 
@@ -310,7 +385,8 @@ img {
     body { font-size: 16px; }
     .container { padding: 0 16px; }
     .site-header { padding: 28px 0 20px; }
-    .site-title { font-size: 24px; }
+    .site-title { font-size: 26px; }
+    .site-tagline { font-size: 14px; }
     .post-title { font-size: 24px; }
     .post-body { font-size: 16px; }
     .post-body h2 { font-size: 20px; }
