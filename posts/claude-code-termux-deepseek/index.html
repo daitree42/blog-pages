@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4） — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">记录技术与生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+            </nav>
+            
+        </div>
+    </header>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-ai-ji-shu">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">Ai技术</div>
+            <h1 class="post-title">移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）</h1>
+            <div class="post-meta">
+                <time datetime="2026-05-26">2026年5月26日</time>
+                <span class="reading-time">5 分钟</span>
+            </div>
+            
+            <div class="post-tags">
+                
+                <span class="tag">Claude</span>
+                
+                <span class="tag">Code</span>
+                
+                <span class="tag">Termux</span>
+                
+                <span class="tag">Android</span>
+                
+                <span class="tag">DeepSeek</span>
+                
+                <span class="tag">教程</span>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="post-body">
+        <hr />
+<p>在大模型與 AI Agent 爆發的時代，Anthropic 官方推出的終端代碼助手 <strong>Claude Code</strong> 憑藉強大的多文件讀寫、自動 Git 管理和指令執行能力，成為了開發者的神器。然而，官方並沒有對安卓（Termux）環境提供原生支持，且其綁定的官方 API 價格不菲。</p>
+<p>本文將完整記錄如何利用 <strong>PRoot 虛擬化技術</strong> 繞過架構限制，在手機上完美部署 Claude Code，並<strong>透過環境變量將其「靈魂」替換為極具性價比的 DeepSeek v4 API</strong>，打造一個隨身攜帶、價格低廉的全棧編程 Agent。</p>
+<hr />
+<h2 id="termux-bug">一、終端體驗優化：解決 Termux 中文輸入法 Bug</h2>
+<p>在 Termux 命令行與本地模型或 Agent 對話時，最常遇到的坑就是<strong>手機中文輸入法無法喚醒</strong>，或者打字時光標亂碼。這是因為移動端軟鍵盤在底層終端環境下默認鎖定了英文原始字符模式。</p>
+<h3 id="_1">實戰最快的中文輸入方案</h3>
+<ul>
+<li><strong>使用 Termux 自帶的「文本輸入框」</strong>：在輔助按鍵欄（有 ESC、CTRL、ALT 的那一欄）<strong>向左滑動</strong>，找到 <strong>TEXT</strong> 按鈕。點擊它會彈出一個標準的 Android 文本輸入框。在這裡你可以像平時聊天一樣絲滑地打中文、換行、修改，點擊確定後，中文就會自動送入終端。</li>
+<li><strong>修改強制限制作業（可選）</strong>：編輯 <code>~/.termux/termux.properties</code> 配置文件，加入 <code>enforce-char-based-input = true</code>，隨後執行 <code>termux-reload-settings</code> 刷新，強制調用系統軟鍵盤。</li>
+</ul>
+<hr />
+<h2 id="proot-ubuntu-claude-code">二、核心搭建：在 PRoot Ubuntu 容器中部署 Claude Code</h2>
+<p>由於 Claude Code 包含大量需要編譯的原生硬體依賴，在原生安卓環境下會遇到權限隔離、/tmp 臨時路徑無法寫入等死結。最穩妥、後續升級最不易崩潰的方案是<strong>在 Termux 中部署一個虛擬的 Ubuntu 容器</strong>。</p>
+<h3 id="1-ubuntu">1. 安裝並穿越進入 Ubuntu 環境</h3>
+<p>打開 Termux，運行以下命令下載大管家並初始化系統：</p>
+<div class="codehilite"><pre><span></span><code>pkg<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>pkg<span class="w"> </span>install<span class="w"> </span>proot-distro
+proot-distro<span class="w"> </span>install<span class="w"> </span>ubuntu
+proot-distro<span class="w"> </span>login<span class="w"> </span>ubuntu
+</code></pre></div>
+
+<blockquote>
+<p><strong>命令小科普</strong>：<code>proot-distro login ubuntu</code> 就像是一扇<strong>任意門</strong>。它利用 PRoot 技術，在不佔用額外內存、不讓手機發燙的前提下，把手機切換到了硬核的 Linux 電腦模式。</p>
+</blockquote>
+<p><em>註：在安裝過程中如果彈出 Configuring tzdata 提示選擇時區，先敲數字 5 選擇 Asia（亞洲），再在城市列表裡找到 Shanghai（上海）或 Hong_Kong（香港）對應的序號回車即可。</em></p>
+<h3 id="2">2. 安裝開發基礎依賴</h3>
+<p>進入 Ubuntu 容器後（此時光標變為綠色的 <code>root@localhost:~#</code>），一鍵安裝 Node.js、npm 等必要工具：</p>
+<div class="codehilite"><pre><span></span><code>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>curl<span class="w"> </span>nodejs<span class="w"> </span>npm<span class="w"> </span>git<span class="w"> </span>ripgrep<span class="w"> </span>nano
+</code></pre></div>
+
+<h3 id="3-claude-code-native-binary">3. 下載 Claude Code 並修復 Native Binary 報錯</h3>
+<p>執行官方推薦的獨立安裝腳本：</p>
+<div class="codehilite"><pre><span></span><code>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://claude.ai/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</code></pre></div>
+
+<p>此時如果直接輸入 <code>claude</code>，系統會因為官方沒有打包適配手機（arm64 架構）的原生二進制文件而甩出報錯：<code>Error: claude native binary not installed.</code></p>
+<p><strong>核心修復命令</strong>：利用 npm 全局強制編譯，補回該架構的核心依賴：</p>
+<div class="codehilite"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>--unsafe-perm<span class="w"> </span>@anthropics/claude-code
+</code></pre></div>
+
+<h3 id="4">4. 補齊快捷路徑</h3>
+<p>將編譯成功的運行路徑塞進系統搜索中：</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export PATH=&quot;$HOME/.local/bin:$PATH&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>~/.bashrc
+</code></pre></div>
+
+<hr />
+<h2 id="deepseek-api-key">三、借殼偷渡：配置 DeepSeek API Key</h2>
+<p>Claude Code 默認需要綁定官方付費帳戶，但幸運的是，DeepSeek 官方提供了<strong>完全兼容 Anthropic 協議格式的 API 接口</strong>。我們只需修改變量，就能完成這場低成本的「瞞天過海」。</p>
+<h3 id="ubuntu">修改內層 Ubuntu 的環境變量</h3>
+<p>在 Ubuntu 提示符下輸入：</p>
+<div class="codehilite"><pre><span></span><code>nano<span class="w"> </span>~/.bashrc
+</code></pre></div>
+
+<p>滑到文件最末尾，粘貼以下配置（<strong>記得將第一行的 Key 替換為你在 DeepSeek 後台申請的真實密鑰</strong>）：</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 填入你的真實 DeepSeek 秘钥</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span><span class="s2">&quot;sk-xxxx你的真實deepseek密鑰xxxx&quot;</span>
+
+<span class="c1"># 修改 API 地址，指向 DeepSeek 的 Anthropic 兼容端點</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span><span class="s2">&quot;https://api.deepseek.com/anthropic&quot;</span>
+
+<span class="c1"># 指定要調用的模型（自動映射至 2026 最新推薦的 v4 全能模型）</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_MODEL</span><span class="o">=</span><span class="s2">&quot;deepseek-v4-pro&quot;</span>
+</code></pre></div>
+
+<p>保存並退出（按 <code>Ctrl + O</code> → 回車 → <code>Ctrl + X</code>），然後刷新配置使其立即生效：</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/.bashrc
+</code></pre></div>
+
+<hr />
+<h2 id="_2">四、首次啟動與排雷指南</h2>
+<p>完成上述步驟後，直接在終端輸入命令喚醒系統：</p>
+<div class="codehilite"><pre><span></span><code>claude
+</code></pre></div>
+
+<h3 id="_3">首次進入的正確選項（至關重要）</h3>
+<ol>
+<li><strong>選擇皮膚主題（Theme）</strong>：默認勾選 2. Dark mode，直接按<strong>回車</strong>。</li>
+<li><strong>自定義 API Key 檢測</strong>：系統會提示 <code>Detected a custom API key in your environment. Do you want to use this API key?</code>
+   - <strong>注意</strong>：用鍵盤上方的方向鍵 ↑ 將光標切換到 <strong>1. Yes</strong>，然後按<strong>回車</strong>。允許它調用我們的 DeepSeek 憑證。</li>
+<li><strong>目錄安全審查</strong>：提示 <code>Yes, I trust this folder</code>，直接按<strong>回車</strong>信任當前的 /root 目錄。</li>
+</ol>
+<hr />
+<h2 id="_4">五、日常使用的「正確姿勢」</h2>
+<p>在折騰過程中，我們曾嘗試使用快捷鍵（別名）想一步跨入系統，但因為「抄近路」會導致 Ubuntu 進入非登錄狀態、拒絕加載 <code>~/.bashrc</code> 中的 DeepSeek 密鑰，從而引發連環報錯。</p>
+<p>因此，日常在手機上使用 Claude Code，<strong>最穩妥、雷打不動的標準動作只有兩步</strong>：</p>
+<p><strong>第一步</strong>：打開 Termux，輸入命令正式登錄虛擬系統，讓 Ubuntu 把 DeepSeek 密鑰等所有配置整齊加載：</p>
+<div class="codehilite"><pre><span></span><code>proot-distro<span class="w"> </span>login<span class="w"> </span>ubuntu
+</code></pre></div>
+
+<p><strong>第二步</strong>：看到綠色的 <code>root@localhost</code> 提示符亮起後，直接喚醒代碼助手：</p>
+<div class="codehilite"><pre><span></span><code>claude
+</code></pre></div>
+
+<p>進入對話界面後，你可以輸入 <code>/status</code> 驗證配置。當看到 <strong>Anthropic base URL</strong> 成功指向 <code>api.deepseek.com</code> 且 <strong>Model</strong> 顯示為 <code>deepseek-v4-flash/pro</code> 時，恭喜你，這套全網最極客、性價比拉滿的隨身 AI 編程工作站就徹底為你所用了！</p>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/claude-code-learning/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">Claude Code 学习经验总结</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/claude-code-commands-guide/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">Claude Code 斜杠命令完全指南</span>
+    </a>
+    
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+</body>
+</html>
