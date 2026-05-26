@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>树</title>
+    <description>日常记录</description>
+    <link>/blog-pages/</link>
+    <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+        <title>Claude Code 斜杠命令完全指南</title>
+        <description>Claude Code 的斜杠命令比想象中更丰富，从 /plan 到 /compact，从内置命令到自定义命令，整理一份完整列表和使用场景。</description>
+        <link>/blog-pages/posts/claude-code-commands-guide/</link>
+        <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）</title>
+        <description>完整记录如何利用 PRoot 虛擬化技術繞過架構限制，在手機上完美部署 Claude Code，並透過環境變量將其靈魂替換為極具性價比的 DeepSeek v4 API。</description>
+        <link>/blog-pages/posts/claude-code-termux-deepseek/</link>
+        <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>Claude Code 学习经验总结</title>
+        <description>Claude Code 的核心理念、工作流、上下文管理和最佳实践的学习笔记。</description>
+        <link>/blog-pages/posts/claude-code-learning/</link>
+        <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>Claude Code 练习项目推荐（初级）</title>
+        <description>三个适合初学者的 Claude Code 练习项目，覆盖博客生成器、待办事项工具和个人主页。</description>
+        <link>/blog-pages/posts/claude-code-practice-projects/</link>
+        <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>Claude Code Prompt 编写指南</title>
+        <description>为 Claude Code 编写有效 prompt 的方法论——从"提问"思维转向"分配任务"思维。</description>
+        <link>/blog-pages/posts/claude-code-prompt-guide/</link>
+        <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>搭了一个零维护的静态博客</title>
+        <description>用纯 Python 搭了一个静态博客生成器，推送到 GitHub Pages。没有框架，没有数据库，没有 node_modules，目标是十年后还能用。</description>
+        <link>/blog-pages/posts/zero-maintenance-blog/</link>
+        <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>云盘保存方案总结：从本地到 Dropbox 和 Google Drive</title>
+        <description>云盘保存方案总结：从本地到 Dropbox 和 Google Drive</description>
+        <link>/blog-pages/posts/cloud-backup-guide/</link>
+        <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+</channel>
+</rss>

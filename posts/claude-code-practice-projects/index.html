@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>Claude Code 练习项目推荐（初级） — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">记录技术与生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+            </nav>
+            
+        </div>
+    </header>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-ai-ji-shu">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">Ai技术</div>
+            <h1 class="post-title">Claude Code 练习项目推荐（初级）</h1>
+            <div class="post-meta">
+                <time datetime="2026-05-25">2026年5月25日</time>
+                <span class="reading-time">4 分钟</span>
+            </div>
+            
+            <div class="post-tags">
+                
+                <span class="tag">Claude</span>
+                
+                <span class="tag">Code</span>
+                
+                <span class="tag">练习项目</span>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="post-body">
+        <hr />
+<h2 id="_1">项目一：个人静态博客生成器</h2>
+<p><strong>难度</strong>：★☆☆☆☆ | <strong>技术栈</strong>：Python + Markdown + HTML</p>
+<p><strong>项目说明</strong>：
+写一个命令行工具，把 Markdown 文件转换成静态 HTML 页面。支持首页文章列表、单篇文章页、简单的标签分类。</p>
+<p><strong>练习目标</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>Claude Code 功能</th>
+<th>在项目中的应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Explore → Plan → Code → Commit</td>
+<td>先分析需要什么功能，再出方案，再实现</td>
+</tr>
+<tr>
+<td>CLAUDE.md</td>
+<td>为项目写一个 CLAUDE.md，记录项目结构和约定</td>
+</tr>
+<tr>
+<td>上下文管理</td>
+<td>跨多个 session 开发，每次用 <code>/compact</code> 保持上下文干净</td>
+</tr>
+<tr>
+<td>调试</td>
+<td>故意留一个 bug，让 Claude 定位和修复</td>
+</tr>
+</tbody>
+</table>
+<p><strong>推荐理由</strong>：
+- 功能边界清晰，适合练习"给目标不给步骤"的 prompt 写法
+- 涉及文件读写、目录遍历，Claude Code 的 agentic loop 优势明显
+- 成品可用，有成就感</p>
+<p><strong>Prompt 示例</strong>：</p>
+<div class="codehilite"><pre><span></span><code>在当前目录创建一个 Python 静态博客生成器。
+输入是 _posts/ 目录下的 .md 文件（带 YAML frontmatter），
+输出到 _site/ 目录的 HTML 文件。
+首页显示文章列表，每篇文章有独立页面。
+先用 Plan Mode 出方案。
+</code></pre></div>
+
+<hr />
+<h2 id="_2">项目二：命令行待办事项管理器（带数据持久化）</h2>
+<p><strong>难度</strong>：★★☆☆☆ | <strong>技术栈</strong>：任意语言（推荐 Python 或 Node.js）</p>
+<p><strong>项目说明</strong>：
+一个在 terminal 中运行的待办事项工具，支持添加、完成、删除、列出任务，数据存储在 JSON 文件中。进阶可加搜索和优先级排序。</p>
+<p><strong>练习目标</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>Claude Code 功能</th>
+<th>在项目中的应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>迭代开发</td>
+<td>分 2-3 轮逐步添加功能，练习 prompt 的增量式写法</td>
+</tr>
+<tr>
+<td>Plan Mode</td>
+<td>在加新功能前先用 Plan Mode 讨论方案</td>
+</tr>
+<tr>
+<td>代码审查</td>
+<td>让 Claude review 已写代码，检查边缘情况</td>
+</tr>
+<tr>
+<td>测试</td>
+<td>让 Claude 帮你写单元测试并运行</td>
+</tr>
+</tbody>
+</table>
+<p><strong>推荐理由</strong>：
+- CRUD 操作覆盖了大部分开发场景
+- JSON 持久化涉及数据格式处理，Claude 的代码生成能力有发挥空间
+- 功能可以逐步扩展，适合练习"分阶段"开发节奏</p>
+<p><strong>Prompt 示例</strong>：</p>
+<div class="codehilite"><pre><span></span><code>用 Node.js 写一个 CLI 待办事项工具，支持：
+- add &lt;任务内容&gt;
+- done &lt;id&gt;
+- list（按状态分组显示）
+- delete &lt;id&gt;
+
+数据存到 ~/.todos/todos.json。
+
+先写核心功能，我确认后再加搜索功能。
+每次改动后运行 npm test 确保不破坏已有功能。
+</code></pre></div>
+
+<hr />
+<h2 id="_3">项目三：个人主页 + 简历站点</h2>
+<p><strong>难度</strong>：★★☆☆☆ | <strong>技术栈</strong>：HTML + CSS + JavaScript（纯前端，可部署到 GitHub Pages）</p>
+<p><strong>项目说明</strong>：
+制作一个个人展示页面，包含简介、技能列表、项目展示、联系方式。响应式设计，风格简洁。</p>
+<p><strong>练习目标</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>Claude Code 功能</th>
+<th>在项目中的应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多文件项目管理</td>
+<td>多个 HTML/CSS/JS 文件之间的协作</td>
+</tr>
+<tr>
+<td>子代理</td>
+<td>让一个子代理写页面结构，另一个写样式，并行工作</td>
+</tr>
+<tr>
+<td>MCP 集成</td>
+<td>练习连接外部资源（如 GitHub）</td>
+</tr>
+<tr>
+<td>全流程闭环</td>
+<td>从零开始到部署到 GitHub Pages 的完整流程</td>
+</tr>
+</tbody>
+</table>
+<p><strong>推荐理由</strong>：
+- 纯前端项目，不需要搭数据库或服务器，零障碍
+- 可视化结果，正反馈强烈
+- 可部署到 GitHub Pages，体验"从开发到上线"的完整闭环
+- 子代理的并行任务在这里特别好用</p>
+<p><strong>Prompt 示例</strong>：</p>
+<div class="codehilite"><pre><span></span><code>帮我从零创建一个个人主页站点。
+布局：顶部导航 → Hero 区 → 技能卡片区 → 项目展示区 → 底部联系区。
+配色简洁，响应式。
+
+你负责搭结构和写样式，同时启动一个子代理去搜索现成的配色方案供参考。
+完成后总结改动了哪些文件。
+</code></pre></div>
+
+<hr />
+<h2 id="_4">三个项目的对比</h2>
+<table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>博客生成器</th>
+<th>待办事项工具</th>
+<th>个人主页</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心能力</td>
+<td>工作流 + CLAUDE.md</td>
+<td>迭代 + Plan Mode</td>
+<td>多文件 + 子代理</td>
+</tr>
+<tr>
+<td>代码量</td>
+<td>~200 行</td>
+<td>~150 行</td>
+<td>~300 行</td>
+</tr>
+<tr>
+<td>完成时间</td>
+<td>2-3 小时</td>
+<td>1-2 小时</td>
+<td>2-3 小时</td>
+</tr>
+<tr>
+<td>是否可部署</td>
+<td>是（生成静态文件）</td>
+<td>否（CLI 工具）</td>
+<td>是（GitHub Pages）</td>
+</tr>
+<tr>
+<td>成就感</td>
+<td>★★★</td>
+<td>★★</td>
+<td>★★★★</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_5">学习路径建议</h2>
+<div class="codehilite"><pre><span></span><code>项目一：博客生成器
+  → 重点学：Explore → Plan → Code → Commit 工作流
+  → 重点学：CLAUDE.md 配置
+      ↓
+项目二：待办事项工具
+  → 重点学：Plan Mode 做增量开发
+  → 重点学：让 Claude 帮你写测试和 debug
+      ↓
+项目三：个人主页
+  → 重点学：子代理并行工作
+  → 重点学：全流程闭环（开发→部署）
+</code></pre></div>
+
+<p>按这个顺序做完三个项目，你会自然掌握 Claude Code 最核心的日常功能，之后再做实际项目就顺手了。</p>
+<hr />
+<p><em>整理于 2026-05-25</em></p>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/claude-code-prompt-guide/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">Claude Code Prompt 编写指南</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/claude-code-learning/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">Claude Code 学习经验总结</span>
+    </a>
+    
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+</body>
+</html>
