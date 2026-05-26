@@ -38,8 +38,15 @@ img {
 .site-nav {
     margin-top: 16px;
     display: flex;
-    gap: 4px;
-    flex-wrap: wrap;
+    gap: 8px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+}
+.site-nav::-webkit-scrollbar {
+    display: none;
 }
 .nav-link {
     display: inline-block;
@@ -109,13 +116,20 @@ img {
 }
 
 /* ===== 文章列表 ===== */
-.article-item {
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #eee;
+.article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
-.article-item:last-child {
-    border-bottom: none;
+.article-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s ease;
+}
+.article-item:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 .article-title {
     font-size: 22px;
@@ -143,6 +157,10 @@ img {
     font-size: 16px;
     color: #666;
     line-height: 1.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* ===== 标签 ===== */
