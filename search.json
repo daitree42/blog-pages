@@ -1,0 +1,111 @@
+[
+  {
+    "title": "Claude Code 学习路线（Linux · 初级 · 快速上手）",
+    "url": "posts/claude-code-learning-path-linux/",
+    "date": "2026年5月27日",
+    "tags": [
+      "Claude",
+      "Code",
+      "Linux",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "了解了你的情况，我来给你一个清晰的学习路线图！ 第一阶段：安装与配置（先把工具跑起来） 前提条件： 你需要 Node.js 和 npm # 第一步：配置 npm（避免权限问题） mkdir -p ~/.npm-global npm config set prefix ~/.npm-global echo 'export PATH=$HOME/.npm-global/bin:$PATH' >> ~/"
+  },
+  {
+    "title": "CLAUDE.md 是什么",
+    "url": "posts/claude-md-guide/",
+    "date": "2026年5月27日",
+    "tags": [
+      "Claude",
+      "Code",
+      "最佳实践",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "好，信息够了，给你一个清晰实用的讲解。 CLAUDE.md 是什么 CLAUDE.md 是一个特殊文件，Claude 每次开始对话时都会自动读取它。你可以把它理解为给 Claude 的项目说明书——不用每次都重复告诉它背景信息。 来源：Claude Code 最佳实践  怎么生成 进入你的项目目录，运行： cd ~/your-project claude > /init   /init 会分析你的"
+  },
+  {
+    "title": "Claude Code 斜杠命令完全指南",
+    "url": "posts/claude-code-commands-guide/",
+    "date": "2026年5月26日",
+    "tags": [
+      "Claude",
+      "Code",
+      "命令行工具"
+    ],
+    "category": "Ai技术",
+    "excerpt": "Claude Code 是一个终端里的 AI 编程助手，和 Claude 网页版不同，它在命令行里工作，能直接读写文件、执行命令、管理整个项目。而它的斜杠命令（slash commands）是控制这个工具最直接的方式。 之前一直以为 Claude Code 只有 /help 和 /clear 几个简单命令，仔细查了一下，发现内置命令比预想的多不少。 一、内置命令完整列表 以下十个命令是 Claud"
+  },
+  {
+    "title": "移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）",
+    "url": "posts/claude-code-termux-deepseek/",
+    "date": "2026年5月26日",
+    "tags": [
+      "Claude",
+      "Code",
+      "Termux",
+      "Android",
+      "DeepSeek",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "在大模型與 AI Agent 爆發的時代，Anthropic 官方推出的終端代碼助手 Claude Code 憑藉強大的多文件讀寫、自動 Git 管理和指令執行能力，成為了開發者的神器。然而，官方並沒有對安卓（Termux）環境提供原生支持，且其綁定的官方 API 價格不菲。 本文將完整記錄如何利用 PRoot 虛擬化技術 繞過架構限制，在手機上完美部署 Claude Code，並透過環境變量將其"
+  },
+  {
+    "title": "Claude Code 学习经验总结",
+    "url": "posts/claude-code-learning/",
+    "date": "2026年5月25日",
+    "tags": [
+      "Claude",
+      "Code",
+      "AI"
+    ],
+    "category": "Ai技术",
+    "excerpt": "来源：Anthropic Skilljar — Claude Code 101 课程  一、核心理念：Claude Code 与普通聊天的区别 Claude Code 是一个 agentic loop（代理循环）系统，而不是简单的问答工具。它在 terminal 中运行，能够自主执行多步操作（读文件、搜索代码、运行命令），并且每一步都需要用户的 permission 控制。这意味着：  它不是\"你"
+  },
+  {
+    "title": "Claude Code 练习项目推荐（初级）",
+    "url": "posts/claude-code-practice-projects/",
+    "date": "2026年5月25日",
+    "tags": [
+      "Claude",
+      "Code",
+      "练习项目"
+    ],
+    "category": "Ai技术",
+    "excerpt": "项目一：个人静态博客生成器 难度：★☆☆☆☆ | 技术栈：Python + Markdown + HTML 项目说明： 写一个命令行工具，把 Markdown 文件转换成静态 HTML 页面。支持首页文章列表、单篇文章页、简单的标签分类。 练习目标：    Claude Code 功能 在项目中的应用     Explore → Plan → Code → Commit 先分析需要什么功能，再出方"
+  },
+  {
+    "title": "Claude Code Prompt 编写指南",
+    "url": "posts/claude-code-prompt-guide/",
+    "date": "2026年5月25日",
+    "tags": [
+      "Claude",
+      "Code",
+      "Prompt"
+    ],
+    "category": "Ai技术",
+    "excerpt": "一、核心认知：Claude Code 不是聊天机器人 Claude Code 是一个 agentic loop（代理循环）系统。这意味着：    聊天式 Claude Claude Code     你问一句它答一句 你给一个任务，它自主执行多步   只能输出文字 可以读文件、写代码、执行命令   被动回应用户 主动探索代码库、制定计划、执行操作   单轮对话 多步循环（思考→行动→观察→再思考）"
+  },
+  {
+    "title": "搭了一个零维护的静态博客",
+    "url": "posts/zero-maintenance-blog/",
+    "date": "2026年5月25日",
+    "tags": [
+      "博客",
+      "静态站点",
+      "Python"
+    ],
+    "category": "Ai技术",
+    "excerpt": "一、为什么 一直在本地写文章，但写完的东西都躺在文件夹里，不方便分享。想搭一个博客，但有几条硬约束：  长期不维护也不会坏。不用框架，不用数据库，不用任何需要定期升级的东西 不改变现有的写作流程。文章还是用 Markdown 写，存在同一个目录结构里 零成本。不买服务器，不交月费 中文排版要好。读起来舒服，不花哨  翻了一圈市面上的方案，静态站点生成器很多（Hugo、Jekyll、Hexo），但都"
+  },
+  {
+    "title": "云盘保存方案总结：从本地到 Dropbox 和 Google Drive",
+    "url": "posts/cloud-backup-guide/",
+    "date": "2026年5月1日",
+    "tags": [],
+    "category": "Ai技术",
+    "excerpt": "一、为什么需要这套方案 在终端环境（如 Android Termux、远程服务器）中写作，文件默认只存在本地。一旦设备丢失、数据清理或环境重置，所有稿件都会丢失。建立一套云盘备份机制，可以确保文章安全，也能在多个设备间同步。 本文总结两种云盘的连接方式和一个一键同步脚本的使用方法。  二、整体架构 本地文件                       云盘 ────────────────────"
+  }
+]
