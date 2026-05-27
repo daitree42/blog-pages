@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
-    <title>存档 — 树</title>
+    <title>树</title>
     <link rel="stylesheet" href="/blog-pages/static/style.css">
     <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
 </head>
@@ -40,7 +40,7 @@
                 
                 <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
                 
-                <a href="/blog-pages/archive/" class="nav-link active">存档</a>
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
             
         </div>
@@ -52,72 +52,41 @@
     <script>var PREFIX = "/blog-pages";</script>
     <main class="container">
         
-<section class="archive">
-    <h2 class="archive-heading">文章存档</h2>
+
+<section class="article-list">
     
-    <div class="archive-year">
-        <h3 class="archive-year-title">2026年</h3>
         
-        <div class="archive-month">
-            <h4 class="archive-month-title">5月</h4>
-            <ul class="archive-list">
-                
-                <li class="archive-item">
-                    <time class="archive-date" datetime="2026-05-27">05-27</time>
-                    <a href="/blog-pages/posts/claude-code-learning-path-linux/" class="archive-link">Claude Code 学习路线（Linux · 初级 · 快速上手）</a>
-                </li>
-                
-                <li class="archive-item">
-                    <time class="archive-date" datetime="2026-05-27">05-27</time>
-                    <a href="/blog-pages/posts/claude-md-guide/" class="archive-link">CLAUDE.md 是什么</a>
-                </li>
-                
-                <li class="archive-item">
-                    <time class="archive-date" datetime="2026-05-27">05-27</time>
-                    <a href="/blog-pages/posts/extend-static-blog/" class="archive-link">给纯 Python 静态博客加了四个功能</a>
-                </li>
-                
-                <li class="archive-item">
-                    <time class="archive-date" datetime="2026-05-26">05-26</time>
-                    <a href="/blog-pages/posts/claude-code-commands-guide/" class="archive-link">Claude Code 斜杠命令完全指南</a>
-                </li>
-                
-                <li class="archive-item">
-                    <time class="archive-date" datetime="2026-05-26">05-26</time>
-                    <a href="/blog-pages/posts/claude-code-termux-deepseek/" class="archive-link">移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）</a>
-                </li>
-                
-                <li class="archive-item">
-                    <time class="archive-date" datetime="2026-05-25">05-25</time>
-                    <a href="/blog-pages/posts/claude-code-learning/" class="archive-link">Claude Code 学习经验总结</a>
-                </li>
-                
-                <li class="archive-item">
-                    <time class="archive-date" datetime="2026-05-25">05-25</time>
-                    <a href="/blog-pages/posts/claude-code-practice-projects/" class="archive-link">Claude Code 练习项目推荐（初级）</a>
-                </li>
-                
-                <li class="archive-item">
-                    <time class="archive-date" datetime="2026-05-25">05-25</time>
-                    <a href="/blog-pages/posts/claude-code-prompt-guide/" class="archive-link">Claude Code Prompt 编写指南</a>
-                </li>
-                
-                <li class="archive-item">
-                    <time class="archive-date" datetime="2026-05-25">05-25</time>
-                    <a href="/blog-pages/posts/zero-maintenance-blog/" class="archive-link">搭了一个零维护的静态博客</a>
-                </li>
-                
-                <li class="archive-item">
-                    <time class="archive-date" datetime="2026-05-01">05-01</time>
-                    <a href="/blog-pages/posts/cloud-backup-guide/" class="archive-link">云盘保存方案总结：从本地到 Dropbox 和 Google Drive</a>
-                </li>
-                
-            </ul>
-        </div>
         
-    </div>
+        <article class="article-item article-featured">
+            <div class="featured-badge">Ai技术</div>
+            <h2 class="article-title featured-title">
+                <a href="/blog-pages/posts/extend-static-blog/">给纯 Python 静态博客加了四个功能</a>
+            </h2>
+            <div class="article-meta">
+                <time class="article-date" datetime="2026-05-27">2026年5月27日</time>
+                <span class="reading-time">4 分钟</span>
+            </div>
+            
+            <div class="article-tags">
+                
+                <span class="tag">博客</span>
+                
+                <span class="tag">静态站点</span>
+                
+                <span class="tag">Python</span>
+                
+                <span class="tag">搜索</span>
+                
+            </div>
+            
+            <p class="article-description featured-description">标签聚合页、sitemap、全文搜索、本地预览服务器——不依赖任何框架，不到 100 行代码。</p>
+        </article>
+        
+        
     
 </section>
+
+
 
     </main>
     <footer class="site-footer">

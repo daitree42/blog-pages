@@ -31,6 +31,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/extend-static-blog/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://daitree42.github.io/blog-pages/posts/claude-code-commands-guide/</loc>
     <lastmod>2026-05-26</lastmod>
     <priority>0.8</priority>

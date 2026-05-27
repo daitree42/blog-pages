@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>给纯 Python 静态博客加了四个功能 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+            
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-ai-ji-shu">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">Ai技术</div>
+            <h1 class="post-title">给纯 Python 静态博客加了四个功能</h1>
+            <div class="post-meta">
+                <time datetime="2026-05-27">2026年5月27日</time>
+                <span class="reading-time">4 分钟</span>
+            </div>
+            
+            <div class="post-tags">
+                
+                <span class="tag">博客</span>
+                
+                <span class="tag">静态站点</span>
+                
+                <span class="tag">Python</span>
+                
+                <span class="tag">搜索</span>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="post-body">
+        <hr />
+<p>上个月搭了<a href="/blog-pages/posts/zero-maintenance-blog/">一个零维护的静态博客</a>，用纯 Python 把 Markdown 转成 HTML，推到 GitHub Pages 上。跑了几天，发现缺几个东西：标签只能看不能点、没有站点地图、想搜索得靠浏览器、改样式要等部署才能看效果。</p>
+<p>花了一个晚上加了四个功能。核心思路不变——不加框架，不引入运行时依赖，能跑 Python 就行。</p>
+<hr />
+<h2 id="_1">一、标签聚合页</h2>
+<p>之前 <code>parse_draft()</code> 已经把标签解析进了 <code>article["tags"]</code>，但 <code>build()</code> 里没有生成页面。加一段循环的事：</p>
+<div class="codehilite"><pre><span></span><code><span class="n">tag_map</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">articles</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;tags&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+        <span class="n">tag_map</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="n">tag_dir</span> <span class="o">=</span> <span class="n">DIST_DIR</span> <span class="o">/</span> <span class="s2">&quot;tag&quot;</span>
+<span class="n">tag_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">tag</span><span class="p">,</span> <span class="n">tag_articles</span> <span class="ow">in</span> <span class="n">tag_map</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">p</span><span class="p">,</span> <span class="n">total</span><span class="p">,</span> <span class="n">page_items</span> <span class="ow">in</span> <span class="n">paginate</span><span class="p">(</span><span class="n">tag_articles</span><span class="p">,</span> <span class="n">PAGE_SIZE</span><span class="p">):</span>
+        <span class="n">render_paginated</span><span class="p">(</span>
+            <span class="s2">&quot;index.html&quot;</span><span class="p">,</span> <span class="n">page_items</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">total</span><span class="p">,</span>
+            <span class="n">tag_dir</span> <span class="o">/</span> <span class="n">tag</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;tag/</span><span class="si">{</span><span class="n">tag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">ctx</span><span class="p">,</span>
+        <span class="p">)</span>
+</code></pre></div>
+
+<p>复用首页模板，自动分页。现在文章标签可以点击了，比如 <code>/tag/Python/</code> 列出所有带 Python 标签的文章。生成器会自动扫描所有标签，有文章就生成页面，没有就跳过。</p>
+<h2 id="sitemap">二、Sitemap</h2>
+<p>Google Search Console 说没有 sitemap。确实没有。加一个：</p>
+<div class="codehilite"><pre><span></span><code><span class="n">sm_lines</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;&lt;urlset xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;&gt;&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">sm_url</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">lastmod</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">priority</span><span class="o">=</span><span class="s2">&quot;0.5&quot;</span><span class="p">):</span>
+    <span class="n">block</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;  &lt;url&gt;</span><span class="se">\n</span><span class="s2">    &lt;loc&gt;</span><span class="si">{</span><span class="n">SITE_URL</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">loc</span><span class="si">}</span><span class="s2">&lt;/loc&gt;</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="k">if</span> <span class="n">lastmod</span><span class="p">:</span>
+        <span class="n">block</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;    &lt;lastmod&gt;</span><span class="si">{</span><span class="n">lastmod</span><span class="si">}</span><span class="s2">&lt;/lastmod&gt;</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="n">block</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;    &lt;priority&gt;</span><span class="si">{</span><span class="n">priority</span><span class="si">}</span><span class="s2">&lt;/priority&gt;</span><span class="se">\n</span><span class="s2">  &lt;/url&gt;&quot;</span>
+    <span class="n">sm_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+
+<span class="n">sm_url</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">priority</span><span class="o">=</span><span class="s2">&quot;1.0&quot;</span><span class="p">)</span>          <span class="c1"># 首页</span>
+<span class="n">sm_url</span><span class="p">(</span><span class="s2">&quot;archive/&quot;</span><span class="p">,</span> <span class="n">priority</span><span class="o">=</span><span class="s2">&quot;0.6&quot;</span><span class="p">)</span>  <span class="c1"># 存档</span>
+<span class="k">for</span> <span class="n">cat_slug</span> <span class="ow">in</span> <span class="n">CATEGORIES</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="n">sm_url</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;category/</span><span class="si">{</span><span class="n">cat_slug</span><span class="si">}</span><span class="s2">/&quot;</span><span class="p">,</span> <span class="n">priority</span><span class="o">=</span><span class="s2">&quot;0.7&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">articles</span><span class="p">:</span>
+    <span class="n">sm_url</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;posts/</span><span class="si">{</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;slug&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">/&quot;</span><span class="p">,</span> <span class="n">lastmod</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">),</span> <span class="n">priority</span><span class="o">=</span><span class="s2">&quot;0.8&quot;</span><span class="p">)</span>
+
+<span class="n">sm_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&lt;/urlset&gt;&quot;</span><span class="p">)</span>
+<span class="p">(</span><span class="n">DIST_DIR</span> <span class="o">/</span> <span class="s2">&quot;sitemap.xml&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sm_lines</span><span class="p">),</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>优先级按层级分配：首页 1.0，栏目页 0.7，文章页 0.8。最后一篇新文章的 <code>lastmod</code> 日期也会自动填上。</p>
+<h2 id="_2">三、全文搜索</h2>
+<p>本打算接一个第三方搜索服务，想了想不值得。静态博客的文章数量有限，构建时把所有文章的内容摘要导出成一个 JSON 文件，前端用 JavaScript 实时过滤就够了。</p>
+<h3 id="_3">后端：构建时生成索引</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">index</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">articles</span><span class="p">:</span>
+    <span class="n">plain</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&lt;[^&gt;]+&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="s2">&quot;body_html&quot;</span><span class="p">])</span>
+    <span class="n">plain</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">plain</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">excerpt</span> <span class="o">=</span> <span class="n">plain</span><span class="p">[:</span><span class="mi">200</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="n">index</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+        <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="n">a</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;posts/</span><span class="si">{</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;slug&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;date&quot;</span><span class="p">:</span> <span class="n">a</span><span class="p">[</span><span class="s2">&quot;date_display&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="n">a</span><span class="p">[</span><span class="s2">&quot;tags&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="n">a</span><span class="p">[</span><span class="s2">&quot;category&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;excerpt&quot;</span><span class="p">:</span> <span class="n">excerpt</span><span class="p">,</span>
+    <span class="p">})</span>
+<span class="p">(</span><span class="n">DIST_DIR</span> <span class="o">/</span> <span class="s2">&quot;search.json&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p>关键细节：用 <code>re.sub</code> 去掉 HTML 标签，取纯文本前 200 字做摘要。<code>search.json</code> 只有十几 KB，加载几乎无感。</p>
+<h3 id="_4">前端：实时过滤</h3>
+<div class="codehilite"><pre><span></span><code><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">initSearch</span><span class="p">(</span><span class="nx">inputId</span><span class="p">,</span><span class="w"> </span><span class="nx">resultsId</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">inputId</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">resultsId</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">input</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="nx">PREFIX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;/search.json&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+
+<span class="w">    </span><span class="nx">input</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">q</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">trim</span><span class="p">().</span><span class="nx">toLowerCase</span><span class="p">();</span>
+<span class="w">        </span><span class="nx">results</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">q</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">hits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">index</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">title</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">().</span><span class="nx">includes</span><span class="p">(</span><span class="nx">q</span><span class="p">)</span><span class="w"> </span><span class="o">||</span>
+<span class="w">                </span><span class="nx">a</span><span class="p">.</span><span class="nx">excerpt</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">().</span><span class="nx">includes</span><span class="p">(</span><span class="nx">q</span><span class="p">)</span><span class="w"> </span><span class="o">||</span>
+<span class="w">                </span><span class="nx">a</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">some</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">t</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">().</span><span class="nx">includes</span><span class="p">(</span><span class="nx">q</span><span class="p">);</span><span class="w"> </span><span class="p">});</span>
+<span class="w">        </span><span class="p">}).</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">);</span>
+
+<span class="w">        </span><span class="nx">hits</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">results</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                </span><span class="s1">&#39;&lt;a href=&quot;&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">PREFIX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">url</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&quot; class=&quot;search-result&quot;&gt;&#39;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                </span><span class="s1">&#39;&lt;span class=&quot;search-title&quot;&gt;&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">title</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;&lt;/span&gt;&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                </span><span class="s1">&#39;&lt;span class=&quot;search-meta&quot;&gt;&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">date</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; · &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">category</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;&lt;/span&gt;&quot;</span><span class="w"> </span><span class="o">+</span>
+<span class="w">                </span><span class="s1">&#39;&lt;span class=&quot;search-excerpt&quot;&gt;&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">excerpt</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;&lt;/span&gt;&lt;/a&gt;&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">});</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>没有防抖（文章少不需要），没有高亮（保持简单），一次加载全部索引。打字即过滤，体验接近即时。</p>
+<p>搜索框放在了导航栏下方，输入时下拉显示结果。样式只用了三四十行 CSS。</p>
+<h2 id="_5">四、本地预览服务器</h2>
+<p>之前改一次样式就要 <code>python3 publish.py &amp;&amp; cd dist &amp;&amp; python3 -m http.server</code>，而且路径前缀 <code>/blog-pages/</code> 还不匹配，得手动拼 URL。</p>
+<p>加了一个 <code>--serve</code> 参数：</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">serve</span><span class="p">(</span><span class="n">port</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">8000</span><span class="p">):</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">http.server</span><span class="o">,</span><span class="w"> </span><span class="nn">socketserver</span>
+
+    <span class="k">class</span><span class="w"> </span><span class="nc">PrefixHandler</span><span class="p">(</span><span class="n">http</span><span class="o">.</span><span class="n">server</span><span class="o">.</span><span class="n">SimpleHTTPRequestHandler</span><span class="p">):</span>
+        <span class="k">def</span><span class="w"> </span><span class="nf">translate_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">path</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">SITE_PREFIX</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span><span class="p">):</span>
+                <span class="n">path</span> <span class="o">=</span> <span class="n">path</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">SITE_PREFIX</span><span class="p">):]</span>
+            <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">translate_path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="n">socketserver</span><span class="o">.</span><span class="n">TCPServer</span><span class="p">((</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="p">),</span> <span class="n">PrefixHandler</span><span class="p">)</span> <span class="k">as</span> <span class="n">httpd</span><span class="p">:</span>
+        <span class="n">httpd</span><span class="o">.</span><span class="n">serve_forever</span><span class="p">()</span>
+</code></pre></div>
+
+<p>核心技巧是重写 <code>translate_path</code>，把 URL 里的 <code>/blog-pages/</code> 前缀去掉，使本地路径与线上保持一致。现在一条命令即可：</p>
+<div class="codehilite"><pre><span></span><code>python3<span class="w"> </span>publish.py<span class="w"> </span>--serve<span class="w"> </span>--port<span class="w"> </span><span class="m">8080</span>
+</code></pre></div>
+
+<p>打开 <code>http://localhost:8080/blog-pages/</code>，和线上看到的一模一样。</p>
+<p>还顺手加了一个 <code>--watch</code> 模式，用 <code>watchdog</code> 库监听文件变动自动重建：</p>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>watchdog
+python3<span class="w"> </span>publish.py<span class="w"> </span>--watch
+</code></pre></div>
+
+<h2 id="_6">尾记</h2>
+<p>这四个功能加起来不到 100 行新增代码。这是静态博客的好处：没有插件系统的学习成本，想要什么自己写。坏处也很明显：得会写。但对一个自己用的工具来说，这种掌控感很舒服。</p>
+<p>整个 <code>publish.py</code> 现在不到 400 行，零外部运行时依赖（除了 markdown 和 jinja2 两个 apt 包）。理论上十年后回来，装两个包就能重新跑起来。</p>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/claude-code-commands-guide/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">Claude Code 斜杠命令完全指南</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/claude-md-guide/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">CLAUDE.md 是什么</span>
+    </a>
+    
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>

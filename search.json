@@ -26,6 +26,19 @@
     "excerpt": "好，信息够了，给你一个清晰实用的讲解。 CLAUDE.md 是什么 CLAUDE.md 是一个特殊文件，Claude 每次开始对话时都会自动读取它。你可以把它理解为给 Claude 的项目说明书——不用每次都重复告诉它背景信息。 来源：Claude Code 最佳实践  怎么生成 进入你的项目目录，运行： cd ~/your-project claude > /init   /init 会分析你的"
   },
   {
+    "title": "给纯 Python 静态博客加了四个功能",
+    "url": "posts/extend-static-blog/",
+    "date": "2026年5月27日",
+    "tags": [
+      "博客",
+      "静态站点",
+      "Python",
+      "搜索"
+    ],
+    "category": "Ai技术",
+    "excerpt": "上个月搭了一个零维护的静态博客，用纯 Python 把 Markdown 转成 HTML，推到 GitHub Pages 上。跑了几天，发现缺几个东西：标签只能看不能点、没有站点地图、想搜索得靠浏览器、改样式要等部署才能看效果。 花了一个晚上加了四个功能。核心思路不变——不加框架，不引入运行时依赖，能跑 Python 就行。  一、标签聚合页 之前 parse_draft() 已经把标签解析进了 "
+  },
+  {
     "title": "Claude Code 斜杠命令完全指南",
     "url": "posts/claude-code-commands-guide/",
     "date": "2026年5月26日",

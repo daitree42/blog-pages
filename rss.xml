@@ -21,6 +21,13 @@
     </item>
     
     <item>
+        <title>给纯 Python 静态博客加了四个功能</title>
+        <description>标签聚合页、sitemap、全文搜索、本地预览服务器——不依赖任何框架，不到 100 行代码。</description>
+        <link>/blog-pages/posts/extend-static-blog/</link>
+        <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>Claude Code 斜杠命令完全指南</title>
         <description>Claude Code 的斜杠命令比想象中更丰富，从 /plan 到 /compact，从内置命令到自定义命令，整理一份完整列表和使用场景。</description>
         <link>/blog-pages/posts/claude-code-commands-guide/</link>
