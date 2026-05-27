@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
     <title>树</title>
-    <description>日常记录</description>
+    <description>漫游，一种生活</description>
     <link>/blog-pages/</link>
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
