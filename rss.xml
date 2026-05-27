@@ -14,6 +14,13 @@
     </item>
     
     <item>
+        <title>CLAUDE.md 是什么</title>
+        <description>CLAUDE.md 是 Claude Code 的项目说明书，解释它的作用、生成方法、写什么内容以及关键原则。</description>
+        <link>/blog-pages/posts/claude-md-guide/</link>
+        <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>Claude Code 斜杠命令完全指南</title>
         <description>Claude Code 的斜杠命令比想象中更丰富，从 /plan 到 /compact，从内置命令到自定义命令，整理一份完整列表和使用场景。</description>
         <link>/blog-pages/posts/claude-code-commands-guide/</link>
