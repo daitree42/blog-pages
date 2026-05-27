@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
-    <title>Claude Code 斜杠命令完全指南 — 树</title>
+    <title>Claude Code 学习路线（Linux · 初级 · 快速上手） — 树</title>
     <link rel="stylesheet" href="/blog-pages/static/style.css">
     <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
 </head>
@@ -54,10 +54,10 @@
     <div class="post-cover">
         <div class="post-cover-inner">
             <div class="post-breadcrumb">Ai技术</div>
-            <h1 class="post-title">Claude Code 斜杠命令完全指南</h1>
+            <h1 class="post-title">Claude Code 学习路线（Linux · 初级 · 快速上手）</h1>
             <div class="post-meta">
-                <time datetime="2026-05-26">2026年5月26日</time>
-                <span class="reading-time">4 分钟</span>
+                <time datetime="2026-05-27">2026年5月27日</time>
+                <span class="reading-time">2 分钟</span>
             </div>
             
             <div class="post-tags">
@@ -66,7 +66,9 @@
                 
                 <span class="tag">Code</span>
                 
-                <span class="tag">命令行工具</span>
+                <span class="tag">Linux</span>
+                
+                <span class="tag">教程</span>
                 
             </div>
             
@@ -74,132 +76,100 @@
     </div>
     <div class="post-body">
         <hr />
-<p>Claude Code 是一个终端里的 AI 编程助手，和 Claude 网页版不同，它在命令行里工作，能直接读写文件、执行命令、管理整个项目。而它的斜杠命令（slash commands）是控制这个工具最直接的方式。</p>
-<p>之前一直以为 Claude Code 只有 /help 和 /clear 几个简单命令，仔细查了一下，发现内置命令比预想的多不少。</p>
-<h2 id="_1">一、内置命令完整列表</h2>
-<p>以下十个命令是 Claude Code 自带的：</p>
+<p>了解了你的情况，我来给你一个清晰的学习路线图！</p>
+<h2 id="_1">第一阶段：安装与配置（先把工具跑起来）</h2>
+<p><strong>前提条件：</strong> 你需要 Node.js 和 npm</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 第一步：配置 npm（避免权限问题）</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span>~/.npm-global
+npm<span class="w"> </span>config<span class="w"> </span><span class="nb">set</span><span class="w"> </span>prefix<span class="w"> </span>~/.npm-global
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export PATH=$HOME/.npm-global/bin:$PATH&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+<span class="nb">source</span><span class="w"> </span>~/.bashrc
+
+<span class="c1"># 第二步：安装 Claude Code</span>
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
+
+<span class="c1"># 第三步：验证安装</span>
+claude<span class="w"> </span>doctor
+</code></pre></div>
+
+<p><strong>账号要求：</strong> 你需要 Claude Pro / Claude Max 订阅，或者开通了计费的 Anthropic Console 账号才能使用。</p>
+<p>来源：<a href="https://www.eesel.ai/blog/install-claude-code">Eesel AI</a></p>
+<hr />
+<h2 id="_2">第二阶段：基本使用流程</h2>
+<p>每次进入你的项目目录，启动 Claude Code：</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/your-project
+claude
+</code></pre></div>
+
+<p>第一次进入项目时，用 <code>/init</code> 命令让 Claude 生成一个 <code>CLAUDE.md</code> 文件，这个文件会记录你的项目结构和约定，以后每次启动 Claude Code 都会自动读取它，大大提升回答质量。</p>
+<p>来源：<a href="https://itecsonline.com/post/how-to-install-claude-code-on-ubuntu-linux-complete-guide-2025">iTechs Online</a></p>
+<hr />
+<h2 id="_3">第三阶段：每日必用的斜杠命令</h2>
+<p>最常用的日常命令是这几个：</p>
 <table>
 <thead>
 <tr>
 <th>命令</th>
 <th>用途</th>
-<th>什么时候用</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>/help</code></td>
-<td>列出所有可用命令和说明</td>
-<td>刚上手，或想查某个命令怎么用</td>
-</tr>
-<tr>
-<td><code>/clear</code></td>
-<td>清空当前对话历史</td>
-<td>换一个新任务，不想让旧对话干扰</td>
-</tr>
-<tr>
-<td><code>/reset</code></td>
-<td>同 /clear</td>
-<td>同上</td>
-</tr>
-<tr>
-<td><code>/new</code></td>
-<td>同 /clear</td>
-<td>同上</td>
-</tr>
-<tr>
-<td><code>/compact</code></td>
-<td>压缩上下文，压缩后续中间步骤</td>
-<td>会话聊了很久，感觉 Claude 反应变慢时</td>
-</tr>
-<tr>
-<td><code>/context</code></td>
-<td>显示当前上下文窗口用量</td>
-<td>不确定还能聊多久，提前看看剩余空间</td>
-</tr>
-<tr>
-<td><code>/cost</code></td>
-<td>查看本次会话消耗的 token 总量</td>
-<td>想知道一次任务花了多少量</td>
-</tr>
-<tr>
-<td><code>/verify</code></td>
-<td>验证代码改动是否正确</td>
-<td>改完代码后跑一下检查</td>
-</tr>
-<tr>
-<td><code>/bug</code></td>
-<td>向 Anthropic 报告 bug</td>
-<td>遇到工具本身的 bug</td>
-</tr>
-<tr>
-<td><code>/plan</code></td>
-<td>进入计划模式，Claude 先出方案再执行</td>
-<td>做比较大的改动前，确认思路</td>
+<td><code>/init</code></td>
+<td>初始化项目，生成 CLAUDE.md</td>
 </tr>
 <tr>
 <td><code>/review</code></td>
-<td>代码审查</td>
-<td>提交前让别人（或 AI）看看代码</td>
+<td>让 Claude 审查你的代码</td>
 </tr>
 <tr>
-<td><code>/init</code></td>
-<td>初始化项目，生成 CLAUDE.md</td>
-<td>开始一个新项目时</td>
+<td><code>/compact</code></td>
+<td>压缩对话上下文（长时间工作必用）</td>
+</tr>
+<tr>
+<td><code>/cost</code></td>
+<td>查看本次会话消耗了多少 token</td>
+</tr>
+<tr>
+<td><code>/help</code></td>
+<td>列出所有可用命令</td>
+</tr>
+<tr>
+<td><code>/clear</code></td>
+<td>清空对话，重新开始</td>
 </tr>
 </tbody>
 </table>
-<p>值得注意的是，/clear、/reset、/new 三个命令功能完全一样，只是不同习惯的人可以用自己顺手的名字。</p>
-<h2 id="markdown">二、自定义命令：用 Markdown 文件扩展能力</h2>
-<p>内置命令之外，Claude Code 允许你自己定义命令。做法很简单：在 <code>~/.claude/commands/</code> 目录下放一个 Markdown 文件，文件名就是命令名。</p>
-<p>比如创建一个 <code>~/.claude/commands/publish.md</code>，内容写：</p>
-<div class="codehilite"><pre><span></span><code># 发布博客
-
-运行构建，然后部署到 GitHub Pages：
-cd /root/blog &amp;&amp; python3 publish.py &amp;&amp; bash /root/blog/deploy.sh
+<p>经验丰富的用户每工作 20-30 分钟就会用一次 <code>/compact</code> 来释放上下文空间，防止 Claude 的回答质量下降。</p>
+<p>来源：<a href="https://learn-prompting.fr/blog/claude-code-slash-commands-reference">LearnIA</a></p>
+<hr />
+<h2 id="_4">第四阶段：日常开发场景示例</h2>
+<p>进入对话后，你可以直接用自然语言提问，越具体越好：</p>
+<div class="codehilite"><pre><span></span><code>&gt; 解释一下这个项目的目录结构
+&gt; 帮我找 user.py 里的 bug
+&gt; 帮我给 login 函数写单元测试
+&gt; 这段代码怎么优化性能？
 </code></pre></div>
 
-<p>之后在 Claude Code 里输入 <code>/publish</code>，Claude 就会读取这个文件并执行你写的指令。文件里可以包含步骤说明、shell 命令、检查清单等。</p>
-<p>这意味着你可以把一切重复性的工作流变成一条命令：发布博客、运行测试、部署服务、格式化代码。只要写一次 Markdown 就行。</p>
-<h2 id="_2">三、实用组合建议</h2>
-<p>几个实际场景中可以搭配使用的命令：</p>
-<p>做大改动之前，先跑 <code>/plan</code>。Claude 会先分析项目结构，给出方案，你确认了再动手。避免它直接改代码而方向不对。</p>
-<p>改完代码之后跑 <code>/verify</code>，确认改动没有引入新问题。</p>
-<p>会话持续了很久、感觉 Claude 反应开始变慢时，用 <code>/compact</code> 压缩上下文。不需要重开对话，中间的状态都保留。</p>
-<p>想知道这一轮花了多少 token，随时跑 <code>/cost</code>。</p>
-<p>如果手头有几个标准操作（发布、部署、检查），写成自定义命令是最省事的——输入三个字母的事。</p>
-<h2 id="_3">四、自定义命令的更多用法</h2>
-<p>自定义命令不只是执行脚本。因为 Markdown 文件里可以写自然语言指令，你可以把它当作一个可复用的 prompt 模板。</p>
-<div class="codehilite"><pre><span></span><code><span class="gh"># 写周报</span>
-
-请根据本周的 git 提交记录，生成一份周报草稿：
-<span class="k">1.</span> 运行 git log --since=&quot;7 days ago&quot; --oneline
-<span class="k">2.</span> 分类整理提交记录（新功能、修复、重构）
-<span class="k">3.</span> 用正式语气写一段工作进展摘要
-<span class="k">4.</span> 列出下周计划，留空待填写
-</code></pre></div>
-
-<p>输入 <code>/周报</code> 就能生成一份草稿，省去逐条翻提交记录的功夫。</p>
-<h2 id="_4">小结</h2>
-<p>Claude Code 的斜杠命令系统设计得比较克制——内置命令不多，但覆盖了核心需求。自定义命令的机制才是真正灵活的部分，它把工具的能力边界交到了用户手里。</p>
-<p>参考来源：
-- <a href="https://clskillshub.com/blog/claude-code-slash-commands-2026">Claude Skills Hub — 2026 Command List</a>
-- <a href="https://medium.com/@ekondur/the-complete-guide-to-claude-code-slash-commands-may-2026-48a127aef832">Medium — The Complete Guide to Claude Code Slash Commands</a></p>
+<p>每次开始会话时，先定向一下背景：「我们在做什么、相关文件是哪个、成功的标准是什么」，效果会好很多。</p>
+<p>来源：<a href="https://dev.to/devdaily_2026/claude-code-the-complete-setup-guide-for-macos-windows-and-linux-3dbl">DEV Community</a></p>
+<hr />
+<h2 id="_5">学习建议</h2>
+<ol>
+<li><strong>先从自己现有的小项目开始</strong>，不要用空项目练习</li>
+<li><strong>出问题时运行 <code>claude doctor</code></strong>，它会自动检测大多数配置问题</li>
+<li><strong>用 <code>/cost</code> 养成习惯</strong>，了解自己的使用量</li>
+</ol>
     </div>
 </article>
 
 <nav class="post-prev-next">
     
-    <a href="/blog-pages/posts/claude-code-termux-deepseek/" class="prev-next-link prev">
+    <a href="/blog-pages/posts/claude-code-commands-guide/" class="prev-next-link prev">
         <span class="prev-next-direction">← 上一篇</span>
-        <span class="prev-next-title">移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）</span>
+        <span class="prev-next-title">Claude Code 斜杠命令完全指南</span>
     </a>
     
-    
-    <a href="/blog-pages/posts/claude-code-learning-path-linux/" class="prev-next-link next">
-        <span class="prev-next-direction">下一篇 →</span>
-        <span class="prev-next-title">Claude Code 学习路线（Linux · 初级 · 快速上手）</span>
-    </a>
     
     
 </nav>

@@ -7,6 +7,13 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+        <title>Claude Code 学习路线（Linux · 初级 · 快速上手）</title>
+        <description>面向 Linux 初级用户的 Claude Code 学习路线图，从安装配置到日常使用，快速上手这个强大的 AI 编程助手。</description>
+        <link>/blog-pages/posts/claude-code-learning-path-linux/</link>
+        <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>Claude Code 斜杠命令完全指南</title>
         <description>Claude Code 的斜杠命令比想象中更丰富，从 /plan 到 /compact，从内置命令到自定义命令，整理一份完整列表和使用场景。</description>
         <link>/blog-pages/posts/claude-code-commands-guide/</link>
