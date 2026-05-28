@@ -7,6 +7,13 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+        <title>做了一个广州徒步路线网站</title>
+        <description>把一份路线数据变成了一个带地图的独立站点，部署在 GitHub Pages 上。</description>
+        <link>/blog-pages/posts/hiking-site/</link>
+        <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>Claude Code 学习路线（Linux · 初级 · 快速上手）</title>
         <description>面向 Linux 初级用户的 Claude Code 学习路线图，从安装配置到日常使用，快速上手这个强大的 AI 编程助手。</description>
         <link>/blog-pages/posts/claude-code-learning-path-linux/</link>

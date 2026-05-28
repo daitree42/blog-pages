@@ -21,6 +21,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/hiking-site/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://daitree42.github.io/blog-pages/posts/claude-code-learning-path-linux/</loc>
     <lastmod>2026-05-27</lastmod>
     <priority>0.8</priority>

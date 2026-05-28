@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
-    <title>树</title>
+    <title>做了一个广州徒步路线网站 — 树</title>
     <link rel="stylesheet" href="/blog-pages/static/style.css">
     <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
 </head>
@@ -53,21 +53,19 @@
     <main class="container">
         
 
-<section class="article-list">
-    
-        
-        
-        <article class="article-item article-featured">
-            <div class="featured-badge">日常走走</div>
-            <h2 class="article-title featured-title">
-                <a href="/blog-pages/posts/hiking-site/">做了一个广州徒步路线网站</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-28">2026年5月28日</time>
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-ri-chang-zou-zou">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">日常走走</div>
+            <h1 class="post-title">做了一个广州徒步路线网站</h1>
+            <div class="post-meta">
+                <time datetime="2026-05-28">2026年5月28日</time>
                 <span class="reading-time">3 分钟</span>
             </div>
             
-            <div class="article-tags">
+            <div class="post-tags">
                 
                 <span class="tag">徒步</span>
                 
@@ -83,128 +81,59 @@
                 
             </div>
             
-            <p class="article-description featured-description">把一份路线数据变成了一个带地图的独立站点，部署在 GitHub Pages 上。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/claude-code-learning-path-linux/">Claude Code 学习路线（Linux · 初级 · 快速上手）</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-27">2026年5月27日</time>
-                <span class="reading-time">2 分钟</span>
-            </div>
-            
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">Linux</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
-            
-            <p class="article-description">面向 Linux 初级用户的 Claude Code 学习路线图，从安装配置到日常使用，快速上手这个强大的 AI 编程助手。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/claude-md-guide/">CLAUDE.md 是什么</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-27">2026年5月27日</time>
-                <span class="reading-time">3 分钟</span>
-            </div>
-            
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">最佳实践</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
-            
-            <p class="article-description">CLAUDE.md 是 Claude Code 的项目说明书，解释它的作用、生成方法、写什么内容以及关键原则。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/extend-static-blog/">给纯 Python 静态博客加了四个功能</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-27">2026年5月27日</time>
-                <span class="reading-time">4 分钟</span>
-            </div>
-            
-            <div class="article-tags">
-                
-                <span class="tag">博客</span>
-                
-                <span class="tag">静态站点</span>
-                
-                <span class="tag">Python</span>
-                
-                <span class="tag">搜索</span>
-                
-            </div>
-            
-            <p class="article-description">标签聚合页、sitemap、全文搜索、本地预览服务器——不依赖任何框架，不到 100 行代码。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/claude-code-commands-guide/">Claude Code 斜杠命令完全指南</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-26">2026年5月26日</time>
-                <span class="reading-time">4 分钟</span>
-            </div>
-            
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">命令行工具</span>
-                
-            </div>
-            
-            <p class="article-description">Claude Code 的斜杠命令比想象中更丰富，从 /plan 到 /compact，从内置命令到自定义命令，整理一份完整列表和使用场景。</p>
-        </article>
-        
-        
-    
-</section>
+        </div>
+    </div>
+    <div class="post-body">
+        <hr />
+<h2 id="_1">起因</h2>
+<p>手头有一份广州徒步路线的数据——越秀历史文化线和荔湾西关风情线，每条线路包含七八个途经点，每个点有坐标、介绍、照片点位。之前这些数据躺在一个 React 组件里，作为某个更大项目的一部分，但我觉得它们值得单独拿出来。</p>
+<p>做成一个独立的徒步路线网站，链接到个人主页的徒步栏目下，方便自己和朋友用。</p>
+<h2 id="_2">方案选型</h2>
+<p>目标很明确：一个纯粹的前端页面，带地图展示，零后端。部署在 GitHub Pages 上，不产生任何维护成本。</p>
+<p>选了 Vite + React 做构建。原因很简单：数据本身就是 React 组件里的，移植成本最低。地图用了 Leaflet + OpenStreetMap，免费、轻量（40KB 左右），不需要注册 API key，对 GitHub Pages 这种纯静态部署非常友好。</p>
+<p>AI 生成路线的功能保留了下来——用户可以输入偏好，让 AI 自动生成一条新线路。后端用一个 Cloudflare Worker 做 API 代理，保护 API key 不暴露在前端代码里。</p>
+<h2 id="_3">结构</h2>
+<p>整个项目就一个页面，左右分栏布局：</p>
+<p>左边是路线列表和行程详情。两条预设路线以卡片形式展示，点击切换。每个途经点可以展开查看介绍和核心亮点，红色编号和地图上的标记一一对应。</p>
+<p>右边是地图，标注所有途经点，用路线色连线。点击标记弹出信息窗，展示景点名称和亮点。</p>
+<p>配色上，每条路线有自己的主题色——越秀线用深红（#8B2020），呼应红砂岩城楼；荔湾线用藏蓝（#2A5C8A），接近西关大屋的青砖色调。主题色会贯穿整个页面：地图连线、标记编号、高亮边框、按钮，都跟着路线走。</p>
+<p>底部有个 AI 定制按钮，点击后弹出输入框，填写偏好就能生成新路线。</p>
+<h2 id="_4">部署</h2>
+<p>GitHub Pages 走得很顺。用 GitHub Actions 自动部署，推送 main 分支就触发构建发布。</p>
+<p>部署后可以在 https://daitree42.github.io/hiking/ 访问。</p>
+<p>Cloudflare Worker 部署了 DeepSeek API 的代理，把前端的 Anthropic 格式请求转为 DeepSeek 格式，响应再转回去。这样前端完全不需要修改。</p>
+<h2 id="_5">几点感受</h2>
+<p>地图在徒步内容里是天然的一级界面。比起文字描述「从 A 步行 15 分钟到 B」，在地图上看到两个点的实际距离和相对位置要直观得多。后续可以考虑在路线数据里补充轨迹路径，让地图上显示的行走路线更精确。</p>
+<p>两条预设路线覆盖了广州两千年的历史切片——从南越王的丝缕玉衣（公元前 2 世纪），到光孝寺的千年菩提树（东晋），到镇海楼的明代城墙（1380 年），再到中山纪念堂的民国风华（1931 年）。同一条路线上走完两千年，这种时空压缩感是广州这座城市特有的魅力。</p>
+<p>AI 生成路线目前依赖 DeepSeek 的 API，生成质量取决于 prompt 的精细程度。后续可以沉淀一批 prompt 模板，或者把已知的景点数据做成知识库，让 AI 生成的路线更可靠。</p>
+    </div>
+</article>
 
-
-<nav class="pagination">
+<nav class="post-prev-next">
     
-    <span class="pagination-info">1 / 3</span>
+    <a href="/blog-pages/posts/claude-code-learning-path-linux/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">Claude Code 学习路线（Linux · 初级 · 快速上手）</span>
+    </a>
     
-    <a href="/blog-pages/page/2/" class="pagination-btn pagination-next">下一页 →</a>
+    
     
 </nav>
 
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
 
     </main>
     <footer class="site-footer">
