@@ -7,6 +7,20 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+        <title>用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</title>
+        <description>Claude Code 在 DeepSeek V4 Flash 上频繁报 400 格式错误？一条 proxy 搞定——把多条 system 消息悄悄转为 user 消息。</description>
+        <link>/blog-pages/posts/deepseek-proxy-fix/</link>
+        <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>徒步网站改版记：加地图、修崩溃、适配国内网络</title>
+        <description>给徒步路线网站加上地图，修复了一系列因 Leaflet 和网络环境导致的问题，最终把链接挂上了个人主页。</description>
+        <link>/blog-pages/posts/hiking-v2/</link>
+        <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>做了一个广州徒步路线网站</title>
         <description>把一份路线数据变成了一个带地图的独立站点，部署在 GitHub Pages 上。</description>
         <link>/blog-pages/posts/hiking-site/</link>

@@ -1,5 +1,36 @@
 [
   {
+    "title": "用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误",
+    "url": "posts/deepseek-proxy-fix/",
+    "date": "2026年5月29日",
+    "tags": [
+      "Claude",
+      "Code",
+      "DeepSeek",
+      "Node.js",
+      "代理",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "把 Claude Code 接到 DeepSeek 的 V4 Flash 模型上，价格便宜量又足，这是很多开发者的首选方案。但跑起来之后，时不时就会迎面砸来一个 400 错误，说消息格式不对。 仔细一看，Claude Code 在发起请求时，会在 messages 数组里塞多条 role: \"system\" 的消息——CLAUDE.md 一条、记忆文件一条、当前日期一条……而这些在 DeepSee"
+  },
+  {
+    "title": "徒步网站改版记：加地图、修崩溃、适配国内网络",
+    "url": "posts/hiking-v2/",
+    "date": "2026年5月29日",
+    "tags": [
+      "徒步",
+      "广州",
+      "React",
+      "Leaflet",
+      "GitHub",
+      "Pages",
+      "踩坑"
+    ],
+    "category": "日常走走",
+    "excerpt": "起因 上一次把广州徒步路线数据做成了独立站点，发布了。但没有地图的路线网站总觉得少了点什么——路线数据里明明有坐标，却没有用起来。 这次的目标很明确：把地图加上。结果打开了一个坑接一个坑的盖子。 加地图 用 Leaflet + react-leaflet，组件封装好，每条路线展开后在地图上显示途经点和连线。预设的两条路线（越秀历史文化线、荔湾西关风情线）各有七八个点，用编号标记一一标注，用路线主题"
+  },
+  {
     "title": "做了一个广州徒步路线网站",
     "url": "posts/hiking-site/",
     "date": "2026年5月28日",

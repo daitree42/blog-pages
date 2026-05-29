@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
-    <title>树</title>
+    <title>徒步网站改版记：加地图、修崩溃、适配国内网络 — 树</title>
     <link rel="stylesheet" href="/blog-pages/static/style.css">
     <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
 </head>
@@ -53,52 +53,19 @@
     <main class="container">
         
 
-<section class="article-list">
-    
-        
-        
-        <article class="article-item article-featured">
-            <div class="featured-badge">Ai技术</div>
-            <h2 class="article-title featured-title">
-                <a href="/blog-pages/posts/deepseek-proxy-fix/">用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-29">2026年5月29日</time>
-                <span class="reading-time">3 分钟</span>
-            </div>
-            
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">DeepSeek</span>
-                
-                <span class="tag">Node.js</span>
-                
-                <span class="tag">代理</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
-            
-            <p class="article-description featured-description">Claude Code 在 DeepSeek V4 Flash 上频繁报 400 格式错误？一条 proxy 搞定——把多条 system 消息悄悄转为 user 消息。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">🚶</span>
-                <a href="/blog-pages/posts/hiking-v2/">徒步网站改版记：加地图、修崩溃、适配国内网络</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-29">2026年5月29日</time>
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-ri-chang-zou-zou">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">日常走走</div>
+            <h1 class="post-title">徒步网站改版记：加地图、修崩溃、适配国内网络</h1>
+            <div class="post-meta">
+                <time datetime="2026-05-29">2026年5月29日</time>
                 <span class="reading-time">4 分钟</span>
             </div>
             
-            <div class="article-tags">
+            <div class="post-tags">
                 
                 <span class="tag">徒步</span>
                 
@@ -116,107 +83,68 @@
                 
             </div>
             
-            <p class="article-description">给徒步路线网站加上地图，修复了一系列因 Leaflet 和网络环境导致的问题，最终把链接挂上了个人主页。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">🚶</span>
-                <a href="/blog-pages/posts/hiking-site/">做了一个广州徒步路线网站</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-28">2026年5月28日</time>
-                <span class="reading-time">3 分钟</span>
-            </div>
-            
-            <div class="article-tags">
-                
-                <span class="tag">徒步</span>
-                
-                <span class="tag">广州</span>
-                
-                <span class="tag">React</span>
-                
-                <span class="tag">Leaflet</span>
-                
-                <span class="tag">GitHub</span>
-                
-                <span class="tag">Pages</span>
-                
-            </div>
-            
-            <p class="article-description">把一份路线数据变成了一个带地图的独立站点，部署在 GitHub Pages 上。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/claude-code-learning-path-linux/">Claude Code 学习路线（Linux · 初级 · 快速上手）</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-27">2026年5月27日</time>
-                <span class="reading-time">2 分钟</span>
-            </div>
-            
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">Linux</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
-            
-            <p class="article-description">面向 Linux 初级用户的 Claude Code 学习路线图，从安装配置到日常使用，快速上手这个强大的 AI 编程助手。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/claude-md-guide/">CLAUDE.md 是什么</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-27">2026年5月27日</time>
-                <span class="reading-time">3 分钟</span>
-            </div>
-            
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">最佳实践</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
-            
-            <p class="article-description">CLAUDE.md 是 Claude Code 的项目说明书，解释它的作用、生成方法、写什么内容以及关键原则。</p>
-        </article>
-        
-        
-    
-</section>
+        </div>
+    </div>
+    <div class="post-body">
+        <hr />
+<h2 id="_1">起因</h2>
+<p>上一次把广州徒步路线数据做成了独立站点，发布了。但没有地图的路线网站总觉得少了点什么——路线数据里明明有坐标，却没有用起来。</p>
+<p>这次的目标很明确：把地图加上。结果打开了一个坑接一个坑的盖子。</p>
+<h2 id="_2">加地图</h2>
+<p>用 Leaflet + react-leaflet，组件封装好，每条路线展开后在地图上显示途经点和连线。预设的两条路线（越秀历史文化线、荔湾西关风情线）各有七八个点，用编号标记一一标注，用路线主题色连线。</p>
+<p>问题在于——数据里根本没坐标。</p>
+<p>之前的数据只存了景点名、地址、介绍，<code>lat</code> 和 <code>lng</code> 字段是空的。Leaflet 拿到 <code>undefined</code> 坐标直接抛出 <code>Invalid LatLng object: (undefined, undefined)</code>，整个页面白屏。</p>
+<p>给每条路线的每个站点加了真实经纬度。坐标来自公开的地理信息，13 个站点的位置都在广州老城区范围内。</p>
+<h2 id="_3">白屏崩溃</h2>
+<p>加了坐标之后页面还是白屏。排查发现是因为 RouteMap 组件直接 import 了 Leaflet——而这个 import 发生在模块加载阶段，一旦 Leaflet 出问题（不管是版本兼容还是网络原因），整个 bundle 都执行不了，React 根本挂载不上。</p>
+<p>解决方案是把 Leaflet 相关的代码拆成动态 import。RouteMap 只在卡片展开时才去加载地图 chunk，加载失败也不会影响主页面。同时加了 ErrorBoundary 组件兜底，捕获渲染异常并显示错误信息，而不是让用户面对一片空白。</p>
+<h2 id="_4">旧路线数据兼容</h2>
+<p>「我的线路」功能保存用户之前 AI 生成的路线，但这些旧数据里没有坐标。切换到这个 tab 时，RouteMap 试图渲染 undefined 坐标，再次崩溃。</p>
+<p>在 RouteMapImpl 里加了过滤逻辑：只渲染包含有效 <code>lat</code>/<code>lng</code> 的站点，过滤掉无效数据。同时修改了 AI 生成的系统提示词，要求返回坐标。</p>
+<h2 id="osm">OSM 瓦片加载失败</h2>
+<p>地图渲染出来了，但显示的是灰色背景——图块没有加载。排查发现 OpenStreetMap 的瓦片服务器在国内网络环境下无法访问。</p>
+<p>换成高德地图瓦片（<code>webrd01.is.autonavi.com</code>）。高德的瓦片在国内访问正常，而且对于国内城市的地图数据（道路标注、地点名称）反而比 OSM 更详细。改一行瓦片 URL 就解决了。</p>
+<h2 id="ai">AI 生成降级</h2>
+<p>Cloudflare Worker 部署的 AI 代理不知什么原因停用了，前端请求一直 <code>Failed to fetch</code>。</p>
+<p>临时方案是在前端加了一个本地备选生成器：预设了 12 个广州真实景点（光孝寺、陈家祠、沙面等），当远程 API 不可用时，随机组合这些景点生成路线。所有站点都带真实坐标，生成效果基本够用。</p>
+<p>后来用户提供了 Cloudflare API 令牌和 DeepSeek API key，用 wrangler 重新部署了 Worker，AI 生成恢复正常。现在前端优先调用远程 API，失败则自动降级到本地生成。</p>
+<h2 id="_5">链接到主页</h2>
+<p>最后把徒步网站的链接加到了个人主页的项目栏目下。主页也是 GitHub Pages 部署，改了 <code>index.html</code> 里徒步卡片的链接地址，自动生效。</p>
+<hr />
+<p>改完后徒步网站可以稳定访问了：地图用高德瓦片，在国内正常显示；预设路线能展开看地图和步行路线；AI 生成有远程 API 和本地备选两层保障。链接挂在 https://daitree42.github.io/homepage/#projects 上。</p>
+    </div>
+</article>
 
-
-<nav class="pagination">
+<nav class="post-prev-next">
     
-    <span class="pagination-info">1 / 3</span>
+    <a href="/blog-pages/posts/hiking-site/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">做了一个广州徒步路线网站</span>
+    </a>
     
-    <a href="/blog-pages/page/2/" class="pagination-btn pagination-next">下一页 →</a>
+    
+    <a href="/blog-pages/posts/deepseek-proxy-fix/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</span>
+    </a>
+    
     
 </nav>
 
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
 
     </main>
     <footer class="site-footer">
