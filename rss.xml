@@ -7,6 +7,13 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+        <title>Claude Code + DeepSeek 完整解决方案文档</title>
+        <description>一份从零到一的完整操作手册，记录在安卓 Termux 的 Ubuntu 容器中运行 Claude Code 并接入 DeepSeek API 的全过程，含 proxy 代理方案和故障排查表。</description>
+        <link>/blog-pages/posts/claude-code-deepseek-guide/</link>
+        <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</title>
         <description>Claude Code 在 DeepSeek V4 Flash 上频繁报 400 格式错误？一条 proxy 搞定——把多条 system 消息悄悄转为 user 消息。</description>
         <link>/blog-pages/posts/deepseek-proxy-fix/</link>

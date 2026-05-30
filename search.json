@@ -1,5 +1,20 @@
 [
   {
+    "title": "Claude Code + DeepSeek 完整解决方案文档",
+    "url": "posts/claude-code-deepseek-guide/",
+    "date": "2026年5月30日",
+    "tags": [
+      "Claude",
+      "Code",
+      "DeepSeek",
+      "Termux",
+      "Android",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "环境说明  设备：Android 手机 终端：Termux 系统：Ubuntu（通过 proot-distro 安装） 目标：用 DeepSeek API 驱动 Claude Code   第一步：确认运行环境 问题： Claude Code 在 Termux 里直接运行报错： Native binaries for linux-arm64-android are not available   "
+  },
+  {
     "title": "用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误",
     "url": "posts/deepseek-proxy-fix/",
     "date": "2026年5月29日",

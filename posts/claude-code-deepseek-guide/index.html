@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>Claude Code + DeepSeek 完整解决方案文档 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+            
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-ai-ji-shu">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">Ai技术</div>
+            <h1 class="post-title">Claude Code + DeepSeek 完整解决方案文档</h1>
+            <div class="post-meta">
+                <time datetime="2026-05-30">2026年5月30日</time>
+                <span class="reading-time">3 分钟</span>
+            </div>
+            
+            <div class="post-tags">
+                
+                <span class="tag">Claude</span>
+                
+                <span class="tag">Code</span>
+                
+                <span class="tag">DeepSeek</span>
+                
+                <span class="tag">Termux</span>
+                
+                <span class="tag">Android</span>
+                
+                <span class="tag">教程</span>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="post-body">
+        <hr />
+<h2 id="_1">环境说明</h2>
+<ul>
+<li>设备：Android 手机</li>
+<li>终端：Termux</li>
+<li>系统：Ubuntu（通过 proot-distro 安装）</li>
+<li>目标：用 DeepSeek API 驱动 Claude Code</li>
+</ul>
+<hr />
+<h2 id="_2">第一步：确认运行环境</h2>
+<p><strong>问题：</strong> Claude Code 在 Termux 里直接运行报错：</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">Native</span><span class="w"> </span><span class="nv">binaries</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">linux</span><span class="o">-</span><span class="nv">arm64</span><span class="o">-</span><span class="nv">android</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">not</span><span class="w"> </span><span class="nv">available</span>
+</code></pre></div>
+
+<p><strong>原因：</strong> Claude Code 官方不支持 Android 原生环境。</p>
+<p><strong>解决：</strong> 必须在 Ubuntu 容器里运行：</p>
+<div class="codehilite"><pre><span></span><code>pkg<span class="w"> </span>install<span class="w"> </span>proot-distro
+proot-distro<span class="w"> </span>install<span class="w"> </span>ubuntu
+proot-distro<span class="w"> </span>login<span class="w"> </span>ubuntu
+</code></pre></div>
+
+<p>以后每次都先进 Ubuntu：</p>
+<div class="codehilite"><pre><span></span><code>proot-distro<span class="w"> </span>login<span class="w"> </span>ubuntu
+</code></pre></div>
+
+<hr />
+<h2 id="claude-code-ubuntu">第二步：安装 Claude Code（在 Ubuntu 里）</h2>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 安装 Node.js</span>
+apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nodejs<span class="w"> </span>npm<span class="w"> </span>-y
+
+<span class="c1"># 安装 Claude Code</span>
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
+
+<span class="c1"># 验证</span>
+claude<span class="w"> </span>--version
+</code></pre></div>
+
+<hr />
+<h2 id="_3">第三步：绕过登录验证</h2>
+<p><strong>问题：</strong> Claude Code 要求登录 Anthropic 账号，免费账号不行，需要 Pro（$20/月）。</p>
+<p><strong>解决：</strong> 直接修改配置文件伪造登录状态：</p>
+<div class="codehilite"><pre><span></span><code>python3<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+<span class="s">import json</span>
+
+<span class="s">with open(&#39;/root/.claude.json&#39;, &#39;r&#39;) as f:</span>
+<span class="s">    config = json.load(f)</span>
+
+<span class="s">config[&#39;oauthAccount&#39;] = {</span>
+<span class="s">    &quot;accountUuid&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;,</span>
+<span class="s">    &quot;emailAddress&quot;: &quot;user@deepseek.local&quot;,</span>
+<span class="s">    &quot;organizationUuid&quot;: &quot;00000000-0000-0000-0000-000000000001&quot;,</span>
+<span class="s">    &quot;organizationName&quot;: &quot;DeepSeek&quot;,</span>
+<span class="s">    &quot;displayName&quot;: &quot;DeepSeek User&quot;</span>
+<span class="s">}</span>
+
+<span class="s">with open(&#39;/root/.claude.json&#39;, &#39;w&#39;) as f:</span>
+<span class="s">    json.dump(config, f, indent=2)</span>
+<span class="s">print(&quot;Done!&quot;)</span>
+<span class="s">EOF</span>
+</code></pre></div>
+
+<hr />
+<h2 id="deepseek">第四步：固定使用 DeepSeek 模型</h2>
+<p><strong>问题：</strong> Claude Code 默认用 Opus 4.8，DeepSeek 不认这个模型名。</p>
+<p><strong>解决：</strong> 直接写入 settings.json：</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;{&quot;hasCompletedOnboarding&quot;: true, &quot;model&quot;: &quot;deepseek-v4-flash&quot;}&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>~/.claude/settings.json
+</code></pre></div>
+
+<hr />
+<h2 id="proxyjs">第五步：创建代理 proxy.js</h2>
+<p><strong>问题一：</strong> Claude Code 发送多条 <code>system</code> 消息，DeepSeek 只接受一条，报 400 错误。</p>
+<p><strong>问题二：</strong> Claude Code 发送路径是 <code>/v1/messages</code>，但 DeepSeek Anthropic 兼容接口路径是 <code>/anthropic/v1/messages</code>。</p>
+<p><strong>解决：</strong> 创建本地代理，同时解决这两个问题：</p>
+<div class="codehilite"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span>/root/proxy.js<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+<span class="s">const http = require(&#39;http&#39;);</span>
+<span class="s">const https = require(&#39;https&#39;);</span>
+
+<span class="s">const PORT = 4000;</span>
+<span class="s">const DEEPSEEK_HOST = &#39;api.deepseek.com&#39;;</span>
+<span class="s">const DEEPSEEK_KEY = process.env.ANTHROPIC_API_KEY;</span>
+
+<span class="s">const server = http.createServer((req, res) =&gt; {</span>
+<span class="s">  let body = &#39;&#39;;</span>
+<span class="s">  req.on(&#39;data&#39;, chunk =&gt; body += chunk);</span>
+<span class="s">  req.on(&#39;end&#39;, () =&gt; {</span>
+<span class="s">    let payload = body;</span>
+
+<span class="s">    // 修正路径：自动加上 /anthropic 前缀</span>
+<span class="s">    let targetPath = &#39;/anthropic&#39; + req.url;</span>
+
+<span class="s">    // 修正多条 system 消息问题</span>
+<span class="s">    if (body &amp;&amp; req.url.includes(&#39;/messages&#39;)) {</span>
+<span class="s">      try {</span>
+<span class="s">        const parsed = JSON.parse(body);</span>
+<span class="s">        if (Array.isArray(parsed.messages)) {</span>
+<span class="s">          let sysCount = 0;</span>
+<span class="s">          parsed.messages = parsed.messages.map(msg =&gt; {</span>
+<span class="s">            if (msg.role === &#39;system&#39;) {</span>
+<span class="s">              sysCount++;</span>
+<span class="s">              if (sysCount &gt; 1) {</span>
+<span class="s">                return { ...msg, role: &#39;user&#39;,</span>
+<span class="s">                  content: &#39;[System Note]: &#39; + msg.content };</span>
+<span class="s">              }</span>
+<span class="s">            }</span>
+<span class="s">            return msg;</span>
+<span class="s">          });</span>
+<span class="s">          payload = JSON.stringify(parsed);</span>
+<span class="s">        }</span>
+<span class="s">      } catch (_) {}</span>
+<span class="s">    }</span>
+
+<span class="s">    const proxy = https.request({</span>
+<span class="s">      hostname: DEEPSEEK_HOST,</span>
+<span class="s">      path: targetPath,</span>
+<span class="s">      method: req.method,</span>
+<span class="s">      headers: {</span>
+<span class="s">        ...req.headers,</span>
+<span class="s">        host: DEEPSEEK_HOST,</span>
+<span class="s">        authorization: &#39;Bearer &#39; + DEEPSEEK_KEY,</span>
+<span class="s">        &#39;content-length&#39;: Buffer.byteLength(payload)</span>
+<span class="s">      },</span>
+<span class="s">    }, proxyRes =&gt; {</span>
+<span class="s">      res.writeHead(proxyRes.statusCode, proxyRes.headers);</span>
+<span class="s">      proxyRes.pipe(res);</span>
+<span class="s">    });</span>
+
+<span class="s">    proxy.on(&#39;error&#39;, e =&gt; {</span>
+<span class="s">      res.writeHead(502);</span>
+<span class="s">      res.end(&#39;Bad Gateway: &#39; + e.message);</span>
+<span class="s">    });</span>
+<span class="s">    proxy.write(payload);</span>
+<span class="s">    proxy.end();</span>
+<span class="s">  });</span>
+<span class="s">});</span>
+
+<span class="s">server.listen(PORT, () =&gt; console.log(&#39;Proxy on port &#39; + PORT));</span>
+<span class="s">EOF</span>
+</code></pre></div>
+
+<hr />
+<h2 id="_4">第六步：配置环境变量</h2>
+<div class="codehilite"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span>~/.bashrc<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+<span class="s">[ -z &quot;$PS1&quot; ] &amp;&amp; return</span>
+
+<span class="s">export ANTHROPIC_API_KEY=&quot;sk-你的完整DeepSeek Key&quot;</span>
+<span class="s">export PATH=&quot;$HOME/.local/bin:$PATH&quot;</span>
+
+<span class="s">alias ds=&quot;pkill -f proxy.js 2&gt;/dev/null; node /root/proxy.js &amp; sleep 1 &amp;&amp; ANTHROPIC_BASE_URL=http://127.0.0.1:4000 claude&quot;</span>
+<span class="s">EOF</span>
+
+<span class="nb">source</span><span class="w"> </span>~/.bashrc
+</code></pre></div>
+
+<hr />
+<h2 id="_5">日常使用方法</h2>
+<p>每次打开手机后：</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 1. 进入 Ubuntu</span>
+proot-distro<span class="w"> </span>login<span class="w"> </span>ubuntu
+
+<span class="c1"># 2. 一条命令启动（用别名）</span>
+ds
+</code></pre></div>
+
+<p>或者手动：</p>
+<div class="codehilite"><pre><span></span><code>pkill<span class="w"> </span>-f<span class="w"> </span>proxy.js<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+node<span class="w"> </span>/root/proxy.js<span class="w"> </span><span class="p">&amp;</span>
+<span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:4000&quot;</span><span class="w"> </span>claude
+</code></pre></div>
+
+<hr />
+<h2 id="_6">故障排查速查表</h2>
+<table>
+<thead>
+<tr>
+<th>报错</th>
+<th>原因</th>
+<th>解决</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cli.js not found</code></td>
+<td>在 Termux 直接运行</td>
+<td>进 Ubuntu 再运行</td>
+</tr>
+<tr>
+<td><code>Not logged in</code></td>
+<td>未登录/免费账号</td>
+<td>修改 <code>.claude.json</code> 写入假账号</td>
+</tr>
+<tr>
+<td><code>model not exist</code></td>
+<td>模型名错误或未设置</td>
+<td>修改 <code>settings.json</code></td>
+</tr>
+<tr>
+<td><code>400 error</code></td>
+<td>多条 system 消息</td>
+<td>启动 proxy.js</td>
+</tr>
+<tr>
+<td><code>502 Bad Gateway</code></td>
+<td>代理未启动或 Key 错误</td>
+<td>检查 proxy.js 和 API Key</td>
+</tr>
+<tr>
+<td>代理端口占用 <code>EADDRINUSE</code></td>
+<td>旧代理未关闭</td>
+<td><code>pkill -f proxy.js</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_7">核心原理</h2>
+<div class="codehilite"><pre><span></span><code>Claude Code → proxy.js (本地4000端口)
+                ↓
+         修正路径 /v1 → /anthropic/v1
+         合并多余 system 消息
+         替换 API Key
+                ↓
+         DeepSeek API
+</code></pre></div>
+
+<p>DeepSeek 提供了 Anthropic 兼容接口，但有两处细节差异，proxy.js 就是专门弥补这两处差异的胶水层。</p>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/deepseek-proxy-fix/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</span>
+    </a>
+    
+    
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>
