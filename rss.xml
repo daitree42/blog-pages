@@ -7,6 +7,13 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+        <title>Claude Code Skills 安装记：从浏览器自动化到元技能</title>
+        <description>一次为自己搭建 Claude Code 技能生态的完整记录，涵盖浏览器自动化、写作辅助、头脑风暴、技能发现与创建等 11 个技能。</description>
+        <link>/blog-pages/posts/claude-code-skills/</link>
+        <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>Claude Code + DeepSeek 完整解决方案文档</title>
         <description>一份从零到一的完整操作手册，记录在安卓 Termux 的 Ubuntu 容器中运行 Claude Code 并接入 DeepSeek API 的全过程，含 proxy 代理方案和故障排查表。</description>
         <link>/blog-pages/posts/claude-code-deepseek-guide/</link>

@@ -1,5 +1,18 @@
 [
   {
+    "title": "Claude Code Skills 安装记：从浏览器自动化到元技能",
+    "url": "posts/claude-code-skills/",
+    "date": "2026年6月1日",
+    "tags": [
+      "Claude",
+      "Code",
+      "Skills",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "起因 用了一段时间 Claude Code，总觉得少了点什么。每次要操作浏览器、搜索现有技能、或者写一篇新报道，都得反复描述上下文。Skills 系统的存在就是为了解决这个——把常用的工作流固化成可复用的命令。 于是花了一个下午，一口气装了 11 个技能，覆盖四个方向。  方向一：浏览器自动化 Claude Code 本身只能处理文本和代码，遇到网页操作就束手无策。两个技能去补这个缺口。 agen"
+  },
+  {
     "title": "Claude Code + DeepSeek 完整解决方案文档",
     "url": "posts/claude-code-deepseek-guide/",
     "date": "2026年5月30日",
