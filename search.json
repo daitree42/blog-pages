@@ -1,5 +1,19 @@
 [
   {
+    "title": "给记者建一个工具包：Claude Skills 的安装与配置",
+    "url": "posts/claude-skills-ecosystem/",
+    "date": "2026年6月3日",
+    "tags": [
+      "Claude",
+      "Code",
+      "skills",
+      "工作流",
+      "效率工具"
+    ],
+    "category": "日常走走",
+    "excerpt": "最近花了些时间搭建 Claude Code 的 Skills 生态，整理一下过程，既是备忘，也是给同样做深度报道的朋友一个参考。 什么是 Skills Claude Code 的 Skills 有点像编辑部的工具柜——每个技能是一个专门的能力包，告诉 AI 怎么帮你做特定的事。搜资料、转写录音、核查事实、生成文档……不用每次都从零开始描述需求，直接调用就好。 安装方式很简单： npx skills"
+  },
+  {
     "title": "镬耳楼与瑶寨之间：清远古村落的两种活法",
     "url": "posts/huoer-tower-and-yao-village/",
     "date": "2026年6月3日",
