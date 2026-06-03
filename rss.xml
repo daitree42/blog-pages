@@ -7,6 +7,27 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+        <title>镬耳楼与瑶寨之间：清远古村落的两种活法</title>
+        <description>镬耳楼与瑶寨之间：清远古村落的两种活法</description>
+        <link>/blog-pages/posts/huoer-tower-and-yao-village/</link>
+        <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>在喀斯特褶皱里行走：清远古驿道徒步记</title>
+        <description>在喀斯特褶皱里行走：清远古驿道徒步记</description>
+        <link>/blog-pages/posts/karst-walk-qingyuan/</link>
+        <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>用脚走出一部村志：一个古村落的徒步民族志</title>
+        <description>用脚走出一部村志：一个古村落的徒步民族志</description>
+        <link>/blog-pages/posts/walking-a-village-chronicle/</link>
+        <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>Claude Code Skills 安装记：从浏览器自动化到元技能</title>
         <description>一次为自己搭建 Claude Code 技能生态的完整记录，涵盖浏览器自动化、写作辅助、头脑风暴、技能发现与创建等 11 个技能。</description>
         <link>/blog-pages/posts/claude-code-skills/</link>
