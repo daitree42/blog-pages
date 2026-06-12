@@ -7,6 +7,13 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+        <title>沿着海岸线讲历史——一个课程网站从零到一</title>
+        <description>用两个下午，搭了一个沿海历史课程网站。十二座城市，一百二十四章大纲，从广州到大连，从鸦片战争到日俄战争。记录一下思路和过程。</description>
+        <link>/blog-pages/posts/coastal-history-site/</link>
+        <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>给记者建一个工具包：Claude Skills 的安装与配置</title>
         <description>给记者建一个工具包：Claude Skills 的安装与配置</description>
         <link>/blog-pages/posts/claude-skills-ecosystem/</link>
