@@ -1,5 +1,21 @@
 [
   {
+    "title": "给 Claude Code 装上「眼睛」和「云盘」：一次完整的 Agent 工具链配置记录",
+    "url": "posts/agent-reach-setup-summary/",
+    "date": "2026年6月15日",
+    "tags": [
+      "Claude",
+      "Code",
+      "Agent-Reach",
+      "Exa",
+      "rclone",
+      "MCP",
+      "工具链"
+    ],
+    "category": "Ai技术",
+    "excerpt": "引子 Claude Code 是一个强大的终端 AI 编程助手，但它有一个先天局限：它没有眼睛。它无法直接搜索互联网，无法读取 GitHub 仓库的代码，更无法访问你的云盘文件。 这篇文章记录了我为 Claude Code 配置完整工具链的过程。装完之后，它既能全网搜索、看 GitHub 代码，也能读写 Google Drive 和 Dropbox 里的文件。整个过程绕过了 npm 环境损坏等若干"
+  },
+  {
     "title": "龙虾冷了，预制菜时代来了：数字义乌重写 AI 价值链？",
     "url": "posts/cold-lobster-ai-value-chain/",
     "date": "2026年6月15日",
