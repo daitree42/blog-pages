@@ -153,5 +153,12 @@
         <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
     </item>
     
+    <item>
+        <title>AI 编码完整工作流：从规划到生产的工程化方法论——Matt Pocock 工作坊实录</title>
+        <description>Matt Pocock 在 AI Engineer 大会上的深度工作坊，展示如何用软件工程基本功驾驭 AI 编程</description>
+        <link>/blog-pages/posts/matt-pocock-ai-coding-workflow/</link>
+        <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    
 </channel>
 </rss>
