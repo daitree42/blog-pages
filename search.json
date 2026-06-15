@@ -1,5 +1,13 @@
 [
   {
+    "title": "在同一台 Android 手机上打通 Obsidian 和 Claude Code",
+    "url": "posts/obsidian-claude-code-android/",
+    "date": "2026年6月16日",
+    "tags": [],
+    "category": "未分类",
+    "excerpt": "记者的工作流里有一件事是确定的——笔记在哪里写，文章最终也在哪里写。但当笔记用 Obsidian、写作用 Claude Code，两者又都在同一台 Android 手机上时，中间需要一座桥。 这篇文章记录的就是这座桥怎么搭起来的。 两个工具，一台手机 Obsidian 是移动端最好的笔记工具之一：本地存储、双向链接、Markdown 原生支持。Claude Code 则是命令行里的 AI 编程助手"
+  },
+  {
     "title": "给 Claude Code 装上「眼睛」和「云盘」：一次完整的 Agent 工具链配置记录",
     "url": "posts/agent-reach-setup-summary/",
     "date": "2026年6月15日",
