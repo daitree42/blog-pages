@@ -7,6 +7,13 @@
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
     <item>
+        <title>龙虾冷了，预制菜时代来了：数字义乌重写 AI 价值链？</title>
+        <description>从龙虾到预制菜，AI Agent 叙事的变迁与数字义乌的崛起</description>
+        <link>/blog-pages/posts/cold-lobster-ai-value-chain/</link>
+        <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>沿着海岸线讲历史——一个课程网站从零到一</title>
         <description>用两个下午，搭了一个沿海历史课程网站。十二座城市，一百二十四章大纲，从广州到大连，从鸦片战争到日俄战争。记录一下思路和过程。</description>
         <link>/blog-pages/posts/coastal-history-site/</link>
