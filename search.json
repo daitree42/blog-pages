@@ -1,1 +1,324 @@
-[]
+[
+  {
+    "title": "在同一台 Android 手机上打通 Obsidian 和 Claude Code",
+    "url": "posts/Obsidian 与 Claude Code 安卓/",
+    "date": "2026年6月16日",
+    "tags": [],
+    "category": "未分类",
+    "excerpt": "记者的工作流里有一件事是确定的——笔记在哪里写，文章最终也在哪里写。但当笔记用 Obsidian、写作用 Claude Code，两者又都在同一台 Android 手机上时，中间需要一座桥。 这篇文章记录的就是这座桥怎么搭起来的。 两个工具，一台手机 Obsidian 是移动端最好的笔记工具之一：本地存储、双向链接、Markdown 原生支持。Claude Code 则是命令行里的 AI 编程助手"
+  },
+  {
+    "title": "当一本书变成技能",
+    "url": "posts/艾緒莉的布袋技能笔记/",
+    "date": "2026年6月16日",
+    "tags": [
+      "Claude",
+      "Code",
+      "book-to-skill",
+      "AI",
+      "笔记",
+      "知识管理",
+      "物质文化"
+    ],
+    "category": "Ai技术",
+    "excerpt": "不久前我收到一本 EPUB：《她所承載的一切：艾緒莉的布包及其所見證的奴隸時代》（All That She Carried）。Tiya Miles 著，国家图书奖获奖作品。这本书围绕一个 1850 年代南卡罗来纳被奴役母亲为九岁女儿打包的棉布袋展开，追溯它穿越三代女性之手、从奴隶制到二十一世纪博物馆的旅程。我在手机上读了一半，然后决定做一个实验：把它变成一个 Claude Code 技能。 不是书"
+  },
+  {
+    "title": "给 Claude Code 装上「眼睛」和「云盘」：一次完整的 Agent 工具链配置记录",
+    "url": "posts/Agent 工具链配置/",
+    "date": "2026年6月15日",
+    "tags": [
+      "Claude",
+      "Code",
+      "Agent-Reach",
+      "Exa",
+      "rclone",
+      "MCP",
+      "工具链"
+    ],
+    "category": "Ai技术",
+    "excerpt": "引子 Claude Code 是一个强大的终端 AI 编程助手，但它有一个先天局限：它没有眼睛。它无法直接搜索互联网，无法读取 GitHub 仓库的代码，更无法访问你的云盘文件。 这篇文章记录了我为 Claude Code 配置完整工具链的过程。装完之后，它既能全网搜索、看 GitHub 代码，也能读写 Google Drive 和 Dropbox 里的文件。整个过程绕过了 npm 环境损坏等若干"
+  },
+  {
+    "title": "龙虾冷了，预制菜时代来了：数字义乌重写 AI 价值链？",
+    "url": "posts/龙虾冷了预制菜时代来了/",
+    "date": "2026年6月15日",
+    "tags": [],
+    "category": "Ai技术",
+    "excerpt": "和王喆老师录上一期《龙虾经济学》时，龙虾刚刚火起来。三个月过去了，情况发生了变化。 小龙虾和 AI Agent，是不是真的已经深刻地影响了我们的工作、改变了世界？亦或是大家打鸡血的剂量已经下降了？我们做了大量的 skills，但真正能留下来的应用多吗？还是仅仅停留在朋友圈里的摆拍？ 于是我们复了个盘，选了几个角度，看看这些变化和上次讨论有什么深层的呼应：从龙虾到 Harness 到预制菜，AI A"
+  },
+  {
+    "title": "沿着海岸线讲历史——一个课程网站从零到一",
+    "url": "posts/沿海历史课程网站/",
+    "date": "2026年6月13日",
+    "tags": [
+      "课程",
+      "静态站点",
+      "Python",
+      "历史",
+      "中国"
+    ],
+    "category": "Ai技术",
+    "excerpt": "几个月前开始酝酿一套历史课程——以中国沿海城市为路线，从广州出发，一路向北走到大连，在每一座城市停留，讲一段中国与海洋打交道的故事。目标读者是十五岁以上的青少年，但深度接近大学预科水平。 跟常见的通史不一样，这套课程有一个具体的空间线索：沿着海岸线走。广州的鸦片战争、汕头的移民潮、福州的马尾船政、温州的民间经济、台州的倭寇、杭州的南宋、上海的租界、连云港的铁路、青岛的殖民规划、天津的北洋、秦皇岛的"
+  },
+  {
+    "title": "给记者建一个工具包：Claude Skills 的安装与配置",
+    "url": "posts/Skills 生态配置记/",
+    "date": "2026年6月3日",
+    "tags": [
+      "Claude",
+      "Code",
+      "skills",
+      "工作流",
+      "效率工具"
+    ],
+    "category": "日常走走",
+    "excerpt": "最近花了些时间搭建 Claude Code 的 Skills 生态，整理一下过程，既是备忘，也是给同样做深度报道的朋友一个参考。 什么是 Skills Claude Code 的 Skills 有点像编辑部的工具柜——每个技能是一个专门的能力包，告诉 AI 怎么帮你做特定的事。搜资料、转写录音、核查事实、生成文档……不用每次都从零开始描述需求，直接调用就好。 安装方式很简单： npx skills"
+  },
+  {
+    "title": "在喀斯特褶皱里行走：清远古驿道徒步记",
+    "url": "posts/清远古驿道徒步记/",
+    "date": "2026年6月3日",
+    "tags": [
+      "清远",
+      "古驿道",
+      "徒步",
+      "慢新闻",
+      "文化地理"
+    ],
+    "category": "日常走走",
+    "excerpt": "选题定位 以一条清远保存最完整的古驿道为主线（禾仓古道 / 梅子坪古道），用一次徒步的动线串联沿途古村落、历史遗迹和人物，呈现石灰岩地貌中的人地关系——明清商道、喀斯特峰林、抗战密道、空心古村，在每一步中展开。 叙事线索  一条线：一天内的徒步动线（出发 → 古道 → 古村 → 返程） 多层切面：青石板路的历史层累 → 喀斯特地貌中的人类生存 → 古驿道活化运动的当代冲击 人物：沿途遇到的守村老人"
+  },
+  {
+    "title": "用脚走出一部村志：一个古村落的徒步民族志",
+    "url": "posts/用脚走出一部村志/",
+    "date": "2026年6月3日",
+    "tags": [
+      "清远",
+      "上岳古村",
+      "慢新闻",
+      "民族志",
+      "徒步"
+    ],
+    "category": "日常走走",
+    "excerpt": "选题定位 选一个古村落为圆心（清远佛冈上岳古村），用徒步一小时可达的范围画出它的完整文化地理图——不是按时间线写村志，而是用空间走村志。把慢新闻理念做到极致：用每一步去感知一个地方的全部纵深。 候选圆心：上岳古村  700 年历史，南宋名将朱文焕后裔建村，朱熹第六代孙为始祖 28 座完整镬耳楼、18 里 37 幢 108 座民居，\"五龙过脊\"布局 广东省首部中国名村志《上岳村志》 三个\"归仁里\"匾"
+  },
+  {
+    "title": "镬耳楼与瑶寨之间：清远古村落的两种活法",
+    "url": "posts/镬耳楼与瑶寨之间/",
+    "date": "2026年6月3日",
+    "tags": [
+      "清远",
+      "古村落",
+      "瑶寨",
+      "广府文化",
+      "徒步"
+    ],
+    "category": "日常走走",
+    "excerpt": "选题定位 选取清远最具代表性的两种古村落形态——广府围村（上岳古村 / 凤塱围）和连南瑶寨（千年瑶寨），用双线叙事和一次跨越喀斯特山地的徒步，呈现岭南大地上两种截然不同的生存智慧和共同体形态。 双线对照  广府围村：镬耳楼、夯土墙、宗族社会、700 年延续——中原儒家文化与岭南本土的交融 瑶寨：石砌排寨、无钉无铆、排瑶社会组织、1300 年传承——山地部落的生存智慧  行走的连接 两村之间隔着喀斯"
+  },
+  {
+    "title": "Claude Code Skills 安装记：从浏览器自动化到元技能",
+    "url": "posts/Claude Code Skills 指南/",
+    "date": "2026年6月1日",
+    "tags": [
+      "Claude",
+      "Code",
+      "Skills",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "起因 用了一段时间 Claude Code，总觉得少了点什么。每次要操作浏览器、搜索现有技能、或者写一篇新报道，都得反复描述上下文。Skills 系统的存在就是为了解决这个——把常用的工作流固化成可复用的命令。 于是花了一个下午，一口气装了 11 个技能，覆盖四个方向。  方向一：浏览器自动化 Claude Code 本身只能处理文本和代码，遇到网页操作就束手无策。两个技能去补这个缺口。 agen"
+  },
+  {
+    "title": "Claude Code + DeepSeek 完整解决方案文档",
+    "url": "posts/Claude Code 接入 DeepSeek/",
+    "date": "2026年5月30日",
+    "tags": [
+      "Claude",
+      "Code",
+      "DeepSeek",
+      "Termux",
+      "Android",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "环境说明  设备：Android 手机 终端：Termux 系统：Ubuntu（通过 proot-distro 安装） 目标：用 DeepSeek API 驱动 Claude Code   第一步：确认运行环境 问题： Claude Code 在 Termux 里直接运行报错： Native binaries for linux-arm64-android are not available   "
+  },
+  {
+    "title": "用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误",
+    "url": "posts/DeepSeek 代理修复/",
+    "date": "2026年5月29日",
+    "tags": [
+      "Claude",
+      "Code",
+      "DeepSeek",
+      "Node.js",
+      "代理",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "把 Claude Code 接到 DeepSeek 的 V4 Flash 模型上，价格便宜量又足，这是很多开发者的首选方案。但跑起来之后，时不时就会迎面砸来一个 400 错误，说消息格式不对。 仔细一看，Claude Code 在发起请求时，会在 messages 数组里塞多条 role: \"system\" 的消息——CLAUDE.md 一条、记忆文件一条、当前日期一条……而这些在 DeepSee"
+  },
+  {
+    "title": "徒步网站改版记：加地图、修崩溃、适配国内网络",
+    "url": "posts/徒步网站改版记/",
+    "date": "2026年5月29日",
+    "tags": [
+      "徒步",
+      "广州",
+      "React",
+      "Leaflet",
+      "GitHub",
+      "Pages",
+      "踩坑"
+    ],
+    "category": "日常走走",
+    "excerpt": "起因 上一次把广州徒步路线数据做成了独立站点，发布了。但没有地图的路线网站总觉得少了点什么——路线数据里明明有坐标，却没有用起来。 这次的目标很明确：把地图加上。结果打开了一个坑接一个坑的盖子。 加地图 用 Leaflet + react-leaflet，组件封装好，每条路线展开后在地图上显示途经点和连线。预设的两条路线（越秀历史文化线、荔湾西关风情线）各有七八个点，用编号标记一一标注，用路线主题"
+  },
+  {
+    "title": "做了一个广州徒步路线网站",
+    "url": "posts/广州徒步路线网站/",
+    "date": "2026年5月28日",
+    "tags": [
+      "徒步",
+      "广州",
+      "React",
+      "Leaflet",
+      "GitHub",
+      "Pages"
+    ],
+    "category": "日常走走",
+    "excerpt": "起因 手头有一份广州徒步路线的数据——越秀历史文化线和荔湾西关风情线，每条线路包含七八个途经点，每个点有坐标、介绍、照片点位。之前这些数据躺在一个 React 组件里，作为某个更大项目的一部分，但我觉得它们值得单独拿出来。 做成一个独立的徒步路线网站，链接到个人主页的徒步栏目下，方便自己和朋友用。 方案选型 目标很明确：一个纯粹的前端页面，带地图展示，零后端。部署在 GitHub Pages 上，"
+  },
+  {
+    "title": "CLAUDE.md 是什么",
+    "url": "posts/CLAUDE.md 详解/",
+    "date": "2026年5月27日",
+    "tags": [
+      "Claude",
+      "Code",
+      "最佳实践",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "好，信息够了，给你一个清晰实用的讲解。 CLAUDE.md 是什么 CLAUDE.md 是一个特殊文件，Claude 每次开始对话时都会自动读取它。你可以把它理解为给 Claude 的项目说明书——不用每次都重复告诉它背景信息。 来源：Claude Code 最佳实践  怎么生成 进入你的项目目录，运行： cd ~/your-project claude > /init   /init 会分析你的"
+  },
+  {
+    "title": "Claude Code 学习路线（Linux · 初级 · 快速上手）",
+    "url": "posts/Claude Code Linux 学习路线/",
+    "date": "2026年5月27日",
+    "tags": [
+      "Claude",
+      "Code",
+      "Linux",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "了解了你的情况，我来给你一个清晰的学习路线图！ 第一阶段：安装与配置（先把工具跑起来） 前提条件： 你需要 Node.js 和 npm # 第一步：配置 npm（避免权限问题） mkdir -p ~/.npm-global npm config set prefix ~/.npm-global echo 'export PATH=$HOME/.npm-global/bin:$PATH' >> ~/"
+  },
+  {
+    "title": "给纯 Python 静态博客加了四个功能",
+    "url": "posts/给博客加功能/",
+    "date": "2026年5月27日",
+    "tags": [
+      "博客",
+      "静态站点",
+      "Python",
+      "搜索"
+    ],
+    "category": "Ai技术",
+    "excerpt": "上个月搭了一个零维护的静态博客，用纯 Python 把 Markdown 转成 HTML，推到 GitHub Pages 上。跑了几天，发现缺几个东西：标签只能看不能点、没有站点地图、想搜索得靠浏览器、改样式要等部署才能看效果。 花了一个晚上加了四个功能。核心思路不变——不加框架，不引入运行时依赖，能跑 Python 就行。  一、标签聚合页 之前 parse_draft() 已经把标签解析进了 "
+  },
+  {
+    "title": "Claude Code 斜杠命令完全指南",
+    "url": "posts/Claude Code 命令指南/",
+    "date": "2026年5月26日",
+    "tags": [
+      "Claude",
+      "Code",
+      "命令行工具"
+    ],
+    "category": "Ai技术",
+    "excerpt": "Claude Code 是一个终端里的 AI 编程助手，和 Claude 网页版不同，它在命令行里工作，能直接读写文件、执行命令、管理整个项目。而它的斜杠命令（slash commands）是控制这个工具最直接的方式。 之前一直以为 Claude Code 只有 /help 和 /clear 几个简单命令，仔细查了一下，发现内置命令比预想的多不少。 一、内置命令完整列表 以下十个命令是 Claud"
+  },
+  {
+    "title": "移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）",
+    "url": "posts/Termux 上运行 Claude Code/",
+    "date": "2026年5月26日",
+    "tags": [
+      "Claude",
+      "Code",
+      "Termux",
+      "Android",
+      "DeepSeek",
+      "教程"
+    ],
+    "category": "Ai技术",
+    "excerpt": "在大模型與 AI Agent 爆發的時代，Anthropic 官方推出的終端代碼助手 Claude Code 憑藉強大的多文件讀寫、自動 Git 管理和指令執行能力，成為了開發者的神器。然而，官方並沒有對安卓（Termux）環境提供原生支持，且其綁定的官方 API 價格不菲。 本文將完整記錄如何利用 PRoot 虛擬化技術 繞過架構限制，在手機上完美部署 Claude Code，並透過環境變量將其"
+  },
+  {
+    "title": "Claude Code 学习经验总结",
+    "url": "posts/Claude Code 学习笔记/",
+    "date": "2026年5月25日",
+    "tags": [
+      "Claude",
+      "Code",
+      "AI"
+    ],
+    "category": "Ai技术",
+    "excerpt": "来源：Anthropic Skilljar — Claude Code 101 课程  一、核心理念：Claude Code 与普通聊天的区别 Claude Code 是一个 agentic loop（代理循环）系统，而不是简单的问答工具。它在 terminal 中运行，能够自主执行多步操作（读文件、搜索代码、运行命令），并且每一步都需要用户的 permission 控制。这意味着：  它不是\"你"
+  },
+  {
+    "title": "Claude Code 练习项目推荐（初级）",
+    "url": "posts/Claude Code 练习项目/",
+    "date": "2026年5月25日",
+    "tags": [
+      "Claude",
+      "Code",
+      "练习项目"
+    ],
+    "category": "Ai技术",
+    "excerpt": "项目一：个人静态博客生成器 难度：★☆☆☆☆ | 技术栈：Python + Markdown + HTML 项目说明： 写一个命令行工具，把 Markdown 文件转换成静态 HTML 页面。支持首页文章列表、单篇文章页、简单的标签分类。 练习目标：    Claude Code 功能 在项目中的应用     Explore → Plan → Code → Commit 先分析需要什么功能，再出方"
+  },
+  {
+    "title": "Claude Code Prompt 编写指南",
+    "url": "posts/Prompt 编写指南/",
+    "date": "2026年5月25日",
+    "tags": [
+      "Claude",
+      "Code",
+      "Prompt"
+    ],
+    "category": "Ai技术",
+    "excerpt": "一、核心认知：Claude Code 不是聊天机器人 Claude Code 是一个 agentic loop（代理循环）系统。这意味着：    聊天式 Claude Claude Code     你问一句它答一句 你给一个任务，它自主执行多步   只能输出文字 可以读文件、写代码、执行命令   被动回应用户 主动探索代码库、制定计划、执行操作   单轮对话 多步循环（思考→行动→观察→再思考）"
+  },
+  {
+    "title": "搭了一个零维护的静态博客",
+    "url": "posts/零维护博客搭建记/",
+    "date": "2026年5月25日",
+    "tags": [
+      "博客",
+      "静态站点",
+      "Python"
+    ],
+    "category": "Ai技术",
+    "excerpt": "一、为什么 一直在本地写文章，但写完的东西都躺在文件夹里，不方便分享。想搭一个博客，但有几条硬约束：  长期不维护也不会坏。不用框架，不用数据库，不用任何需要定期升级的东西 不改变现有的写作流程。文章还是用 Markdown 写，存在同一个目录结构里 零成本。不买服务器，不交月费 中文排版要好。读起来舒服，不花哨  翻了一圈市面上的方案，静态站点生成器很多（Hugo、Jekyll、Hexo），但都"
+  },
+  {
+    "title": "云盘保存方案总结：从本地到 Dropbox 和 Google Drive",
+    "url": "posts/云盘备份方案/",
+    "date": "2026年5月1日",
+    "tags": [],
+    "category": "Ai技术",
+    "excerpt": "一、为什么需要这套方案 在终端环境（如 Android Termux、远程服务器）中写作，文件默认只存在本地。一旦设备丢失、数据清理或环境重置，所有稿件都会丢失。建立一套云盘备份机制，可以确保文章安全，也能在多个设备间同步。 本文总结两种云盘的连接方式和一个一键同步脚本的使用方法。  二、整体架构 本地文件                       云盘 ────────────────────"
+  },
+  {
+    "title": "AI 编码完整工作流：从规划到生产的工程化方法论——Matt Pocock 工作坊实录",
+    "url": "posts/Matt Pocock AI 编码工作坊/",
+    "date": "2026年4月23日",
+    "tags": [],
+    "category": "Ai技术",
+    "excerpt": "以下为 Matt Pocock 在 AI Engineer 大会上的工作坊 Full Walkthrough: Workflow for AI Coding from Planning to Production 的完整文字稿中文翻译。  开场：软件工程基本功依然是放大器 Matt 开场说道： 「好，人满了，我们开始吧。我是 Matt，一名老师，现在也教 AI。」 他的核心论点是：我们总说 AI "
+  }
+]

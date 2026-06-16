@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>给记者建一个工具包：Claude Skills 的安装与配置 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+            
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-ri-chang-zou-zou">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">日常走走</div>
+            <h1 class="post-title">给记者建一个工具包：Claude Skills 的安装与配置</h1>
+            <div class="post-meta">
+                <time datetime="2026-06-03">2026年6月3日</time>
+                <span class="reading-time">3 分钟</span>
+            </div>
+            
+            <div class="post-tags">
+                
+                <span class="tag">Claude</span>
+                
+                <span class="tag">Code</span>
+                
+                <span class="tag">skills</span>
+                
+                <span class="tag">工作流</span>
+                
+                <span class="tag">效率工具</span>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="post-body">
+        <p>最近花了些时间搭建 Claude Code 的 Skills 生态，整理一下过程，既是备忘，也是给同样做深度报道的朋友一个参考。</p>
+<h2 id="skills">什么是 Skills</h2>
+<p>Claude Code 的 Skills 有点像编辑部的工具柜——每个技能是一个专门的能力包，告诉 AI 怎么帮你做特定的事。搜资料、转写录音、核查事实、生成文档……不用每次都从零开始描述需求，直接调用就好。</p>
+<p>安装方式很简单：</p>
+<div class="codehilite"><pre><span></span><code>npx skills add &lt;仓库名/技能名&gt; -g
+</code></pre></div>
+
+<h2 id="_1">装了什么</h2>
+<p>最先装的是<strong>微信读书助手</strong>（weread-skills），因为我平时的阅读积累大量在微信读书上。装好之后可以直接搜书、看书架、查阅读统计、拉取笔记划线——写稿时查资料不用切 App。</p>
+<p>然后做了个全面审计，看看缺什么。作为记者，最核心的需求是采访、资料、写作、核查这条链。发现新闻相关的技能几乎空白，于是装了一整包。</p>
+<h3 id="_2">从新闻技能包拆出来的</h3>
+<table>
+<thead>
+<tr>
+<th>技能</th>
+<th>做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>interview-transcription</td>
+<td>采访录音转写整理</td>
+</tr>
+<tr>
+<td>interview-prep</td>
+<td>采访提纲准备</td>
+</tr>
+<tr>
+<td>fact-check-workflow</td>
+<td>事实核查</td>
+</tr>
+<tr>
+<td>source-verification</td>
+<td>信源核实</td>
+</tr>
+<tr>
+<td>web-scraping</td>
+<td>网页抓取做资料收集</td>
+</tr>
+<tr>
+<td>social-media-intelligence</td>
+<td>社交媒体线索挖掘</td>
+</tr>
+<tr>
+<td>data-journalism</td>
+<td>数据新闻处理</td>
+</tr>
+<tr>
+<td>story-pitch</td>
+<td>选题策划</td>
+</tr>
+<tr>
+<td>editorial-workflow</td>
+<td>编辑流程</td>
+</tr>
+<tr>
+<td>foia-requests</td>
+<td>信息公开申请</td>
+</tr>
+</tbody>
+</table>
+<p>还有几个辅助的：PDF 和 DOCX 文档处理、写作提纲规划（writing-plans）、写作润色（writing-skills）。</p>
+<h2 id="_3">工作流能怎么走</h2>
+<p>这些技能串起来，一个深度报道的生命周期大致是：</p>
+<p><strong>选题阶段</strong>——story-pitch 出选题方案，brainstorming 帮打磨</p>
+<p><strong>资料阶段</strong>——weread-skills 查相关书籍，web-scraping 爬公开资料，social-media-intelligence 摸社交媒体讨论</p>
+<p><strong>采访阶段</strong>——interview-prep 列提纲，interview-transcription 转写录音</p>
+<p><strong>写作阶段</strong>——writing-plans 搭结构，writing-skills + newsroom-style + humanizer-zh 打磨文字</p>
+<p><strong>核查阶段</strong>——fact-check-workflow 核查事实，source-verification 验证信源</p>
+<p><strong>交付阶段</strong>——docx 出 Word 给编辑</p>
+<h2 id="_4">一点感受</h2>
+<p>技能的真正价值不是"让 AI 做更多事"，而是<strong>减少语境切换的成本</strong>。</p>
+<p>以前查资料要切到微信读书，搜网页要开浏览器，转写录音要开另一个工具——每切一次就断一次思路。现在写稿的时候直接说"帮我搜一下 xx"或者"转写这段录音"，AI 在同一界面里完成，思维不用中断。</p>
+<p>当然，这些技能只是工具。一篇好报道的核心永远是人：判断力、叙事感、在现场的理解。但工具如果能让人更专注在核心的事情上，就值得花时间搭。</p>
+<h2 id="_5">附：你当前可用的技能清单</h2>
+<p>如果在用 Claude Code，可以跑 <code>npx skills add</code> 装需要的能力。目前我个人配置中比较常用的：</p>
+<ul>
+<li><strong>采前</strong>：interview-prep, story-pitch, brainstorming</li>
+<li><strong>采中</strong>：interview-transcription, weread-skills</li>
+<li><strong>资料</strong>：deep-research, web-scraping, web-access</li>
+<li><strong>核查</strong>：fact-check-workflow, source-verification</li>
+<li><strong>写作</strong>：writing-plans, writing-skills, humanizer-zh, newsroom-style</li>
+<li><strong>输出</strong>：docx, pdf, publish</li>
+</ul>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/清远古驿道徒步记/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">在喀斯特褶皱里行走：清远古驿道徒步记</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/沿海历史课程网站/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">沿着海岸线讲历史——一个课程网站从零到一</span>
+    </a>
+    
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>

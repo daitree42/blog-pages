@@ -6,5 +6,180 @@
     <link>/blog-pages/</link>
     <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
     
+    <item>
+        <title>在同一台 Android 手机上打通 Obsidian 和 Claude Code</title>
+        <description>在同一台 Android 手机上打通 Obsidian 和 Claude Code</description>
+        <link>/blog-pages/posts/Obsidian 与 Claude Code 安卓/</link>
+        <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>当一本书变成技能</title>
+        <description>把一本书变成 AI 可调用的知识体——记录将《她所承載的一切》转换为 Claude Code 技能的完整过程</description>
+        <link>/blog-pages/posts/艾緒莉的布袋技能笔记/</link>
+        <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>给 Claude Code 装上「眼睛」和「云盘」：一次完整的 Agent 工具链配置记录</title>
+        <description>给 Claude Code 装上「眼睛」和「云盘」：一次完整的 Agent 工具链配置记录</description>
+        <link>/blog-pages/posts/Agent 工具链配置/</link>
+        <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>龙虾冷了，预制菜时代来了：数字义乌重写 AI 价值链？</title>
+        <description>从龙虾到预制菜，AI Agent 叙事的变迁与数字义乌的崛起</description>
+        <link>/blog-pages/posts/龙虾冷了预制菜时代来了/</link>
+        <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>沿着海岸线讲历史——一个课程网站从零到一</title>
+        <description>用两个下午，搭了一个沿海历史课程网站。十二座城市，一百二十四章大纲，从广州到大连，从鸦片战争到日俄战争。记录一下思路和过程。</description>
+        <link>/blog-pages/posts/沿海历史课程网站/</link>
+        <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>给记者建一个工具包：Claude Skills 的安装与配置</title>
+        <description>给记者建一个工具包：Claude Skills 的安装与配置</description>
+        <link>/blog-pages/posts/Skills 生态配置记/</link>
+        <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>在喀斯特褶皱里行走：清远古驿道徒步记</title>
+        <description>在喀斯特褶皱里行走：清远古驿道徒步记</description>
+        <link>/blog-pages/posts/清远古驿道徒步记/</link>
+        <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>用脚走出一部村志：一个古村落的徒步民族志</title>
+        <description>用脚走出一部村志：一个古村落的徒步民族志</description>
+        <link>/blog-pages/posts/用脚走出一部村志/</link>
+        <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>镬耳楼与瑶寨之间：清远古村落的两种活法</title>
+        <description>镬耳楼与瑶寨之间：清远古村落的两种活法</description>
+        <link>/blog-pages/posts/镬耳楼与瑶寨之间/</link>
+        <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>Claude Code Skills 安装记：从浏览器自动化到元技能</title>
+        <description>一次为自己搭建 Claude Code 技能生态的完整记录，涵盖浏览器自动化、写作辅助、头脑风暴、技能发现与创建等 11 个技能。</description>
+        <link>/blog-pages/posts/Claude Code Skills 指南/</link>
+        <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>Claude Code + DeepSeek 完整解决方案文档</title>
+        <description>一份从零到一的完整操作手册，记录在安卓 Termux 的 Ubuntu 容器中运行 Claude Code 并接入 DeepSeek API 的全过程，含 proxy 代理方案和故障排查表。</description>
+        <link>/blog-pages/posts/Claude Code 接入 DeepSeek/</link>
+        <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</title>
+        <description>Claude Code 在 DeepSeek V4 Flash 上频繁报 400 格式错误？一条 proxy 搞定——把多条 system 消息悄悄转为 user 消息。</description>
+        <link>/blog-pages/posts/DeepSeek 代理修复/</link>
+        <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>徒步网站改版记：加地图、修崩溃、适配国内网络</title>
+        <description>给徒步路线网站加上地图，修复了一系列因 Leaflet 和网络环境导致的问题，最终把链接挂上了个人主页。</description>
+        <link>/blog-pages/posts/徒步网站改版记/</link>
+        <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>做了一个广州徒步路线网站</title>
+        <description>把一份路线数据变成了一个带地图的独立站点，部署在 GitHub Pages 上。</description>
+        <link>/blog-pages/posts/广州徒步路线网站/</link>
+        <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>CLAUDE.md 是什么</title>
+        <description>CLAUDE.md 是 Claude Code 的项目说明书，解释它的作用、生成方法、写什么内容以及关键原则。</description>
+        <link>/blog-pages/posts/CLAUDE.md 详解/</link>
+        <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>Claude Code 学习路线（Linux · 初级 · 快速上手）</title>
+        <description>面向 Linux 初级用户的 Claude Code 学习路线图，从安装配置到日常使用，快速上手这个强大的 AI 编程助手。</description>
+        <link>/blog-pages/posts/Claude Code Linux 学习路线/</link>
+        <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>给纯 Python 静态博客加了四个功能</title>
+        <description>标签聚合页、sitemap、全文搜索、本地预览服务器——不依赖任何框架，不到 100 行代码。</description>
+        <link>/blog-pages/posts/给博客加功能/</link>
+        <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>Claude Code 斜杠命令完全指南</title>
+        <description>Claude Code 的斜杠命令比想象中更丰富，从 /plan 到 /compact，从内置命令到自定义命令，整理一份完整列表和使用场景。</description>
+        <link>/blog-pages/posts/Claude Code 命令指南/</link>
+        <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）</title>
+        <description>完整记录如何利用 PRoot 虛擬化技術繞過架構限制，在手機上完美部署 Claude Code，並透過環境變量將其靈魂替換為極具性價比的 DeepSeek v4 API。</description>
+        <link>/blog-pages/posts/Termux 上运行 Claude Code/</link>
+        <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>Claude Code 学习经验总结</title>
+        <description>Claude Code 的核心理念、工作流、上下文管理和最佳实践的学习笔记。</description>
+        <link>/blog-pages/posts/Claude Code 学习笔记/</link>
+        <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>Claude Code 练习项目推荐（初级）</title>
+        <description>三个适合初学者的 Claude Code 练习项目，覆盖博客生成器、待办事项工具和个人主页。</description>
+        <link>/blog-pages/posts/Claude Code 练习项目/</link>
+        <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>Claude Code Prompt 编写指南</title>
+        <description>为 Claude Code 编写有效 prompt 的方法论——从"提问"思维转向"分配任务"思维。</description>
+        <link>/blog-pages/posts/Prompt 编写指南/</link>
+        <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>搭了一个零维护的静态博客</title>
+        <description>用纯 Python 搭了一个静态博客生成器，推送到 GitHub Pages。没有框架，没有数据库，没有 node_modules，目标是十年后还能用。</description>
+        <link>/blog-pages/posts/零维护博客搭建记/</link>
+        <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>云盘保存方案总结：从本地到 Dropbox 和 Google Drive</title>
+        <description>云盘保存方案总结：从本地到 Dropbox 和 Google Drive</description>
+        <link>/blog-pages/posts/云盘备份方案/</link>
+        <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+        <title>AI 编码完整工作流：从规划到生产的工程化方法论——Matt Pocock 工作坊实录</title>
+        <description>Matt Pocock 在 AI Engineer 大会上的深度工作坊，展示如何用软件工程基本功驾驭 AI 编程</description>
+        <link>/blog-pages/posts/Matt Pocock AI 编码工作坊/</link>
+        <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    
 </channel>
 </rss>

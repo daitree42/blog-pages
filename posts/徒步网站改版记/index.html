@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>徒步网站改版记：加地图、修崩溃、适配国内网络 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+            
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-ri-chang-zou-zou">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">日常走走</div>
+            <h1 class="post-title">徒步网站改版记：加地图、修崩溃、适配国内网络</h1>
+            <div class="post-meta">
+                <time datetime="2026-05-29">2026年5月29日</time>
+                <span class="reading-time">4 分钟</span>
+            </div>
+            
+            <div class="post-tags">
+                
+                <span class="tag">徒步</span>
+                
+                <span class="tag">广州</span>
+                
+                <span class="tag">React</span>
+                
+                <span class="tag">Leaflet</span>
+                
+                <span class="tag">GitHub</span>
+                
+                <span class="tag">Pages</span>
+                
+                <span class="tag">踩坑</span>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="post-body">
+        <hr />
+<h2 id="_1">起因</h2>
+<p>上一次把广州徒步路线数据做成了独立站点，发布了。但没有地图的路线网站总觉得少了点什么——路线数据里明明有坐标，却没有用起来。</p>
+<p>这次的目标很明确：把地图加上。结果打开了一个坑接一个坑的盖子。</p>
+<h2 id="_2">加地图</h2>
+<p>用 Leaflet + react-leaflet，组件封装好，每条路线展开后在地图上显示途经点和连线。预设的两条路线（越秀历史文化线、荔湾西关风情线）各有七八个点，用编号标记一一标注，用路线主题色连线。</p>
+<p>问题在于——数据里根本没坐标。</p>
+<p>之前的数据只存了景点名、地址、介绍，<code>lat</code> 和 <code>lng</code> 字段是空的。Leaflet 拿到 <code>undefined</code> 坐标直接抛出 <code>Invalid LatLng object: (undefined, undefined)</code>，整个页面白屏。</p>
+<p>给每条路线的每个站点加了真实经纬度。坐标来自公开的地理信息，13 个站点的位置都在广州老城区范围内。</p>
+<h2 id="_3">白屏崩溃</h2>
+<p>加了坐标之后页面还是白屏。排查发现是因为 RouteMap 组件直接 import 了 Leaflet——而这个 import 发生在模块加载阶段，一旦 Leaflet 出问题（不管是版本兼容还是网络原因），整个 bundle 都执行不了，React 根本挂载不上。</p>
+<p>解决方案是把 Leaflet 相关的代码拆成动态 import。RouteMap 只在卡片展开时才去加载地图 chunk，加载失败也不会影响主页面。同时加了 ErrorBoundary 组件兜底，捕获渲染异常并显示错误信息，而不是让用户面对一片空白。</p>
+<h2 id="_4">旧路线数据兼容</h2>
+<p>「我的线路」功能保存用户之前 AI 生成的路线，但这些旧数据里没有坐标。切换到这个 tab 时，RouteMap 试图渲染 undefined 坐标，再次崩溃。</p>
+<p>在 RouteMapImpl 里加了过滤逻辑：只渲染包含有效 <code>lat</code>/<code>lng</code> 的站点，过滤掉无效数据。同时修改了 AI 生成的系统提示词，要求返回坐标。</p>
+<h2 id="osm">OSM 瓦片加载失败</h2>
+<p>地图渲染出来了，但显示的是灰色背景——图块没有加载。排查发现 OpenStreetMap 的瓦片服务器在国内网络环境下无法访问。</p>
+<p>换成高德地图瓦片（<code>webrd01.is.autonavi.com</code>）。高德的瓦片在国内访问正常，而且对于国内城市的地图数据（道路标注、地点名称）反而比 OSM 更详细。改一行瓦片 URL 就解决了。</p>
+<h2 id="ai">AI 生成降级</h2>
+<p>Cloudflare Worker 部署的 AI 代理不知什么原因停用了，前端请求一直 <code>Failed to fetch</code>。</p>
+<p>临时方案是在前端加了一个本地备选生成器：预设了 12 个广州真实景点（光孝寺、陈家祠、沙面等），当远程 API 不可用时，随机组合这些景点生成路线。所有站点都带真实坐标，生成效果基本够用。</p>
+<p>后来用户提供了 Cloudflare API 令牌和 DeepSeek API key，用 wrangler 重新部署了 Worker，AI 生成恢复正常。现在前端优先调用远程 API，失败则自动降级到本地生成。</p>
+<h2 id="_5">链接到主页</h2>
+<p>最后把徒步网站的链接加到了个人主页的项目栏目下。主页也是 GitHub Pages 部署，改了 <code>index.html</code> 里徒步卡片的链接地址，自动生效。</p>
+<hr />
+<p>改完后徒步网站可以稳定访问了：地图用高德瓦片，在国内正常显示；预设路线能展开看地图和步行路线；AI 生成有远程 API 和本地备选两层保障。链接挂在 https://daitree42.github.io/homepage/#projects 上。</p>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/广州徒步路线网站/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">做了一个广州徒步路线网站</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/DeepSeek 代理修复/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</span>
+    </a>
+    
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>

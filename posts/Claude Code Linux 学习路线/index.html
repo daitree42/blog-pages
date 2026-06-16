@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>Claude Code 学习路线（Linux · 初级 · 快速上手） — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+            
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-ai-ji-shu">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">Ai技术</div>
+            <h1 class="post-title">Claude Code 学习路线（Linux · 初级 · 快速上手）</h1>
+            <div class="post-meta">
+                <time datetime="2026-05-27">2026年5月27日</time>
+                <span class="reading-time">2 分钟</span>
+            </div>
+            
+            <div class="post-tags">
+                
+                <span class="tag">Claude</span>
+                
+                <span class="tag">Code</span>
+                
+                <span class="tag">Linux</span>
+                
+                <span class="tag">教程</span>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="post-body">
+        <hr />
+<p>了解了你的情况，我来给你一个清晰的学习路线图！</p>
+<h2 id="_1">第一阶段：安装与配置（先把工具跑起来）</h2>
+<p><strong>前提条件：</strong> 你需要 Node.js 和 npm</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 第一步：配置 npm（避免权限问题）</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span>~/.npm-global
+npm<span class="w"> </span>config<span class="w"> </span><span class="nb">set</span><span class="w"> </span>prefix<span class="w"> </span>~/.npm-global
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export PATH=$HOME/.npm-global/bin:$PATH&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+<span class="nb">source</span><span class="w"> </span>~/.bashrc
+
+<span class="c1"># 第二步：安装 Claude Code</span>
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
+
+<span class="c1"># 第三步：验证安装</span>
+claude<span class="w"> </span>doctor
+</code></pre></div>
+
+<p><strong>账号要求：</strong> 你需要 Claude Pro / Claude Max 订阅，或者开通了计费的 Anthropic Console 账号才能使用。</p>
+<p>来源：<a href="https://www.eesel.ai/blog/install-claude-code">Eesel AI</a></p>
+<hr />
+<h2 id="_2">第二阶段：基本使用流程</h2>
+<p>每次进入你的项目目录，启动 Claude Code：</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/your-project
+claude
+</code></pre></div>
+
+<p>第一次进入项目时，用 <code>/init</code> 命令让 Claude 生成一个 <code>CLAUDE.md</code> 文件，这个文件会记录你的项目结构和约定，以后每次启动 Claude Code 都会自动读取它，大大提升回答质量。</p>
+<p>来源：<a href="https://itecsonline.com/post/how-to-install-claude-code-on-ubuntu-linux-complete-guide-2025">iTechs Online</a></p>
+<hr />
+<h2 id="_3">第三阶段：每日必用的斜杠命令</h2>
+<p>最常用的日常命令是这几个：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/init</code></td>
+<td>初始化项目，生成 CLAUDE.md</td>
+</tr>
+<tr>
+<td><code>/review</code></td>
+<td>让 Claude 审查你的代码</td>
+</tr>
+<tr>
+<td><code>/compact</code></td>
+<td>压缩对话上下文（长时间工作必用）</td>
+</tr>
+<tr>
+<td><code>/cost</code></td>
+<td>查看本次会话消耗了多少 token</td>
+</tr>
+<tr>
+<td><code>/help</code></td>
+<td>列出所有可用命令</td>
+</tr>
+<tr>
+<td><code>/clear</code></td>
+<td>清空对话，重新开始</td>
+</tr>
+</tbody>
+</table>
+<p>经验丰富的用户每工作 20-30 分钟就会用一次 <code>/compact</code> 来释放上下文空间，防止 Claude 的回答质量下降。</p>
+<p>来源：<a href="https://learn-prompting.fr/blog/claude-code-slash-commands-reference">LearnIA</a></p>
+<hr />
+<h2 id="_4">第四阶段：日常开发场景示例</h2>
+<p>进入对话后，你可以直接用自然语言提问，越具体越好：</p>
+<div class="codehilite"><pre><span></span><code>&gt; 解释一下这个项目的目录结构
+&gt; 帮我找 user.py 里的 bug
+&gt; 帮我给 login 函数写单元测试
+&gt; 这段代码怎么优化性能？
+</code></pre></div>
+
+<p>每次开始会话时，先定向一下背景：「我们在做什么、相关文件是哪个、成功的标准是什么」，效果会好很多。</p>
+<p>来源：<a href="https://dev.to/devdaily_2026/claude-code-the-complete-setup-guide-for-macos-windows-and-linux-3dbl">DEV Community</a></p>
+<hr />
+<h2 id="_5">学习建议</h2>
+<ol>
+<li><strong>先从自己现有的小项目开始</strong>，不要用空项目练习</li>
+<li><strong>出问题时运行 <code>claude doctor</code></strong>，它会自动检测大多数配置问题</li>
+<li><strong>用 <code>/cost</code> 养成习惯</strong>，了解自己的使用量</li>
+</ol>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/给博客加功能/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">给纯 Python 静态博客加了四个功能</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/CLAUDE.md 详解/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">CLAUDE.md 是什么</span>
+    </a>
+    
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>
