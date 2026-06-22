@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>小宇宙播客极速转录工作流 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+            
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+            
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-uncategorized">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">未分类</div>
+            <h1 class="post-title">小宇宙播客极速转录工作流</h1>
+            <div class="post-meta">
+                <time datetime="2026-06-22">2026年6月22日</time>
+                <span class="reading-time">4 分钟</span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="post-body">
+        <h2 id="_1">痛点</h2>
+<p>做深度报道经常需要处理播客素材——把一期对话转成文字稿，整理归档，发布到博客。以前这套流程走下来，瓶颈很明显：</p>
+<ul>
+<li>录屏/下载音频需要手动操作</li>
+<li>语音转文字用 whisper.cpp small 模型，22 分钟音频要跑 <strong>40 分钟</strong></li>
+<li>整个过程缺乏自动化</li>
+</ul>
+<p>最近用一集 14 分钟的「聊15块钱儿的」做试验，把流程优化了一遍，<strong>从拿到链接到部署发布不到 3 分钟</strong>。</p>
+<h2 id="_2">流程全景</h2>
+<div class="codehilite"><pre><span></span><code>播客链接
+    │
+    ▼
+curl 提取 __NEXT_DATA__ 中的音频 URL
+    │
+    ├── 并行 ──→ curl 下载 .m4a 音频
+    │
+    ├── 并行 ──→ curl 下载 whisper 模型（首次）
+    │
+    ▼
+ffmpeg 转码为 16kHz 单声道 WAV
+    │
+    ▼
+whisper-cli tiny 模型转录
+    │
+    ▼
+Python 批量清理同音错字
+    │
+    ▼
+写入文章目录 + deploy.sh 发布
+</code></pre></div>
+
+<h2 id="_3">步骤详解</h2>
+<h3 id="1">1. 获取音频地址（零等待）</h3>
+<p>小宇宙的音频地址藏在页面 <code>__NEXT_DATA__</code> 的 <code>pageProps.episode.enclosure.url</code> 中。以前用 Playwright 渲染页面提取，启动浏览器就要 10 秒。直接用 curl 取即可：</p>
+<div class="codehilite"><pre><span></span><code>curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;https://www.xiaoyuzhoufm.com/episode/&lt;eid&gt;&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span>
+<span class="s2">import sys, json, re</span>
+<span class="s2">html = sys.stdin.read()</span>
+<span class="s2">m = re.search(r&#39;enclosure.*?url.*?(https:[^&quot;</span><span class="se">\\</span><span class="o">]</span>+<span class="o">)</span><span class="err">&#39;</span>,<span class="w"> </span>html<span class="o">)</span>
+<span class="k">if</span><span class="w"> </span>m:<span class="w"> </span>print<span class="o">(</span>m.group<span class="o">(</span><span class="m">1</span><span class="o">))</span>
+<span class="s2">&quot;</span>
+</code></pre></div>
+
+<p>音频地址格式：<code>https://media.xyzcdn.net/&lt;pid&gt;/&lt;mediaKey&gt;.m4a</code></p>
+<h3 id="2">2. 并行下载音频和模型</h3>
+<p>音频和模型互不依赖，发起两个后台任务同时下载，互不等待：</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 后台1：下载音频</span>
+curl<span class="w"> </span>-L<span class="w"> </span>-o<span class="w"> </span>/tmp/podcast.m4a<span class="w"> </span><span class="s2">&quot;https://media.xyzcdn.net/...&quot;</span>
+
+<span class="c1"># 后台2：下载 whisper 模型（仅首次需要）</span>
+curl<span class="w"> </span>-L<span class="w"> </span>-o<span class="w"> </span>models/ggml-tiny.bin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.bin&quot;</span>
+</code></pre></div>
+
+<p>tiny 模型只有 75MB，下载比 small 模型（460MB）快得多。设备条件允许的话，两块下载可以完全并发。</p>
+<h3 id="3">3. 转码</h3>
+<p>whisper.cpp 不支持直接输入 m4a，需要用 ffmpeg 转为 16kHz 单声道 WAV：</p>
+<div class="codehilite"><pre><span></span><code>ffmpeg<span class="w"> </span>-y<span class="w"> </span>-i<span class="w"> </span>/tmp/podcast.m4a<span class="w"> </span>-ar<span class="w"> </span><span class="m">16000</span><span class="w"> </span>-ac<span class="w"> </span><span class="m">1</span><span class="w"> </span>/tmp/podcast.wav
+</code></pre></div>
+
+<p>14 分钟的音源转码约 <strong>4 秒</strong>，ffmpeg 跑在 196x 速度。</p>
+<h3 id="4">4. 语音转文字</h3>
+<p>核心命令：</p>
+<div class="codehilite"><pre><span></span><code>whisper-cli<span class="w"> </span>-m<span class="w"> </span>/root/whisper-models/ggml-tiny.bin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-f<span class="w"> </span>/tmp/podcast.wav<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-l<span class="w"> </span>zh<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--output-txt<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-of<span class="w"> </span>/tmp/transcript<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-np
+</code></pre></div>
+
+<p>模型选型对比：</p>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>大小</th>
+<th>14min 转录耗时</th>
+<th>中文精度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ggml-tiny</td>
+<td>75MB</td>
+<td>~1 分钟</td>
+<td>可接受，同音错字较多</td>
+</tr>
+<tr>
+<td>ggml-small</td>
+<td>460MB</td>
+<td>~5-8 分钟</td>
+<td>较好，专有名词更准</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5">5. 清理文稿</h3>
+<p>tiny 模型的中文同音错字比较典型，比如：雄饰→熊市、货木资→霍尔木兹、美连处→美联储。用 Python 批量替换清理，比逐句校对快得多：</p>
+<div class="codehilite"><pre><span></span><code><span class="n">fixes</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;雄饰&quot;</span><span class="p">,</span> <span class="s2">&quot;熊市&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;货木资&quot;</span><span class="p">,</span> <span class="s2">&quot;霍尔木兹&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;美连处&quot;</span><span class="p">,</span> <span class="s2">&quot;美联储&quot;</span><span class="p">),</span>
+    <span class="c1"># ... 几十条替换规则</span>
+<span class="p">]</span>
+<span class="k">for</span> <span class="n">old</span><span class="p">,</span> <span class="n">new</span> <span class="ow">in</span> <span class="n">fixes</span><span class="p">:</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="6">6. 发布</h3>
+<p>项目使用纯 Python 静态站点生成器，运行部署脚本一键构建并推送到 GitHub Pages：</p>
+<div class="codehilite"><pre><span></span><code>bash<span class="w"> </span>/root/blog/deploy.sh
+</code></pre></div>
+
+<h2 id="_4">全流程耗时对比</h2>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>旧流程（small 模型）</th>
+<th>优化流程（tiny 模型）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>获取音频</td>
+<td>~10s（Playwright）</td>
+<td>即时（curl）</td>
+</tr>
+<tr>
+<td>下载音频</td>
+<td>~30s</td>
+<td>~30s（并行）</td>
+</tr>
+<tr>
+<td>下载模型</td>
+<td>~2min（首次）</td>
+<td>~30s（并行）</td>
+</tr>
+<tr>
+<td>转码</td>
+<td>~5s</td>
+<td>~4s</td>
+</tr>
+<tr>
+<td>转录（14min）</td>
+<td>~15min</td>
+<td>~1min</td>
+</tr>
+<tr>
+<td>清理文稿</td>
+<td>~2min 手动</td>
+<td>即时（批量替换）</td>
+</tr>
+<tr>
+<td>写入+发布</td>
+<td>~10s</td>
+<td>~10s</td>
+</tr>
+<tr>
+<td><strong>总计</strong></td>
+<td><strong>~18min</strong></td>
+<td><strong>~3min</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">适用场景与局限</h2>
+<p><strong>适合</strong>：
+- 日常快速存档，获取可检索的文字稿
+- 思路梗概和关键引语提取
+- 多期播客的批量转录建索引</p>
+<p><strong>需注意</strong>：
+- tiny 模型对生僻专有名词、英文术语、口音较重者精度下降明显
+- 如需对外发布的正式文稿，建议用 small 模型 + 人工校对
+- 整个流程依赖命令行环境（curl / ffmpeg / whisper-cli 需预先安装）</p>
+<h2 id="_6">源码</h2>
+<p>上述流程已整理为项目标准工作流，记录在项目 CLAUDE.md 中。后续可用一句话触发：</p>
+<blockquote>
+<p>「帮我把这个播客链接转成文字保存并发布」</p>
+</blockquote>
+<p>即可自动完成采集→转写→清理→发布全流程。</p>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/余海军骗局案播客笔记/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">余海军骗局案：豪车、名流与百亿骗局</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/金价还会再砸出一个坑吗/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">金价还会再砸出一个坑吗？</span>
+    </a>
+    
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>
