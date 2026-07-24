@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} — {{ site_title }}{% endblock %}
+
+{% block content %}
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-{{ article.category_slug }}">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">{{ article.category }}</div>
+            <h1 class="post-title">{{ article.title }}</h1>
+            <div class="post-meta">
+                <time datetime="{{ article.date_iso }}">{{ article.date_display }}</time>
+                <span class="reading-time">{{ article.reading_time }} 分钟</span>
+            </div>
+
+            <div class="post-tags">
+                {% for tag in article.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+    <div class="post-body">
+        {{ article.body_html | safe }}
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    {% if prev_article %}
+    <a href="{{ site_prefix }}/posts/{{ prev_article.slug }}/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">{{ prev_article.title }}</span>
+    </a>
+    {% endif %}
+    {% if next_article %}
+    <a href="{{ site_prefix }}/posts/{{ next_article.slug }}/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">{{ next_article.title }}</span>
+    </a>
+    {% endif %}
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+{% endblock %}

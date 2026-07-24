@@ -30,7 +30,7 @@
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
-            
+
             <nav class="site-nav">
                 <a href="/blog-pages/" class="nav-link active">全部</a>
                 
@@ -44,7 +44,7 @@
                 
                 <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
-            
+
         </div>
     </header>
     <div class="search-bar container">
@@ -66,15 +66,19 @@
                 <time datetime="2026-05-01">2026年5月1日</time>
                 <span class="reading-time">6 分钟</span>
             </div>
-            
+
+            <div class="post-tags">
+                
+            </div>
+
         </div>
     </div>
     <div class="post-body">
-        <hr />
+        <hr/>
 <h2 id="_1">一、为什么需要这套方案</h2>
 <p>在终端环境（如 Android Termux、远程服务器）中写作，文件默认只存在本地。一旦设备丢失、数据清理或环境重置，所有稿件都会丢失。建立一套云盘备份机制，可以确保文章安全，也能在多个设备间同步。</p>
 <p>本文总结两种云盘的连接方式和一个一键同步脚本的使用方法。</p>
-<hr />
+<hr/>
 <h2 id="_2">二、整体架构</h2>
 <div class="codehilite"><pre><span></span><code>本地文件                       云盘
 ─────────────────────────────────────────────
@@ -87,9 +91,8 @@
   ├── cloud-backup-guide/
   └── ...
 </code></pre></div>
-
 <p>通过 rclone 这个统一的命令行工具，同时管理 Dropbox 和 Google Drive 两个云端的文件传输。</p>
-<hr />
+<hr/>
 <h2 id="rclone">三、前置准备：安装 rclone</h2>
 <div class="codehilite"><pre><span></span><code><span class="c1"># Ubuntu/Debian</span>
 apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>rclone
@@ -97,31 +100,27 @@ apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w">
 <span class="c1"># 验证安装</span>
 rclone<span class="w"> </span>version
 </code></pre></div>
-
 <p>rclone 是一个开源的云存储命令行工具，支持 40+ 种云存储服务，包括 Dropbox、Google Drive、OneDrive、Amazon S3 等。</p>
-<hr />
+<hr/>
 <h2 id="dropbox">四、连接 Dropbox</h2>
 <h3 id="41">4.1 原理</h3>
 <p>rclone 通过 OAuth 2.0 协议连接 Dropbox。在无图形界面的终端中，rclone 会启动一个本地 Web 服务器（端口 53682），用户需要在浏览器中访问它来完成授权。</p>
 <h3 id="42">4.2 操作步骤</h3>
 <p><strong>第一步</strong>：运行授权命令</p>
-<div class="codehilite"><pre><span></span><code>rclone<span class="w"> </span>authorize<span class="w"> </span><span class="s2">&quot;dropbox&quot;</span>
+<div class="codehilite"><pre><span></span><code>rclone<span class="w"> </span>authorize<span class="w"> </span><span class="s2">"dropbox"</span>
 </code></pre></div>
-
 <p>终端会输出类似：</p>
-<div class="codehilite"><pre><span></span><code><span class="n">NOTICE</span><span class="o">:</span><span class="w"> </span><span class="n">If</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">browser</span><span class="w"> </span><span class="n">doesn</span><span class="err">&#39;</span><span class="n">t</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">automatically</span><span class="w"> </span><span class="n">go</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="n">link</span><span class="o">:</span>
+<div class="codehilite"><pre><span></span><code><span class="n">NOTICE</span><span class="o">:</span><span class="w"> </span><span class="n">If</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">browser</span><span class="w"> </span><span class="n">doesn</span><span class="err">'</span><span class="n">t</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">automatically</span><span class="w"> </span><span class="n">go</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="n">link</span><span class="o">:</span>
 <span class="n">http</span><span class="o">://</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="o">:</span><span class="mi">53682</span><span class="o">/</span><span class="n">auth</span><span class="o">?</span><span class="n">state</span><span class="o">=</span><span class="n">xxxxxxxxxx</span>
 <span class="n">NOTICE</span><span class="o">:</span><span class="w"> </span><span class="n">Waiting</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">code</span><span class="o">...</span>
 </code></pre></div>
-
 <p><strong>第二步</strong>：在手机或电脑的浏览器中打开上述链接。</p>
 <p><strong>第三步</strong>：登录 Dropbox 账号，点击"授权"。</p>
 <p><strong>第四步</strong>：授权成功后，终端会收到 token。rclone 自动保存配置，或在终端输出 token JSON：</p>
 <div class="codehilite"><pre><span></span><code><span class="nx">Paste</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">following</span><span class="w"> </span><span class="nx">into</span><span class="w"> </span><span class="nx">your</span><span class="w"> </span><span class="nx">remote</span><span class="w"> </span><span class="nx">machine</span><span class="w"> </span><span class="o">---&gt;</span>
-<span class="p">{</span><span class="s">&quot;access_token&quot;</span><span class="p">:</span><span class="s">&quot;sl.u.xxx...&quot;</span><span class="p">,</span><span class="s">&quot;token_type&quot;</span><span class="p">:</span><span class="s">&quot;bearer&quot;</span><span class="p">,</span><span class="s">&quot;refresh_token&quot;</span><span class="p">:</span><span class="s">&quot;xxx...&quot;</span><span class="p">,</span><span class="s">&quot;expiry&quot;</span><span class="p">:</span><span class="s">&quot;...&quot;</span><span class="p">}</span>
+<span class="p">{</span><span class="s">"access_token"</span><span class="p">:</span><span class="s">"sl.u.xxx..."</span><span class="p">,</span><span class="s">"token_type"</span><span class="p">:</span><span class="s">"bearer"</span><span class="p">,</span><span class="s">"refresh_token"</span><span class="p">:</span><span class="s">"xxx..."</span><span class="p">,</span><span class="s">"expiry"</span><span class="p">:</span><span class="s">"..."</span><span class="p">}</span>
 <span class="p">&lt;</span><span class="o">---</span><span class="nx">End</span><span class="w"> </span><span class="nx">paste</span>
 </code></pre></div>
-
 <p><strong>第五步</strong>：验证连接</p>
 <div class="codehilite"><pre><span></span><code>rclone<span class="w"> </span>listremotes
 <span class="c1"># 应显示：dropbox:</span>
@@ -129,30 +128,26 @@ rclone<span class="w"> </span>version
 rclone<span class="w"> </span>mkdir<span class="w"> </span>dropbox:/Test
 rclone<span class="w"> </span>ls<span class="w"> </span>dropbox:/
 </code></pre></div>
-
 <h3 id="43">4.3 配置文件位置</h3>
 <p>rclone 的配置文件保存在 <code>~/.config/rclone/rclone.conf</code>，格式如下：</p>
 <div class="codehilite"><pre><span></span><code><span class="k">[dropbox]</span>
 <span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">dropbox</span>
-<span class="na">token = {&quot;access_token&quot;</span><span class="o">:</span><span class="s">&quot;sl.u.xxx...&quot;</span><span class="na">,&quot;token_type&quot;</span><span class="o">:</span><span class="s">&quot;bearer&quot;</span><span class="na">,&quot;refresh_token&quot;</span><span class="o">:</span><span class="s">&quot;xxx...&quot;</span><span class="na">,&quot;expiry&quot;</span><span class="o">:</span><span class="s">&quot;...&quot;</span><span class="na">}</span>
+<span class="na">token = {"access_token"</span><span class="o">:</span><span class="s">"sl.u.xxx..."</span><span class="na">,"token_type"</span><span class="o">:</span><span class="s">"bearer"</span><span class="na">,"refresh_token"</span><span class="o">:</span><span class="s">"xxx..."</span><span class="na">,"expiry"</span><span class="o">:</span><span class="s">"..."</span><span class="na">}</span>
 </code></pre></div>
-
 <p>这个文件包含 access token 和 refresh token。access token 过期后，rclone 会自动用 refresh token 刷新，无需重新授权。</p>
-<hr />
+<hr/>
 <h2 id="google-drive">五、连接 Google Drive</h2>
 <h3 id="51">5.1 操作步骤</h3>
 <p>与 Dropbox 类似，只是把 <code>"dropbox"</code> 换成 <code>"drive"</code>：</p>
-<div class="codehilite"><pre><span></span><code>rclone<span class="w"> </span>authorize<span class="w"> </span><span class="s2">&quot;drive&quot;</span>
+<div class="codehilite"><pre><span></span><code>rclone<span class="w"> </span>authorize<span class="w"> </span><span class="s2">"drive"</span>
 </code></pre></div>
-
 <p>在浏览器中打开终端输出的 <code>http://127.0.0.1:53682/auth?state=xxx</code>，登录 Google 账号完成授权。</p>
 <h3 id="52">5.2 配置示例</h3>
 <div class="codehilite"><pre><span></span><code><span class="k">[gdrive]</span>
 <span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">drive</span>
 <span class="na">scope</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">drive</span>
-<span class="na">token = {&quot;access_token&quot;</span><span class="o">:</span><span class="s">&quot;ya29.xxx...&quot;</span><span class="na">,&quot;token_type&quot;</span><span class="o">:</span><span class="s">&quot;Bearer&quot;</span><span class="na">,&quot;refresh_token&quot;</span><span class="o">:</span><span class="s">&quot;1//xxx...&quot;</span><span class="na">,&quot;expiry&quot;</span><span class="o">:</span><span class="s">&quot;...&quot;</span><span class="na">}</span>
+<span class="na">token = {"access_token"</span><span class="o">:</span><span class="s">"ya29.xxx..."</span><span class="na">,"token_type"</span><span class="o">:</span><span class="s">"Bearer"</span><span class="na">,"refresh_token"</span><span class="o">:</span><span class="s">"1//xxx..."</span><span class="na">,"expiry"</span><span class="o">:</span><span class="s">"..."</span><span class="na">}</span>
 </code></pre></div>
-
 <p><code>scope = drive</code> 表示完整的 Google Drive 文件访问权限。</p>
 <h3 id="53">5.3 验证</h3>
 <div class="codehilite"><pre><span></span><code>rclone<span class="w"> </span>listremotes
@@ -161,8 +156,7 @@ rclone<span class="w"> </span>ls<span class="w"> </span>dropbox:/
 rclone<span class="w"> </span>mkdir<span class="w"> </span>gdrive:/Test
 rclone<span class="w"> </span>ls<span class="w"> </span>gdrive:/
 </code></pre></div>
-
-<hr />
+<hr/>
 <h2 id="_3">六、注意事项</h2>
 <h3 id="61-oauth">6.1 关于 OAuth 授权</h3>
 <ul>
@@ -183,7 +177,7 @@ rclone<span class="w"> </span>ls<span class="w"> </span>gdrive:/
 <li>Token 泄露意味着他人可以访问你的云盘文件</li>
 <li>如果怀疑 token 泄露，可以在云盘设置中撤销应用授权</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="_4">七、一键同步脚本</h2>
 <h3 id="71">7.1 脚本内容</h3>
 <p>在 <code>/root/sync-cloud</code> 位置创建了自动同步脚本，内容如下：</p>
@@ -192,37 +186,36 @@ rclone<span class="w"> </span>ls<span class="w"> </span>gdrive:/
 
 <span class="nb">set</span><span class="w"> </span>-e
 
-<span class="nv">ARTICLES_DIR</span><span class="o">=</span><span class="s2">&quot;/root/articles&quot;</span>
-<span class="nv">DROPBOX_DEST</span><span class="o">=</span><span class="s2">&quot;dropbox:/Articles&quot;</span>
-<span class="nv">GDRIVE_DEST</span><span class="o">=</span><span class="s2">&quot;gdrive:/Articles&quot;</span>
+<span class="nv">ARTICLES_DIR</span><span class="o">=</span><span class="s2">"/root/articles"</span>
+<span class="nv">DROPBOX_DEST</span><span class="o">=</span><span class="s2">"dropbox:/Articles"</span>
+<span class="nv">GDRIVE_DEST</span><span class="o">=</span><span class="s2">"gdrive:/Articles"</span>
 
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;===== 开始同步到云盘 =====&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"===== 开始同步到云盘 ====="</span>
 
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;--- Dropbox ---&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">""</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"--- Dropbox ---"</span>
 <span class="k">if</span><span class="w"> </span>rclone<span class="w"> </span>ls<span class="w"> </span>dropbox:<span class="w"> </span><span class="p">&amp;</span>&gt;/dev/null<span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">  </span>rclone<span class="w"> </span>sync<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ARTICLES_DIR</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$DROPBOX_DEST</span><span class="s2">&quot;</span><span class="w"> </span>--progress<span class="w"> </span>--ignore-existing
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;[</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">&#39;+%H:%M:%S&#39;</span><span class="k">)</span><span class="s2">] Dropbox 同步完成&quot;</span>
+<span class="w">  </span>rclone<span class="w"> </span>sync<span class="w"> </span><span class="s2">"</span><span class="nv">$ARTICLES_DIR</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$DROPBOX_DEST</span><span class="s2">"</span><span class="w"> </span>--progress<span class="w"> </span>--ignore-existing
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">"[</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">'+%H:%M:%S'</span><span class="k">)</span><span class="s2">] Dropbox 同步完成"</span>
 <span class="k">else</span>
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;[</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">&#39;+%H:%M:%S&#39;</span><span class="k">)</span><span class="s2">] ⚠️  Dropbox 未配置，跳过&quot;</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">"[</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">'+%H:%M:%S'</span><span class="k">)</span><span class="s2">] ⚠️  Dropbox 未配置，跳过"</span>
 <span class="k">fi</span>
 
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;--- Google Drive ---&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">""</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"--- Google Drive ---"</span>
 <span class="k">if</span><span class="w"> </span>rclone<span class="w"> </span>ls<span class="w"> </span>gdrive:<span class="w"> </span><span class="p">&amp;</span>&gt;/dev/null<span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">  </span>rclone<span class="w"> </span>sync<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ARTICLES_DIR</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$GDRIVE_DEST</span><span class="s2">&quot;</span><span class="w"> </span>--progress<span class="w"> </span>--ignore-existing
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;[</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">&#39;+%H:%M:%S&#39;</span><span class="k">)</span><span class="s2">] Google Drive 同步完成&quot;</span>
+<span class="w">  </span>rclone<span class="w"> </span>sync<span class="w"> </span><span class="s2">"</span><span class="nv">$ARTICLES_DIR</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$GDRIVE_DEST</span><span class="s2">"</span><span class="w"> </span>--progress<span class="w"> </span>--ignore-existing
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">"[</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">'+%H:%M:%S'</span><span class="k">)</span><span class="s2">] Google Drive 同步完成"</span>
 <span class="k">else</span>
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;[</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">&#39;+%H:%M:%S&#39;</span><span class="k">)</span><span class="s2">] ⚠️  Google Drive 未配置，跳过&quot;</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">"[</span><span class="k">$(</span>date<span class="w"> </span><span class="s1">'+%H:%M:%S'</span><span class="k">)</span><span class="s2">] ⚠️  Google Drive 未配置，跳过"</span>
 <span class="k">fi</span>
 
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;===== 同步完成 =====&quot;</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;已同步到:&quot;</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;  Dropbox     -&gt; </span><span class="nv">$DROPBOX_DEST</span><span class="s2">&quot;</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;  Google Drive -&gt; </span><span class="nv">$GDRIVE_DEST</span><span class="s2">&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">""</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"===== 同步完成 ====="</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"已同步到:"</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"  Dropbox     -&gt; </span><span class="nv">$DROPBOX_DEST</span><span class="s2">"</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"  Google Drive -&gt; </span><span class="nv">$GDRIVE_DEST</span><span class="s2">"</span>
 </code></pre></div>
-
 <h3 id="72">7.2 使用方法</h3>
 <div class="codehilite"><pre><span></span><code><span class="c1"># 赋予执行权限（只需要一次）</span>
 chmod<span class="w"> </span>+x<span class="w"> </span>/root/sync-cloud
@@ -230,7 +223,6 @@ chmod<span class="w"> </span>+x<span class="w"> </span>/root/sync-cloud
 <span class="c1"># 一键同步</span>
 ./sync-cloud
 </code></pre></div>
-
 <h3 id="73">7.3 脚本特性</h3>
 <ul>
 <li><strong>增量同步</strong>：只上传新增文件，已有文件不受影响（<code>--ignore-existing</code>）</li>
@@ -243,7 +235,7 @@ chmod<span class="w"> </span>+x<span class="w"> </span>/root/sync-cloud
 <li>新建选题后运行，确保云盘与本地一致</li>
 <li>可以设置 cron 定时任务定期同步（视需求而定）</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="_5">八、文件管理建议</h2>
 <h3 id="81">8.1 本地项目结构</h3>
 <p>每个选题在 <code>/root/articles/</code> 下独立建目录：</p>
@@ -255,7 +247,6 @@ chmod<span class="w"> </span>+x<span class="w"> </span>/root/sync-cloud
 └── sources/             ← 参考来源
     └── links.md
 </code></pre></div>
-
 <h3 id="82">8.2 云盘目录结构</h3>
 <p>同步到云盘后，目录结构保持与本地一致：</p>
 <div class="codehilite"><pre><span></span><code>Articles/
@@ -267,13 +258,12 @@ chmod<span class="w"> </span>+x<span class="w"> </span>/root/sync-cloud
 ├── cloud-backup-guide/
 └── ...
 </code></pre></div>
-
 <h3 id="83">8.3 后续扩展</h3>
 <ul>
 <li>如果新增云盘（如 OneDrive），只需用 <code>rclone authorize "onedrive"</code> 配置新的 remote，然后在脚本中增加同步目标</li>
 <li>如果想同步更多目录，修改脚本中的 <code>ARTICLES_DIR</code> 和对应的目标路径即可</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="_6">九、常见问题</h2>
 <p><strong>Q：rclone authorize 提示端口被占用？</strong>
 A：上一次授权进程未退出，等几秒重试即可。端口 53682 是 rclone 的默认 OAuth 回调端口。</p>
@@ -285,7 +275,7 @@ A：rclone 会自动使用 refresh token 刷新。如果 refresh token 也失效
 A：Dropbox：用户设置 → 已连接的应用 → 移除应用。Google Drive：Google 账号 → 安全 → 第三方应用 → 移除。</p>
 <p><strong>Q：上传速度慢？</strong>
 A：Termux 环境下网速取决于当前网络。小型文本文件通常几秒内完成。</p>
-<hr />
+<hr/>
 <h2 id="_7">十、总结</h2>
 <p>这套方案的核心价值在于：</p>
 <ol>
@@ -311,7 +301,6 @@ A：Termux 环境下网速取决于当前网络。小型文本文件通常几秒
         <span class="prev-next-title">搭了一个零维护的静态博客</span>
     </a>
     
-    
 </nav>
 
 <script>
@@ -328,6 +317,7 @@ A：Termux 环境下网速取决于当前网络。小型文本文件通常几秒
     update();
 })();
 </script>
+
 
     </main>
     <footer class="site-footer">

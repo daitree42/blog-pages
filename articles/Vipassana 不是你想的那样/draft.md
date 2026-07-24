@@ -1,0 +1,115 @@
+# Vipassana 不是你想的那样 — 宗萨钦哲仁波切开示中英对照
+
+> 栏目：未分类
+> 日期：2026-06-23
+> 阅读时间：16
+> 排序：1
+> 摘要：几年前，宗萨钦哲仁波切在不丹参加了一场晚宴。席间几位刚参加过葛印卡内观禅修营的不丹精英跑来问他："难道我们佛教里没有这个吗？"他抑郁了好几周。问题不在于佛教没有，而在于——用仁波切自己的话说——像他这样的仁波切们、喇嘛们，"不擅长包装、营销、贴标签"。Vipassana 对应的藏文词Lhaktong
+
+<div class="post-body">
+<hr/>
+<p>几年前，宗萨钦哲仁波切在不丹参加了一场晚宴。席间几位刚参加过葛印卡内观禅修营的不丹精英跑来问他："难道我们佛教里没有这个吗？"</p>
+<p>他抑郁了好几周。</p>
+<p>问题不在于佛教没有，而在于——用仁波切自己的话说——像他这样的仁波切们、喇嘛们，"不擅长包装、营销、贴标签"。Vipassana 对应的藏文词 <strong>Lhaktong</strong>（lhag mthong），本来就是佛法的核心与脊梁，但佛教徒们没能把它讲清楚，以至于不丹的年轻一代要去参加世俗禅修营才能体验到"觉知"。</p>
+<p>这场大约二十分钟的开示，就是从这句话开始的。以下是中英对照全文。</p>
+<hr/>
+<h1 id="_1">中英对照全文</h1>
+<p><strong>P1</strong></p>
+<p>A few years ago when I was in Bhutan I got invited by elites, had a dinner. Several of the members of these elites were Bhutanese. They're Bhutanese. They just went to Goenka Vipassana, you understand, Vipassana. You know, a mindfulness camp. And they were so impressed. They were so moved, and they were telling me, "Don't we have that in Buddhism?" I actually got depressed for a few weeks upon hearing this.</p>
+<p>几年前我在不丹的时候，被一些精英人士邀请参加晚宴。其中有几位是不丹人，他们刚去参加了葛印卡的内观禅修营，你知道，就是那种正念营。他们深受感动，跑来跟我说："难道我们佛教里没有这个吗？"我听到这话，抑郁了好几周。</p>
+<p><strong>P2</strong></p>
+<p>But then I realized it's actually people like me, like Rinpoches, Lamas, our fault. We are not good at packaging, marketing, like labeling. We have to speak that language. We need to sort of... because.... Lhaktong, which is translated from the word "Vipassana", is sort of the core, spine, heart, head, breath, if you like, of Buddha Dharma.</p>
+<p>但后来我意识到，其实是我这样的人——仁波切们、喇嘛们——的错。我们不擅长包装、营销、贴标签。我们得学会说那种语言。我们需要某种……因为……"Lhaktong"，也就是"Vipassana"这个词翻译过来的东西，本来就是佛法的核心、脊梁、心脏、头脑、呼吸——如果你愿意这么理解的话。</p>
+<p><strong>P3</strong></p>
+<p>So I think it's good to dwell on the word "Lhaktong". It's interesting. Now, the moment you hear the word "Vipassana", what is your attitude?</p>
+<p>所以我觉得好好琢磨一下"Lhaktong"这个词是有益的。它很有意思。现在，当你听到"Vipassana"这个词的那一刻，你的态度是什么？</p>
+<p><strong>P4</strong></p>
+<p>Most likely your attitude is, "Ah! Vipassana, mindfulness." And what does that mean? Sit straight. Meditation. By the way, the word "meditation" is a terrible word. A terrible word. In Chöke, it's called "Gom." Gom or Ghom, different spellings. It has a similar meaning, which actually means getting used to, getting accustomed to. It's like you don't know how to drive. You go to a driving school, and then you try in a driving school with a proper whatever setup. But you can't be driving there your whole life. You have to go to the street. You have to see dogs running, cats going here and there, other traffic coming towards you. I don't know… and then, with Gom, you get used to the technique of driving. And then once you are so good at it, you can use the... What do you call it? Rearview mirror? to fix your lipstick. You can text people. You can drive with the one hand and talk back. Better don't do this, though. But anyway, this is what happens when we get used to it. Gom, Ghom. The word "meditation" does not really tell us this. Actually, meditation is a very Christian word, I would say. Lots of things, lots of things, by the way. I think it's really important. Sometimes I get frustrated with this because even here in our country, Bhutan, most of our education curriculum is very much from the British. So I bet lots of you, when you say "good" — GOOD you mean something that is not really Buddhist. I'm very sure. Yes, superficially of course, there's a similarity between Islam, Hinduism, and Buddhism, and all of this. But what is "good" in Christianity is different from what is "good" in Hinduism, and of course, Buddhism.</p>
+<p>很可能你的态度是："啊！Vipassana，正念。"然后那意味着什么？坐直。冥想。顺便说一句，"meditation"这个词很糟糕，非常糟糕。在古典藏语中，它叫"Gom"。Gom 或 Ghom，不同拼法，意思相近——实际上是"习惯"、"熟悉"。就像你不会开车，去驾校，在驾校里用各种正确的设置练习。但你不可能一辈子只在驾校里开。你得开到街上去，你得看到狗跑过去、猫窜来窜去、对面有车开过来。然后，通过 Gom，你习惯了驾驶技术。一旦你熟练到一定程度，你就可以用——那个叫什么来着？后视镜？——来补口红。你可以发短信，可以单手开车还跟人聊天。（不过最好别这么干。）但总之，这就是"习惯了"之后发生的事情。Gom，Ghom。"Meditation"这个词并不能传达这些。实际上，我认为 meditation 是一个非常基督教的词。顺便说一句，很多东西都是这样。我觉得这很重要。有时候我会因为这个感到沮丧，因为即使在我们不丹，大部分教育课程也深受英国影响。所以我敢打赌，你们很多人说"好"的时候——你所指的"好"并不是佛教意义上的好。我很确定。当然，表面上看，伊斯兰教、印度教、佛教等等之间有相似之处。但基督教里的"好"和印度教里的"好"不一样，和佛教当然也不一样。</p>
+<p><strong>P5</strong></p>
+<p>Going back to Lhaktong. Lhaktong means... sometimes the word "Lhak" means something extra, insight, the real deal, the true color. You understand? You know, somebody looks good, polite, gentle, but the true color, you know... the true color, he can be very this, this. You understand. So we are talking about the superficial projection, the superficial understanding of something— the real deal, sort of the true color behind it. That's what Lhaktong is all about. You have to get this.</p>
+<p>回到 Lhaktong。Lhaktong 的意思是……有时候"Lhak"这个词意味着某种额外的东西、洞察、真实的那一面、本相（true color）。你明白吗？就像一个人看起来很好、礼貌、温和，但他的本相——你知道——他的本相可能非常怎样怎样。所以我们在谈论的是表面的投射、对某件事的肤浅理解——真实的那一面，是背后的本相。这就是 Lhaktong 的全部含义。你必须明白这一点。</p>
+<p><strong>P6</strong></p>
+<p>The true color of life... Actually the word "Lhaktong"... this is the irony. The moment we use the word "Vipassana", people seem to immediately think it's a meditation, but it's actually not. Not necessarily. No one talks. In the entire Buddhist canon, there's no word called "Lhak Gom". Lhak Tong, right? Lhak Tong.</p>
+<p>生命的本相……其实"Lhaktong"这个词——这就是讽刺之处。我们一用"Vipassana"这个词，人们立刻认为它是一种冥想，但事实并非如此。不一定是。没有人谈论过。在整个佛教经典中，没有"Lhak Gom"这个词。是 Lhak Tong，对吧？Lhak Tong。</p>
+<p><strong>P7</strong></p>
+<p>Tong is like seeing, realizing, awakened with. Gom yes, you fabricate.</p>
+<p>Tong 就像看见、了悟、觉醒。Gom 是——是的，你造作。</p>
+<p><strong>P8</strong></p>
+<p>So, Lhaktong.</p>
+<p>所以，Lhaktong。</p>
+<p><strong>P9</strong></p>
+<p>Yes, seeing the true color,</p>
+<p>是的，看见本相。</p>
+<p><strong>P10</strong></p>
+<p>the true nature. Again, you see, the moment I use the word "true nature", I'm sure many of you are immediately rushing to, "Ah, true nature." Something very magical, mystical. If you try so hard, if you go to this Thimphu Chorten kora 10,000 times, then you will see this true color. But this is really not true. This is important that we realize.</p>
+<p>看见实相。你看，我一说"实相"这个词，我敢肯定很多人立刻奔向了："啊，实相。"——某种非常神奇、神秘的东西。如果你非常努力，如果你去廷布大佛塔转绕一万次，然后你就会看到这个本相。但这根本不是真的。认识到这一点很重要。</p>
+<p><strong>P11</strong></p>
+<p>The true color, or the insight,</p>
+<p>本相，或者说洞察。</p>
+<p><strong>P12</strong></p>
+<p>especially in the Buddha Dharma, is so simple, ridiculously simple, and ridiculously mundane. It's so ridiculous. That's why it's called "holy". You understand? Actually, in the Mahamudra lineage, the Drukpa Kagyupa, they even use the word "tha mal gyi shes pa," which means the ordinary mind. They actually detest anything that is special. Ordinary, naked, raw, uncooked, unaltered,</p>
+<p>尤其是在佛法中，它是如此简单——可笑地简单，可笑地平庸。它太荒谬了，所以才被称为"神圣"。你明白吗？实际上，在大手印传承中，竹巴噶举派甚至用"tha mal gyi shes pa"这个词，意思是"平常心"。他们实际上厌恶任何不寻常的东西。平常、赤裸、鲜活、未经烹煮、未经改变。</p>
+<p><strong>P13</strong></p>
+<p>unconditioned,</p>
+<p>未经造作。</p>
+<p><strong>P14</strong></p>
+<p>truth we are talking about. But I know many of us, we think, "Ah, he's talking about something really profound. This is so profound." The word is so deceiving, isn't it? So profound. So immediately you distance yourself with this profound truth, thinking, "Me? I'm not for the profound." You understand? Like there's a long distance between you and the profound truth.</p>
+<p>这就是我们所说的真理。但我知道我们很多人会想："啊，他在讲非常深奥的东西。这太深奥了。"这个词真会骗人，不是吗？"太深奥了。"于是你立刻把自己和这个深奥的真理拉开了距离，心想："我？我不是那种追求深奥的人。"你明白吗？好像你和这个深奥的真理之间隔着很远的距离。</p>
+<p><strong>P15</strong></p>
+<p>So let's decipher this a little bit. Lhaktong seeing insight, seeing the real color, seeing the truth. Let's discuss this on a more chewable, a more understandable level first.</p>
+<p>所以让我们稍微解读一下。Lhaktong——看见洞察、看见本相、看见真理。我们先在一个更容易消化、更容易理解的层面上讨论它。</p>
+<p><strong>P16</strong></p>
+<p>Impermanence, that's one of them. Impermanence. That is one raw, naked truth. And when I say "impermanence," most of the Buddhists think about, "Ah, Rinpoche is talking about 'chiwa mitakpa'—death." Isn't it? Of course, that's like, I don't even have to mention that you and I are going to die anyway. That's a given. But I'm not only talking about that. I'm talking about everything, basically.</p>
+<p>无常，这就是其中之一。无常。那是一个赤裸裸的真理。当我说"无常"的时候，大多数佛教徒会想："啊，仁波切在说'chiwa mitakpa'——死亡。"不是吗？当然，这就像——甚至不需要我提，你和我终归一死。这是必然的。但我说的不只是那个。我说的是基本上一切事物。</p>
+<p><strong>P17</strong></p>
+<p>Our paradigm of life, our values. Yeah… wow... just about 10 years ago, I worshipped the BBC, I worshipped the New York Times. Now I detest them from the bottom of my heart. You understand? It's terrible. See! impermanence.</p>
+<p>我们的人生范式、我们的价值观。是的……哇……大概十年前，我还崇拜 BBC，崇拜《纽约时报》。现在我从心底厌恶它们。你明白吗？太糟糕了。看！无常。</p>
+<p><strong>P18</strong></p>
+<p>I used to never understand why people like to have tea. Tea. Now I'm becoming kind of a tea connoisseur, actually. I know Earl Grey, this, that, how much degree of temperature to make a tea, all of this. Values. How you relate to people individually.</p>
+<p>我以前从来不理解为什么人们喜欢喝茶。茶。现在我都快成茶专家了。我知道 Earl Grey，这个那个，多少度的水温泡茶，所有这些。价值观在变。你与每个人的关系也在变。</p>
+<p><strong>P19</strong></p>
+<p>Nations. We Bhutanese, we may be so proud that we are Buddhists and this Buddhism is going to go on forever. You'd better think twice. Japan was one of the most important and most powerful Buddhist countries. You look at Japan now. Almost all the temples are basically just a little more than museums. Daitokuji Temple, one of the biggest temples in Tokyo, has something like 10 monks. If Japanese Buddhism cannot survive, what chance do we have? So small.</p>
+<p>国家。我们不丹人，可能很自豪我们是佛教徒，而且这个佛教会永远延续下去。你最好再想想。日本曾经是最重要、最强大的佛教国家之一。你看看现在的日本。几乎所有的寺庙基本上都只是比博物馆好一点点。大德寺，东京最大的寺庙之一，只有大约十位僧人。如果日本佛教都无法生存，我们有什么机会？如此渺茫。</p>
+<p><strong>P20</strong></p>
+<p>Yes. I'm sure many of you, and me. We think our whole life:</p>
+<p>是的。我相信你们很多人，还有我。我们一辈子都以为：</p>
+<p><strong>P21</strong></p>
+<p>"I'll be a Buddhist. That's for sure."</p>
+<p>"我会一直是佛教徒。这毫无疑问。"</p>
+<p><strong>P22</strong></p>
+<p>You'd better think twice. You might end up becoming a Zorastrian. Who knows? We never know. All it takes is a small cause and condition. What if you happen to fall in love with a very handsome Persian, Iranian Zoroastrian? Oh my god.</p>
+<p>你最好再想想。你最后可能变成一个琐罗亚斯德教徒。谁知道呢？我们永远不知道。只需要一个小小的因和缘。如果你碰巧爱上了一个非常英俊的波斯——伊朗琐罗亚斯德教徒呢？哦，天哪。</p>
+<p><strong>P23</strong></p>
+<p>You know, Buddha, Dharma, Sangha, you know, like... you understand? All it takes.</p>
+<p>你知道，佛、法、僧——你明白吗？就这么简单。</p>
+<p><strong>P24</strong></p>
+<p>Vice versa, by the way.</p>
+<p>反过来也一样，顺便说一句。</p>
+<p><strong>P25</strong></p>
+<p>What we value this today, something more amazing is meaning of "meaning." You know, meaning—the word has a meaning. Even that changes. It's so shocking in our life. If even that changes. Meaning. That's scary actually. Or I should say, that's enlightening.</p>
+<p>我们今天所珍视的东西——更神奇的是"意义"的意义。你知道，"意义"这个词本身是有意义的。连这个都在变。这在我们的生命中太震撼了。如果连这个都在变——意义。这其实很可怕。或者我应该说，这很有启发。</p>
+<p><strong>P26</strong></p>
+<p>This is something you need to see. This is something you really need to see.</p>
+<p>这是你需要看见的。这是你真正需要看见的。</p>
+<p><strong>P27</strong></p>
+<p>Lhak Tong, remember? Extra seeing, insight— having the real picture, having the insight. This is what you need to see.</p>
+<p>Lhak Tong，记得吗？额外的看见、洞察——看到真实的图景、拥有洞察力。这就是你需要看见的。</p>
+<p><strong>P28</strong></p>
+<p>And that can be achieved not necessarily by sitting like this. That can be achieved through discussing like this. You understand? So if I tell you today, for two hours, we are going to do Vipassana, not just talk Vipassana, but actually do Vipassana, but never sit, no this, no mantras, nothing. Just talking, just.... like constantly pulling the rug out from under your feet. It is valid. It is a valid Lhaktong. It is a valid Vipassana.</p>
+<p>而这并不一定需要像这样坐着才能实现。通过像这样讨论也可以实现。你明白吗？所以如果我今天告诉你，我们要花两个小时做 Vipassana——不是谈论 Vipassana，而是真正做 Vipassana——但从来不坐下来，没有这个，没有咒语，什么都没有。只是对话，只是……像不停地把地毯从你脚下抽走。这是有效的。这是有效的 Lhaktong。这是有效的 Vipassana。</p>
+<p><strong>P29</strong></p>
+<p>While I'm on this, I want to just add this one thing. Many of the youngsters here, probably not the older generations, but the younger generations, they will think: "Okay, where does this circumambulating the stupa, lighting the Karmi lamp, prayer flags— where does this come in?" They are actually Vipassana. I'm telling you. And I think you may enjoy printing a prayer flag than sitting like this for three hours. You understand? It is actually Vipassana.</p>
+<p>说到这个，我还想补充一点。在座的很多年轻人——可能不是老一辈，而是年轻一代——他们会想："那么，绕佛塔、点酥油灯、挂经幡——这些算什么？"它们其实就是 Vipassana。我告诉你们。而且我觉得你可能更喜欢印一面经幡，而不是像这样坐三个小时。你明白吗？它实际上就是 Vipassana。</p>
+<p><strong>P30</strong></p>
+<p>All our mural paintings, even things like pouring water bowl offerings, they are Vipassana. Do you really think that the Buddha gets thirsty and you have to diligently feed him water? You can't be that stupid. What good does it do to want some lamp burning there? And then shalsey, torma, you try to eat those. They're supposedly food. You try to eat this, you will have diarrhea.</p>
+<p>我们所有的壁画，甚至像供水这样的仪式，它们都是 Vipassana。你真的以为佛陀会口渴，需要你殷勤地给他喂水吗？你不至于那么蠢吧。让一盏灯在那里烧着有什么好处？还有那些食子（shalsey、torma），你试着去吃一下——它们据说是食物。你要是吃了这个，会拉肚子的。</p>
+<p><strong>P31</strong></p>
+<p>But it is a sacrifice. It's a practice of, not only actually, that's not only Shamatha, that's not only Vipassana, it is also Shamatha. Pilgrimage. You should go to pilgrimage, like go to Paro Taktsang or Bumthang. Every step you take, even if you don't think anything good, maybe you are only counting money, you understand? from the doorstep all the way to the Taktsang, you may be only thinking about how to outwit other people, blah blah blah... but nevertheless, the small effort that you took is Vipassana. You understand? And not only that, you can turn things into... you know, like Bhutanese, Bhutanese are really good with the etiquette, Drik lam Namzha, right? Etiquette with the right motivation, the right attitude. Attitude, remember attitude? All your Drik lam Namzha, all like standing, I don't know… all of that could become Vipassana. I'm serious. Many of you may think that I'm modifying Buddhism a little bit. No, actually not. I'm really like a most conservative Taliban of Buddhism. You understand? People somehow associate me, "Oh, he is very modern." Actually not. What I have been saying is not like I created or invented. I'm trying, I bring this from the sutras. If any of these Khenpos or lamas, they debate with you, send them to me. I say this, even in the Kangyur, it is: "Gang dak changwa aam, Klog pa aam, Zinpa aam, Chhoepa jepa dang," (Who ever memories, read, apprehend, make offerings,) "Titang jepa dang, Kurti jepa dang, Rimdro jepa dang." (pay respect, worship and taking care of...) These are all the words from the sutras. According to the Buddha, he said that even if you have a Kangyur text or a Bum (100,000-verses Prajnaparamita Sutra), or Gye Tongpa (8000-verses Prajnaparamita Sutra), one sutra text you never read them, you don't do anything, even if you have them in your house is a worthy act. Why? Because, you know, these books are big, and they take lots of space, but yet, you try to have them and that's a sacrifice. And also, it involves a sense of wanting to appreciate, to long for, how should I call? to venerate the words of wisdom. You understand? These are very much Vipassana. You need to know this.</p>
+<p>但这是一种奉献。它是一种修行——实际上不仅是止，不仅是观，它也是止。朝圣。你应该去朝圣，比如去帕罗虎穴寺或布姆塘。你走的每一步，即使你没有在想任何好的事情，也许你只是在数钱——你明白吗？从家门口一直到虎穴寺，你可能只想着怎么算计别人——但尽管如此，你所付出的这一点努力就是 Vipassana。不仅如此，你还可以把很多事情变成——你知道，不丹人非常擅长礼仪，Drik lam Namzha，对吧？带着正确的发心、正确的态度的礼仪。态度，记得态度吗？你所有的 Drik lam Namzha，所有的站立方式等等——所有这些都可以成为 Vipassana。我是认真的。你们很多人可能以为我在对佛教做一些修改。不，其实没有。我实际上是佛教中最保守的塔利班。你明白吗？人们总把我联想成"他很现代"。其实不是。我所说的这些并不是我创造或发明的。我努力从佛经里把它们带出来。如果有任何堪布或喇嘛和你辩论，让他们来找我。我说，甚至在《甘珠尔》中就有："Gang dak changwa aam, Klog pa aam, Zinpa aam, Chhoepa jepa dang"（任何忆持、读诵、领受、供养者），"Titang jepa dang, Kurti jepa dang, Rimdro jepa dang"（礼敬、供奉、承事）。这些都是佛经里的话。根据佛陀所说，即使你拥有一部《甘珠尔》或一部"bum"（十万颂《般若经》），或"gye tongpa"（八千颂《般若经》）——你从未读过它们，什么都没做，但仅仅把它们放在你的家里，就是一种有功德的行为。为什么？因为，你知道，这些书很大，占据很多空间，但你仍然设法拥有它们，这是一种牺牲。同时，它包含了一种想要欣赏、渴望——该怎么说呢？——崇敬智慧之语的心。你明白吗？这些都非常 Vipassana。你需要知道这一点。</p>
+<hr/>
+<blockquote>
+<p>原始视频：<a href="https://youtu.be/uhCOc-XiGC8">Vipassana Is Not What You Think — Dzongsar Khyentse Rinpoche</a>
+字幕来源：YouTube 自动生成英文字幕，经整理翻译</p>
+</blockquote>
+</div>

@@ -30,7 +30,7 @@
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
-            
+
             <nav class="site-nav">
                 <a href="/blog-pages/" class="nav-link active">全部</a>
                 
@@ -44,7 +44,7 @@
                 
                 <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
-            
+
         </div>
     </header>
     <div class="search-bar container">
@@ -66,7 +66,7 @@
                 <time datetime="2026-05-29">2026年5月29日</time>
                 <span class="reading-time">3 分钟</span>
             </div>
-            
+
             <div class="post-tags">
                 
                 <span class="tag">Claude</span>
@@ -82,15 +82,15 @@
                 <span class="tag">教程</span>
                 
             </div>
-            
+
         </div>
     </div>
     <div class="post-body">
-        <hr />
+        <hr/>
 <p>把 Claude Code 接到 DeepSeek 的 V4 Flash 模型上，价格便宜量又足，这是很多开发者的首选方案。但跑起来之后，时不时就会迎面砸来一个 400 错误，说消息格式不对。</p>
 <p>仔细一看，Claude Code 在发起请求时，会在 <code>messages</code> 数组里塞<strong>多条</strong> <code>role: "system"</code> 的消息——CLAUDE.md 一条、记忆文件一条、当前日期一条……而这些在 DeepSeek 的 Anthropic 兼容接口上不被接受，直接报格式错误。</p>
 <p>解决思路很直接：写一个本地代理，在请求到达 DeepSeek 之前，把多余的系统消息"翻译"一下。</p>
-<hr />
+<hr/>
 <h2 id="_1">思路</h2>
 <p>Anthropic 的对话协议允许 <code>messages</code> 数组中出现多条 <code>role: "system"</code> 的消息，但 DeepSeek 的兼容实现只认一条。最简单的修复是：</p>
 <ul>
@@ -106,28 +106,28 @@
 <li>转发到 DeepSeek 官方接口</li>
 </ol>
 <p>代码很直白：</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">http</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">https</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;https&#39;</span><span class="p">);</span>
+<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">http</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">'http'</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">https</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">'https'</span><span class="p">);</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">PORT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4000</span><span class="p">;</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">DEEPSEEK_HOST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;api.deepseek.com&#39;</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">DEEPSEEK_HOST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'api.deepseek.com'</span><span class="p">;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">((</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">req</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">chunk</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">body</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">chunk</span><span class="p">);</span>
-<span class="w">  </span><span class="nx">req</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;end&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">''</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">req</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span><span class="w"> </span><span class="nx">chunk</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">body</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">chunk</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">req</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'end'</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">payload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">body</span><span class="p">;</span>
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">body</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">&#39;/v1/messages&#39;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">body</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s1">'/v1/messages'</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">parsed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">parsed</span><span class="p">.</span><span class="nx">messages</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <span class="w">          </span><span class="kd">let</span><span class="w"> </span><span class="nx">sysCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
 <span class="w">          </span><span class="nx">parsed</span><span class="p">.</span><span class="nx">messages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">parsed</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">msg</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">role</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;system&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">role</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'system'</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">              </span><span class="nx">sysCount</span><span class="o">++</span><span class="p">;</span>
 <span class="w">              </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">sysCount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">msg</span><span class="p">,</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;user&#39;</span><span class="p">,</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">msg</span><span class="p">,</span><span class="w"> </span><span class="nx">role</span><span class="o">:</span><span class="w"> </span><span class="s1">'user'</span><span class="p">,</span>
 <span class="w">                  </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="sb">`[System Note]: </span><span class="si">${</span><span class="nx">msg</span><span class="p">.</span><span class="nx">content</span><span class="si">}</span><span class="sb">`</span><span class="w"> </span><span class="p">};</span>
 <span class="w">              </span><span class="p">}</span>
 <span class="w">            </span><span class="p">}</span>
@@ -143,15 +143,15 @@
 <span class="w">      </span><span class="nx">path</span><span class="o">:</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
 <span class="w">      </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="p">,</span>
 <span class="w">      </span><span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">req</span><span class="p">.</span><span class="nx">headers</span><span class="p">,</span><span class="w"> </span><span class="nx">host</span><span class="o">:</span><span class="w"> </span><span class="nx">DEEPSEEK_HOST</span><span class="p">,</span>
-<span class="w">                 </span><span class="s1">&#39;content-length&#39;</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="nx">byteLength</span><span class="p">(</span><span class="nx">payload</span><span class="p">)</span><span class="w"> </span><span class="p">},</span>
+<span class="w">                 </span><span class="s1">'content-length'</span><span class="o">:</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="nx">byteLength</span><span class="p">(</span><span class="nx">payload</span><span class="p">)</span><span class="w"> </span><span class="p">},</span>
 <span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="nx">proxyRes</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="nx">res</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="nx">proxyRes</span><span class="p">.</span><span class="nx">statusCode</span><span class="p">,</span><span class="w"> </span><span class="nx">proxyRes</span><span class="p">.</span><span class="nx">headers</span><span class="p">);</span>
 <span class="w">      </span><span class="nx">proxyRes</span><span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
 <span class="w">    </span><span class="p">});</span>
 
-<span class="w">    </span><span class="nx">proxy</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">e</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">proxy</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'error'</span><span class="p">,</span><span class="w"> </span><span class="nx">e</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="nx">res</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="mf">502</span><span class="p">);</span>
-<span class="w">      </span><span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">&#39;Bad Gateway: &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+<span class="w">      </span><span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">'Bad Gateway: '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
 <span class="w">    </span><span class="p">});</span>
 
 <span class="w">    </span><span class="nx">proxy</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">payload</span><span class="p">);</span>
@@ -161,7 +161,6 @@
 
 <span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">PORT</span><span class="p">);</span>
 </code></pre></div>
-
 <p>核心逻辑其实就一个 <code>map</code> 加一个计数器——第一条 system 跳过，后续的全部改 role 加前缀。请求和响应都是流式管道直通，没有额外延迟。</p>
 <h2 id="_3">使用方式</h2>
 <p>保存为 <code>proxy.js</code>，然后：</p>
@@ -169,19 +168,17 @@
 node<span class="w"> </span>/root/proxy.js<span class="w"> </span><span class="p">&amp;</span>
 
 <span class="c1"># 设置环境变量，让 Claude Code 走代理</span>
-<span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:4000&quot;</span><span class="w"> </span>claude
+<span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span><span class="s2">"http://127.0.0.1:4000"</span><span class="w"> </span>claude
 </code></pre></div>
-
 <p>为了让日常使用更方便，我在 <code>~/.bashrc</code> 里加了一个函数，让默认的 <code>claude</code> 命令自动拉起代理：</p>
 <div class="codehilite"><pre><span></span><code>claude<span class="o">()</span><span class="w"> </span><span class="o">{</span>
 <span class="w">  </span><span class="o">(</span>node<span class="w"> </span>/root/proxy.js<span class="w"> </span><span class="p">&amp;</span>&gt;/dev/null<span class="w"> </span><span class="p">&amp;</span><span class="o">)</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null
-<span class="w">  </span><span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span><span class="s2">&quot;http://127.0.0.1:4000&quot;</span><span class="w"> </span><span class="nb">command</span><span class="w"> </span>claude<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+<span class="w">  </span><span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span><span class="s2">"http://127.0.0.1:4000"</span><span class="w"> </span><span class="nb">command</span><span class="w"> </span>claude<span class="w"> </span><span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span>
 <span class="o">}</span>
 
 <span class="c1"># 同时也留一个直连通道备用</span>
-<span class="nb">alias</span><span class="w"> </span>claude-direct<span class="o">=</span><span class="s1">&#39;ANTHROPIC_BASE_URL=&quot;https://api.deepseek.com/anthropic&quot; claude&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>claude-direct<span class="o">=</span><span class="s1">'ANTHROPIC_BASE_URL="https://api.deepseek.com/anthropic" claude'</span>
 </code></pre></div>
-
 <h2 id="_4">效果</h2>
 <p>加上这层代理之后，400 错误彻底消失，所有 Claude Code 的功能——CLAUDE.md 指令注入、记忆文件读取、工具调用——全部正常工作。</p>
 <p>代理的开销几乎为零：只是改了两个 JSON 字段名就原样转发，不缓存、不记录、不修改响应体，耗时在微秒级别。</p>
@@ -204,7 +201,6 @@ node<span class="w"> </span>/root/proxy.js<span class="w"> </span><span class="p
         <span class="prev-next-title">Claude Code + DeepSeek 完整解决方案文档</span>
     </a>
     
-    
 </nav>
 
 <script>
@@ -221,6 +217,7 @@ node<span class="w"> </span>/root/proxy.js<span class="w"> </span><span class="p
     update();
 })();
 </script>
+
 
     </main>
     <footer class="site-footer">

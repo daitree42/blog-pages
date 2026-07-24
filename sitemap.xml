@@ -5,12 +5,156 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/archive/</loc>
+    <loc>https://daitree42.github.io/blog-pages/page/2/</loc>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/page/3/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/page/4/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/page/5/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/page/6/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/892_Trapped_on_a_Bus/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/金价还会再砸出一个坑吗/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Vipassana 不是你想的那样/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/小宇宙播客极速转录工作流/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/余海军骗局案播客笔记/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Obsidian 与 Claude Code 安卓/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/艾緒莉的布袋技能笔记/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Agent 工具链配置/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/龙虾冷了预制菜时代来了/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/沿海历史课程网站/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Skills 生态配置记/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/清远古驿道徒步记/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/镬耳楼与瑶寨之间/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code Skills 指南/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code 接入 DeepSeek/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/DeepSeek 代理修复/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/徒步网站改版记/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/广州徒步路线网站/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/CLAUDE.md 详解/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code Linux 学习路线/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/给博客加功能/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code 命令指南/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Termux 上运行 Claude Code/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code 学习笔记/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code 练习项目/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Prompt 编写指南/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/零维护博客搭建记/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/云盘备份方案/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/Matt Pocock AI 编码工作坊/</loc>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://daitree42.github.io/blog-pages/category/ai-ji-shu/</loc>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/category/ai-ji-shu/page/2/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/category/ai-ji-shu/page/3/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/category/ai-ji-shu/page/4/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daitree42.github.io/blog-pages/category/ri-chang-zou-zou/</loc>
@@ -21,143 +165,235 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/金价还会再砸出一个坑吗/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/category/uncategorized/</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Vipassana 不是你想的那样/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/category/uncategorized/page/2/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/小宇宙播客极速转录工作流/</loc>
-    <lastmod>2026-06-22</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/播客/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/余海军骗局案播客笔记/</loc>
-    <lastmod>2026-06-22</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/翻译/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Obsidian 与 Claude Code 安卓/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/Claude/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/艾緒莉的布袋技能笔记/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/Claude/page/2/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Agent 工具链配置/</loc>
-    <lastmod>2026-06-15</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/Claude/page/3/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/龙虾冷了预制菜时代来了/</loc>
-    <lastmod>2026-06-15</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/Code/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/沿海历史课程网站/</loc>
-    <lastmod>2026-06-13</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/Code/page/2/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Skills 生态配置记/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/Code/page/3/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/清远古驿道徒步记/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/book-to-skill/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/镬耳楼与瑶寨之间/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/AI/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code Skills 指南/</loc>
-    <lastmod>2026-06-01</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/笔记/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code 接入 DeepSeek/</loc>
-    <lastmod>2026-05-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/知识管理/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/DeepSeek 代理修复/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/物质文化/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/徒步网站改版记/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/Agent-Reach/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/广州徒步路线网站/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/Exa/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/CLAUDE.md 详解/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/rclone/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code Linux 学习路线/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/MCP/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/给博客加功能/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/工具链/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code 命令指南/</loc>
-    <lastmod>2026-05-26</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/课程/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Termux 上运行 Claude Code/</loc>
-    <lastmod>2026-05-26</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/静态站点/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code 学习笔记/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/Python/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Claude Code 练习项目/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/历史/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Prompt 编写指南/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/中国/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/零维护博客搭建记/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/skills/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/云盘备份方案/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/工作流/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daitree42.github.io/blog-pages/posts/Matt Pocock AI 编码工作坊/</loc>
-    <lastmod>2026-04-23</lastmod>
-    <priority>0.8</priority>
+    <loc>https://daitree42.github.io/blog-pages/tag/效率工具/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/清远/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/古驿道/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/徒步/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/慢新闻/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/文化地理/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/古村落/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/瑶寨/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/广府文化/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/Skills/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/教程/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/教程/page/2/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/DeepSeek/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/Termux/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/Android/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/Node.js/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/代理/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/广州/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/React/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/Leaflet/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/GitHub/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/Pages/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/踩坑/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/最佳实践/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/Linux/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/博客/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/搜索/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/命令行工具/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/练习项目/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/Prompt/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/archive/</loc>
+    <priority>0.6</priority>
   </url>
 </urlset>

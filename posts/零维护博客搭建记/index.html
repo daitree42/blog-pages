@@ -30,7 +30,7 @@
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
-            
+
             <nav class="site-nav">
                 <a href="/blog-pages/" class="nav-link active">全部</a>
                 
@@ -44,7 +44,7 @@
                 
                 <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
-            
+
         </div>
     </header>
     <div class="search-bar container">
@@ -66,7 +66,7 @@
                 <time datetime="2026-05-25">2026年5月25日</time>
                 <span class="reading-time">5 分钟</span>
             </div>
-            
+
             <div class="post-tags">
                 
                 <span class="tag">博客</span>
@@ -76,11 +76,11 @@
                 <span class="tag">Python</span>
                 
             </div>
-            
+
         </div>
     </div>
     <div class="post-body">
-        <hr />
+        <hr/>
 <h2 id="_1">一、为什么</h2>
 <p>一直在本地写文章，但写完的东西都躺在文件夹里，不方便分享。想搭一个博客，但有几条硬约束：</p>
 <ul>
@@ -91,7 +91,7 @@
 </ul>
 <p>翻了一圈市面上的方案，静态站点生成器很多（Hugo、Jekyll、Hexo），但都依赖特定的运行时生态。五年后这些工具的版本可能已经面目全非，而我不想去折腾升级。</p>
 <p>于是决定自己写一个。</p>
-<hr />
+<hr/>
 <h2 id="_2">二、方案</h2>
 <p>核心思路就一条：<strong>用纯 Python 把 Markdown 转成 HTML，推到 GitHub Pages 上。</strong></p>
 <p>整个博客是一个 Python 脚本 + 三个 Jinja2 模板 + 一个 CSS 文件，放在 <code>/blog/</code> 目录下。运行时只需要系统自带的 Python 3 和两个 apt 包（<code>python3-markdown</code>、<code>python3-jinja2</code>），没有任何需要 node_modules 或 gemfile 的东西。</p>
@@ -106,7 +106,6 @@
 │   └── style.css      # 中文排版样式
 └── dist/              # 构建输出，推送到 Pages
 </code></pre></div>
-
 <h3 id="_3">文章解析</h3>
 <p>文章的目录结构保持了写作时的原样：</p>
 <div class="codehilite"><pre><span></span><code>articles/&lt;slug&gt;/
@@ -115,7 +114,6 @@
 ├── notes/             # 采访笔记
 └── sources/           # 参考资料
 </code></pre></div>
-
 <p><code>publish.py</code> 遍历 <code>articles/</code> 目录，从每个 <code>draft.md</code> 中解析元数据和正文。元数据写在标题后的 blockquote 里：</p>
 <div class="codehilite"><pre><span></span><code><span class="gh"># 文章标题</span>
 
@@ -126,7 +124,6 @@
 
 正文从这里开始……
 </code></pre></div>
-
 <p>用 blockquote 做元数据的好处是：即使解析器出了问题，它在 Markdown 渲染后看起来仍然是一段正常的引用文字，不会破坏页面。</p>
 <h3 id="_4">构建流程</h3>
 <p><code>publish.py</code> 做的事情很简单：</p>
@@ -140,7 +137,7 @@
 <h3 id="_5">部署</h3>
 <p>构建完成后，<code>dist/</code> 目录就是一个完整的静态站点。<code>deploy.sh</code> 把这个目录推送到 GitHub Pages 仓库，Pages 自动托管——不需要自己配 Nginx，不需要管 HTTPS 证书，不需要担心服务器宕机。</p>
 <p>还加了一个监控脚本，用 <code>inotifywait</code> 监听 <code>draft.md</code> 的修改，检测到变动后自动构建部署。这样写完文章保存文件，博客就自动更新了。</p>
-<hr />
+<hr/>
 <h2 id="_6">三、设计上的几个选择</h2>
 <h3 id="_7">不用前端框架</h3>
 <p>一个静态博客不需要 React 或 Vue。纯 HTML + CSS 的页面加载最快，且不会因为依赖升级而突然不能用了。CSS 里用了衬线字体栈、合适的行距（1.9）和字号（18px），针对中文阅读做了优化。</p>
@@ -150,13 +147,13 @@
 <p>每次构建会清空 <code>dist/</code> 目录，但保留了 <code>.git</code>，这样每次部署都是增量推送，不用重新初始化仓库。</p>
 <h3 id="_9">封面图可选</h3>
 <p>如果有 <code>cover.jpg</code> 放在文章目录下，构建时会自动复制到页面目录。没有也不影响，属于渐进增强。</p>
-<hr />
+<hr/>
 <h2 id="_10">四、感受</h2>
 <p>写这个生成器的过程比预期的愉快。一方面是因为需求很明确，不需要纠结"万一以后要加评论怎么办"（答案是真的需要再说）；另一方面是因为纯 Python 加模板的方案几乎没有心智负担，改起来很快。</p>
 <p>相比于用现成的博客框架，自己写生成器的好处是<strong>完全可控</strong>。想加一个栏目分类页面，改几行代码就行。想调整 RSS 格式，直接改 XML 模板。没有插件系统的学习成本，也没有框架版本的迁移焦虑。</p>
 <p>当然，它缺的东西也很明显：没有评论区（目前用不着），没有搜索功能（文章多了再加），没有统计分析（我也不想看）。一个博客最核心的东西还是内容本身，工具只要能稳定地把文字发布出去就够了。</p>
 <p>这种极简的体感很好。工具应该隐身，而不是刷存在感。</p>
-<hr />
+<hr/>
 <h2 id="_11">五、结果</h2>
 <p>现在这个博客就运行在这个生成器上。写完这篇文章，保存文件，监控脚本检测到变动，十秒后站点自动更新。</p>
 <p>整个系统依赖列表：</p>
@@ -184,7 +181,6 @@
         <span class="prev-next-title">Claude Code Prompt 编写指南</span>
     </a>
     
-    
 </nav>
 
 <script>
@@ -201,6 +197,7 @@
     update();
 })();
 </script>
+
 
     </main>
     <footer class="site-footer">

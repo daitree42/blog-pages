@@ -30,7 +30,7 @@
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
-            
+
             <nav class="site-nav">
                 <a href="/blog-pages/" class="nav-link active">全部</a>
                 
@@ -44,7 +44,7 @@
                 
                 <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
-            
+
         </div>
     </header>
     <div class="search-bar container">
@@ -66,19 +66,23 @@
                 <time datetime="2026-04-23">2026年4月23日</time>
                 <span class="reading-time">9 分钟</span>
             </div>
-            
+
+            <div class="post-tags">
+                
+            </div>
+
         </div>
     </div>
     <div class="post-body">
-        <hr />
+        <hr/>
 <p><em>以下为 Matt Pocock 在 AI Engineer 大会上的工作坊 Full Walkthrough: Workflow for AI Coding from Planning to Production 的完整文字稿中文翻译。</em></p>
-<hr />
+<hr/>
 <h2 id="_1">开场：软件工程基本功依然是放大器</h2>
 <p>Matt 开场说道：</p>
 <p>「好，人满了，我们开始吧。我是 Matt，一名老师，现在也教 AI。」</p>
 <p>他的核心论点是：我们总说 AI 是一个新范式，但在谈论这个新范式时，我们忘记了——<strong>软件工程基本功，那些与人协作至关重要的东西，跟 AI 协作同样有效。</strong> 今天的工作坊就是试图证明这一点。</p>
 <p>他先做了一个现场调查：有多少人曾经用 AI 写过代码？——全场举手。每天都用 AI 写代码的？——大部分人举手。曾被 AI 搞得很恼火的？——所有人依然举着手。现场哄堂大笑。</p>
-<hr />
+<hr/>
 <h2 id="llm">LLM 的「聪明区」与「蠢笨区」</h2>
 <p>Matt 引入了 HumanLayer 创始人 Dex Hardy 的一个概念：<strong>LLM 有聪明区（smart zone）和蠢笨区（dumb zone）。</strong></p>
 <p>当你刚开始一段新对话时，LLM 从零开始——这时它表现最好。因为注意力关系（attention relationships）的负担最轻。每增加一个 token，注意力关系的数量就像往足球联赛里加球队一样——比赛场次呈二次方增长。</p>
@@ -90,7 +94,7 @@
 <p>Matt 说他自己以前也用的多阶段计划：把大任务拆成小块，每块都在聪明区完成。</p>
 <p>但任何一个靠谱的开发者看到这个模式都会说——<strong>「这是一个循环啊」</strong>。阶段一、阶段二、阶段三、阶段四……为什么不做阶段 N？用一个计划在后台运行，然后不断循环，直到完成。</p>
 <p>这就是 <strong>Ralph Wiggum 实践</strong>——本质上只需要指定目标终点（一个 PRD 文档说明要去哪里），然后告诉 AI「做一个小改变，一步步靠近目标」。Ralph 工作得还不错，但 Matt 更喜欢多一点点结构。</p>
-<hr />
+<hr/>
 <h2 id="llm_1">LLM 像《记忆碎片》的主角</h2>
 <p>另一个奇怪的约束：<strong>LLM 就像电影《记忆碎片》的主角</strong>，持续遗忘，每次重置回到初始状态。</p>
 <p>他画了一个示意图——每次与 LLM 的会话都经过几个阶段：</p>
@@ -109,7 +113,7 @@
 </ul>
 <p>「开发者不知为何特别喜欢压缩，但我讨厌它。我更喜欢让 AI 像《记忆碎片》里的主角一样——<strong>因为清空后的状态始终一样，如果你能为此优化，你就处在绝佳位置。</strong>」</p>
 <p>他说有两个东西需要记住：<strong>LLM 有聪明区和蠢笨区；LLM 像《记忆碎片》的主角。</strong></p>
-<hr />
+<hr/>
 <h2 id="grill-me">实操演示：Grill Me 技能</h2>
 <p>Matt 开始演示第一个练习。</p>
 <p>他构建了一个课程管理平台（CMS），今天要在这个平台里实现一个功能——从想法出发，到 PRD，再到最终实现。</p>
@@ -157,7 +161,7 @@
 <blockquote>
 <p>「现阶段没有明确的赢家，没有唯一正确的路径，事情在不断变化，<strong>你需要尽可能掌控自己的规划栈</strong>。很多学生过度依赖某一套栈，遇到麻烦的时候因为不拥有这套栈、没有可观测性，只会说『这不行』。而如果你能掌控一切，至少你知道怎么修。」</p>
 </blockquote>
-<hr />
+<hr/>
 <h2 id="vs-afk">人类在环 vs. AFK 任务</h2>
 <p>Matt 提出了一个关键区分：</p>
 <blockquote>
@@ -165,7 +169,7 @@
 <p><strong>「实现，我们会看到，可以变成 AFK 任务。但规划、对齐阶段，必须是人类在环。必须。」</strong></p>
 </blockquote>
 <p>为什么不能跳过对齐？有人喊「Ralph loop 这个」。Matt 说：「我不能循环这个。在 AI 的每个阶段，我都会重新评估。这就是为什么我一直在这里回答问题。」</p>
-<hr />
+<hr/>
 <h2 id="_6">后续流程</h2>
 <p>工作坊继续展示了从 PRD 到任务拆分的完整流程：</p>
 <ul>
@@ -180,7 +184,7 @@
 <p><strong>想法 → 对齐（Grill Me）→ PRD → 看板 → 实现（Ralph 循环）→ 审查</strong></p>
 </blockquote>
 <p>Matt 的最终建议：<strong>多读经典软件工程书籍</strong>——他把这称为「一座纯金矿」。</p>
-<hr />
+<hr/>
 <h2 id="_8">来源</h2>
 <blockquote>
 <p>原文标题：<em>How I got 30k+ GitHub stars as a nontechnical builder: vibe coding techniques and principles</em></p>
@@ -199,7 +203,6 @@
         <span class="prev-next-title">云盘保存方案总结：从本地到 Dropbox 和 Google Drive</span>
     </a>
     
-    
 </nav>
 
 <script>
@@ -216,6 +219,7 @@
     update();
 })();
 </script>
+
 
     </main>
     <footer class="site-footer">

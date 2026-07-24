@@ -30,7 +30,7 @@
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
-            
+
             <nav class="site-nav">
                 <a href="/blog-pages/" class="nav-link active">全部</a>
                 
@@ -44,7 +44,7 @@
                 
                 <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
-            
+
         </div>
     </header>
     <div class="search-bar container">
@@ -66,7 +66,7 @@
                 <time datetime="2026-05-29">2026年5月29日</time>
                 <span class="reading-time">4 分钟</span>
             </div>
-            
+
             <div class="post-tags">
                 
                 <span class="tag">徒步</span>
@@ -84,11 +84,11 @@
                 <span class="tag">踩坑</span>
                 
             </div>
-            
+
         </div>
     </div>
     <div class="post-body">
-        <hr />
+        <hr/>
 <h2 id="_1">起因</h2>
 <p>上一次把广州徒步路线数据做成了独立站点，发布了。但没有地图的路线网站总觉得少了点什么——路线数据里明明有坐标，却没有用起来。</p>
 <p>这次的目标很明确：把地图加上。结果打开了一个坑接一个坑的盖子。</p>
@@ -112,7 +112,7 @@
 <p>后来用户提供了 Cloudflare API 令牌和 DeepSeek API key，用 wrangler 重新部署了 Worker，AI 生成恢复正常。现在前端优先调用远程 API，失败则自动降级到本地生成。</p>
 <h2 id="_5">链接到主页</h2>
 <p>最后把徒步网站的链接加到了个人主页的项目栏目下。主页也是 GitHub Pages 部署，改了 <code>index.html</code> 里徒步卡片的链接地址，自动生效。</p>
-<hr />
+<hr/>
 <p>改完后徒步网站可以稳定访问了：地图用高德瓦片，在国内正常显示；预设路线能展开看地图和步行路线；AI 生成有远程 API 和本地备选两层保障。链接挂在 https://daitree42.github.io/homepage/#projects 上。</p>
     </div>
 </article>
@@ -130,7 +130,6 @@
         <span class="prev-next-title">用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</span>
     </a>
     
-    
 </nav>
 
 <script>
@@ -147,6 +146,7 @@
     update();
 })();
 </script>
+
 
     </main>
     <footer class="site-footer">

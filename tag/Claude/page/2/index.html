@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
-    <title>树</title>
+    <title>Claude -- 树</title>
     <link rel="stylesheet" href="/blog-pages/static/style.css">
     <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
 </head>
@@ -30,9 +30,9 @@
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
-            
+
             <nav class="site-nav">
-                <a href="/blog-pages/" class="nav-link active">全部</a>
+                <a href="/blog-pages/" class="nav-link">全部</a>
                 
                 <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
                 
@@ -44,7 +44,7 @@
                 
                 <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
-            
+
         </div>
     </header>
     <div class="search-bar container">
@@ -58,148 +58,130 @@
 
 <section class="article-list">
     
+    <article class="article-item article-featured">
         
+        <div class="featured-badge">Ai技术</div>
+        <h2 class="article-title featured-title">
+            <a href="/blog-pages/posts/DeepSeek 代理修复/">用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-05-29">2026年5月29日</time>
+            <span class="reading-time">3 分钟</span>
+        </div>
+
+        <p class="article-description featured-description">把 Claude Code 接到 DeepSeek 的 V4 Flash 模型上，价格便宜量又足，这是很多开发者的首选方案。但跑起来之后，时不时就会迎面砸来一个 400 错误，说消息格式不对。仔细一看，Claude Code 在发起请求时，会在messages数组里塞多条role: &#34;system&#34;</p>
         
-        <article class="article-item article-featured">
-            <div class="featured-badge">Ai技术</div>
-            <h2 class="article-title featured-title">
-                <a href="/blog-pages/posts/DeepSeek 代理修复/">用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-29">2026年5月29日</time>
-                <span class="reading-time">3 分钟</span>
-            </div>
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">💻</span>
+            <a href="/blog-pages/posts/CLAUDE.md 详解/">CLAUDE.md 是什么</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-05-27">2026年5月27日</time>
+            <span class="reading-time">3 分钟</span>
+        </div>
+        
+        <div class="article-tags">
             
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">DeepSeek</span>
-                
-                <span class="tag">Node.js</span>
-                
-                <span class="tag">代理</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
+            <span class="tag">Claude</span>
             
-            <p class="article-description featured-description">Claude Code 在 DeepSeek V4 Flash 上频繁报 400 格式错误？一条 proxy 搞定——把多条 system 消息悄悄转为 user 消息。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/CLAUDE.md 详解/">CLAUDE.md 是什么</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-27">2026年5月27日</time>
-                <span class="reading-time">3 分钟</span>
-            </div>
+            <span class="tag">Code</span>
             
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">最佳实践</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
+            <span class="tag">最佳实践</span>
             
-            <p class="article-description">CLAUDE.md 是 Claude Code 的项目说明书，解释它的作用、生成方法、写什么内容以及关键原则。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/Claude Code Linux 学习路线/">Claude Code 学习路线（Linux · 初级 · 快速上手）</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-27">2026年5月27日</time>
-                <span class="reading-time">2 分钟</span>
-            </div>
+            <span class="tag">教程</span>
             
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">Linux</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
+        </div>
+        
+        <p class="article-description">好，信息够了，给你一个清晰实用的讲解。CLAUDE.md 是什么CLAUDE.md 是一个特殊文件，Claude 每次开始对话时都会自动读取它。你可以把它理解为给 Claude 的项目说明书——不用每次都重复告诉它背景信息。来源：Claude Code 最佳实践怎么生成进入你的项目目录，运行：cd~</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">💻</span>
+            <a href="/blog-pages/posts/Claude Code Linux 学习路线/">Claude Code 学习路线（Linux · 初级 · 快速上手）</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-05-27">2026年5月27日</time>
+            <span class="reading-time">2 分钟</span>
+        </div>
+        
+        <div class="article-tags">
             
-            <p class="article-description">面向 Linux 初级用户的 Claude Code 学习路线图，从安装配置到日常使用，快速上手这个强大的 AI 编程助手。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/Claude Code 命令指南/">Claude Code 斜杠命令完全指南</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-26">2026年5月26日</time>
-                <span class="reading-time">4 分钟</span>
-            </div>
+            <span class="tag">Claude</span>
             
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">命令行工具</span>
-                
-            </div>
+            <span class="tag">Code</span>
             
-            <p class="article-description">Claude Code 的斜杠命令比想象中更丰富，从 /plan 到 /compact，从内置命令到自定义命令，整理一份完整列表和使用场景。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/Termux 上运行 Claude Code/">移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-26">2026年5月26日</time>
-                <span class="reading-time">5 分钟</span>
-            </div>
+            <span class="tag">Linux</span>
             
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">Termux</span>
-                
-                <span class="tag">Android</span>
-                
-                <span class="tag">DeepSeek</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
+            <span class="tag">教程</span>
             
-            <p class="article-description">完整记录如何利用 PRoot 虛擬化技術繞過架構限制，在手機上完美部署 Claude Code，並透過環境變量將其靈魂替換為極具性價比的 DeepSeek v4 API。</p>
-        </article>
+        </div>
         
+        <p class="article-description">了解了你的情况，我来给你一个清晰的学习路线图！第一阶段：安装与配置（先把工具跑起来）前提条件：你需要 Node.js 和 npm# 第一步：配置 npm（避免权限问题）mkdir-p~/.npm-global</p>
         
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">💻</span>
+            <a href="/blog-pages/posts/Claude Code 命令指南/">Claude Code 斜杠命令完全指南</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-05-26">2026年5月26日</time>
+            <span class="reading-time">4 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">Claude</span>
+            
+            <span class="tag">Code</span>
+            
+            <span class="tag">命令行工具</span>
+            
+        </div>
+        
+        <p class="article-description">Claude Code 是一个终端里的 AI 编程助手，和 Claude 网页版不同，它在命令行里工作，能直接读写文件、执行命令、管理整个项目。而它的斜杠命令（slash commands）是控制这个工具最直接的方式。之前一直以为 Claude Code 只有 /help 和 /clear 几个简单</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">💻</span>
+            <a href="/blog-pages/posts/Termux 上运行 Claude Code/">移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-05-26">2026年5月26日</time>
+            <span class="reading-time">5 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">Claude</span>
+            
+            <span class="tag">Code</span>
+            
+            <span class="tag">Termux</span>
+            
+            <span class="tag">Android</span>
+            
+            <span class="tag">DeepSeek</span>
+            
+            <span class="tag">教程</span>
+            
+        </div>
+        
+        <p class="article-description">在大模型與 AI Agent 爆發的時代，Anthropic 官方推出的終端代碼助手Claude Code憑藉強大的多文件讀寫、自動 Git 管理和指令執行能力，成為了開發者的神器。然而，官方並沒有對安卓（Termux）環境提供原生支持，且其綁定的官方 API 價格不菲。本文將完整記錄如何利用PRo</p>
+        
+    </article>
     
 </section>
 

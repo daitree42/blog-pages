@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>未分类 -- 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link active">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<a href="/blog-pages/posts/892_Trapped_on_a_Bus/" class="recommend-banner">
+    <span class="recommend-badge">推荐</span>
+    <span class="recommend-title">892：困在巴士上</span>
+    <span class="recommend-arrow">→</span>
+</a>
+
+
+<section class="article-list">
+    
+    <article class="article-item article-featured">
+        
+        <div class="featured-badge">未分类</div>
+        <h2 class="article-title featured-title">
+            <a href="/blog-pages/posts/892_Trapped_on_a_Bus/">892：困在巴士上</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-07-19">2026年7月19日</time>
+            <span class="reading-time">21 分钟</span>
+        </div>
+
+        <p class="article-description featured-description">本期节目探讨了人们在不可控和不喜欢的情况下被困住的经历，就像一辆失控的公交车上的乘客。</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/金价还会再砸出一个坑吗/">金价还会再砸出一个坑吗？</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-06-23">2026年6月23日</time>
+            <span class="reading-time">11 分钟</span>
+        </div>
+        
+        <p class="article-description">班克儿：今天是4月26日星期一。欢迎大家收听「聊15块钱儿的」，聊点不俗的财经，跟跑趋势15分钟。大家好我是班克儿。上周黄金又跌了，连跌了300美元。这黄金价格是不是要跌破四千了？今年黄金以后还有长的希望吗？今天咱们听听万总怎么看待这件事。本期节目仅代表嘉宾个人观点，不构成投资建议。那么咱们就开始聊</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/Vipassana 不是你想的那样/">Vipassana 不是你想的那样 — 宗萨钦哲仁波切开示中英对照</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-06-23">2026年6月23日</time>
+            <span class="reading-time">16 分钟</span>
+        </div>
+        
+        <p class="article-description">几年前，宗萨钦哲仁波切在不丹参加了一场晚宴。席间几位刚参加过葛印卡内观禅修营的不丹精英跑来问他：&#34;难道我们佛教里没有这个吗？&#34;他抑郁了好几周。问题不在于佛教没有，而在于——用仁波切自己的话说——像他这样的仁波切们、喇嘛们，&#34;不擅长包装、营销、贴标签&#34;。Vipassana 对应的藏文词Lhaktong</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/小宇宙播客极速转录工作流/">小宇宙播客极速转录工作流</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-06-22">2026年6月22日</time>
+            <span class="reading-time">4 分钟</span>
+        </div>
+        
+        <p class="article-description">痛点做深度报道经常需要处理播客素材——把一期对话转成文字稿，整理归档，发布到博客。以前这套流程走下来，瓶颈很明显：录屏/下载音频需要手动操作语音转文字用 whisper.cpp small 模型，22 分钟音频要跑40 分钟整个过程缺乏自动化最近用一集 14 分钟的「聊15块钱儿的」做试验，把流程优</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/余海军骗局案播客笔记/">余海军骗局案：豪车、名流与百亿骗局</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-06-22">2026年6月22日</time>
+            <span class="reading-time">20 分钟</span>
+        </div>
+        
+        <p class="article-description">主持：班克儿嘉宾：万理PKT时间轴：- 01:57 余海军事件始末</p>
+        
+    </article>
+    
+</section>
+
+
+<nav class="pagination">
+    
+    <span class="pagination-info">1 / 2</span>
+    
+    <a href="/blog-pages/category/uncategorized/page/2/" class="pagination-btn pagination-next">下一页 →</a>
+    
+</nav>
+
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>

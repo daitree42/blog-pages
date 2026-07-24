@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}存档 -- {{ site_title }}{% endblock %}
+
+{% block content %}
+<section class="archive">
+    <h2 class="archive-heading">文章存档</h2>
+    {% for year_data in archive_data %}
+    <div class="archive-year">
+        <h3 class="archive-year-title">{{ year_data.year }}年</h3>
+        {% for month_data in year_data.months %}
+        <div class="archive-month">
+            <h4 class="archive-month-title">{{ month_data.month }}月</h4>
+            <ul class="archive-list">
+                {% for article in month_data.articles %}
+                <li class="archive-item">
+                    <time class="archive-date" datetime="{{ article.date_iso }}">{{ article.date_archive }}</time>
+                    <a href="{{ site_prefix }}/posts/{{ article.slug }}/" class="archive-link">{{ article.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}

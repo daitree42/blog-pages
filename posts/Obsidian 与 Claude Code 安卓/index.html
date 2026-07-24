@@ -30,7 +30,7 @@
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
-            
+
             <nav class="site-nav">
                 <a href="/blog-pages/" class="nav-link active">全部</a>
                 
@@ -44,7 +44,7 @@
                 
                 <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
-            
+
         </div>
     </header>
     <div class="search-bar container">
@@ -66,7 +66,11 @@
                 <time datetime="2026-06-16">2026年6月16日</time>
                 <span class="reading-time">7 分钟</span>
             </div>
-            
+
+            <div class="post-tags">
+                
+            </div>
+
         </div>
     </div>
     <div class="post-body">
@@ -96,14 +100,12 @@
 <span class="err">├──</span><span class="w"> </span><span class="n">pictures</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">/</span><span class="n">storage</span><span class="o">/</span><span class="n">emulated</span><span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">Pictures</span>
 <span class="err">└──</span><span class="w"> </span><span class="o">...</span>
 </code></pre></div>
-
 <p>这个命令授权 Termux 读取 Android 的共享存储。<code>/storage/emulated/0/</code> 是所有 Android 应用共享的存储区域——Obsidian 的笔记文件也保存在这里。</p>
 <p>但在 PRoot Distro 容器内，<code>/data/data/com.termux/files/home/storage/</code> 这个路径不直接可见。好在容器能访问外部的 <code>/storage/emulated/0/</code> 路径，这是 Android 系统层面的挂载点，不会被容器隔离。</p>
 <h2 id="obsidian-vault">第二步：找到 Obsidian 的 vault</h2>
 <p>在 Obsidian 里新建 vault 时，可以选择保存位置。为了让 Claude Code 也能访问到，把 vault 建在共享存储下：</p>
 <div class="codehilite"><pre><span></span><code>/storage/emulated/0/Documents/obsidian/Claude/
 </code></pre></div>
-
 <p>这个路径从 PRoot Distro 容器内可以直接访问。验证方法很简单——在 Termux 里用 <code>cat</code> 读一个 Obsidian 里写的笔记，如果内容正确显示，说明连通了。</p>
 <h2 id="_3">第三步：符号链接打通工作目录</h2>
 <p>Claude Code 的工作目录按照项目规范设在 <code>/root/articles/</code>。但这个路径在 PRoot Distro 容器内部，Obsidian 看不到。</p>
@@ -118,7 +120,6 @@ mkdir<span class="w"> </span>-p<span class="w"> </span>~/obsidian-vault/articles
 mv<span class="w"> </span>/root/articles<span class="w"> </span>/root/articles.bak
 ln<span class="w"> </span>-sf<span class="w"> </span>~/obsidian-vault/articles<span class="w"> </span>/root/articles
 </code></pre></div>
-
 <p>做好之后，效果是这样的：</p>
 <div class="codehilite"><pre><span></span><code>手机 Obsidian                        Termux (PRoot Distro)
        │                                   │
@@ -129,7 +130,6 @@ ln<span class="w"> </span>-sf<span class="w"> </span>~/obsidian-vault/articles<s
       Claude/                              │
         articles/ ◄───────────────────────┘
 </code></pre></div>
-
 <p>如果之前已经有文章，把它们复制到 <code>articles/</code> 目录下。我迁移的时候有 25 个选题，全部保留。</p>
 <h2 id="_4">工作流：一次打通，三端协同</h2>
 <p>打通之后，工作流变成了闭环：</p>
@@ -147,7 +147,6 @@ ln<span class="w"> </span>-sf<span class="w"> </span>~/obsidian-vault/articles<s
 dropbox:
 gdrive:
 </code></pre></div>
-
 <p>同步命令：</p>
 <div class="codehilite"><pre><span></span><code><span class="c1"># 同步到 Dropbox</span>
 rclone<span class="w"> </span>sync<span class="w"> </span>/storage/emulated/0/Documents/obsidian/<span class="w"> </span>dropbox:obsidian-notes<span class="w"> </span>--progress
@@ -155,14 +154,12 @@ rclone<span class="w"> </span>sync<span class="w"> </span>/storage/emulated/0/Do
 <span class="c1"># 同步到 Google Drive</span>
 rclone<span class="w"> </span>sync<span class="w"> </span>/storage/emulated/0/Documents/obsidian/<span class="w"> </span>gdrive:obsidian-notes<span class="w"> </span>--progress
 </code></pre></div>
-
 <p>这样，一篇文章同时存在于三个地方：手机本地（Obsidian + Termux）、Dropbox、Google Drive。任何一个设备出问题，数据都不会丢。</p>
 <h2 id="_6">发布闭环</h2>
 <p>文章写完、网盘备份之后，最后一步是发布到博客。</p>
 <p>博客基于 Python 静态站点生成器（<code>/root/blog/publish.py</code>），模板使用 Jinja2，部署在 GitHub Pages 上。运行发布命令：</p>
 <div class="codehilite"><pre><span></span><code>bash<span class="w"> </span>/root/blog/deploy.sh
 </code></pre></div>
-
 <p>发布后访问：<a href="https://daitree42.github.io/blog-pages/">https://daitree42.github.io/blog-pages/</a></p>
 <p>从在 Obsidian 里写下第一个字开始，到文章出现在博客上，整个过程不离开手机。</p>
 <h2 id="_7">一些建议</h2>
@@ -178,7 +175,7 @@ rclone<span class="w"> </span>sync<span class="w"> </span>/storage/emulated/0/Do
 <p>这套方案基于 Android 的共享存储路径访问。如果未来 Android 版本的 Scoped Storage 进一步收紧这个路径的访问权限，方案可能需要调整。一种可选的备选方案是走 SyncThing，通过局域网同步来替代直接文件系统共享。</p>
 <p>另一个局限是 PRoot Distro 的性能开销——容器化运行 Claude Code 比原生 Termux 应用慢一些，但对写作工作流来说几乎不可感知。</p>
 <p>连接 Obsidian 和 Claude Code 这件事本身并不复杂，核心在于理解文件系统在 Android、Termux 和容器之间的映射关系。一旦理解了这层映射，能做的事情就不只是记笔记和写文章——同样的原理可以扩展到任何需要在命令行和图形界面之间共享文件的场景。</p>
-<hr />
+<hr/>
 <p><em>这篇文章本身就是用打通后的工作流写成的：采访笔记在 Obsidian 里记录，正文由 Claude Code 生成，保存到 Obsidian、「发布」命令部署到博客，再通过 rclone 备份到网盘。</em></p>
     </div>
 </article>
@@ -196,7 +193,6 @@ rclone<span class="w"> </span>sync<span class="w"> </span>/storage/emulated/0/Do
         <span class="prev-next-title">余海军骗局案：豪车、名流与百亿骗局</span>
     </a>
     
-    
 </nav>
 
 <script>
@@ -213,6 +209,7 @@ rclone<span class="w"> </span>sync<span class="w"> </span>/storage/emulated/0/Do
     update();
 })();
 </script>
+
 
     </main>
     <footer class="site-footer">

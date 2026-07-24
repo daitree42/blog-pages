@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}{% if page_title %}{{ page_title }} -- {{ site_title }}{% else %}{{ site_title }}{% endif %}{% endblock %}
+
+{% block content %}
+{% if is_first_page and recommended_article %}
+<a href="{{ site_prefix }}/posts/{{ recommended_article.slug }}/" class="recommend-banner">
+    <span class="recommend-badge">推荐</span>
+    <span class="recommend-title">{{ recommended_article.title }}</span>
+    <span class="recommend-arrow">→</span>
+</a>
+{% endif %}
+
+<section class="article-list">
+    {% for article in articles %}
+    <article class="article-item{% if loop.first %} article-featured{% endif %}">
+        {% if loop.first %}
+        <div class="featured-badge">{{ article.category }}</div>
+        <h2 class="article-title featured-title">
+            <a href="{{ site_prefix }}/posts/{{ article.slug }}/">{{ article.title }}</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="{{ article.date_iso }}">{{ article.date_display }}</time>
+            <span class="reading-time">{{ article.reading_time }} 分钟</span>
+        </div>
+
+        <p class="article-description featured-description">{{ article.excerpt }}</p>
+        {% else %}
+        <h2 class="article-title">
+            <span class="card-emoji">{{ article.emoji }}</span>
+            <a href="{{ site_prefix }}/posts/{{ article.slug }}/">{{ article.title }}</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="{{ article.date_iso }}">{{ article.date_display }}</time>
+            <span class="reading-time">{{ article.reading_time }} 分钟</span>
+        </div>
+        {% if article.tags %}
+        <div class="article-tags">
+            {% for tag in article.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <p class="article-description">{{ article.excerpt }}</p>
+        {% endif %}
+    </article>
+    {% endfor %}
+</section>
+
+{% if total_pages > 1 %}
+<nav class="pagination">
+    {% if current_page > 1 %}
+    <a href="{{ site_prefix }}/{{ page_prev_url }}" class="pagination-btn pagination-prev">← 上一页</a>
+    {% endif %}
+    <span class="pagination-info">{{ current_page }} / {{ total_pages }}</span>
+    {% if not is_last_page %}
+    <a href="{{ site_prefix }}/{{ page_next_url }}" class="pagination-btn pagination-next">下一页 →</a>
+    {% endif %}
+</nav>
+{% endif %}
+{% endblock %}

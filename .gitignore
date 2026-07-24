@@ -1,1 +1,9 @@
 .git
+__pycache__/
+*.pyc
+# 播客音频与转录稿（不应入仓）
+podcast_inbox/
+*.mp3
+*.wav
+*.m4a
+*.transcript.json

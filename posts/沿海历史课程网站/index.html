@@ -30,7 +30,7 @@
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
-            
+
             <nav class="site-nav">
                 <a href="/blog-pages/" class="nav-link active">全部</a>
                 
@@ -44,7 +44,7 @@
                 
                 <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
-            
+
         </div>
     </header>
     <div class="search-bar container">
@@ -66,7 +66,7 @@
                 <time datetime="2026-06-13">2026年6月13日</time>
                 <span class="reading-time">7 分钟</span>
             </div>
-            
+
             <div class="post-tags">
                 
                 <span class="tag">课程</span>
@@ -80,15 +80,15 @@
                 <span class="tag">中国</span>
                 
             </div>
-            
+
         </div>
     </div>
     <div class="post-body">
-        <hr />
+        <hr/>
 <p>几个月前开始酝酿一套历史课程——以中国沿海城市为路线，从广州出发，一路向北走到大连，在每一座城市停留，讲一段中国与海洋打交道的故事。目标读者是十五岁以上的青少年，但深度接近大学预科水平。</p>
 <p>跟常见的通史不一样，这套课程有一个具体的空间线索：<strong>沿着海岸线走</strong>。广州的鸦片战争、汕头的移民潮、福州的马尾船政、温州的民间经济、台州的倭寇、杭州的南宋、上海的租界、连云港的铁路、青岛的殖民规划、天津的北洋、秦皇岛的长城、大连的三国占领史——每个城市都有自己的主题人物和核心问题。</p>
 <p>内容攒到差不多十二站一百多章大纲的时候，觉得应该有一个专门的地方来放它。不是扔在博客里当普通文章，而是一个<strong>能让人按顺序走完一趟的沉浸式网站</strong>。</p>
-<hr />
+<hr/>
 <h2 id="_1">技术选型：继续零依赖路线</h2>
 <p>上一次搭博客的时候定了一个原则：不引入框架，不用 node_modules，纯 Python + Markdown + Jinja2 模板，推到 GitHub Pages，目标是十年后回来还能跑。</p>
 <p>这次延续这个路线。但课程网站跟博客的需求不一样：</p>
@@ -110,7 +110,6 @@
 <span class="w">    </span><span class="nt">order</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
 <span class="w">  </span><span class="c1"># ...一路往北，到大连收尾</span>
 </code></pre></div>
-
 <div class="codehilite"><pre><span></span><code><span class="c1"># build.py 的核心逻辑</span>
 <span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">:</span>
     <span class="c1"># 加载城市概览（主题、人物、emoji、坐标）</span>
@@ -118,7 +117,6 @@
     <span class="c1"># 生成城市页、各章节页</span>
     <span class="c1"># 生成城市间导航链接（上一站/下一站）</span>
 </code></pre></div>
-
 <p>单个 <code>build.py</code> 大约 170 行，分布在 <code>_site/</code> 下生成近二百个 HTML 文件。</p>
 <h2 id="_2">十二座城市及其坐标</h2>
 <p>每个城市在数据里存了一组经纬度，方便以后升级到真实地图。当前版本用的是 SVG 方案 A——一条抽象海岸线弧线串联十二个点，从南到北依次排开。</p>
@@ -128,9 +126,9 @@
 <p>课程设计了一个内容分层结构：每章可以有故事层、年表层、深挖层、思考层、旅行层、推荐读物，六个层次。不是每章都必须全部填满，但结构先行。</p>
 <p>所以一百多章 Markdown 文件现在全是这个状态：</p>
 <div class="codehilite"><pre><span></span><code>---
-title: &quot;虎门销烟——已知场景，陌生问题&quot;
-city: &quot;广州&quot;
-city_slug: &quot;guangzhou&quot;
+title: "虎门销烟——已知场景，陌生问题"
+city: "广州"
+city_slug: "guangzhou"
 chapter: 4
 total_chapters: 7
 <span class="gu">status: outline</span>
@@ -143,7 +141,6 @@ total_chapters: 7
 【旅行层】空白待写
 【推荐读物】空白待写
 </code></pre></div>
-
 <p>网站上线后，所有章节页会显示这个空白模板，标注「本章正在撰写中」。状态字段从 <code>outline</code> 改成 <code>draft</code> 再改成 <code>published</code>，对应大纲/草稿/完稿三种显示。</p>
 <p>这是一种"先搭骨架后填肉"的策略。骨架先摆在那里，知道自己要填什么、填在哪。事实证明这是对的——如果没有这个框架，我可能会在某个细节里迷失方向，而不是清楚地看到整条海岸线。</p>
 <h2 id="github-actions-python">部署：GitHub Actions 跑一个纯 Python 构建</h2>
@@ -151,9 +148,8 @@ total_chapters: 7
 <p>唯一遇到的问题是 GitHub Pages 的子路径。博客部署在 <code>username.github.io/blog-pages/</code>，课程部署在 <code>username.github.io/coastal-history/</code>。静态资源的路径必须带上子路径前缀，否则 CSS 和链接全部 404。</p>
 <p>解决方法是解析 <code>_config.yml</code> 里的 <code>base_url</code>，自动提取路径前缀，在模板里用 <code>{{ prefix }}</code> 生成所有 URL：</p>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">urllib.parse</span><span class="w"> </span><span class="kn">import</span> <span class="n">urlparse</span>
-<span class="n">SITE_PREFIX</span> <span class="o">=</span> <span class="n">urlparse</span><span class="p">(</span><span class="n">SITE_URL</span><span class="p">)</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="s2">&quot;&quot;</span>
+<span class="n">SITE_PREFIX</span> <span class="o">=</span> <span class="n">urlparse</span><span class="p">(</span><span class="n">SITE_URL</span><span class="p">)</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)</span> <span class="ow">or</span> <span class="s2">""</span>
 </code></pre></div>
-
 <p>然后在 <code>base.html</code> 里把 <code>&lt;link rel="stylesheet" href="{{ prefix }}/static/style.css"&gt;</code>。这个细节在本地开发时完全不会暴露，只有部署到 Pages 子路径下才会炸。炸了一次之后，所有链接都加上了前缀。</p>
 <h2 id="_4">关于写作方法的题外话</h2>
 <p>整套大纲——十二座城市、一百多章、每章的主题人物和标题——不是在编辑文档里敲出来的，而是在一个 Claude 自定义 skill 里跟 AI 对话式地、一站一站讨论出来的。</p>
@@ -181,7 +177,6 @@ total_chapters: 7
         <span class="prev-next-title">龙虾冷了，预制菜时代来了：数字义乌重写 AI 价值链？</span>
     </a>
     
-    
 </nav>
 
 <script>
@@ -198,6 +193,7 @@ total_chapters: 7
     update();
 })();
 </script>
+
 
     </main>
     <footer class="site-footer">

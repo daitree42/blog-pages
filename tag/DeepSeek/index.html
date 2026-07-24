@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
-    <title>树</title>
+    <title>DeepSeek -- 树</title>
     <link rel="stylesheet" href="/blog-pages/static/style.css">
     <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
 </head>
@@ -30,9 +30,9 @@
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
-            
+
             <nav class="site-nav">
-                <a href="/blog-pages/" class="nav-link active">全部</a>
+                <a href="/blog-pages/" class="nav-link">全部</a>
                 
                 <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
                 
@@ -44,7 +44,7 @@
                 
                 <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
-            
+
         </div>
     </header>
     <div class="search-bar container">
@@ -56,108 +56,84 @@
         
 
 
-<a href="/blog-pages/posts/金价还会再砸出一个坑吗/" class="recommend-banner">
-    <span class="recommend-badge">推荐</span>
-    <span class="recommend-title">金价还会再砸出一个坑吗？</span>
-    <span class="recommend-arrow">→</span>
-</a>
-
 <section class="article-list">
     
+    <article class="article-item article-featured">
         
+        <div class="featured-badge">Ai技术</div>
+        <h2 class="article-title featured-title">
+            <a href="/blog-pages/posts/Claude Code 接入 DeepSeek/">Claude Code + DeepSeek 完整解决方案文档</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-05-30">2026年5月30日</time>
+            <span class="reading-time">3 分钟</span>
+        </div>
+
+        <p class="article-description featured-description">环境说明设备：Android 手机终端：Termux系统：Ubuntu（通过 proot-distro 安装）目标：用 DeepSeek API 驱动 Claude Code第一步：确认运行环境问题：Claude Code 在 Termux 里直接运行报错：Nativebinariesforlinu</p>
         
-        <article class="article-item article-featured">
-            <div class="featured-badge">Ai技术</div>
-            <h2 class="article-title featured-title">
-                <a href="/blog-pages/posts/Claude Code 接入 DeepSeek/">Claude Code + DeepSeek 完整解决方案文档</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-30">2026年5月30日</time>
-                <span class="reading-time">3 分钟</span>
-            </div>
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">💻</span>
+            <a href="/blog-pages/posts/DeepSeek 代理修复/">用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-05-29">2026年5月29日</time>
+            <span class="reading-time">3 分钟</span>
+        </div>
+        
+        <div class="article-tags">
             
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">DeepSeek</span>
-                
-                <span class="tag">Termux</span>
-                
-                <span class="tag">Android</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
+            <span class="tag">Claude</span>
             
-            <p class="article-description featured-description">一份从零到一的完整操作手册，记录在安卓 Termux 的 Ubuntu 容器中运行 Claude Code 并接入 DeepSeek API 的全过程，含 proxy 代理方案和故障排查表。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/DeepSeek 代理修复/">用 20 行 Node.js 为 DeepSeek 修复 Claude Code 的 system 消息 400 错误</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-29">2026年5月29日</time>
-                <span class="reading-time">3 分钟</span>
-            </div>
+            <span class="tag">Code</span>
             
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">DeepSeek</span>
-                
-                <span class="tag">Node.js</span>
-                
-                <span class="tag">代理</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
+            <span class="tag">DeepSeek</span>
             
-            <p class="article-description">Claude Code 在 DeepSeek V4 Flash 上频繁报 400 格式错误？一条 proxy 搞定——把多条 system 消息悄悄转为 user 消息。</p>
-        </article>
-        
-        
-        
-        <article class="article-item">
-            <h2 class="article-title">
-                <span class="card-emoji">💻</span>
-                <a href="/blog-pages/posts/Termux 上运行 Claude Code/">移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）</a>
-            </h2>
-            <div class="article-meta">
-                <time class="article-date" datetime="2026-05-26">2026年5月26日</time>
-                <span class="reading-time">5 分钟</span>
-            </div>
+            <span class="tag">Node.js</span>
             
-            <div class="article-tags">
-                
-                <span class="tag">Claude</span>
-                
-                <span class="tag">Code</span>
-                
-                <span class="tag">Termux</span>
-                
-                <span class="tag">Android</span>
-                
-                <span class="tag">DeepSeek</span>
-                
-                <span class="tag">教程</span>
-                
-            </div>
+            <span class="tag">代理</span>
             
-            <p class="article-description">完整记录如何利用 PRoot 虛擬化技術繞過架構限制，在手機上完美部署 Claude Code，並透過環境變量將其靈魂替換為極具性價比的 DeepSeek v4 API。</p>
-        </article>
+            <span class="tag">教程</span>
+            
+        </div>
         
+        <p class="article-description">把 Claude Code 接到 DeepSeek 的 V4 Flash 模型上，价格便宜量又足，这是很多开发者的首选方案。但跑起来之后，时不时就会迎面砸来一个 400 错误，说消息格式不对。仔细一看，Claude Code 在发起请求时，会在messages数组里塞多条role: &#34;system&#34;</p>
         
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">💻</span>
+            <a href="/blog-pages/posts/Termux 上运行 Claude Code/">移动端極客實錄：在安卓 Termux 上完美運行 Claude Code（借殼 DeepSeek v4）</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-05-26">2026年5月26日</time>
+            <span class="reading-time">5 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">Claude</span>
+            
+            <span class="tag">Code</span>
+            
+            <span class="tag">Termux</span>
+            
+            <span class="tag">Android</span>
+            
+            <span class="tag">DeepSeek</span>
+            
+            <span class="tag">教程</span>
+            
+        </div>
+        
+        <p class="article-description">在大模型與 AI Agent 爆發的時代，Anthropic 官方推出的終端代碼助手Claude Code憑藉強大的多文件讀寫、自動 Git 管理和指令執行能力，成為了開發者的神器。然而，官方並沒有對安卓（Termux）環境提供原生支持，且其綁定的官方 API 價格不菲。本文將完整記錄如何利用PRo</p>
+        
+    </article>
     
 </section>
 

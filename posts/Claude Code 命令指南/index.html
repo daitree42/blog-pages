@@ -30,7 +30,7 @@
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
-            
+
             <nav class="site-nav">
                 <a href="/blog-pages/" class="nav-link active">全部</a>
                 
@@ -44,7 +44,7 @@
                 
                 <a href="/blog-pages/archive/" class="nav-link">存档</a>
             </nav>
-            
+
         </div>
     </header>
     <div class="search-bar container">
@@ -66,7 +66,7 @@
                 <time datetime="2026-05-26">2026年5月26日</time>
                 <span class="reading-time">4 分钟</span>
             </div>
-            
+
             <div class="post-tags">
                 
                 <span class="tag">Claude</span>
@@ -76,11 +76,11 @@
                 <span class="tag">命令行工具</span>
                 
             </div>
-            
+
         </div>
     </div>
     <div class="post-body">
-        <hr />
+        <hr/>
 <p>Claude Code 是一个终端里的 AI 编程助手，和 Claude 网页版不同，它在命令行里工作，能直接读写文件、执行命令、管理整个项目。而它的斜杠命令（slash commands）是控制这个工具最直接的方式。</p>
 <p>之前一直以为 Claude Code 只有 /help 和 /clear 几个简单命令，仔细查了一下，发现内置命令比预想的多不少。</p>
 <h2 id="_1">一、内置命令完整列表</h2>
@@ -165,7 +165,6 @@
 运行构建，然后部署到 GitHub Pages：
 cd /root/blog &amp;&amp; python3 publish.py &amp;&amp; bash /root/blog/deploy.sh
 </code></pre></div>
-
 <p>之后在 Claude Code 里输入 <code>/publish</code>，Claude 就会读取这个文件并执行你写的指令。文件里可以包含步骤说明、shell 命令、检查清单等。</p>
 <p>这意味着你可以把一切重复性的工作流变成一条命令：发布博客、运行测试、部署服务、格式化代码。只要写一次 Markdown 就行。</p>
 <h2 id="_2">三、实用组合建议</h2>
@@ -180,12 +179,11 @@ cd /root/blog &amp;&amp; python3 publish.py &amp;&amp; bash /root/blog/deploy.sh
 <div class="codehilite"><pre><span></span><code><span class="gh"># 写周报</span>
 
 请根据本周的 git 提交记录，生成一份周报草稿：
-<span class="k">1.</span> 运行 git log --since=&quot;7 days ago&quot; --oneline
+<span class="k">1.</span> 运行 git log --since="7 days ago" --oneline
 <span class="k">2.</span> 分类整理提交记录（新功能、修复、重构）
 <span class="k">3.</span> 用正式语气写一段工作进展摘要
 <span class="k">4.</span> 列出下周计划，留空待填写
 </code></pre></div>
-
 <p>输入 <code>/周报</code> 就能生成一份草稿，省去逐条翻提交记录的功夫。</p>
 <h2 id="_4">小结</h2>
 <p>Claude Code 的斜杠命令系统设计得比较克制——内置命令不多，但覆盖了核心需求。自定义命令的机制才是真正灵活的部分，它把工具的能力边界交到了用户手里。</p>
@@ -208,7 +206,6 @@ cd /root/blog &amp;&amp; python3 publish.py &amp;&amp; bash /root/blog/deploy.sh
         <span class="prev-next-title">给纯 Python 静态博客加了四个功能</span>
     </a>
     
-    
 </nav>
 
 <script>
@@ -225,6 +222,7 @@ cd /root/blog &amp;&amp; python3 publish.py &amp;&amp; bash /root/blog/deploy.sh
     update();
 })();
 </script>
+
 
     </main>
     <footer class="site-footer">
