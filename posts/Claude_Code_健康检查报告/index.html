@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>Claude Code 健康检查报告 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/bo-ke-bi-ji/" class="nav-link">播客笔记</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-uncategorized">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">ClaudeCode</div>
+            <h1 class="post-title">Claude Code 健康检查报告</h1>
+            <div class="post-meta">
+                <time datetime="2026-07-28">2026年7月28日</time>
+                <span class="reading-time">2 分钟</span>
+            </div>
+
+            <div class="post-tags">
+                
+                <span class="tag">Claude Code</span>
+                
+                <span class="tag">健康检查</span>
+                
+                <span class="tag">性能优化</span>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="post-body">
+        <p>本文记录了在一个实际项目中对 Claude Code 执行 <code>/doctor</code> 健康检查的完整过程和结果。</p>
+<h2>什么是 <code>/doctor</code></h2>
+<p><code>/doctor</code> 是 Claude Code 内置的体检命令，它会检查：</p>
+<ol>
+<li><strong>安装健康</strong> — 重复安装、破损的配置文件、冲突的 agent 定义</li>
+<li><strong>未使用的扩展</strong> — skill、MCP 服务器、插件中有哪些从未被调用过</li>
+<li><strong>CLAUDE.md 去重</strong> — 本地配置与仓库文件之间的矛盾和重复</li>
+<li><strong>可推导的内容</strong> — CLAUDE.md 中那些用几条命令就能从代码库获取的信息</li>
+<li><strong>延迟加载迁移</strong> — 把常驻内存的内容改为按需加载（skill）</li>
+<li><strong>慢钩子</strong> — 配置的 hook 有没有拖慢会话</li>
+<li><strong>版本更新</strong> — 是不是最新版</li>
+<li><strong>权限模式</strong> — 是否可以用自动模式减少提示</li>
+<li><strong>被拒绝的命令</strong> — 频繁被拒绝的只读命令，考虑预批准</li>
+</ol>
+<h2>环境概况</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原版本</td>
+<td>2.1.215</td>
+</tr>
+<tr>
+<td>安装方式</td>
+<td>npm global（npm 全局安装）</td>
+</tr>
+<tr>
+<td>自动更新</td>
+<td>已关闭（用户设置）</td>
+</tr>
+<tr>
+<td>会话记录窗口</td>
+<td>8 个会话，覆盖 9 天（Jul 20–28, 2026）</td>
+</tr>
+<tr>
+<td>使用统计</td>
+<td>启动 70 次</td>
+</tr>
+</tbody>
+</table>
+<h2>检查结果摘要</h2>
+<p>整体来说健康状况良好。最大的发现是 <strong>25 个 skill 全部零使用</strong>——它们每次会话都占用了技能列表的上下文空间。</p>
+<h3>发现一：未使用的 skill（25 个）</h3>
+<p>用户级别的 15 个 skill 全部零使用：agent-reach、brainstorming、coastal-china-history、data-journalism 等。项目级别的 11 个 skill（deep-reader、docx、history-tutor、interview-me、pdf、universal-reader 等）同样零使用。</p>
+<p>这些 skill 的 name 和 description 在每次会话中都会加载到上下文中，大约消耗 <strong>350–400 estimator tokens</strong>。</p>
+<p><strong>操作</strong>：在 <code>.claude/settings.local.json</code> 中添加 <code>skillOverrides</code>，将全部 25 个设为 <code>"off"</code>。</p>
+<h3>发现二：CLAUDE.md 修剪</h3>
+<p>项目根目录的 CLAUDE.md 有 4,867 字节（约 1,217 tokens）。发现两个可以安全移除的章节：</p>
+<ul>
+<li><strong>项目结构</strong>（~16 行）— 文件树，<code>ls -R</code> 即可获得</li>
+<li><strong>快速开始</strong>（~6 行）— <code>cd no1; python city_research.py</code>，读脚本名就知道</li>
+</ul>
+<p><strong>操作</strong>：删除这两节，每次会话节省约 100–125 tokens。</p>
+<h3>发现三：博客工作流迁移到 skill</h3>
+<p>CLAUDE.md 中的「博客管理」章节包含详细的发布命令——新建文章、播客转录、部署。这些命令只在博客维护时用到，不需要每次会话都加载。</p>
+<p><strong>操作</strong>：将完整命令迁移到 <code>.claude/skills/blog-workflow/SKILL.md</code>，CLAUDE.md 中只保留简短引用和 <code>/blog-workflow</code> 的提示。节省约 150 tokens/会话。</p>
+<p>这也是本篇文章能在这里的原因——我现在通过这个 skill 的指引完成了发布。</p>
+<h3>发现四：版本升级</h3>
+<p>从 2.1.215 升级到 <strong>2.1.220</strong>（npm registry 上的最新版）。因为 <code>autoUpdates: false</code> 禁用了后台自动更新，所以需要手动运行 <code>npm install -g @anthropic-ai/claude-code@latest</code>。</p>
+<h3>发现五：自动模式</h3>
+<p><code>permissions.defaultMode</code> 之前未设置，默认为手动模式（每次工具调用都提示）。现在设置为 <code>"auto"</code>——安全分类器会自动批准常规操作（读文件、搜索代码等），只在有风险的操作时才提示。如果模型不支持自动模式，CLI 会自动回退。</p>
+<h3>无需处理的项目</h3>
+<table>
+<thead>
+<tr>
+<th>检查</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>本地/仓库去重</td>
+<td>无本地 CLAUDE.md 文件</td>
+</tr>
+<tr>
+<td>慢钩子</td>
+<td>无钩子配置或执行记录</td>
+</tr>
+<tr>
+<td>上下文过重</td>
+<td>正常范围（~3,100 est. tokens）</td>
+</tr>
+<tr>
+<td>预批准命令</td>
+<td>只有 1 次拒绝，是 <code>pip install</code>（写操作）</td>
+</tr>
+</tbody>
+</table>
+<h2>总节省</h2>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th style="text-align: center;">节省 tokens/会话</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>禁用 25 个 skill</td>
+<td style="text-align: center;">~350–400</td>
+</tr>
+<tr>
+<td>修剪 CLAUDE.md</td>
+<td style="text-align: center;">~100–125</td>
+</tr>
+<tr>
+<td>博客工作流迁移 skill</td>
+<td style="text-align: center;">~150</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td style="text-align: center;"><strong>~600–700</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>总体评价</h2>
+<p>Claude Code 的 <code>/doctor</code> 命令是一个非常实用的自检工具。这次检查发现的问题集中在「积累的未使用扩展」和「文档优化」上——这是长期使用的自然结果。所有修改都可逆，无破坏性操作。</p>
+<p>如果你也在长期使用 Claude Code，建议定期运行 <code>/doctor</code> 做一次清理，可以让每次会话的上下文更干净、响应更快。</p>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/2026-07-25-Our_Ancestors_Were_M-The_Revolutionary_Black_L/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">黑人效忠派的自由之路</span>
+    </a>
+    
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>

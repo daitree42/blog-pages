@@ -1,5 +1,25 @@
 [
   {
+    "title": "Claude Code 健康检查报告",
+    "url": "posts/Claude_Code_健康检查报告/",
+    "date": "2026年7月28日",
+    "tags": [
+      "Claude Code",
+      "健康检查",
+      "性能优化"
+    ],
+    "category": "ClaudeCode",
+    "excerpt": "用 `/doctor` 命令对 Claude Code 做了一次全面的健康检查——清理了 25 个从未使用的 skill、修剪了 CLAUDE.md、将博客工作流迁移到按需加载的 skill、升级到最新版本、开启了自动权限模式。记录过程和结果。"
+  },
+  {
+    "title": "黑人效忠派的自由之路",
+    "url": "posts/2026-07-25-Our_Ancestors_Were_M-The_Revolutionary_Black_L/",
+    "date": "2026年7月25日",
+    "tags": [],
+    "category": "未分类",
+    "excerpt": "本期播客中，主持人与嘉宾Tressie McMillan Cottom讲述了黑人效忠派大卫·乔治的故事。从奴隶制下逃亡，到在美国革命中为英国而战，再到战后移民新斯科舍，大卫·乔治在种族、信仰与生存之间做出艰难抉择。这个故事揭示了早期美国历史中黑人的复杂处境，以及他们在压迫中寻求自由与尊严的斗争。"
+  },
+  {
     "title": "892：困在巴士上",
     "url": "posts/892_Trapped_on_a_Bus/",
     "date": "2026年7月19日",

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}播客笔记{% endblock %}
+
+{% block content %}
+  {% if shows %}
+    <div class="show-grid">
+      {% for show in shows %}
+        <a href="{{ site_prefix }}/show/{{ show.slug }}/" class="show-card">
+          <div class="show-name">
+            <span class="show-color-dot" style="background:{{ show.color }}"></span>
+            {{ show.name }}
+          </div>
+          {% if show.description %}
+            <div class="show-desc">{{ show.description }}</div>
+          {% endif %}
+          <div class="show-meta">
+            {{ show.episode_count }} 集
+            {% if show.host %} · {{ show.host }}{% endif %}
+            {% if show.language and show.language != "zh" %} · {{ show.language|upper }}{% endif %}
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="empty-state">
+      <div class="empty-icon">🎙️</div>
+      <p>还没有播客节目</p>
+      <p>在 <code>shows.json</code> 中添加节目，在 <code>transcripts/</code> 中添加转录文本</p>
+    </div>
+  {% endif %}
+{% endblock %}

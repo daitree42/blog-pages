@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}播客笔记{% endblock %}</title>
+  <link rel="stylesheet" href="{{ site_prefix }}/static/style.css">
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      {% block header %}
+        <h1><a href="{{ site_prefix }}/" style="color:inherit;text-decoration:none;">🎙️ 播客笔记</a></h1>
+      {% endblock %}
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <p>播客笔记 &middot; 个人转录存档</p>
+    </footer>
+  </div>
+</body>
+</html>

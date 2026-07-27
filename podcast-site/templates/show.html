@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}{{ show.name }} - 播客笔记{% endblock %}
+
+{% block header %}
+  <a href="{{ site_prefix }}/" class="back-link">← 所有节目</a>
+  <h1>{{ show.name }}</h1>
+{% endblock %}
+
+{% block content %}
+  <div class="show-info">
+    {% if show.description %}<p>{{ show.description }}</p>{% endif %}
+    <p>
+      {% if show.host %}<strong>主持：</strong>{{ show.host }}<br>{% endif %}
+      {% if show.link %}<strong>链接：</strong><a href="{{ show.link }}" target="_blank">{{ show.link }}</a><br>{% endif %}
+      <strong>集数：</strong>{{ episodes|length }} 集
+      {% if show.language and show.language != "zh" %}
+        · <strong>语言：</strong>{{ show.language|upper }}
+      {% endif %}
+    </p>
+  </div>
+
+  {% if episodes %}
+    <div class="episode-list">
+      {% for ep in episodes %}
+        <a href="{{ site_prefix }}/episode/{{ ep.slug }}/" class="episode-item" style="display:block;">
+          <div class="ep-date">{{ ep.date }}</div>
+          <div class="ep-title">{{ ep.title }}</div>
+          {% if ep.summary %}
+            <div class="ep-summary">{{ ep.summary[:120] }}{% if ep.summary|length > 120 %}…{% endif %}</div>
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="empty-state">
+      <div class="empty-icon">📄</div>
+      <p>该节目还没有转录文本</p>
+    </div>
+  {% endif %}
+{% endblock %}

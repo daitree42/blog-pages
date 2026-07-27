@@ -1,0 +1,209 @@
+[
+  {
+    "slug": "propublica-narrated",
+    "name": "ProPublica Narrated",
+    "description": "ProPublica 官方出品的语音朗读版节目，将该机构最优质的长篇调查报道转换为声音形式呈献给听众。",
+    "publisher": "ProPublica",
+    "link": "https://podcasts.apple.com/podcast/propublica-narrated",
+    "color": "#c0392b",
+    "language": "en"
+  },
+  {
+    "slug": "paper-trail",
+    "name": "Paper Trail",
+    "description": "聚焦调查记者如何通过文件、档案与数据线索（Paper Trail）层层剖析，揭露幕后真相与权力内幕。",
+    "publisher": "ProPublica",
+    "link": "https://podcasts.apple.com/podcast/paper-trail",
+    "color": "#a93226",
+    "language": "en"
+  },
+  {
+    "slug": "throughline",
+    "name": "Throughline",
+    "description": "NPR 旗下的深度历史播客，主打「回到过去以理解当下」，将当下的重大新闻事件与深层的历史渊源和脉络联系起来。",
+    "publisher": "NPR",
+    "link": "https://podcasts.apple.com/podcast/throughline",
+    "color": "#7d3c98",
+    "language": "en"
+  },
+  {
+    "slug": "the-rest-is-history",
+    "name": "The Rest Is History",
+    "description": "由英国著名历史学家 Tom Holland 和 Dominic Sandbrook 主持的全球顶流历史播客，语言幽默风趣，深入浅出地拆解世界历史的经典瞬间与人物。",
+    "publisher": "Goalhanger Podcasts",
+    "link": "https://podcasts.apple.com/podcast/the-rest-is-history",
+    "color": "#d35400",
+    "language": "en"
+  },
+  {
+    "slug": "hard-fork",
+    "name": "Hard Fork",
+    "description": "由 Kevin Roose 和 Casey Newton 主持，《纽约时报》关于前沿科技、人工智能、硅谷动态及数字未来趋势的对话节目。",
+    "publisher": "The New York Times",
+    "link": "https://podcasts.apple.com/podcast/hard-fork",
+    "color": "#2c3e50",
+    "language": "en"
+  },
+  {
+    "slug": "pivot",
+    "name": "Pivot",
+    "description": "科技评论家 Kara Swisher 与纽约大学教授 Scott Galloway 联手，对科技、商业、政治及大众文化中的热点事件进行犀利点评。",
+    "publisher": "New York Magazine / Vox Media",
+    "link": "https://podcasts.apple.com/podcast/pivot",
+    "color": "#16a085",
+    "language": "en"
+  },
+  {
+    "slug": "stateside-with-kai-and-carter",
+    "name": "Stateside with Kai and Carter",
+    "description": "《卫报》推出的美国政治观察节目，由 Kai Wright 与 Carter Sherman 主持，深入探讨美国政治局势与社会议题。",
+    "publisher": "The Guardian",
+    "link": "https://podcasts.apple.com/podcast/stateside-with-kai-and-carter",
+    "color": "#2980b9",
+    "language": "en"
+  },
+  {
+    "slug": "american-friction",
+    "name": "American Friction",
+    "description": "专注于美国政治分歧、文化冲突以及选举动向的政治分析与评论播客。",
+    "publisher": "Podmasters",
+    "link": "https://podcasts.apple.com/podcast/american-friction",
+    "color": "#34495e",
+    "language": "en"
+  },
+  {
+    "slug": "interesting-times",
+    "name": "Interesting Times with Ross Douthat",
+    "description": "《纽约时报》专栏作家 Ross Douthat 主持的深度访谈节目，与各界学者和思想者探讨文化、宗教、政治与时代演变。",
+    "publisher": "New York Times Opinion",
+    "link": "https://podcasts.apple.com/podcast/interesting-times-with-ross-douthat",
+    "color": "#5d6d7e",
+    "language": "en"
+  },
+  {
+    "slug": "embedded",
+    "name": "Embedded",
+    "description": "NPR 的旗舰沉浸式调查新闻播客，记者亲自深入新闻事件现场与报道对象生活，带来具备现场感与人性的非虚构故事。",
+    "publisher": "NPR",
+    "link": "https://podcasts.apple.com/podcast/embedded",
+    "color": "#8e44ad",
+    "language": "en"
+  },
+  {
+    "slug": "sources-and-methods",
+    "name": "Sources & Methods with Mary Louise Kelly",
+    "description": "由 NPR 资深主持人 Mary Louise Kelly 主持，带听众深入情报、国家安全、外交政要以及新闻调查背后的消息来源与采访方法。",
+    "publisher": "NPR",
+    "link": "https://podcasts.apple.com/podcast/sources-and-methods",
+    "color": "#9b59b6",
+    "language": "en"
+  },
+  {
+    "slug": "the-journal",
+    "name": "The Journal.",
+    "description": "《华尔街日报》与 Spotify 联合打造的每日播客，围绕金钱、商业与权力，深入探究单一重大商业新闻。",
+    "publisher": "The Wall Street Journal & Spotify Studios",
+    "link": "https://podcasts.apple.com/podcast/the-journal",
+    "color": "#1a5276",
+    "language": "en"
+  },
+  {
+    "slug": "big-take-daily",
+    "name": "Big Take Daily",
+    "description": "彭博社出品的每日财经与商业深度解读播客，挖掘全球市场与宏观经济背后的实质影响。",
+    "publisher": "Bloomberg & iHeartPodcasts",
+    "link": "https://podcasts.apple.com/podcast/big-take-daily",
+    "color": "#f39c12",
+    "language": "en"
+  },
+  {
+    "slug": "the-news-agents",
+    "name": "The News Agents",
+    "description": "由前 BBC 顶尖记者 Emily Maitlis、Jon Sopel 及 Lewis Goodall 主持，英国极具影响力的每日新闻与政治剖析播客。",
+    "publisher": "Global",
+    "link": "https://podcasts.apple.com/podcast/the-news-agents",
+    "color": "#e74c3c",
+    "language": "en"
+  },
+  {
+    "slug": "the-daily",
+    "name": "The Daily",
+    "description": "《纽约时报》标杆级别的每日新闻播客，每集约 20 分钟，由专业记者带领听众走进当日最核心的一条热点新闻。",
+    "publisher": "The New York Times",
+    "link": "https://podcasts.apple.com/podcast/the-daily",
+    "color": "#1c2833",
+    "language": "en"
+  },
+  {
+    "slug": "the-global-story",
+    "name": "The Global Story",
+    "description": "BBC 世界服务出品的每日国际新闻播客，聚焦影响全球局势的重大事件，提供多角度国际视野。",
+    "publisher": "BBC World Service",
+    "link": "https://podcasts.apple.com/podcast/the-global-story",
+    "color": "#c0392b",
+    "language": "en"
+  },
+  {
+    "slug": "today-in-focus",
+    "name": "Today in Focus",
+    "description": "英国《卫报》出品的每日旗舰新闻播客，结合实地报道与深入访谈，剖析全球重大新闻事件背后的故事。",
+    "publisher": "The Guardian",
+    "link": "https://podcasts.apple.com/podcast/today-in-focus",
+    "color": "#2471a3",
+    "language": "en"
+  },
+  {
+    "slug": "consider-this",
+    "name": "Consider This from NPR",
+    "description": "NPR 傍晚时段的每日新闻节目，用 15 分钟左右的时间，对当天最核心的一条焦点新闻进行全方位解析。",
+    "publisher": "NPR",
+    "link": "https://podcasts.apple.com/podcast/consider-this",
+    "color": "#af7ac5",
+    "language": "en"
+  },
+  {
+    "slug": "state-of-the-world",
+    "name": "State of the World from NPR",
+    "description": "由 NPR 驻外记者团队带来的每日国际动态简报，汇聚世界各地的现场观察与局势分析。",
+    "publisher": "NPR",
+    "link": "https://podcasts.apple.com/podcast/state-of-the-world",
+    "color": "#a569bd",
+    "language": "en"
+  },
+  {
+    "slug": "up-first",
+    "name": "Up First from NPR",
+    "description": "NPR 旗下的晨间新闻速递，用 10-15 分钟梳理当天早晨最重要的三大新闻热点。",
+    "publisher": "NPR",
+    "link": "https://podcasts.apple.com/podcast/up-first",
+    "color": "#bb8fce",
+    "language": "en"
+  },
+  {
+    "slug": "today-explained",
+    "name": "Today, Explained",
+    "description": "Vox 旗下的每日解释类新闻播客，以生动通俗的方式讲解复杂的新闻话题、文化现象与公共政策。",
+    "publisher": "Vox",
+    "link": "https://podcasts.apple.com/podcast/today-explained",
+    "color": "#1abc9c",
+    "language": "en"
+  },
+  {
+    "slug": "our-ancestors-were-messy",
+    "name": "Our Ancestors Were Messy",
+    "description": "入选 Tribeca 电影节的黑人历史喜剧播客。以幽默、接地气的视角探索黑人历史人物和事件中那些真实、混乱又充满戏剧性的过往细节。",
+    "publisher": "Coco Hill Productions",
+    "link": "https://podcasts.apple.com/podcast/our-ancestors-were-messy",
+    "color": "#e67e22",
+    "language": "en"
+  },
+  {
+    "slug": "radiolab",
+    "name": "Radiolab",
+    "description": "老牌现象级科普与哲学播客，以极具创意和艺术感的声音设计闻名。节目探讨科学、哲学与人类经验的交汇点，把复杂的科学概念讲得极其动人。",
+    "publisher": "WNYC Studios",
+    "link": "https://podcasts.apple.com/podcast/radiolab",
+    "color": "#2ecc71",
+    "language": "en"
+  }
+]

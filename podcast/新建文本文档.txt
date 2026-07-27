@@ -1,0 +1,2 @@
+  cd C:/cc/blog-pages
+  python process.py podcast/你的音频文件名.mp3 --show "播客名" --episode "第X期"

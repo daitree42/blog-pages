@@ -7,3 +7,4 @@ podcast_inbox/
 *.wav
 *.m4a
 *.transcript.json
+.env
