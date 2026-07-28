@@ -1,0 +1,18 @@
+📂 本地保存
+
+  - 所有文章保存为 blog-pages/articles/{slug}/draft.md
+  - 播客站点转录：podcast-site/transcripts/{show-slug}/
+
+  🏗️ 已完成构建
+
+  - 博客站点 ✅ 构建成功（837篇文章）
+  - 播客站点 ✅  构建成功（8集，24个节目）
+
+  ❌ 需要手动操作
+
+  Git push 被安全策略阻止，请手动运行以下命令部署：
+
+  cd /c/cc/blog-pages
+  git add -A
+  git commit -m "feat: 整理播客转录文章——添加元数据、讲者标注、文字润色"
+  git push origin main

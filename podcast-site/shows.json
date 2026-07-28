@@ -205,5 +205,14 @@
     "link": "https://podcasts.apple.com/podcast/radiolab",
     "color": "#2ecc71",
     "language": "en"
+  },
+  {
+    "slug": "this-american-life",
+    "name": "This American Life",
+    "description": "美国公共广播电台（WBEZ Chicago）出品的旗舰叙事类播客，由 Ira Glass 主持，每期围绕一个主题讲述多个真实故事，是非虚构叙事的标杆之作。",
+    "publisher": "WBEZ Chicago",
+    "link": "https://www.thisamericanlife.org",
+    "color": "#c0392b",
+    "language": "en"
   }
 ]
