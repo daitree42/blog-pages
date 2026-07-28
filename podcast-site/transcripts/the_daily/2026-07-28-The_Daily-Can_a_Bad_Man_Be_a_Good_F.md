@@ -1,0 +1,1787 @@
+# Can a Bad Man Be a Good Father
+
+> 栏目：播客
+> 日期：2026-07-28
+> 阅读时间：31 分钟
+> 标签：播客，The Daily，NYT
+> 摘要：The Daily · Can a Bad Man Be a Good Father 英文播客中文翻译
+
+<div class="post-body">
+The New York Times app has all the stuff that you may not have seen.  
+纽约时报应用里有许多你可能没见过的内容。
+
+The way the tabs are at the top with all of the different sections.  
+顶部标签页划分出不同版块。
+
+I can immediately navigate to something that matches what I'm feeling.  
+我能立刻找到符合当下心情的内容。
+
+I owe the games always.  
+我永远沉迷于游戏。
+
+Don't want the money, don't want the word.  
+不想要钱，也不想要文字。
+
+I love how much content it exposed me to.  
+我喜欢它让我接触到如此多的内容。
+
+Things that I never would have thought to turn to a news app for.  
+那些我从未想过会从新闻应用里获取的东西。
+
+This app is essential.  
+这个应用不可或缺。
+
+The New York Times app.  
+纽约时报应用。
+
+All of the times, all in one place.  
+所有内容，一应俱全。
+
+Download it now at nytimes.com slash app.  
+立即在 nytimes.com/app 下载。
+
+From New York Times, I'm Michael Babarro.  
+我是《纽约时报》的迈克尔·巴巴罗。
+
+This is the daily on Sunday.  
+这里是《星期日日报》。
+
+The writer Tom Juno is a student of flawed men.  
+作家汤姆·朱诺（Tom Juno）是研究有缺陷男人的学者。
+
+In a long and varied career in American magazines, it places like GQ and Esquire, Tom Profile complicated figures like Norman Mailer, Kevin Spacey, and Tony Curtis.  
+他在美国杂志界漫长而多元的职业生涯中，曾在《GQ》和《Esquire》等刊物工作，为诺曼·梅勒（Norman Mailer）、凯文·史派西（Kevin Spacey）和托尼·柯蒂斯（Tony Curtis）等复杂人物撰写过人物特写。
+
+But in all of those profiles, another flawed man loomed in the background.  
+但在所有这些人物特写背后，还有另一个有缺陷的男人若隐若现。
+
+One who informed how Tom thought about the very nature of masculinity and manhood.  
+这个人塑造了汤姆对男子气概和男性本质的看法。
+
+And that was his father, Lou.  
+那就是他的父亲卢（Lou）。
+
+A man who had a life full of secrets.  
+一个生活充满秘密的男人。
+
+Tom's relationship with his dad is the subject of his new book, which is part memoir and part detective story.  
+汤姆与父亲的关系是他的新书的主题，这本书部分是回忆录，部分是侦探故事。
+
+It's called, in the days of my youth, I was told what it means to be a man.  
+书名为《在我年轻的日子里，有人告诉我什么是男人》。
+
+And it's a powerful meditation on what we need from a father, what we inherit from a father, and how we somehow make peace with the gap in between those.  
+这是一次深刻的思考，关于我们需要从父亲那里得到什么，从父亲那里继承了什么，以及我们如何设法与两者之间的差距和解。
+
+Today, on Father's Day, my conversation with Tom Juno, it's Sunday, June 21st.  
+今天，父亲节，我与汤姆·朱诺的对话，今天是6月21日，星期日。
+
+Well, welcome to the Sunday Daily.  
+欢迎来到《星期日日报》。
+
+It's so great to be here.  
+能来真是太棒了。
+
+It's an honor to have you.  
+很荣幸邀请到你。
+
+Can I ask you to read from the ulogy that you read your father's funeral?  
+能请你读一下你在父亲葬礼上念的悼词吗？
+
+Sure. Leave it's on page four.  
+当然。在第4页。
+
+Yeah.  
+好的。
+
+So the ulogy had a title.  
+这篇悼词有一个标题。
+
+If you're going to be a bear, be a grizzly.  
+如果你要做一头熊，就做灰熊。
+
+And that was one of my dad's things.  
+那是我父亲的口头禅之一。
+
+My father, dad, pop-up, was not like other fathers.  
+我的父亲，爸爸，老头子，与其他父亲不同。
+
+He was not like other people, period.  
+他根本不像其他人，句号。
+
+A lot of people have told me that he's with Jesus now.  
+很多人告诉我他现在和耶稣在一起了。
+
+Well, with all due respect, I have my doubts.  
+好吧，恕我直言，我对此表示怀疑。
+
+Unless, of course, Jesus has shaved his beard, ditched the sandals, and is drinking a martini at the El Morocco, circa 1955, with Frank and Eva.  
+除非耶稣剃掉了胡子，脱掉了凉鞋，正在1955年左右的El Morocco酒吧与弗兰克（Frank）和伊娃（Eva）一起喝马提尼酒。
+
+This is not to say my father was not a believer.  
+这并不是说我父亲没有信仰。
+
+He had a whole belief system.  
+他有一套完整的信仰体系。
+
+He believed in a lot of things.  
+他相信很多事情。
+
+And what he believed in, he believed in absolutely.  
+他相信的事情，他绝对相信。
+
+He believed that there was not a person in the world whose appearance could not be helped by exposure to the sun, or what he called a fresh burn.  
+他相信世界上没有一个人的外表不能被太阳晒——或者他所说的“新鲜晒伤”——来改善。
+
+He believed that there was not an ailment in the world that could not be cured by salt water.  
+他相信世界上没有一种疾病不能用盐水治愈。
+
+He believed that the way Red Butler treated Scarlet was the way all women should be treated.  
+他相信瑞德·巴特勒（Red Butler）对待斯嘉丽（Scarlet）的方式就是所有女人应该被对待的方式。
+
+And that Clark Gable was robbed when he didn't he when he Oscar for Best Actor in 1939.  
+他还相信克拉克·盖博（Clark Gable）在1939年没有获得奥斯卡最佳男主角奖是被抢劫了。
+
+He believed that the lottery was a game of skill rather than chance.  
+他相信彩票是一种技巧游戏，而不是靠运气。
+
+And that he had won it twice.  
+而且他赢过两次。
+
+But for some reason, Hednik elected to turn in the ticket.  
+但不知为何，埃德尼克（Hednik）选择把票交回去了。
+
+And he believed to the very end that he was going to win again.  
+他一直坚信自己还会再赢。
+
+And then, as he said, then I'll teach you how to live.  
+然后，正如他所说，那时我会教你如何生活。
+
+I mean, just from those brief words, it's very evident that your dad was a larger than life, character.  
+我是说，仅从这些简短的文字中，很明显你父亲是一个传奇般的人物。
+
+Also, he had all these maximums.  
+而且，他有所有这些格言。
+
+He had all these ideas about how men should be.  
+他对男人应该怎样有很多想法。
+
+And he lived by him.  
+而且他身体力行。
+
+And that's the thing about him.  
+这就是他的特点。
+
+So it's not just that he thought that every man should have a fresh burn theoretically.  
+所以他不仅是理论上认为每个男人都应该有新鲜晒伤。
+
+And he, you know, didn't just say where white to the face, or the turtle neck is the most flattering thing a man can wear.  
+而且他不只是说穿白色到脸部，或者高领毛衣是男人穿最好看的。
+
+I mean, he followed all these things religiously.  
+我是说，他虔诚地遵循所有这些。
+
+And they worked.  
+而且它们很有效。
+
+I mean, that's the thing I think that you have to understand, you know, with my dad, is that it all worked.  
+我是说，我认为你必须了解的是，我父亲的这套方法全都奏效了。
+
+I mean, if he walked into a restaurant, you know, every, what am I seeing?  
+我是说，如果他走进一家餐馆，你懂的，你看到的是什么呢？
+
+Yeah, so you saw a guy who was wearing a blue shirt with a white collar, you know, high to the face, a big fat knot, cufflinks, floor shime shoes, skin, the color of mahogany or A1 steak.  
+是的，你会看到一个穿着蓝衬衫白领子的人，衬衫领子高到脸上，打着一个又大又粗的领带结，戴着袖扣，穿着发亮的鞋子，皮肤呈桃花心木色或A1牛排色。
+
+So any sort of synonym that you can figure out for brown.  
+总之是你能想到的任何棕色的同义词。
+
+He was that.  
+他就是那样。
+
+And then he had eyes, the color of short truths.  
+然后他的眼睛，颜色像短诗。
+
+I mean, they were the greenest eyes I've ever seen in any human being.  
+我是说，那是我在任何人身上见过的最绿的眼睛。
+
+They were on fire.  
+它们像在燃烧。
+
+And they were kind of beautiful and entrancing and kind of terrifying at the same time.  
+它们美得令人着迷，同时又有点吓人。
+
+I feel like I'm, I'm looking at Frank Sinatra.  
+我感觉我好像在看弗兰克·辛纳屈（Frank Sinatra）。
+
+Yeah, I mean, so I saw Frank Sinatra once.  
+是的，我见过一次弗兰克·辛纳屈。
+
+And that's all you saw were his blue eyes.  
+你看到的只有他的蓝眼睛。
+
+They were burning like gas jets.  
+它们像煤气火焰一样燃烧。
+
+And that was the same with my dad.  
+我父亲也是一样。
+
+All you saw was his dark skin and his insanely green eyes.  
+你只看到他的深色皮肤和那双疯狂的绿眼睛。
+
+Behind this very masculine appearance, you have said, are some very specific ideas that your dad had about masculinity.  
+在这种非常男性化的外表背后，你说过，是你父亲关于男子气概的一些非常具体的想法。
+
+It wasn't just a veneer, it was a whole philosophy.  
+那不仅仅是一层表面，而是一整套哲学。
+
+So tell me about that.  
+那么请告诉我这些。
+
+Well, so it wasn't just clothes.  
+嗯，所以不仅仅是穿着。
+
+You know, it was also some very specific ideas about manhood.  
+你知道，还有一些关于男性气质的非常具体的想法。
+
+And how a man should be.  
+以及一个男人应该是什么样。
+
+Well, number one, always look a man in the eye.  
+首先，永远要直视一个男人的眼睛。
+
+And number two, always have a firm handshake.  
+第二，永远要有坚定的握手。
+
+Number three, always open the door for a woman.  
+第三，永远要为女士开门。
+
+And then they got a little bit, like if you sort of sort of the basics, they were complex.  
+然后这些规则变得有点复杂，如果你把基础部分梳理一下的话。
+
+There was one time that he told me basically his overall rule for seducing women.  
+有一次他告诉我他勾引女人的总体规则。
+
+And it was, it was tell a smart woman she's beautiful and tell a beautiful woman she's smart.  
+那就是：告诉聪明的女人她很美，告诉美丽的女人她很聪明。
+
+So he had a lot of tips.  
+所以他有很多小窍门。
+
+And they were all acted on.  
+而且他都付诸实践了。
+
+They were all part of who he was.  
+它们是他的一部分。
+
+Where do you think that these lessons about manhood came from?  
+你认为这些关于男性气质的教诲来自哪里？
+
+Upon what was it modeled, as best you could tell?  
+据你所知，它们是以什么为模型的？
+
+As best as I could tell, it was modeled on the movie stars of the late 1930s.  
+据我所知，它们是以20世纪30年代末的电影明星为模型的。
+
+Not his dad.  
+不是他父亲。
+
+Definitely not his dad.  
+绝对不是他父亲。
+
+When we were growing up, my brother, my sister and I, we would always ask him, you know, dad, tell us about your dad.  
+在我们成长过程中，我和我的兄弟姐妹总是问他：“爸爸，给我们讲讲你爸爸的事吧。”
+
+And he would say, in the way he spoke, I never had a father.  
+他会用他特有的方式说：“我从来没有过父亲。”
+
+And then one of us would say, wait a minute, dad, your father calls every couple of months to ask for money.  
+然后我们中会有人说：“等一下，爸爸，你父亲每隔几个月就会打电话来要钱。”
+
+And he would just look at us and repeat, I never had a father.  
+他只会看着我们，重复道：“我从来没有过父亲。”
+
+But he would go to the movies when he was growing up in Brooklyn.  
+但他在布鲁克林长大时会去看电影。
+
+And he absorbed everything.  
+他吸收了所有东西。
+
+He absorbed how to dress from feta stare.  
+他从费塔·斯塔（feta stare）那里学会了如何穿衣。
+
+He absorbed how to talk from carry grant.  
+他从加里·格兰特（Cary Grant）那里学会了如何说话。
+
+He absorbed how to treat women from, you know, from Clark Gable.  
+他从克拉克·盖博（Clark Gable）那里学会了如何对待女人。
+
+And he was a student of all that.  
+他对此如饥似渴地学习。
+
+I mean, the thing about my dad, so he was like, he was a rough kid growing up in Brooklyn.  
+我是说，我父亲是这样一个人：他是在布鲁克林长大的粗野孩子。
+
+But by the time I knew him, he had expunged like every bit of his Brooklyn accent.  
+但当我认识他时，他已经完全改掉了布鲁克林口音。
+
+And a lot of that was because when he was in World War II, he was wounded.  
+这很大程度上是因为他在二战中受伤了。
+
+And then instead of being shipped back to the front, a lieutenant heard him sing and put him in a show.  
+然后，他没有被送回前线，而是被一位中尉听到他唱歌，把他安排进了一场演出。
+
+And so he became, you know, a cruner singing in a traveling army act called Fremen only.  
+于是他成了一个唱小夜曲的歌手，在一个名为“只限男性”（Fremen only）的巡回军队表演中唱歌。
+
+Fremen only, which is almost too on the nose, it really is.  
+“只限男性”，这名字简直太贴切了，真的。
+
+And when my dad came home from World War II, he tried to make it a singer and did not.  
+我父亲二战回家后，试图成为一名歌手，但没有成功。
+
+But one of the things he still did was go down to the basement and tape himself singing to instrumental records.  
+但他仍然会做一件事：到地下室，用乐器伴奏录音带给自己录歌。
+
+And for an audience of himself, for an audience of himself.  
+听众只有他自己，只有他自己。
+
+And so he behaved the way a cruner and his mind was supposed to be.  
+所以他表现得像个他心目中理想的歌手那样。
+
+He behaved the way a cruner was supposed to behave.  
+他的举止就像一个歌手该有的样子。
+
+But he cruned his daily language.  
+但他日常说话也像唱歌一样。
+
+I mean, he was a cruner even when he was talking.  
+我是说，即使谈话时他也像在唱歌。
+
+It was all, you know, a mechanism of seduction of some kind.  
+那都是一种某种程度上的诱惑机制。
+
+He would stand in front of the mirror in the morning.  
+他早上会站在镜子前。
+
+I'd be on my way to school and I'd go in to say hello or goodbye.  
+我准备去上学，会进去打招呼或说再见。
+
+And he would be standing there and his black bikini.  
+他会站在那里，穿着他的黑色比基尼。
+
+In front of this enormous mirror in his room and he would say, look, look at this body.  
+在他房间里的大镜子前，他会说：“看，看看这身体。”
+
+Have you ever seen a body like this?  
+“你见过这样的身体吗？”
+
+And he had a body, I mean, he was built like Charles Atlas.  
+他确实有一副好身材，就像查尔斯·阿特拉斯（Charles Atlas）那样。
+
+How did all of this philosophy manifest in the kind of father that he was to you?  
+所有这些哲学是如何体现在他作为父亲对你的方式上的？
+
+What kind of dad was he?  
+他是怎样一个父亲？
+
+He was actually a really good dad in a lot of different ways.  
+实际上，在很多方面他是个非常好的父亲。
+
+He was attentive.  
+他体贴周到。
+
+He was prescriptive.  
+他喜欢发号施令。
+
+He taught me how to play football.  
+他教我打橄榄球。
+
+He taught me how to box.  
+他教我拳击。
+
+He would kiss me hard, good night on my head.  
+他会用力地亲吻我的头顶道晚安。
+
+Or in the morning when he went away on a trip.  
+或者早上他出门旅行时也是如此。
+
+He was a super attentive dad at the same time.  
+同时他是一个非常细心的父亲。
+
+He was terrifying.  
+但他也很可怕。
+
+Like I was terrified of my father.  
+我很怕我父亲。
+
+He was not a violent person around the house.  
+他在家里不是暴力的人。
+
+But the amount of force that his presence had was just the kind of thing where you felt like if you came too close to him, it was like going too close to the sun that you would be obliterated.  
+但他存在感所带来的那种力量，让你觉得如果离他太近，就像太靠近太阳一样会被毁灭。
+
+The toughest thing about growing up with my dad was having this warm overwhelmingly demonstratively loving person who at the same time was a person I could not be in the same room with, especially when I was like five, six, seven years old, you know, without crying.  
+和父亲一起长大最艰难的事情是，他是一个温暖、极其外露地充满爱意的人，但同时我又无法和他共处一室而不哭，尤其是我五六七岁的时候。
+
+And one specific behavior would make you cry.  
+有什么具体行为会让你哭吗？
+
+I mean, there was definitely a time when I was so given to tears that my father at dinner time would sort of make it a game.  
+嗯，有一段时间我特别容易哭，父亲在晚餐时间几乎把这当成一个游戏。
+
+Tommy, why aren't you finishing that steak?  
+“汤米，你为什么不吃完那块牛排？”
+
+And I would, you know, my lip would start quivering and I would cry.  
+然后我会开始嘴唇发抖，然后哭起来。
+
+And I think it was just there was a power imbalance that was really just tough to deal with.  
+我觉得那只是力量不平衡，真的很难应对。
+
+So here's the disconnect that I have having read your book.  
+所以读了你的书，我有个矛盾点。
+
+This intimidating guy, he sells persons.  
+这个令人生畏的家伙，他卖的是手提包。
+
+Yeah, he was a handbag salesman.  
+是的，他是个手提包推销员。
+
+Square that.  
+请解释一下。
+
+Well, so he didn't make it as a singer and he hadn't gone to school past eighth grade and he had really nothing but his looks and his charm.  
+嗯，他没能成为歌手，而且他八年级后就辍学了，除了外貌和魅力，他几乎一无所有。
+
+And one of his army buddies had gotten a job in the leather business as a salesman and he took my dad under his wing and they went out on the road together.  
+他一个军队里的朋友在皮具行业找到了推销员的工作，他把我父亲收为徒弟，他们一起出差。
+
+And, you know, my father quickly became to the degree that there were legendary handbag salesman.  
+然后，你知道，我父亲很快就成为了那种传奇般的手提包推销员。
+
+He was the legendary handbag salesman.  
+他就是那个传奇的手提包推销员。
+
+Legendary for what?  
+以什么闻名？
+
+Legendary for two things.  
+以两件事闻名。
+
+Legendary for, you know, being big Lou, that was his, even though he was, as he would say, six feet in shoes.  
+以被称为“大卢”闻名，尽管他自己说他穿上鞋子有六英尺。
+
+Meaning he was about five, about five, 10.  
+意思是他大概五英尺十英寸。
+
+He was big Lou.  
+他是“大卢”。
+
+But he was also known for seducing women.  
+但他也以勾引女人闻名。
+
+So he was selling handbags and he was seducing buyers.  
+所以他一边卖手提包，一边勾引买家。
+
+But his sex appeal was the thing that it not only made him the celebrity that he wanted to be.  
+但他的性魅力不仅让他成为了他想成为的明星。
+
+But also made him money.  
+而且还给他带来了钱。
+
+I mean, my father was an extremely successful handbag salesman.  
+我是说，我父亲是一个非常成功的手提包推销员。
+
+And I think that like his earnings topped out in the early 70s or in the mid 70s at around $250,000 a year, which in the mids for 1974, that was big money.  
+他的收入在70年代初或中期达到顶峰，大约每年25万美元，这在1974年是一大笔钱。
+
+Huge money.  
+巨款。
+
+I mean, I'm gonna say three X-Tap given relation to that.  
+我是说，现在大概是三倍于那个数。
+
+Right.  
+对的。
+
+I mean, I think that he was, I think that he was promiscuous.  
+我是说，我认为他性关系混乱。
+
+I think that he was a, you know, if he was a philanderer, he was a driven philanderer.  
+我认为他，嗯，如果说他是个花花公子，那他是个执着的花花公子。
+
+And this is a deliberate intentional word to using, he's married.  
+我故意用这个词，他是已婚的。
+
+He's married to my mom.  
+他娶了我妈妈。
+
+He's married to my mom from as long as he was alive.  
+他活着的时候一直和我妈妈结婚。
+
+You know, in my, in my world, I was born to a marriage that stayed together until both my parents passed away.  
+你知道，在我的世界里，我出生在一个一直维持到父母都去世的婚姻中。
+
+He's described, you know, often in the press about the book as a philanderer.  
+在关于这本书的媒体报道中，他常被描述为花花公子。
+
+And I guess that's the right word.  
+我想这个词没错。
+
+But it seems almost too, too mild for what he was.  
+但对他实际的行为来说，这个词似乎太温和了。
+
+Correctly from wrong, but you come to understand all of this, not just through youthful intuition, but as you write through a pretty big moment of discovery.  
+从错误中正确理解，但你了解这一切不只是靠年轻时的直觉，而是像你写的那样，通过一个相当重大的发现时刻。
+
+Yeah.  
+是的。
+
+So tell me the story of how you come to understand that your dad's masculinity and his virility is not just an external identity, but something he's acting on in ways that are, perhaps not meant for you to have understood.  
+那么告诉我，你是如何逐渐明白你父亲的男子气概和男性活力不仅是一种外在身份，而且是他以你或许不该理解的方式付诸实践的故事。
+
+The thing about my dad was he presented himself in a very fourth rightly sexual way.  
+我父亲的特点是他以一种非常直白的性化方式展现自己。
+
+And it wasn't like that was simply for show.  
+而这并不只是作秀。
+
+My father had an affair with my first friend's mother when I was three years old.  
+我三岁时，我父亲和我第一个朋友的母亲有染。
+
+And I knew it.  
+而我知道。
+
+You knew it.  
+你知道？
+
+I knew it.  
+我知道。
+
+Somehow, somehow.  
+不知怎么的，就是知道。
+
+I knew that something was wrong, something was off.  
+我知道有些事情不对劲，有些不对劲。
+
+Something that made my mom unhappy.  
+有些让我妈妈不开心的事。
+
+That was always sort of the compass needle.  
+那就像是指南针的指针。
+
+I talked to you before about always crying around my dad and that I felt sort of powerless around my dad, the way that I tried to deal with that was to try to figure out my dad.  
+我之前跟你提到过，我在父亲身边总是哭，在他身边感到无力，我应对的方式就是试图了解他。
+
+And so I never stopped sort of spying on him snooping around.  
+所以我从未停止暗中观察他、打探他。
+
+And then when I was 16, my father came home with something that he had never had.  
+然后在我16岁时，我父亲带回家一件他从未有过的东西。
+
+So my father was not like an organized guy.  
+我父亲不是个有条理的人。
+
+And he kept all his work stuff and like a manila envelope, handwriting scrolled all over it.  
+他把他所有工作文件都放在一个手写潦草的马尼拉信封里。
+
+One day, he comes home and all of a sudden, he looks like every other guy on the long island railroad.  
+有一天他回家，突然看起来像长岛铁路上的其他所有人一样。
+
+He comes home with a Samsonite briefcase.  
+他带回家一个新秀丽（Samsonite）公文包。
+
+And the minute I saw the Samsonite briefcase, I did not think, oh my dad's like a normal guy now.  
+我看到那个新秀丽公文包的那一刻，我并不觉得“哦，我爸爸现在像个普通人了”。
+
+I said, there's something inside that Samsonite briefcase.  
+我说：“那个新秀丽公文包里一定有东西。”
+
+And you wanted to figure out a way.  
+你很想弄清楚。
+
+And I was driven to figure out what it was.  
+我被驱使着去弄清楚里面是什么。
+
+And one night, he was going out to the track with my mom, which he frequently did.  
+一天晚上，他和我妈妈去赛马场，他经常这样。
+
+And I went into his closet.  
+我走进他的衣柜。
+
+I pulled out the briefcase and looked at it and wondered whether I should open it because I knew the things were about to change right there.  
+我拿出公文包，看着它，犹豫是否应该打开，因为我知道事情就要改变了。
+
+My heart was beating.  
+我的心在怦怦跳。
+
+And then I opened it anyway.  
+然后我还是打开了它。
+
+And what did you find?  
+你发现了什么？
+
+And there was this huge stack of really extreme pornography in super eight, a celluloid format for watching home movies.  
+里面有一大堆非常露骨的色情片，用超八（super eight）胶片格式，就是看家庭电影的那种。
+
+And there were these two gigantic rubber dildos.  
+还有两个巨大的橡胶假阳具。
+
+It's like a wool moment.  
+这就像一个爆点时刻。
+
+Yeah.  
+是的。
+
+And you watch the super eight.  
+你看了那个超八胶片。
+
+I watched the super eight.  
+我看了那个超八胶片。
+
+And it's on an old movie projector that we used to watch home movies on.  
+用一台我们过去看家庭电影的旧电影放映机看的。
+
+And I'm watching this really extreme pornography.  
+我正在看这种非常极端的色情片。
+
+It was super, it was a subjugation porn.  
+那是超级的，是一种征服类型的色情片。
+
+But you're a teenage.  
+但你还是个青少年。
+
+I'm 16, just turned 16.  
+我16岁，刚满16岁。
+
+And so you've never seen anything like this.  
+所以你从没见过这种东西。
+
+I've never been kissed.  
+我连吻都没接过。
+
+I didn't know anything.  
+我什么都不知道。
+
+And it jams in the projector.  
+结果它卡在放映机里了。
+
+And I smell the smoke and it burns.  
+我闻到烟味，它烧起来了。
+
+And it breaks.  
+它断了。
+
+It snaps.  
+它啪地断了。
+
+And so that presented me as a son with a problem.  
+所以这给我这个儿子带来了一个问题。
+
+Like, what do I do?  
+比如，我该怎么办？
+
+I rewounded meticulously.  
+我小心翼翼地把胶片重绕回去。
+
+I spent hours rewinding it.  
+我花了好几个小时把它绕回去。
+
+So that's your terrified of him.  
+那时你很怕他。
+
+I'm terrified of him.  
+我很怕他。
+
+And I didn't want him to know my secret, which was that I knew his secret.  
+我不想让他知道我的秘密，那就是我知道了他的秘密。
+
+And I went from thinking that my dad was sort of a charming thief, like somebody that would be in a movie played by Carrie Grant or David Niven to a hitman.  
+我从认为我父亲是个有魅力的小偷——就像加里·格兰特（Cary Grant）或大卫·尼文（David Niven）演的那种电影角色——转变成了认为他是个杀手。
+
+Just tell me understand that.  
+请让我理解这一点。
+
+You would, by this point, do seem to have understood even from toddler days that your dad was sleeping around.  
+到这个时候，你似乎从幼儿时期就已经明白你父亲在外面乱搞了。
+
+Sleeping around, yeah.  
+乱搞，是的。
+
+But this does what?  
+但这又带来了什么？
+
+It made me wonder if my dad at some level was bad.  
+它让我怀疑我父亲在某种程度上是不是坏人。
+
+Did it cross your mind to talk to your mom about this?  
+你有没有想过和你妈妈谈谈这件事？
+
+It crossed my mind.  
+我确实想过。
+
+But then I knew that it was the nuclear code to my family.  
+但我知道那是我家的核密码。
+
+I mean, I don't think my parents' marriage would have survived.  
+我是说，我不认为我父母的婚姻能够存活下来。
+
+I don't know if I would have survived.  
+我不知道我自己是否能挺过去。
+
+I mean, that's the whole thing about secrets.  
+我是说，这就是秘密的全部意义。
+
+You really don't know what's on the other side of them.  
+你真的不知道秘密的另一面是什么。
+
+Well, they enlist you in them.  
+好吧，它们会把你拉进去。
+
+And I was enlisted in that particular secret.  
+而我就被卷入那个特定的秘密中。
+
+I sort of got bonded to my dad through the secrets that sort of upset me most.  
+我通过那些最让我不安的秘密，某种程度上与我父亲建立了联系。
+
+When I was 20, I went out on a date with my dad and a buyer with whom he was very clearly having an affair with.  
+我20岁时，我和我父亲以及一个很明显与他有染的女买家一起出去约会。
+
+What was that like?  
+那是什么感觉？
+
+It was at once of concern because it was another thing I had to keep from my mom.  
+那既让人担忧，因为又是一件我必须瞒着妈妈的事。
+
+And also, I'll just say it. It was like one of the most glamorous nights of my life.  
+而且，我就直说吧，那晚像是我一生中最迷人的夜晚之一。
+
+We went out to see Woody Allen at Michael's Pub.  
+我们去了迈克尔酒吧（Michael's Pub）看伍迪·艾伦（Woody Allen）。
+
+We walked my father's date and her sister-in-law, who was sort of like my date back to the Plaza.  
+我们陪父亲的约会对象和她的嫂子——她有点像我的约会对象——走回广场酒店（The Plaza）。
+
+And it was my first night in New York City.  
+那是我在纽约市的第一个夜晚。
+
+And I was sort of, I was a swept away as the two women were.  
+我有点，和那两个女人一样被彻底迷住了。
+
+So my dad presented himself as a paragon of masculinity.  
+所以我父亲把自己表现为男子气概的典范。
+
+But masculinity to my dad didn't just mean being able to handle yourself with your fists.  
+但对我父亲来说，男子气概不仅仅意味着能用拳头保护自己。
+
+It didn't just mean looking sharp.  
+不仅仅意味着看起来精明。
+
+It didn't just mean having a firm handshake.  
+不仅仅意味着有坚定的握手。
+
+It meant having sex.  
+它意味着发生性关系。
+
+That is the thing that I think that distinguished the way I grew up from a lot of other people who had sort of macho dad.  
+我认为这就是我的成长方式与许多其他有粗犷父亲的人的区别。
+
+I had a macho dad who was forever on the make.  
+我有个永远在追求女人的粗犷父亲。
+
+And that was the difference.  
+这就是区别。
+
+And wanted you to be on the make.  
+而且他也希望你去追求女人。
+
+And wanted me to be on the make.  
+他希望我去追求女人。
+
+As your father gets older, what's your relationship to him and these secrets that he may or may not understand, you possess that are bringing you closer to him, but also clearly have left you wary of him.  
+随着你父亲变老，你与他和这些秘密的关系如何？这些秘密他可能知道也可能不知道，你拥有它们，让你更接近他，但显然也让你对他保持警惕。
+
+You know, I became, in some ways, his protector.  
+你知道吗，我在某些方面成了他的保护者。
+
+He did not age well.  
+他老得并不好。
+
+And he went from being a guy who made $250,000 a year to a guy who had lost everything.  
+他从一个每年赚25万美元的人变成了一个失去一切的人。
+
+And how did he lose everything?  
+他是怎么失去一切的？
+
+He was a terrible gambler and he was even worse.  
+他是个糟糕的赌徒，而且更糟糕的是。
+
+He was even a worse investor in the stock market.  
+他在股票市场上投资更差。
+
+I mean, he was the most confident man I had ever come across.  
+我是说，他是我见过的最自信的人。
+
+And that itself was like seductive and powerful.  
+这本身就迷人而强大。
+
+And then he became a guy whose pockets were lined with regrets.  
+然后他成了一个口袋里装满悔恨的人。
+
+I mean, he was one of these guys.  
+我是说，他是那种人。
+
+That's all he did was talk about, you know, what I could have shut up.  
+他整天就是谈论，你知道，“我本可以怎么怎么样”。
+
+And so in 1996, I was writing for GQ.  
+所以在1996年，我正在为《GQ》撰稿。
+
+I wrote the story called My Father's Fashion Tips, which was a way to sort of allow him to expand his principles and his maxims and introduce those to, you know, the wider reading public.  
+我写了一篇名为《我父亲的时尚建议》的文章，这是一种让他扩展自己的原则和格言，并将它们介绍给更广泛的读者大众的方式。
+
+The reason I did it was as a gift to him.  
+我这样做的原因是为了给他一个礼物。
+
+I wanted to make him the celebrity that he never was.  
+我想让他成为他从未成为过的名人。
+
+But, and there's always a butt, I think, in all of these stories, I did that story to corner my dad with a tape recorder between us.  
+但是——我想所有故事里都有一个“但是”——我写那篇文章是为了用录音机架在我和我父亲之间，让他无处可逃。
+
+And so I finally had the chance to talk to him about all this stuff.  
+于是我终于有机会和他谈论所有这些事情。
+
+And, you know, so I found out that he had in a fair with the not just Joshua Gabor, but with the Gabor sisters.  
+然后，我发现他不仅和约书亚·加博（Joshua Gabor）有染，还和加博姐妹（Gabor sisters）有染。
+
+I found out.  
+我发现了。
+
+Gabor is not enough.  
+加博还不够。
+
+He talked about the affair that he had with my first friend's mother, Valerie Shockett.  
+他谈到了他和我第一个朋友的母亲瓦莱丽·肖克特（Valerie Shockett）的私情。
+
+The one you sensed when you were throwing.  
+你三岁时感觉到的那段。
+
+The one I sensed when I was three.  
+我三岁时感觉到的那段。
+
+Then he told me about something that happened to him that at once enabled him as like a tragic character and also made me wonder if I really knew him at all.  
+然后他告诉我一件发生在他身上的事，这件事立刻让他成了一个悲剧角色，同时让我怀疑我是否真的了解他。
+
+We'll do it right back.  
+我们马上回来。
+
+Hi, this is Ashley.  
+嗨，我是阿什利（Ashley）。
+
+I live in San Francisco with my boyfriend.  
+我和男朋友住在旧金山。
+
+We would love to officially share my New York Times subscription with separate logins.  
+我们希望能正式共享我的《纽约时报》订阅，使用独立的登录账号。
+
+We both love cooking, love being in the kitchen, but I'm at 30 minute and under efficient dinner girly.  
+我们都热爱烹饪，喜欢待在厨房里，但我是个追求30分钟以内高效晚餐的女孩。
+
+I want a sheet pan meal.  
+我想要一锅出。
+
+He is very elaborate.  
+他则很精细。
+
+He wants to get into the storytelling.  
+他想要进入叙事状态。
+
+I want to be able to save my easy meals and check off the ones that I've completed.  
+我希望能够保存我的简易食谱，并勾选我已经完成的。
+
+And I think him having his own profile would be great.  
+我认为他有自己的个人资料会很好。
+
+Ashley, we heard you.  
+阿什利，我们听到了。
+
+It's why we created the New York Times family subscription.  
+这就是为什么我们推出了《纽约时报》家庭订阅。
+
+You get your own login and Mr. elaborate gets his.  
+你会得到自己的登录账号，精细先生也有他的。
+
+Plus, room for two others.  
+另外，还可以加两个人。
+
+Find out more at nytimes.com slash family.  
+了解更多信息，请访问 nytimes.com/family。
+
+Tom described this information your father shared with you that from lack of a better word. Clearly changes your life and changes your view of him.  
+汤姆描述了父亲分享给你的这个信息，用一个不太贴切的词来说，它明显改变了你的生活，也改变了你对他的看法。
+
+Sure.  
+当然。
+
+So this was my last day with him for this story.  
+所以这是我为这篇报道陪他的最后一天。
+
+I had taken him out to the Dune Deck Hotel on Dune Road in West Hampton, which was sort of his refuge when I was growing up.  
+我带他去了西汉普顿（West Hampton）沙丘路上的沙丘甲板酒店（Dune Deck Hotel），那是我小时候他的避难所。
+
+He would leave the house or house or run four or five o'clock.  
+他会在下午四五点离开家。
+
+You know, dressed in his sort of uniform.  
+穿着他那种制服。
+
+He'd wear an orange Alpaca sweater. White ducks, which were white pants.  
+他会穿一件橙色羊驼毛衣，白色裤子。
+
+And he would go out for, you know, for a drink at this hotel.  
+他会出去，你知道，去这家酒店喝一杯。
+
+And so I took him there when I was doing the story for GQ.  
+所以我为《GQ》写那篇报道时就带他去了那里。
+
+And there was a moment where I felt, I felt that I didn't have to ask any more questions.  
+有某个时刻，我觉得，我觉得我不需要再问任何问题了。
+
+I felt like I was done.  
+我觉得已经够了。
+
+And then that night when we were at the hotel, an 81-year-old woman asked him for his phone number when we were out at dinner, which was just, he was 77 at the time.  
+然后那天晚上我们在酒店，一个81岁的女人在晚餐时向他要电话号码，这简直——他当时77岁。
+
+So it was just a beautiful, it was just a beautiful moment.  
+这真是一个美好的时刻。
+
+But the next morning, I asked him, I said, Dad, you know, when that woman asked you for your phone number, is that what it was like when you were in your 30s and 40s and even 50s.  
+但第二天早上，我问他：“爸爸，当那个女人问你要电话号码时，是不是就像你三四十岁甚至五十岁时那样？”
+
+And he shook his head and he said, tell me, tell me, tell me, I'm not pulling your leg.  
+他摇摇头说：“我告诉你，我告诉你，我没在开玩笑。”
+
+There was a time that I couldn't walk down fifth avenue without being propositioned.  
+“曾有一段时间，我走在第五大道上，总会有人来搭讪。”
+
+And I said, gee, Dad, do you take any of them up on it?  
+我说：“哎呀，爸，你接受过其中一些人的邀请吗？”
+
+And his answer was, not all of them.  
+他的回答是：“不是所有都接受。”
+
+You know, and I said, okay, Dad, how many?  
+你知道，然后我说：“好吧，爸，有多少？”
+
+I'm not telling you, I'm a gentleman.  
+“我不告诉你，我是个绅士。”
+
+Okay, Dad, give me a percentage.  
+“好吧，爸，给我一个百分比。”
+
+Oh, I don't know. 25%, that led me to the next question, which is, did you ever fall in love with one?  
+“哦，我不知道。25%。”这引出了我下一个问题：“你有没有爱上过其中某一个？”
+
+And there was a pause.  
+然后他停顿了一下。
+
+And then my father looked at me and held out a finger.  
+然后我父亲看着我，伸出一根手指。
+
+And he said, one.  
+他说：“一个。”
+
+Who is she?  
+“她是谁？”
+
+What's her name?  
+“她叫什么名字？”
+
+What happened to her?  
+“她后来怎么样了？”
+
+And he said, she died.  
+他说：“她死了。”
+
+He said, she fell down the steps of her home in Florida.  
+他说：“她在佛罗里达家里的楼梯上摔了下来。”
+
+And she was a married woman.  
+而且她是个已婚女人。
+
+And it was the central tragedy of my dad's life.  
+那是我父亲生命中最大的悲剧。
+
+It was the thing that I didn't see coming.  
+这是我完全没有预料到的事。
+
+Like, I think I saw the plurn in the dildos coming more than I saw that coming.  
+我觉得我预料到假阳具的出现比预料到这个更容易。
+
+And then you could be deeply, that he could be deeply in love and have loved and lost.  
+然后你发现，他能够深深地爱过并且失去过。
+
+That he had something happened to him that couldn't be just sort of shuffled away, like any of his others lovers.  
+他经历了一些不能像对待其他情人那样随便打发的事情。
+
+Did you end up putting the story of this great love of your dad's life in the piece about him that ran in GQ?  
+你最后把父亲生命中这段伟大的爱情故事写在《GQ》那篇关于他的文章里了吗？
+
+No, I didn't put that story in there.  
+没有，我没有把那故事写进去。
+
+I didn't put any of the secrets that he shared with me at the Dune Deck that weekend in the story.  
+那个周末他在沙丘甲板酒店分享给我的任何秘密我都没写进文章。
+
+He spared him.  
+我放过了他。
+
+I spared him.  
+我放过了他。
+
+And I put in the secrets that he wanted everybody to know.  
+我只写了他想让所有人知道的秘密。
+
+The secrets of grooming, the secrets of hygiene, the secrets of dressing.  
+关于打扮、卫生、穿衣的秘密。
+
+Everything else I kept to myself.  
+其他一切都烂在我肚子里。
+
+A final tribute.  
+一个最后的致敬。
+
+A final tribute.  
+一个最后的致敬。
+
+And to a diminished man.  
+献给一个衰落的人。
+
+To a man who was a diminished man.  
+献给一个已经衰落的人。
+
+And it was intended as a gift to him.  
+这是作为给他的礼物。
+
+And it worked as a gift to him.  
+它也的确成为了送给他的礼物。
+
+And the piece became one of the most popular pieces I'd ever written.  
+那篇文章成了我写过的最受欢迎的文章之一。
+
+There was a photo of my father in it in the Tuxedo drinking martini.  
+里面有一张我父亲穿着燕尾服喝马提尼酒的照片。
+
+And it wound up in the window of the B-Alpman on 5th Avenue.  
+它后来出现在第五大道B-Alpman百货公司的橱窗里。
+
+The department store.  
+那家百货公司。
+
+The department store.  
+那家百货公司。
+
+And he was immortalized in a way.  
+他以某种方式获得了不朽。
+
+I thought my job was done.  
+我以为我的任务完成了。
+
+And he passes away.  
+然后他去世了。
+
+Ten years later.  
+十年后。
+
+187.  
+187年？
+
+That would be the moment for most people where their relationship with their father, their mother, their parent. More or less comes to an end, right?  
+对大多数人来说，那将是他们与父亲、母亲、父母的关系或多或少结束的时刻，对吧？
+
+You have a bunch of secrets.  
+你有一堆秘密。
+
+They've died with him.  
+它们随他一起死了。
+
+They're probably going to die with you.  
+它们很可能随你一起死去。
+
+But as you write it's this precise moment when you actively start to seek out a very big and new chapter in your relationship with your father.  
+但如你所述，正是在这一刻，你开始主动寻找你与父亲关系中一个非常重大而崭新的篇章。
+
+And what made you do that?  
+是什么促使你这么做？
+
+So I orchestrated my dad's funeral service.  
+于是我策划了父亲的葬礼。
+
+I hired a shantuz from New York City to come and saying, I'll be seeing you.  
+我雇了一个来自纽约的歌手来演唱《我会再见到你》。
+
+Instead of, you know, Christian hymns, I selected Sinatra songs for everybody just saying at the funeral.  
+而不是基督教赞美诗，我为每个人选了辛纳屈的歌，就在葬礼上唱着。
+
+I gave the apology that I spent a long time preparing.  
+我念了花很长时间准备的悼词。
+
+Right.  
+没错。
+
+I got the last word.  
+我有了最后的话语权。
+
+I'm done.  
+我完了。
+
+And then at the end of the funeral, this beautiful woman stands up that I didn't really even notice her presence.  
+然后葬礼结束时，一个美丽的女人站起来，我之前甚至没注意到她的存在。
+
+I was so involved in what I was doing.  
+我太专注于自己的事了。
+
+She's the only black person at the funeral.  
+她是葬礼上唯一的黑人。
+
+She's six foot tall.  
+她六英尺高。
+
+She's wearing a black leather jacket.  
+她穿着一件黑色皮夹克。
+
+She's wearing blue jeans.  
+穿着蓝色牛仔裤。
+
+Cut to Capri pant length.  
+剪成卡普里裤的长度。
+
+She has these gold sandals on with five inch heels.  
+她脚穿五英寸跟的金色凉鞋。
+
+And she stands up.  
+她站起来。
+
+She turns around.  
+她转过身。
+
+She brings her hands down on the lectern.  
+她双手按在讲台上。
+
+And she says, can we all just agree that this?  
+她说：“我们能不能都同意，这个……”
+
+Wow.  
+哇。
+
+And that's throws.  
+那件事让我震惊。
+
+That throws me.  
+那让我措手不及。
+
+And so you discover yet another woman.  
+于是你又发现了另一个女人。
+
+So there's another woman.  
+所以还有另一个女人。
+
+There's another woman.  
+还有另一个女人。
+
+She was a person who was in the handbag business.  
+她是手提包行业的人。
+
+She's not the woman that he was in love with.  
+她不是他爱上的那个女人。
+
+She was just another woman that he had a long affair with.  
+她只是另一个与他有长期婚外情的女人。
+
+And once again, it was something that eventually set me on the path of trying to find out everything about him.  
+又一次，这件事最终让我踏上了试图弄清他一切的道路。
+
+How did you actually go about investigating the parts of your dad's life that you didn't know?  
+你实际上是如何着手调查你父亲生活中你不了解的部分的？
+
+Because by this point, you know a great deal.  
+因为到这个时候，你已经知道很多了。
+
+Yeah, a lot.  
+是的，很多。
+
+Basically the way I did it was, you know, I tried to call people who were connected with my dad either sexually or through the business or through the handbag business.  
+基本上我的做法是，我试图联系那些与我父亲有性关系或业务关系、或者在手提包行业有关联的人。
+
+I mean, to the extent that I went and went out to California and found the woman with whom he had an affair when I was three years old.  
+比如说，我甚至去了加利福尼亚州，找到了我三岁时他与她有染的那个女人。
+
+But the biggest thing that I did was try to find out more about the one.  
+但我做的最重要的事情是试图更多地了解“那一个”。
+
+The great love.  
+那伟大的爱。
+
+The great, the great love.  
+那伟大的、伟大的爱。
+
+And that was the hardest part as well.  
+而那也是最困难的部分。
+
+My.  
+我的天。
+
+Because she had children.  
+因为她有孩子。
+
+She had four children.  
+她有四个孩子。
+
+I looked at the notes that I had written to myself and I first found out the name of the one.  
+我看着自己写的笔记，首先查到了“那一个”的名字。
+
+And her name was Peggy Monahan.  
+她的名字是佩吉·莫纳汉（Peggy Monahan）。
+
+And when I found out her name, I found out the name of her children.  
+当我得知她的名字后，我也知道了她孩子们的名字。
+
+And in one note that I wrote to myself, I asked myself, I say, you know, my father 40 years ago invaded this family's life.  
+在一条写给自己的笔记中，我问自己：“你知道吗，我父亲40年前侵入了这个家庭的生活。”
+
+And it had a tragic ending.  
+而且结局很悲惨。
+
+Do I presume to do that again?  
+我凭什么再来一次？
+
+And why?  
+为什么？
+
+Why did you want to invade this same family again, just like your father?  
+你为什么想再次侵入同一个家庭，就像你父亲一样？
+
+Because when I first started doing my research into the book, I spoke to the children of my father's best friend in Florida.  
+因为当我刚开始为这本书做研究时，我和我父亲在佛罗里达最要好的朋友的孩子聊过。
+
+Because the name was Frankie Klein.  
+那个朋友叫弗兰基·克莱因（Frankie Klein）。
+
+He was my dad's wingman.  
+他是我父亲的僚机。
+
+He was one of my dad's best friends.  
+他是我父亲最好的朋友之一。
+
+And, you know, they had met Peggy Monahan.  
+然后，他们见过佩吉·莫纳汉。
+
+They had seen Peggy Monahan.  
+他们见过佩吉·莫纳汉。
+
+They had seen Peggy Monahan with my father.  
+他们见过佩吉·莫纳汉和我父亲在一起。
+
+In the secret life.  
+在秘密生活中。
+
+And the secret in Florida.  
+在佛罗里达的秘密。
+
+Yeah, we're back up here.  
+是的，我们回到这里了。
+
+Yeah.  
+是的。
+
+One of Frankie's daughters said, I always knew that it was a forbidden love.  
+弗兰基的一个女儿说：“我一直知道那是一段禁忌的爱。”
+
+And then another Frankie's daughters called up one day and said, listen, there's something I need to tell you.  
+然后弗兰基的另一个女儿有一天打来电话说：“听着，有件事我需要告诉你。”
+
+And what she needed to tell me was that Peggy had a child by my dad or it was rumored to have a child by my dad.  
+她要告诉我的是，佩吉怀了我父亲的孩子，或者有传言说她怀了我父亲的孩子。
+
+I didn't know which one, but I took it upon myself to find out.  
+我不知道是哪一个，但我决定自己去查明。
+
+Because then you have a sibling.  
+因为那样你就有了一个兄弟姐妹。
+
+It was such a powerful urge.  
+那是一种非常强烈的冲动。
+
+Because I knew what my dad's secret life had done to my family.  
+因为我知道我父亲的秘密生活对我们家造成了什么影响。
+
+And I had an idea what my father's secret life had done to the Monahan family.  
+而且我也大致知道我父亲的秘密生活对莫纳汉家造成了什么影响。
+
+And I was driven by this urge to put it all back together again.  
+我被一种想要把所有碎片还原的冲动驱使。
+
+And I took it upon myself to do that.  
+我主动承担起这个任务。
+
+We are going to take one more quick break.  
+我们再快速休息一下。
+
+So Tom, after you discover that you might have a sibling, you didn't know about.  
+那么汤姆，在你发现你可能有一个你不知道的兄弟姐妹之后。
+
+And you realize how deep this urge is to figure it out.  
+并且你意识到弄清楚这件事的冲动有多深。
+
+What do you do?  
+你做了什么？
+
+Well, I sent out an email and letters to some of the children saying in that email.  
+嗯，我给其中几个孩子发了电子邮件和信，在邮件里说。
+
+Hello, my name is Tom.  
+“你好，我叫汤姆。”
+
+And you know, you don't know me, but my father was in love with your mother.  
+“你不认识我，但我父亲曾爱过你的母亲。”
+
+Your mother and my father had a long affair.  
+“你母亲和我父亲有过长期婚外情。”
+
+And I've been given to understand that your mother was the love of my father's life.  
+“我得知你母亲是我父亲一生的挚爱。”
+
+What did they communicate back to you?  
+他们回复你什么了？
+
+Well, the first person in the family that I met was named Tommy.  
+嗯，这个家庭里我见到的第一个人叫汤米（Tommy）。
+
+And we met on New Year's Eve 2016.  
+我们在2016年新年前夜见了面。
+
+We went to a bar in Queens.  
+我们去了皇后区的一个酒吧。
+
+And Tommy was basically trying to suck out, you know, my motives in contacting him.  
+汤米基本上是想弄清楚我联系他的动机。
+
+And then pursuing, you know, because I told him I was writing a book.  
+然后继续追问，因为我告诉他我在写一本书。
+
+He asked if he could go outside and smoke a cigarette.  
+他问是否可以出去抽根烟。
+
+And I said, sure, and we went outside.  
+我说当然可以，然后我们出去了。
+
+And then the minute he turned around and lit up a cigarette, I looked at me and he goes, it's my sister, isn't it?  
+然后他转过身点烟的时候，他看着我说：“是我妹妹，对吧？”
+
+And I said, yeah.  
+我说：“是的。”
+
+And he was like, I knew it.  
+他反应是：“我就知道。”
+
+And then he said, but here's the thing, you can never tell her.  
+然后他说：“但问题是，你绝不能告诉她。”
+
+So you're being asked to keep you at another secret.  
+所以你被要求保守另一个秘密。
+
+But you decide not to.  
+但你决定不这么做。
+
+You do reach out to her.  
+你真的联系了她。
+
+Why?  
+为什么？
+
+Because I couldn't live with not finding her.  
+因为我无法忍受不去找到她。
+
+I couldn't live with it.  
+我无法忍受。
+
+I couldn't, I had started trying to, you know, trying to put the pieces back together.  
+我已经开始尝试把碎片拼凑回去。
+
+And the idea of not completing that task, while knowing that there was someone out there.  
+而知道有一个人在世上，却不去完成这个任务，这个想法。
+
+I just couldn't, I couldn't abide by it.  
+我就是无法接受。
+
+And I didn't think, ultimately, it would be anybody's decision, but hers.  
+我最终认为，这应该是她自己的决定，而不是别人的。
+
+And so in 2018, I decided to approach her.  
+于是2018年，我决定去找她。
+
+And her name is Lizanne.  
+她的名字是莉莎妮（Lizanne）。
+
+And she owns and runs and cooks in a food truck at the University of Connecticut.  
+她在康涅狄格大学拥有一辆餐车，并在那里经营和做饭。
+
+And one day I decided to approach the food truck.  
+有一天我决定接近那辆餐车。
+
+And I've done a lot of interviews.  
+我做过很多采访。
+
+And I've done even, you know, pretty scary interviews.  
+我甚至做过相当吓人的采访。
+
+I've knocked on any number of doors.  
+我敲过无数扇门。
+
+And nothing ever in my entire, you know, journalistic career scared me more than walking up to Lizanne's food truck and introducing myself.  
+我整个记者生涯中，没有比走向莉莎妮的餐车并向她自我介绍更让我害怕的事了。
+
+And she asked me, how can I help you?  
+她问我：“有什么能帮你的吗？”
+
+And I said, I said, Lizanne, I'm Tom Juno.  
+我说：“我说，莉莎妮，我是汤姆·朱诺。”
+
+And she has this beautiful, beautiful smile.  
+她有着非常非常美丽的笑容。
+
+And she was smiling and then the smile disappeared.  
+她本来在笑，然后笑容消失了。
+
+And she looked at me and she looked at me.  
+她看着我，一直看着我。
+
+And then the smile came back.  
+然后笑容又回来了。
+
+And she said, what the hell are you doing here?  
+她说：“你到底在这里干什么？”
+
+Did she know?  
+她知道吗？
+
+I think she knew.  
+我觉得她知道。
+
+I certainly did.  
+我当然知道。
+
+There was something about seeing somebody who was related to you that is hard to describe.  
+看到与自己有血缘关系的人，那种感觉难以形容。
+
+When I first saw Lizzy's picture on a Facebook page, it's not that I identified her.  
+当我第一次在脸书主页上看到莉兹的照片时，并不是我认出了她。
+
+It's not that I was able to say, oh, yeah, we have the same nose.  
+并不是我能说：“哦，对，我们有一样的鼻子。”
+
+We have the same smile lines or smiles or similar.  
+“我们有一样的笑纹或笑容。”
+
+It was beyond that.  
+超越那些。
+
+I recognized her.  
+我认出了她。
+
+And I think that she recognized me as well.  
+我觉得她也认出了我。
+
+I mean, it took a while.  
+嗯，过了一段时间才确认。
+
+But let's just turn it out to be one of the most remarkable experiences of my life, not just because we found each other.  
+但这成了我人生中最非凡的经历之一，不不仅仅是因为我们找到了彼此。
+
+But we had lost.  
+还因为我们失去了。
+
+We each had lost something enormous.  
+我们每个人都失去了一些巨大的东西。
+
+In May of 2022, I lost my sister Kathy.  
+2022年5月，我失去了我的妹妹凯西（Kathy）。
+
+She died in July of 2023.  
+她于2023年7月去世。
+
+Lizzy lost her brother Michael.  
+莉兹失去了她的哥哥迈克尔（Michael）。
+
+And on Christmas Eve 2022, she called me to tell me that she had gotten the results of the ancestry test back.  
+2022年圣诞夜，她打电话告诉我她拿到了血统检测结果。
+
+You had lost siblings.  
+我们都失去了兄弟姐妹。
+
+We had late games.  
+我们错失了时光。
+
+We were in that moment.  
+我们在那一刻。
+
+We each had lost family and we each had found each other.  
+我们各自失去了家人，又找到了彼此。
+
+But there was something else about it.  
+但还有别的东西。
+
+I felt like I had settled finally.  
+我觉得我终于释怀了。
+
+What I'd never been able to settle in my life, which is, you know, my feelings about my dad and my knowledge about my dad.  
+我生命中一直无法释怀的东西，那就是我对父亲的感受和了解。
+
+Well, how does this settle?  
+那这如何释怀？
+
+Well, I'm not despite a lifetime of betrayals that ends with arguably the greatest betrayal of all.  
+尽管经历了一生的背叛，最终可以说是最大的背叛。
+
+Yes.  
+是的。
+
+A secret family.  
+一个秘密家庭。
+
+Right.  
+对。
+
+A secret child.  
+一个秘密的孩子。
+
+Right.  
+对。
+
+A great love who he paraded around Florida.  
+他带着在佛罗里达到处炫耀的伟大爱情。
+
+Right.  
+对。
+
+And a pretty cavalier way.  
+以一种相当轻率的方式。
+
+When he was allegedly off selling persons, who knows what he was doing.  
+当他据说去卖手提包时，谁知道他在干什么。
+
+Right.  
+对。
+
+And wasn't taking care of you in those moments.  
+那些时候他没有照顾你。
+
+And we haven't talked about how much he was or wasn't a father to this sister.  
+而且我们还没谈他对这个妹妹做了多少父亲该做的事或没做。
+
+But are you not at all angry?  
+但你难道一点都不愤怒吗？
+
+So anger just come easy to me with with my dad.  
+嗯，对我父亲，愤怒并不容易涌上心头。
+
+And not long after it was confirmed that Lizzie and I are rather in sister.  
+在确认了莉兹和我是兄妹后不久。
+
+I was taking a ride on a winter day in a bus to LaGuardia airport.  
+一个冬日，我乘巴士去拉瓜迪亚机场。
+
+And I sat next to a woman who asked me.  
+我坐在一个女人旁边，她问我。
+
+You know, I had the misfortune to ask me how my holidays were.  
+你知道，她不幸地问了我的假期过得怎么样。
+
+And we talked about my holidays.  
+我们聊了我的假期。
+
+So I told her everything.  
+所以我把所有事都告诉了她。
+
+So she listened to the whole story.  
+她听完了整个故事。
+
+And then she says, can I ask you one question about your father?  
+然后她说：“我能问你一个关于你父亲的问题吗？”
+
+And I'd like to read the passage in the book where I answer her.  
+我想读一下书里我回答她的那段。
+
+Why aren't you angry at him? She asked.  
+“你为什么不生他的气？”她问道。
+
+She waits for an answer so I tried to think of one.  
+她等着回答，于是我试着想一个答案。
+
+Why did I do the gentlemanly thing and buy her a coffee when I bought mine?  
+为什么我做了绅士的事，给自己买咖啡时也给她买了一杯？
+
+Because of my dad.  
+因为我的父亲。
+
+Why has the discovery of Lizzie come to me so much to me?  
+为什么发现莉兹对我如此重要？
+
+Because of my dad.  
+因为我的父亲。
+
+Why do I love music so much?  
+为什么我如此热爱音乐？
+
+Because of my dad.  
+因为我的父亲。
+
+Why do I love language so much?  
+为什么我如此热爱语言？
+
+Because of my dad.  
+因为我的父亲。
+
+Why am I a writer in the first place?  
+为什么我当初成了作家？
+
+Because of my dad.  
+因为我的父亲。
+
+I took so much from him.  
+我向他汲取了太多。
+
+I owe so much to him.  
+我欠他太多。
+
+And when I respond to the world, I am often responding through him for better and for worse.  
+当我回应世界时，我常常是通过他来回应，无论好坏。
+
+He taught me how to live man.  
+他教会了我如何生活，伙计。
+
+And he gave me permission to enjoy life.  
+他给了我享受生活的许可。
+
+He might not have been a good man.  
+他可能不是一个好人。
+
+But he was an elemental one.  
+但他是一个本质的人。
+
+And I feel his presence when I eat.  
+当我吃饭时，我感受到他的存在。
+
+When I drink.  
+当我喝酒时。
+
+When I make love.  
+当我做爱时。
+
+When I breathe.  
+当我呼吸时。
+
+Anger never had a chance.  
+愤怒从未有机会。
+
+Anger isn't the right word.  
+愤怒不是正确的词。
+
+For the way you feel about your dad right now.  
+来形容你现在对父亲的感受。
+
+What is the right word?  
+那正确的词是什么？
+
+For words. That you feel about your dad right now.  
+对于你现在对父亲的感受，说什么好呢？
+
+I couldn't have written this book without loving him.  
+如果我不爱他，我写不出这本书。
+
+And there's a part of me that doesn't want to say it.  
+有一部分我不想说出来。
+
+But that's where it is.  
+但事实就是如此。
+
+I am imbivalently still in love with my dad.  
+我仍然在矛盾中爱着我的父亲。
+
+And thank you for being here for talking about your dad and for the gift of this book.  
+感谢你来到这里谈论你的父亲，感谢你这份书的礼物。
+
+And happy fathers, they too.  
+也祝你父亲节快乐。
+
+Thank you very much, Michael.  
+非常感谢，迈克尔。
+
+Today's episode was produced by Tina Antelini.  
+今天的节目由蒂娜·安特利尼（Tina Antelini）制作。
+
+It was edited by Wendy Door and engineer by Daniel Ramirez.  
+由温迪·多尔（Wendy Door）编辑，丹尼尔·拉米雷斯（Daniel Ramirez）担任工程师。
+
+With production assistance from Dahlia Hadad.  
+制作助理达莉亚·哈达德（Dahlia Hadad）。
+
+It contains music by Dan Powell.  
+包含丹·鲍威尔（Dan Powell）的音乐。
+
+That's it for the Daily On Sunday.  
+以上就是《星期日日报》的全部内容。
+
+I'm Michael Barrow.  
+我是迈克尔·巴罗（Michael Barrow）。
+
+Happy Father's Day.  
+父亲节快乐。
+
+See you tomorrow.  
+明天见。
+
+I'm Gilbert Cruz.  
+我是吉尔伯特·克鲁兹（Gilbert Cruz）。
+
+This week on the Book of You podcast, and I think it's time to talk about some of our best books of the year.  
+本周在《你的书》播客中，我想是时候谈谈我们今年的一些最佳书籍了。
+
+Parent the C so far.  
+到目前为止的年度好书。
+
+It is the platonic ideal of a novel.  
+它是小说的柏拉图式理想。
+
+We are introduced to the most unbelievable cast of characters.  
+我们被介绍给最令人难以置信的角色阵容。
+
+Metaphorically jumping on a sofa right now.  
+此刻我正比喻性地在沙发上跳跃。
+
+What I think makes this a great book, a best book, is.  
+我认为这本书之所以成为一本伟大的书、最好的书，是因为。
+
+Listen to the book review wherever you get your podcasts.  
+在您收听播客的任何地方收听《书评》节目。
+
+It's majestic.  
+它宏伟壮丽。
+
+---
+
+**Source:** The Daily · Can a Bad Man Be a Good Father · [Original Link](https://www.nytimes.com/the-daily)
+**Processing Date:** 2026-07-28
+
+## 📝 英文原文
+
+<details>
+<summary>点击展开英文原文</summary>
+
+The New York Times app has all the stuff that you may not have seen. The way the tabs are at the top with all of the different sections. I can immediately navigate to something that matches what I'm feeling. I owe the games always. Don't want the money, don't want the word. I love how much content it exposed me to. Things that I never would have thought to turn to a news app for. This app is essential. The New York Times app. All of the times, all in one place. Download it now at nytimes.com slash app. From New York Times, I'm Michael Babarro. This is the daily on Sunday. The writer Tom Juno is a student of flawed men. In a long and varied career in American magazines, it places like GQ and Esquire, Tom Profile complicated figures like Norman Mailer, Kevin Spacey, and Tony Curtis. But in all of those profiles, another flawed man loomed in the background. One who informed how Tom thought about the very nature of masculinity and manhood. And that was his father, Lou. A man who had a life full of secrets. Tom's relationship with his dad is the subject of his new book, which is part memoir and part detective story. It's called, in the days of my youth, I was told what it means to be a man. And it's a powerful meditation on what we need from a father, what we inherit from a father, and how we somehow make peace with the gap in between those. Today, on Father's Day, my conversation with Tom Juno, it's Sunday, June 21st. Well, welcome to the Sunday Daily. It's so great to be here. It's an honor to have you. Can I ask you to read from the ulogy that you read your father's funeral? Sure. Leave it's on page four. Yeah. So the ulogy had a title. If you're going to be a bear, be a grizzly. And that was one of my dad's things. My father, dad, pop-up, was not like other fathers. He was not like other people, period. A lot of people have told me that he's with Jesus now. Well, with all due respect, I have my doubts. Unless, of course, Jesus has shaved his beard, ditched the sandals, and is drinking a martini at the El Morocco, circa 1955, with Frank and Eva. This is not to say my father was not a believer. He had a whole belief system. He believed in a lot of things. And what he believed in, he believed in absolutely. He believed that there was not a person in the world whose appearance could not be helped by exposure to the sun, or what he called a fresh burn. He believed that there was not an ailment in the world. That could not be cured by salt water. He believed that the way Red Butler treated Scarlet was the way all women should be treated. And that Clark Gable was robbed when he didn't when he Oscar for Best Actor in 1939. He believed that the lottery was a game of skill rather than chance. And that he had won it twice. But for some reason, Hednik elected to turn in the ticket. And he believed to the very end that he was going to win again. And then, as he said, then I'll teach you how to live. I mean, just from those brief words, it's very evident that your dad was a larger than life, character. Also, he had all these maximums. He had all these ideas about how men should be. And he lived by him. And that's the thing about him. So it's not just that he thought that every man should have a fresh burn theoretically. And he, you know, didn't just say where white to the face, or the turtle neck is the most flattering thing a man can wear. I mean, he followed all these things religiously. And they worked. I mean, that's the thing I think that you have to understand, you know, with my dad, is that it all worked. I mean, if he walked into a restaurant, you know, every, what am I seeing? Yeah, so you saw a guy who was wearing a blue shirt with a white collar, you know, high to the face, a big fat knot, cufflinks, floor shime shoes, skin, the color of mahogany or A1 steak. So any sort of synonym that you can figure out for brown. He was that. And then he had eyes, the color of short truths. I mean, they were the greenest eyes I've ever seen in any human being. They were on fire. And they were kind of beautiful and entrancing and kind of terrifying at the same time. I feel like I'm, I'm looking at Frank Sinatra. Yeah, I mean, so I saw Frank Sinatra once. And that's all you saw were his blue eyes. They were burning like gas jets. And that was the same with my dad. All you saw was his dark skin and his insanely green eyes. Behind this very masculine appearance, you have said, are some very specific ideas that your dad had about masculinity. It wasn't just a veneer, it was a whole philosophy. So tell me about that. Well, so it wasn't just clothes. You know, it was also some very specific ideas about manhood. And how a man should be. Well, number one, always look a man in the eye. And number two, always have a firm handshake. Number three, always open the door for a woman. And then they got a little bit, like if you sort of sort of the basics, they were complex. There was one time that he told me basically his overall rule for seducing women. And it was, it was tell a smart woman. She's beautiful and tell a beautiful woman. She's smart. So he had a lot of tips. And they were all acted on. They were all part of who he was. Where do you think that these lessons about manhood came from? Upon what was it modeled, as best you could tell? As best as I could tell, it was modeled on the movie stars of the late 1930s. Not his dad. Definitely not his dad. When we were growing up, my brother, my sister and I, we would always ask him, you know, dad, tell us about your dad. And he would say, in the way he spoke, I never had a father. And then one of us would say, wait a minute, dad, your father calls every couple of months to ask for money. And he would just look at us and repeat, I never had a father. But he would go to the movies when he was growing up in Brooklyn. And he absorbed everything. He absorbed how to dress from feta stare. He absorbed how to talk from carry grant. He absorbed how to treat women from, you know, from Clark Gable. And he was a student of all that. I mean, the thing about my dad, so he was like, he was a rough kid growing up in Brooklyn. But by the time I knew him, he had expunged like every bit of his Brooklyn accent. And a lot of that was because when he was in World War II, he was wounded. And then instead of being shipped back to the front, a lieutenant heard him sing and put him in a show. And so he became, you know, a cruner singing in a traveling army act called Fremen only. Fremen only, which is almost too on the nose, it really is. And when my dad came home from World War II, he tried to make it a singer and did not. But one of the things he still did was go down to the basement and tape himself singing to instrumental records. And for an audience of himself, for an audience of himself. And so he behaved the way a cruner and his mind was supposed to be. He behaved the way a cruner was supposed to behave. But he crumed his daily language. I mean, he was a cruner even when he was talking. It was all, you know, a mechanism of seduction of some kind. He would stand in front of the mirror in the morning. I'd be on my way to school and I'd go in to say hello or goodbye. And he would be standing there and his black bikini. In front of this enormous mirror in his room and he would say, look, look at this body. Have you ever seen a body like this? And he had a body, I mean, he was built like Charles Atlas. How did all of this philosophy manifest in the kind of father that he was to you? What kind of dad was he? He was actually a really good dad in a lot of different ways. He was attentive. He was prescriptive. He taught me how to play football. He taught me how to box. He would kiss me hard, good night on my head. Or in the morning when he went away on a trip. He was a super attentive dad at the same time. He was terrifying. Like I was terrified of my father. He was not a violent person around the house. But the amount of force that his presence had was just the kind of thing where you felt like if you came to close to him, it was like going to close to the sun that you would be obliterated. The toughest thing about growing up with my dad was having this warm overwhelmingly demonstratively loving person who at the same time was a person I could not be in the same room with, especially when I was like five, six, seven years old, you know, without crying. And one specific behavior would make you cry. I mean, there was definitely a time when I was so given to tears that my father at dinner time would sort of make it a game. Tommy, why aren't you finishing that stick? And I would, you know, my lip would start quivering and I would cry. And I think it was just there was a power imbalance that was really just tough to deal with. So here's the disconnect that I have having read your book. This intimidating guy, he sells persons. Yeah, he was a handbag salesman. Square that. Well, so he didn't make it as a singer and he hadn't gone to school past eighth grade and he had really nothing but his looks and his charm. And one of his army buddies had gotten a job in the leather business as a salesman and he took my dad under his wing and they went out on the road together. And, you know, my father quickly became to the degree that there were legendary handbag salesman. He was the legendary handbag salesman. Legendary for what? Legendary for two things. Legendary for, you know, being big Lou, that was his, even though he was, as he would say, six feet in shoes. Meaning he was about five, about five, 10. He was big Lou. But he was also known for seducing women. So he was selling handbags and he was seducing buyers. But his sex appeal was the thing that it not only made him the celebrity that he wanted to be. But also made him money. I mean, my father was an extremely successful handbag salesman. And I think that like his earnings topped out in the early 70s or in the mid 70s at around $250,000 a year, which in the mids for 1974, that was big money. Huge money. I mean, I'm gonna say three X-Tap given relation to that. Right. I mean, I think that he was, I think that he was promiscuous. I think that he was a, you know, if he was a philanderer, he was a driven philanderer. And this is a deliberate intentional word to using, he's married. He's married to my mom. He's married to my mom from as long as he was alive. You know, in my, in my world, I was born to a marriage that stayed together until both my parents passed away. He's described, you know, often in the press about the book as a philanderer. And I guess that's the right word. But it seems almost too, too mild for what he was. Correctly from wrong, but you come to understand all of this, not just through youthful intuition, but as you write through a pretty big moment of discovery. Yeah. So tell me the story of how you come to understand that your dad's masculinity and his virility is not just an external identity, but something he's acting on in ways that are, perhaps not meant for you to have understood. The thing about my dad was he presented himself in a very fourth rightly sexual way. And it wasn't like that was simply for show. My father had an affair with my first friend's mother when I was three years old. And I knew it. You knew it. I knew it. Somehow, somehow. I knew that something was wrong, something was off. Something that made my mom unhappy. That was always sort of the compass needle. I talked to you before about always crying around my dad and that I felt sort of powerless around my dad, the way that I tried to deal with that was to try to figure out my dad. And so I never stopped sort of spying on him snooping around. And then when I was 16, my father came home with something that he had never had. So my father was not like an organized guy. And he kept all his work stuff and like a manila envelope, handwriting scrolled all over it. One day, he comes home and all of a sudden, he looks like every other guy on the long island railroad. He comes home with a Samsonite briefcase. And the minute I saw the Samsonite briefcase, I did not think, oh my dad's like a normal guy now. I said, there's something inside that Samsonite briefcase. And you wanted to figure out a way. And I was driven to figure out what it was. And one night, he was going out to the track with my mom, which he frequently did. And I went into his closet. I pulled out the briefcase and looked at it and wondered whether I should open it because I knew the things were about to change right there. My heart was beating. And then I opened it anyway. And what did you find? And there was this huge stack of really extreme pornography in super eight, a celluloid format for watching home movies. And there were these two gigantic rubber dildos. It's like a wool moment. Yeah. And you watch the super eight. I watched the super eight. And it's on an old movie projector that we used to watch home movies on. And I'm watching this really extreme pornography. It was super, it was a subjugation porn. But you're a teenage. I'm 16, just turned 16. And so you've never seen anything like this. I've never been kissed. I didn't know anything. And it jams in the projector. And I smell the smoke and it burns. And it breaks. It snaps. And so that presented me as a son with a problem. Like, what do I do? I rewounded meticulously. I spent hours rewinding it. So that's your terrified of him. I'm terrified of him. And I didn't want him to know my secret, which was that I knew his secret. And I went from thinking that my dad was sort of a charming thief, like somebody that would be in a movie played by Carrie Grant or David Niven to a hitman. Just tell me understand that. You would, by this point, do seem to have understood even from toddler days that your dad was sleeping around. Sleeping around, yeah. But this does what? It made me wonder if my dad at some level was bad. Did it cross your mind to talk to your mom about this? It crossed my mind. But then I knew that it was the nuclear code to my family. I mean, I don't think my parents' marriage would have survived. I don't know if I would have survived. I mean, that's the whole thing about secrets. You really don't know what's on the other side of them. Well, they enlist you in them. And I was enlisted in that particular secret. I sort of got bonded to my dad through the secrets that sort of upset me most. When I was 20, I went out on a date with my dad and a buyer with whom he was very clearly having an affair with. What was that like? It was at once of concern because it was another thing I had to keep from my mom. And also, I'll just say it. It was like one of the most glamorous nights of my life. We went out to see Woody Allen at Michael's Pub. We walked my father's date and her sister-in-law, who was sort of like my date back to the Plaza. And it was my first night in New York City. And I was sort of, I was a swept away as the two women were. So my dad presented himself as a paragon of masculinity. But masculinity to my dad didn't just mean being able to handle yourself with your fists. It didn't just mean looking sharp. It didn't just mean having a firm handshake. It meant having sex. That is the thing that I think that distinguished the way I grew up from a lot of other people who had sort of macho dad. I had a macho dad who was forever on the make. And that was the difference. And wanted you to be on the make. And wanted me to be on the make. As your father gets older, what's your relationship to him and these secrets that he may or may not understand, you possess that are bringing you closer to him, but also clearly have left you wary of him. You know, I became, in some ways, his protector. He did not age well. And he went from being a guy who made $250,000 a year to a guy who had lost everything. And how did he lose everything? He was a terrible gambler and he was even worse. He was even a worse investor in the stock market. I mean, he was the most confident man I had ever come across. And that itself was like seductive and powerful. And then he became a guy whose pockets were lined with regrets. I mean, he was one of these guys. That's all he did was talk about, you know, what I could have shut up. And so in 1996, I was writing for GQ. I wrote the story called My Father's Fashion Tips, which was a way to sort of allow him to expand his principles and his maxims and introduce those to, you know, the wider reading public. The reason I did it was as a gift to him. I wanted to make him the celebrity that he never was. But, and there's always a butt, I think, in all of these stories, I did that story to corner my dad with a tape recorder between us. And so I finally had the chance to talk to him about all this stuff. And, you know, so I found out that he had in a fair with the not just Joshua Gabor, but with the Gabor sisters. I found out. Gabor is not enough. He talked about the affair that he had with my first friend's mother, Valerie Shockett. The one you sensed when you were throwing. The one I sensed when I was three. Then he told me about something that happened to him that at once enabled him as like a tragic character and also made me wonder if I really knew him at all. We'll do it right back. Hi, this is Ashley. I live in San Francisco with my boyfriend. We would love to officially share my New York Times subscription with separate logins. We both love cooking, love being in the kitchen, but I'm at 30 minute and under efficient dinner girly. I want a sheet pan meal. He is very elaborate. He wants to get into the storytelling. I want to be able to save my easy meals and check off the ones that I've completed. And I think him having his own profile would be great. Ashley, we heard you. It's why we created the New York Times family subscription. You get your own login and Mr. elaborate gets his. Plus, room for two others. Find out more at nytimes.com slash family. Tom described this information your father shared with you that from lack of a better word. Clearly changes your life and changes your view of him. Sure. So this was my last day with him for this story. I had taken him out to the Dune Deck Hotel on Dune Road in West Hampton, which was sort of his refuge when I was growing up. He would leave the house or house or run four or five o'clock. You know, dressed in his sort of uniform. He'd wear an orange Alpaca sweater. White ducks, which were white pants. And he would go out for, you know, for a drink at this hotel. And so I took him there when I was doing the story for GQ. And there was a moment where I felt, I felt that I didn't have to ask any more questions. I felt like I was done. And then that night when we were at the hotel, in 81-year-old woman asked him for his phone number when we were out at dinner, which was just, he was 77 at the time. So it was just a beautiful, it was just a beautiful moment. But the next morning, I asked him, I said, Dad, you know, when that woman asked you for your phone number, is that what it was like when you were in your 30s and 40s and even 50s. And he shook his head and he said, tell me, tell me, tell me, I'm not pulling your leg. There was a time that I couldn't walk down fifth avenue without being propositioned. And I said, gee, Dad, do you take any of them up on it? And his answer was, not all of them. You know, and I said, okay, Dad, how many? I'm not telling you, I'm a gentleman. Okay, Dad, give me a percentage. Oh, I don't know. 25%, that led me to the next question, which is, did you ever fall in love with one? And there was a pause. And then my father looked at me and held out a finger. And he said, one, who is she? What's her name? What happened to her? And he said, she died. He said, she fell down the steps of her home in Florida. And she was a married woman. And it was the central tragedy of my dad's life. It was the thing that I didn't see coming. Like, I think I saw the plurn in the dildos coming more than I saw that coming. And then you could be deeply, that he could be deeply in love and have loved and lost. That he had something happened to him that couldn't be just sort of shuffled away, like any of his others lovers. Did you end up putting the story of this great love of your dad's life in the piece about him that ran in GQ? No, I didn't put that story in there. I didn't put any of the secrets that he shared with me at the Dune Deck that weekend in the story. He spared him. I spared him. And I put in the secrets that he wanted everybody to know. The secrets of grooming, the secrets of hygiene, the secrets of dressing. Everything else I kept to myself. A final tribute. A final tribute. And to a diminished man. To a man who was a diminished man. And it was intended as a gift to him. And it worked as a gift to him. And the piece became one of the most popular pieces I'd ever written. There was a photo of my father in it in the Tuxedo drinking martini. And it wound up in the window of the B-Alpman on 5th Avenue. The department store. The department store. And he was immortalized in a way. I thought my job was done. And he passes away. Ten years later. 187. That would be the moment for most people where their relationship with their father, their mother, their parent. More or less comes to an end, right? You have a bunch of secrets. They've died with him. They're probably going to die with you. But as you write it's this precise moment when you actively start to seek out a very big and new chapter in your relationship with your father. And what made you do that? So I orchestrated my dad's funeral service. I hired a shantuz from New York City to come and saying, I'll be seeing you. Instead of, you know, Christian hymns, I selected Sinatra songs for everybody just saying at the funeral. I gave the apology that I spent a long time preparing. Right. I got the last word. I'm done. And then at the end of the funeral, this beautiful woman stands up that I didn't really even notice her presence. I was so involved in what I was doing. She's the only black person at the funeral. She's six foot tall. She's wearing a black leather jacket. She's wearing blue jeans. Cut to Capri pant length. She has these gold sandals on with five inch heels. And she stands up. She turns around. She brings her hands down on the lectern. And she says, can we all just agree that this? Wow. And that's throws. That throws me. And so you discover yet another woman. So there's another woman. There's another woman. She was a person who was in the handbag business. She's not the woman that he was in love with. She was just another woman that he had a long affair with. And once again, it was something that eventually set me set me on the path of trying to find out everything about him. How did you actually go about investigating the parts of your dad's life that you didn't know? Because by this point, you know a great deal. Yeah, a lot. Basically the way I did it was, you know, I tried to call people who were connected with my dad either sexually or through the business or through the handbag business. I mean, to the extent that I went and went out to California and found the woman with whom he had an affair. When I was three years old. But the biggest thing that I did was try to find out more about the one. The great love. The great, the great love. And that was the hardest part as well. My. Because she had children. She had four children. I looked at the notes that I had written to myself and I first found out the name of the one. And her name was Peggy Monahan. And when I found out her name, I found out the name of her children. And in one note that I wrote to myself, I asked myself, I say, you know, my father 40 years ago invaded this family's life. And it had a tragic ending. Do I presume to do that again? And why? Why did you want to invade this same family again, just like your father? Because when I first started doing my research into the book, I spoke to the children of my father's best friend in Florida. Because the name was Frankie Klein. He was my dad's wingman. He was one of my dad's best friends. And, you know, they had met Peggy Monahan. They had seen Peggy Monahan. They had seen Peggy Monahan with my father. In the secret life. And the secret in Florida. Yeah, we're back up here. Yeah. One of Frankie's daughters said, I always knew that it was a forbidden love. And then another Frankie's daughters called up one day and said, listen, there's something I need to tell you. And what she needed to tell me was that Peggy had a child by my dad or it was rumored to have a child by my dad. I didn't know which one, but I took it upon myself to find out. Because then you have a sibling. It was such a powerful urge. Because I knew what my dad's secret life had done to my family. And I had an idea what my father's secret life had done to the Monahan family. And I was driven by this urge to put it all back together again. And I took it upon myself to do that. We are going to take one more quick break. So Tom, after you discover that you might have a sibling, you didn't know about. And you realize how deep this urge is to figure it out. What do you do? Well, I sent out an email and letters to some of the children saying in that email. Hello, my name is Tom. And you know, you don't know me, but my father was in love with your mother. Your mother and my father had a long affair. And I've been given to understand that your mother was the love of my father's life. What did they communicate back to you? Well, the first person in the family that I met was named Tommy. And we met on New Year's Eve 2016. We went to a bar in Queens. And Tommy was basically trying to suck out, you know, my motives in contacting him. And then pursuing, you know, because I told him I was writing a book. He asked if he could go outside and smoke a cigarette. And I said, sure, and we went outside. And then the minute he turned around and lit up a cigarette, I looked at me and he goes, it's my sister, isn't it? And I said, yeah. And he was like, I knew it. And then he said, but here's the thing, you can never tell her. So you're being asked to keep you at another secret. But you decide not to. You do reach out to her. Why? Because I couldn't live with not finding her. I couldn't live with it. I couldn't, I had started trying to, you know, trying to put the pieces back together. And the idea of not completing that task, while knowing that there was someone out there. I just couldn't, I couldn't abide by it. And I didn't think, ultimately, it would be anybody's decision, but hers. And so in 2018, I decided to approach her. And her name is Lizanne. And she owns and runs and cooks in a food truck at the University of Connecticut. And one day I decided to approach the food truck. And I've done a lot of interviews. And I've done even, you know, pretty scary interviews. I've knocked on any number of doors. And nothing ever in my entire, you know, journalistic career scared me more than walking up to Lizanne's food truck and introducing myself. And she asked me, how can I help you? And I said, I said, Lizanne, I'm Tom Juno. And she has this beautiful, beautiful smile. And she was smiling and then the smile disappeared. And she looked at me and she looked at me. And then the smile came back. And she said, what the hell are you doing here? Did she know? I think she knew. I certainly did. There was something about seeing somebody who was related to you that is hard to describe. When I first saw Lizzy's picture on a Facebook page, it's not that I identified her. It's not that I was able to say, oh, yeah, we have the same nose. We have the same smile lines or smiles or similar. It was beyond that. I recognized her. And I think that she recognized me as well. I mean, it took a while. But let's just turn it out to be one of the most remarkable experiences of my life, not just because we found each other. But we had lost. We each had lost something enormous. In May of 2022, I lost my sister Kathy. She died in July of 2023. Lizzy lost her brother Michael. And on Christmas Eve 2022, she called me to tell me that she had gotten the results of the ancestry test back. You had lost siblings. We had late games. We were in that moment. We each had lost family and we each had found each other. But there was something else about it. I felt like I had settled finally. What I'd never been able to settle in my life, which is, you know, my feelings about my dad and my knowledge about my dad. Well, how does this settle? Well, I'm not disrupt despite a lifetime of betrayals that ends with arguably the greatest betrayal of all. Yes. A secret family. Right. A secret child. Right. A great love who he paraded around Florida. Right. And a pretty cavalier way. When he was allegedly off selling persons, who knows what he was doing. Right. And wasn't taking care of you in those moments. And we haven't talked about how much he was or wasn't a father to this sister. But are you not at all angry? So anger just come easy to me with with my dad. And not long after it was confirmed that Lizzie and I are rather in sister. I was taking a ride on a winter day in a bus to LaGuardia airport. And I sat next to a woman who asked me. You know, I had the misfortune to ask me how my holidays were. And we talked about my holidays. So I told her everything. So she listened to the whole story. And then she says, can I ask you one question about your father? And I'd like to read the passage in the book where I answer her. Why aren't you angry at him? She asked. She waits for an answer so I tried to think of one. Why did I do the gentlemanly thing and buy her a coffee when I bought mine? Because of my dad. Why has the discovery of Lizzie come to me so much to me? Because of my dad. Why do I love music so much? Because of my dad. Why do I love language so much? Because of my dad. Why am I a writer in the first place? Because of my dad. I took so much from him. I owe so much to him. And when I respond to the world, I am often responding through him for better and for worse. He taught me how to live man. And he gave me permission to enjoy life. He might not have been a good man. But he was an elemental one. And I feel his presence when I eat. When I drink. When I make love. When I breathe. Anger never had a chance. Anger isn't the right word. For the way you feel about your dad right now. What is the right word? For words. That you feel about your dad right now. I couldn't have written this book without loving him. And there's a part of me that doesn't want to say it. But that's where it is. I am imbivalently still in love with my dad. And thank you for being here for talking about your dad and for the gift of this book. And happy fathers, they too. Thank you very much, Michael. Today's episode was produced by Tina Antelini. It was edited by Wendy Door and engineer by Daniel Ramirez. With production assistance from Dahlia Hadad. It contains music by Dan Powell. That's it for the Daily On Sunday. I'm Michael Barrow. Happy Father's Day. See you tomorrow. I'm Gilbert Cruz. This week on the Book of You podcast, and I think it's time to talk about some of our best books of the year. Parent the C so far. It is the platonic ideal of a novel. We are introduced to the most unbelievable cast of characters. Metaphorically jumping on a sofa right now. What I think makes this a great book, a best book, is. Listen to the book review wherever you get your podcasts. It's majestic.
+
+</details>
+</div>
