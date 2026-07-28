@@ -29,7 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent
 TRANSCRIPTS_DIR = BASE_DIR / "transcripts"
 TEMPLATES_DIR = BASE_DIR / "templates"
 STATIC_DIR = BASE_DIR / "static"
-OUTPUT_DIR = BASE_DIR / "docs"
+OUTPUT_DIR = BASE_DIR
+SOURCE_DIRS = {"templates", "static", "transcripts", "transcripts_raw", ".git"}
+SOURCE_FILES = {"build.py", "shows.json", ".gitignore"}
 SHOWS_FILE = BASE_DIR / "shows.json"
 
 # 站点前缀（部署到 GitHub Pages 子路径时使用）
@@ -174,10 +176,13 @@ def load_episodes(show_slug: str) -> list[dict]:
 
 
 def clean_output():
-    """清空输出目录（保留 .git 等）"""
+    """清空输出目录（保留源文件）"""
     if OUTPUT_DIR.exists():
         for item in OUTPUT_DIR.iterdir():
-            if item.name in (".git", ".gitignore", ".nojekyll"):
+            # 保留源文件/目录
+            if item.name in SOURCE_FILES:
+                continue
+            if item.name in SOURCE_DIRS:
                 continue
             if item.is_dir():
                 shutil.rmtree(item)
@@ -265,7 +270,7 @@ def serve(port=8000):
 
     class Handler(http.server.SimpleHTTPRequestHandler):
         def __init__(self, *args, **kwargs):
-            super().__init__(*args, directory=str(BASE_DIR / "docs"), **kwargs)
+            super().__init__(*args, directory=str(BASE_DIR), **kwargs)
 
     print(f"🌐 本地预览: http://localhost:{port}{SITE_PREFIX}/")
     print("   按 Ctrl+C 停止")
