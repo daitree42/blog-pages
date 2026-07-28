@@ -29,6 +29,10 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/2026-07-28-The_Daily-What_AI_Is_Actually_Doing/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://daitree42.github.io/blog-pages/posts/Claude_Code_健康检查报告/</loc>
     <priority>0.8</priority>
   </url>
@@ -189,6 +193,22 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/播客/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/The Daily/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/NYT/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/AI经济/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daitree42.github.io/blog-pages/tag/Claude Code/</loc>
     <priority>0.6</priority>
   </url>
@@ -198,10 +218,6 @@
   </url>
   <url>
     <loc>https://daitree42.github.io/blog-pages/tag/性能优化/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daitree42.github.io/blog-pages/tag/播客/</loc>
     <priority>0.6</priority>
   </url>
   <url>
