@@ -10,7 +10,7 @@ AUTHOR_EMAIL = "oytree@gmail.com"
 GITHUB_URL = "https://github.com/daitree42"
 
 # 分页：每页文章数
-POSTS_PER_PAGE = 5
+POSTS_PER_PAGE = 10
 
 # 阅读速度估计（中文：字/分钟）
 READING_SPEED_ZH = 500
