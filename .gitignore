@@ -8,3 +8,4 @@ podcast_inbox/
 *.m4a
 *.transcript.json
 .env
+预览-*.md
