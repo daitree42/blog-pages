@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>人生新篇章：秘密与和解 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/bo-ke-bi-ji/" class="nav-link">播客笔记</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-bo-ke-bi-ji">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">播客笔记</div>
+            <h1 class="post-title">人生新篇章：秘密与和解</h1>
+            <div class="post-meta">
+                <time datetime="2026-07-29">2026年7月29日</time>
+                <span class="reading-time">2 分钟</span>
+            </div>
+
+            <div class="post-tags">
+                
+                <span class="tag">播客</span>
+                
+                <span class="tag">This American Life</span>
+                
+                <span class="tag">TAL</span>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="post-body">
+        ## 节目警告
+[00:00]
+请注意，本期节目包含未经消音的脏话。如果你偏好哔声版本，可访问我们的网站 thisamericanlife.org 收听。
+
+## 父母是间谍
+[00:11]
+Pete 18岁那年夏天，即将离家上大学。一天晚上，父亲突然提议开车兜风——这在他们家是前所未有的事。Pete知道有事要发生，却毫无头绪。出门前他问是否要叫上弟弟，父亲只是摇头。
+
+车里，父亲说：“是时候告诉你家里的秘密了——商业间谍。”Pete以为他在开玩笑。父亲让他打开手套箱，里面有一张简历——中央情报局的。Pete一直以为父亲在国务院工作，但纸上写满了反间谍、反叛乱、站长、特工等字眼。更令人震惊的是：当Pete问母亲是否知情时，父亲回答：“她也在这工作。”
+
+父母都是外勤特工，伪造身份、招募间谍。Pete回忆，母亲曾教他暗号（“忍者神龟”），父亲凌晨四点跑步、随身带枪，家里从不来客人——这些线索现在全串联起来了。他们住在弗吉尼亚，离CIA总部不到五分钟车程。
+
+Pete的父母现已退休，可以公开谈论这些。他说，虽然一开始感觉生活被颠覆，但后来觉得更像是一场加速版的“成长觉醒”——和其他人发现父母并非表面那样平凡类似，只是他一次性在车里得到了全部信息。
+
+## 与祖母的“书友会”
+[15:00]
+Jake从小在大家庭中长大，七岁时搬家到佛蒙特州，远离了亲戚们。祖母得了乳腺癌后，他每天打电话给她，两人渐渐开始分享阅读。他们会同步读同一本书，互相汇报情节——Jake像说书一样充满悬念，而祖母则更随性。
+
+几年后，这一习惯演变成独立阅读后的交流。Jake会把自己读的书详细复述给祖母听。但十二三岁时，他开始感到不安——他喜欢读“双胞胎女巫”之类的少女系小说，怕祖母发现他的喜好（也怕被认为不男性化），于是开始篡改细节：把主角性别改成男孩，把魔法能力变成超能力。
+
+多年后，祖母患上痴呆，Jake去探望时偶然翻到祖母以前读的书——竟是情色小说，描写极其露骨。他这才明白，当年祖母复述时也删掉了所有色情内容，只保留情节主线。两人都在为对方“编辑”。Jake如今已出柜，并喜欢看男同性恋题材的影集。他笑着说：“我身上喜欢这类故事的基因，来自祖母。”
+
+## 童年的霸凌记忆
+[35:00]
+Ben讨厌Facebook，却忍不住刷。某天他听说六年级老师去世，便破例给老同学发好友请求。加了Chaka、Alana、Malcolm后，他犹豫要不要加Eddie——因为从小就听说Eddie是因为他才转学的。最终他还是发了，Eddie立刻回复了一篇长文：指控Ben从幼儿园到五年级欺负他，用语言和肢体威胁他，让他至今在教导孩子关于霸凌时仍会想到Ben。
+
+Ben完全想不起任何事件，但他还是道歉了。Eddie回以犹太祝福，表示感激。Ben却深感不安，决定飞往佛罗里达与Eddie面谈。
+
+Eddie拿出老照片和笔记：Ben曾叫他“Eddie Spaghetti”，这让他每次都会哭泣；有一次午餐时Ben用金属饭盒打他，眼中充满愤怒；还有一次在公园，Eddie因恐犬症逃跑，Ben和其他同学嘲笑他。Ben对“Eddie Spaghetti”和大打出手毫无印象，但对公园事件的叙述不同——他认为自己是试图保护Eddie。
+
+两人最终承认各自记忆的主观性。Eddie说，Ben的道歉（尽管不完全真诚）解放了他。Ben则意识到，自己并非完全无辜也不是穷凶极恶之徒，只是普通的孩子。这次会面让两人真正对话，放下了三十年的包袱。
+
+## 结语
+本期节目由Aviva de Cornfeld和Tupner Glow制作。节目团队包括（列出工作人员）。特别感谢（列出致谢）。This American Life由PRX播出。欢迎访问 thisamericanlife.org 收听更多内容，包括关于Pete父亲在越战期间秘密行动的专题故事。下周节目：叙利亚喜剧演员在政权倒台后的全国巡演，探讨言论自由的界限。
+
+---
+
+**来源：** This American Life · 878: New Lore Drop · [原始链接](https://www.thisamericanlife.org/878/transcript)
+**处理日期：** 2026-07-29
+**原始语言：** en
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/2026-07-29-This_American_Life-884_The_Idiot/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">表兄的疯狂计划：The Idiot</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/2026-07-28-The_Daily-Why_Do_Some_Memories_Surv/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">Why Do Some Memories Survive Dementia（为什么有些记忆能抵抗痴呆症）</span>
+    </a>
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>

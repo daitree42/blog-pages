@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>万福玛丽：孤注一掷的绝境 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/bo-ke-bi-ji/" class="nav-link">播客笔记</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-bo-ke-bi-ji">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">播客笔记</div>
+            <h1 class="post-title">万福玛丽：孤注一掷的绝境</h1>
+            <div class="post-meta">
+                <time datetime="2026-07-29">2026年7月29日</time>
+                <span class="reading-time">2 分钟</span>
+            </div>
+
+            <div class="post-tags">
+                
+                <span class="tag">播客</span>
+                
+                <span class="tag">This American Life</span>
+                
+                <span class="tag">TAL</span>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="post-body">
+        ## 开场：万福玛丽的故事
+
+[无时间戳]
+
+一位名叫奥拉（Oris）的年轻女性，五年来被原因不明的症状折磨：视力模糊、心脏悸动、极度疲劳、脑雾，甚至感觉脑袋被冰激凌勺挖走一块。她尝试过抗生素、高压氧舱、红外桑拿、极端节食和中草药，全部无效。医生先后诊断可能是莱姆病（检测结果反复），但标准治疗失败。绝望中，奥拉的母亲听说有人用一种极其便宜且随处可得的普通产品——双氧水——通过静脉注射治好了类似症状。疾病控制中心警告此法无效且有毒，传染病学会也强烈反对。但奥拉感到“现状不可持续”，决定冒险一试。在明知可能致命的情况下，她完成了数周治疗，所有症状竟然消失了。研究者无法解释，医生本人也否认是双氧水的作用。奥拉回顾时承认这是个“坏主意”，但当时已别无选择——这就是万福玛丽（Hail Mary）式的赌博。
+
+## 第一幕：12周的最后期限——死刑律师的绝地反击
+
+[无时间戳]
+
+得克萨斯州死刑犯戴维·伍德（David Wood）被控谋杀六名女性，其中包含未成年少女。关键证据包括：监狱线人声称伍德曾向他们认罪；橙色纤维来自其吸尘器；以及受害女性朱迪丝·凯林（Judith Kelling）作证被伍德强奸。伍德的辩护律师格雷格·沃楚克（Greg Warchuk）接手此案时，距执行日仅剩12周。他怀疑警方存在“隧道视角”——迫于压力只盯着伍德，忽略其他线索。
+
+格雷格团队重新调查，发现多个疑点：前囚犯乔治·豪尔（George Hall）称警方曾以优待换取线人假证词；另一名证人拉莫娜·迪斯缪克斯（Ramona Dismukes）指控侦探威胁她作伪证，并声称朱迪丝曾承认强奸她的人是迈克尔·普勒（Michael Plyler）而非伍德，且普勒的绰号“斯凯特”（Skeeter）与案件中的线索吻合。格雷格试图核实这些信息，但普勒拒绝回应，警方也否认所有指控。最终格雷格将新证据提交法院，但能否阻止执行仍是未知数。故事揭示了死刑辩护律师在时间压力下，拼凑每一个可能打破定论的碎片。
+
+## 第二幕：瓶子传信——移民拘留中心的求生信号
+
+[无时间戳]
+
+在加州圣地亚哥的奥特梅萨（Otay Mesa）移民拘留中心外，每周日下午都有一群志愿者聚集。他们带着孩子、狗、音乐和扩音器，向墙内被拘留者喊话：“你们并不孤单。”拘留中心由私人公司CoreCivic运营，内部条件恶劣：电话昂贵、探视困难、食物糟糕、医疗缺失。志愿者通过收取被拘留者喊出的“A号码”直接往账户存钱。更惊人的是，被拘留者会从墙内抛出装纸条的瓶子——用洗发水瓶、止汗露瓶或电池绑上纸条，越过双层铁丝网。
+
+记者米娅·沙哈（Mia Wallace-Palomares）在现场目睹了这一幕：一个棕色瓶子飞过围墙，里面是长达一页的手写信，描述了290天的非人待遇：没有门窗的大房间、没有新鲜水果、持续生病、没有网络、律师无法联系。志愿者将故事发上网后，CoreCivic否认指控，但不久后拘留中心降低了温度并限制户外活动，试图阻止瓶中信。然而志愿者已获得数百个A号码，通过短信与数百名被拘留者保持联系。被拘留者要求将故事公之于众，以便外界知道真相。
+
+**来源**：此美国生活（This American Life）第889期：There’s Something About Hail Mary，原始链接：https://www.thisamericanlife.org/889/transcript，处理日期：2025年4月10日。
+
+---
+
+**来源：** This American Life · 889: There’s Something About Hail Mary · [原始链接](https://www.thisamericanlife.org/889/transcript)
+**处理日期：** 2026-07-29
+**原始语言：** en
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/2026-07-29-This_American_Life-890_Maximal_Americanness/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">极致的美国特色</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/2026-07-29-This_American_Life-888_Not_Today_Hades/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">凡人挑战众神：三个现代神话</span>
+    </a>
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>
