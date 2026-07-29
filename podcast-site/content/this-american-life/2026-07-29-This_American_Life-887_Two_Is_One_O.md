@@ -8,8 +8,6 @@ processed_date: 2026-07-29
 original_language: EN
 ---
 
-<div class="post-body">
-
 <h2>节目开场与警告</h2>
 
 <p>[00:00]</p>
@@ -196,4 +194,3 @@ original_language: EN
 
 <p>今天的节目由米奇·米克制作，汉娜·贾菲·沃尔特编辑。我是劳拉·斯塔切斯基，下周我们将带来更多《This American Life》的故事。</p>
 
-</div>
