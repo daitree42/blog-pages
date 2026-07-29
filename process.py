@@ -541,6 +541,11 @@ def generate_article(
     if "**来源：**" not in body_md:
         body_md += source_note
 
+    # 将 Markdown 正文转换为 HTML（如果没有被 HTML 标签包裹）
+    import markdown as md_lib
+    if not re.search(r'<(p|h[1-6]|div|ul|ol|table|hr)[\s>]', body_md[:500]):
+        body_md = md_lib.markdown(body_md, extensions=['fenced_code', 'tables', 'codehilite'])
+
     # 计算阅读时间
     zh_chars = len(re.findall(r'[一-鿿]', body_md))
     reading_time = max(1, round(zh_chars / 500))
