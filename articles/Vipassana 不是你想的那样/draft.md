@@ -6,7 +6,7 @@
 > 排序：1
 > 摘要：几年前，宗萨钦哲仁波切在不丹参加了一场晚宴。席间几位刚参加过葛印卡内观禅修营的不丹精英跑来问他："难道我们佛教里没有这个吗？"他抑郁了好几周。问题不在于佛教没有，而在于——用仁波切自己的话说——像他这样的仁波切们、喇嘛们，"不擅长包装、营销、贴标签"。Vipassana 对应的藏文词Lhaktong
 
-<div class="post-body">
+
 <hr/>
 <p>几年前，宗萨钦哲仁波切在不丹参加了一场晚宴。席间几位刚参加过葛印卡内观禅修营的不丹精英跑来问他："难道我们佛教里没有这个吗？"</p>
 <p>他抑郁了好几周。</p>
@@ -112,4 +112,3 @@
 <p>原始视频：<a href="https://youtu.be/uhCOc-XiGC8">Vipassana Is Not What You Think — Dzongsar Khyentse Rinpoche</a>
 字幕来源：YouTube 自动生成英文字幕，经整理翻译</p>
 </blockquote>
-</div>

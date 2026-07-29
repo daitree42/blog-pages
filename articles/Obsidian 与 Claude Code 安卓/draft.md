@@ -6,7 +6,7 @@
 > 排序：4
 > 摘要：记者的工作流里有一件事是确定的——笔记在哪里写，文章最终也在哪里写。但当笔记用 Obsidian、写作用 Claude Code，两者又都在同一台 Android 手机上时，中间需要一座桥。这篇文章记录的就是这座桥怎么搭起来的。两个工具，一台手机Obsidian 是移动端最好的笔记工具之一：本地存储
 
-<div class="post-body">
+
 <p>记者的工作流里有一件事是确定的——笔记在哪里写，文章最终也在哪里写。但当笔记用 Obsidian、写作用 Claude Code，两者又都在同一台 Android 手机上时，中间需要一座桥。</p>
 <p>这篇文章记录的就是这座桥怎么搭起来的。</p>
 <h2 id="_1">两个工具，一台手机</h2>
@@ -110,4 +110,3 @@ rclone<span class="w"> </span>sync<span class="w"> </span>/storage/emulated/0/Do
 <p>连接 Obsidian 和 Claude Code 这件事本身并不复杂，核心在于理解文件系统在 Android、Termux 和容器之间的映射关系。一旦理解了这层映射，能做的事情就不只是记笔记和写文章——同样的原理可以扩展到任何需要在命令行和图形界面之间共享文件的场景。</p>
 <hr/>
 <p><em>这篇文章本身就是用打通后的工作流写成的：采访笔记在 Obsidian 里记录，正文由 Claude Code 生成，保存到 Obsidian、「发布」命令部署到博客，再通过 rclone 备份到网盘。</em></p>
-</div>

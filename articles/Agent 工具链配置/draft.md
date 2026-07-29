@@ -7,7 +7,7 @@
 > 排序：6
 > 摘要：引子Claude Code 是一个强大的终端 AI 编程助手，但它有一个先天局限：它没有眼睛。它无法直接搜索互联网，无法读取 GitHub 仓库的代码，更无法访问你的云盘文件。这篇文章记录了我为 Claude Code 配置完整工具链的过程。装完之后，它既能全网搜索、看 GitHub 代码，也能读写
 
-<div class="post-body">
+
 <hr/>
 <h2 id="_1">引子</h2>
 <p>Claude Code 是一个强大的终端 AI 编程助手，但它有一个先天局限：<strong>它没有眼睛</strong>。它无法直接搜索互联网，无法读取 GitHub 仓库的代码，更无法访问你的云盘文件。</p>
@@ -199,4 +199,3 @@ curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </spa
 <p>如果 npm 能修好，还可以装上完整的 <code>rclone-mcp</code>，获得 55 个内置工具（比我自己写的 Python 版完整得多）。</p>
 <hr/>
 <p><em>工具是延伸，不是替代。一个好的工具链，应该让自己忘记工具的存在。</em></p>
-</div>

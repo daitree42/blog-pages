@@ -7,7 +7,7 @@
 > 排序：19
 > 摘要：上个月搭了一个零维护的静态博客，用纯 Python 把 Markdown 转成 HTML，推到 GitHub Pages 上。跑了几天，发现缺几个东西：标签只能看不能点、没有站点地图、想搜索得靠浏览器、改样式要等部署才能看效果。花了一个晚上加了四个功能。核心思路不变——不加框架，不引入运行时依赖，能
 
-<div class="post-body">
+
 <hr/>
 <p>上个月搭了<a href="/blog-pages/posts/zero-maintenance-blog/">一个零维护的静态博客</a>，用纯 Python 把 Markdown 转成 HTML，推到 GitHub Pages 上。跑了几天，发现缺几个东西：标签只能看不能点、没有站点地图、想搜索得靠浏览器、改样式要等部署才能看效果。</p>
 <p>花了一个晚上加了四个功能。核心思路不变——不加框架，不引入运行时依赖，能跑 Python 就行。</p>
@@ -134,4 +134,3 @@ python3<span class="w"> </span>publish.py<span class="w"> </span>--watch
 <h2 id="_6">尾记</h2>
 <p>这四个功能加起来不到 100 行新增代码。这是静态博客的好处：没有插件系统的学习成本，想要什么自己写。坏处也很明显：得会写。但对一个自己用的工具来说，这种掌控感很舒服。</p>
 <p>整个 <code>publish.py</code> 现在不到 400 行，零外部运行时依赖（除了 markdown 和 jinja2 两个 apt 包）。理论上十年后回来，装两个包就能重新跑起来。</p>
-</div>

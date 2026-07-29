@@ -7,8 +7,6 @@
 > 标签：播客，This American Life，TAL
 > 摘要：This American Life 第878期节目文字稿。
 
-<div class="post-body">
-
 ---
 **[00:00]**
 
@@ -493,4 +491,3 @@ J.D. 罗布——她写了《Naked in Death》，一个女人通过和一个性�
 **主持人：** 我是艾拉·格拉斯。下周带着更多《美国生活》的故事再见。
 ---
 
-</div>

@@ -7,7 +7,7 @@
 > 排序：22
 > 摘要：来源：Anthropic Skilljar — Claude Code 101 课程一、核心理念：Claude Code 与普通聊天的区别Claude Code 是一个agentic loop（代理循环）系统，而不是简单的问答工具。它在 terminal 中运行，能够自主执行多步操作（读文件、搜索代
 
-<div class="post-body">
+
 <hr/>
 <p>来源：Anthropic Skilljar — Claude Code 101 课程</p>
 <hr/>
@@ -121,4 +121,3 @@
 </ol>
 <hr/>
 <p><em>整理于 2026-05-25，来源：anthropic.skilljar.com/courses/claude-code-101</em></p>
-</div>

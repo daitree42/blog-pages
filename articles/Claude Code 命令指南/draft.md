@@ -7,7 +7,7 @@
 > 排序：20
 > 摘要：Claude Code 是一个终端里的 AI 编程助手，和 Claude 网页版不同，它在命令行里工作，能直接读写文件、执行命令、管理整个项目。而它的斜杠命令（slash commands）是控制这个工具最直接的方式。之前一直以为 Claude Code 只有 /help 和 /clear 几个简单
 
-<div class="post-body">
+
 <hr/>
 <p>Claude Code 是一个终端里的 AI 编程助手，和 Claude 网页版不同，它在命令行里工作，能直接读写文件、执行命令、管理整个项目。而它的斜杠命令（slash commands）是控制这个工具最直接的方式。</p>
 <p>之前一直以为 Claude Code 只有 /help 和 /clear 几个简单命令，仔细查了一下，发现内置命令比预想的多不少。</p>
@@ -118,4 +118,3 @@ cd /root/blog &amp;&amp; python3 publish.py &amp;&amp; bash /root/blog/deploy.sh
 <p>参考来源：
 - <a href="https://clskillshub.com/blog/claude-code-slash-commands-2026">Claude Skills Hub — 2026 Command List</a>
 - <a href="https://medium.com/@ekondur/the-complete-guide-to-claude-code-slash-commands-may-2026-48a127aef832">Medium — The Complete Guide to Claude Code Slash Commands</a></p>
-</div>

@@ -7,7 +7,7 @@
 > 标签：播客，This American Life，TAL
 > 摘要：在本期节目中，主持人Ira Glass与M. Gesson讨论她的新播客系列《The Idiot》。故事围绕M. Gesson的表哥Alan展开：他带着5岁儿子从俄罗斯来到美国，疑似绑架；两年后再次绑架，最终因雇佣杀手谋杀前妻Priscilla被捕。M. Gesson起初担任双重间谍，帮助Priscilla获取信息，最终在庭审中从录音中听到Alan亲口同意杀妻。节目包含第一集完整内容、对Priscilla的访谈、法庭录音分析，以及M. Gesson与Alan的对话。这是一个关于家族秘密、背叛与正义的惊人故事。
 
-<div class="post-body">
+
 <h2>开场与警告</h2>
 <p>[00:00] 快速警告：今天的节目中有未经消音的脏话。如果你偏好消音版本，可以访问我们的网站thisamericanlife.org。</p>
 <p>[00:05] 来自芝加哥WB电台，这里是《This American Life》，我是Ira Glass。今天在演播室与我们一同的是M. Gesson，你好。
@@ -49,4 +49,3 @@
 <p><strong>来源：</strong> This American Life · 884: The Idiot · <a href="https://www.thisamericanlife.org/884/transcript">原始链接</a>
 <strong>处理日期：</strong> 2026-07-29
 <strong>原始语言：</strong> en</p>
-</div>

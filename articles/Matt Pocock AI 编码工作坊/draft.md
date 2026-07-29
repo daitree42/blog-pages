@@ -6,7 +6,7 @@
 > 排序：27
 > 摘要：以下为 Matt Pocock 在 AI Engineer 大会上的工作坊 Full Walkthrough: Workflow for AI Coding from Planning to Production 的完整文字稿中文翻译。开场：软件工程基本功依然是放大器Matt 开场说道：「好，人满了
 
-<div class="post-body">
+
 <hr/>
 <p><em>以下为 Matt Pocock 在 AI Engineer 大会上的工作坊 Full Walkthrough: Workflow for AI Coding from Planning to Production 的完整文字稿中文翻译。</em></p>
 <hr/>
@@ -125,4 +125,3 @@
 文字稿整理：autoem.net</p>
 <p>链接：https://youtu.be/jvB2F_hYkXA</p>
 </blockquote>
-</div>

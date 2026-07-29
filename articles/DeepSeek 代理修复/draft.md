@@ -7,7 +7,7 @@
 > 排序：14
 > 摘要：把 Claude Code 接到 DeepSeek 的 V4 Flash 模型上，价格便宜量又足，这是很多开发者的首选方案。但跑起来之后，时不时就会迎面砸来一个 400 错误，说消息格式不对。仔细一看，Claude Code 在发起请求时，会在messages数组里塞多条role: "system"
 
-<div class="post-body">
+
 <hr/>
 <p>把 Claude Code 接到 DeepSeek 的 V4 Flash 模型上，价格便宜量又足，这是很多开发者的首选方案。但跑起来之后，时不时就会迎面砸来一个 400 错误，说消息格式不对。</p>
 <p>仔细一看，Claude Code 在发起请求时，会在 <code>messages</code> 数组里塞<strong>多条</strong> <code>role: "system"</code> 的消息——CLAUDE.md 一条、记忆文件一条、当前日期一条……而这些在 DeepSeek 的 Anthropic 兼容接口上不被接受，直接报格式错误。</p>
@@ -107,4 +107,3 @@ node<span class="w"> </span>/root/proxy.js<span class="w"> </span><span class="p
 <h2 id="_5">小结</h2>
 <p>这是一个很典型的"兼容层补丁"场景——两个 API 协议在核心功能上一致，但在边缘细节上存在差异。与其等上游修复，不如在中间加一层轻量的胶水代码。20 行逻辑，一个 <code>map</code>，解决问题。</p>
 <p>如果你想在自己的环境里用，把上面的代码保存为 <code>proxy.js</code>，修改 <code>DEEPSEEK_HOST</code> 为你自己的 API 地址即可。整件事的核心不是什么高深技术，而是<strong>知道问题出在哪</strong>。</p>
-</div>

@@ -7,7 +7,7 @@
 > 排序：24
 > 摘要：一、核心认知：Claude Code 不是聊天机器人Claude Code 是一个agentic loop（代理循环）系统。这意味着：聊天式 ClaudeClaude Code你问一句它答一句你给一个任务，它自主执行多步只能输出文字可以读文件、写代码、执行命令被动回应用户主动探索代码库、制定计划、执
 
-<div class="post-body">
+
 <hr/>
 <h2 id="claude-code">一、核心认知：Claude Code 不是聊天机器人</h2>
 <p>Claude Code 是一个 <strong>agentic loop</strong>（代理循环）系统。这意味着：</p>
@@ -225,4 +225,3 @@
 </ol>
 <hr/>
 <p><em>整理于 2026-05-25</em></p>
-</div>

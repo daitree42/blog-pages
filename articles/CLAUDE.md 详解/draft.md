@@ -7,7 +7,7 @@
 > 排序：17
 > 摘要：好，信息够了，给你一个清晰实用的讲解。CLAUDE.md 是什么CLAUDE.md 是一个特殊文件，Claude 每次开始对话时都会自动读取它。你可以把它理解为给 Claude 的项目说明书——不用每次都重复告诉它背景信息。来源：Claude Code 最佳实践怎么生成进入你的项目目录，运行：cd~
 
-<div class="post-body">
+
 <hr/>
 <p>好，信息够了，给你一个清晰实用的讲解。</p>
 <h2 id="claudemd">CLAUDE.md 是什么</h2>
@@ -79,4 +79,3 @@ claude
 <li>把 CLAUDE.md 提交到 git，团队共享，这个文件会随时间越来越有价值</li>
 </ol>
 <p>来源：<a href="https://code.claude.com/docs/en/best-practices">Claude Code 最佳实践</a></p>
-</div>

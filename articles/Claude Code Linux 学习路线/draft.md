@@ -8,7 +8,7 @@
 > 摘要：了解了你的情况，我来给你一个清晰的学习路线图！第一阶段：安装与配置（先把工具跑起来）前提条件：你需要 Node.js 和 npm# 第一步：配置 npm（避免权限问题）mkdir-p~/.npm-global
 npmconfigsetprefix~/.npm-globalecho'export PA
 
-<div class="post-body">
+
 <hr/>
 <p>了解了你的情况，我来给你一个清晰的学习路线图！</p>
 <h2 id="_1">第一阶段：安装与配置（先把工具跑起来）</h2>
@@ -91,4 +91,3 @@ claude
 <li><strong>出问题时运行 <code>claude doctor</code></strong>，它会自动检测大多数配置问题</li>
 <li><strong>用 <code>/cost</code> 养成习惯</strong>，了解自己的使用量</li>
 </ol>
-</div>

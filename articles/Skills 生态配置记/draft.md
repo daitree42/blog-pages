@@ -7,7 +7,7 @@
 > 排序：9
 > 摘要：最近花了些时间搭建 Claude Code 的 Skills 生态，整理一下过程，既是备忘，也是给同样做深度报道的朋友一个参考。什么是 SkillsClaude Code 的 Skills 有点像编辑部的工具柜——每个技能是一个专门的能力包，告诉 AI 怎么帮你做特定的事。搜资料、转写录音、核查事实
 
-<div class="post-body">
+
 <p>最近花了些时间搭建 Claude Code 的 Skills 生态，整理一下过程，既是备忘，也是给同样做深度报道的朋友一个参考。</p>
 <h2 id="skills">什么是 Skills</h2>
 <p>Claude Code 的 Skills 有点像编辑部的工具柜——每个技能是一个专门的能力包，告诉 AI 怎么帮你做特定的事。搜资料、转写录音、核查事实、生成文档……不用每次都从零开始描述需求，直接调用就好。</p>
@@ -91,4 +91,3 @@
 <li><strong>写作</strong>：writing-plans, writing-skills, humanizer-zh, newsroom-style</li>
 <li><strong>输出</strong>：docx, pdf, publish</li>
 </ul>
-</div>

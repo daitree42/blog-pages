@@ -7,7 +7,7 @@
 > 排序：21
 > 摘要：在大模型與 AI Agent 爆發的時代，Anthropic 官方推出的終端代碼助手Claude Code憑藉強大的多文件讀寫、自動 Git 管理和指令執行能力，成為了開發者的神器。然而，官方並沒有對安卓（Termux）環境提供原生支持，且其綁定的官方 API 價格不菲。本文將完整記錄如何利用PRo
 
-<div class="post-body">
+
 <hr/>
 <p>在大模型與 AI Agent 爆發的時代，Anthropic 官方推出的終端代碼助手 <strong>Claude Code</strong> 憑藉強大的多文件讀寫、自動 Git 管理和指令執行能力，成為了開發者的神器。然而，官方並沒有對安卓（Termux）環境提供原生支持，且其綁定的官方 API 價格不菲。</p>
 <p>本文將完整記錄如何利用 <strong>PRoot 虛擬化技術</strong> 繞過架構限制，在手機上完美部署 Claude Code，並<strong>透過環境變量將其「靈魂」替換為極具性價比的 DeepSeek v4 API</strong>，打造一個隨身攜帶、價格低廉的全棧編程 Agent。</p>
@@ -91,4 +91,3 @@ proot-distro<span class="w"> </span>login<span class="w"> </span>ubuntu
 <div class="codehilite"><pre><span></span><code>claude
 </code></pre></div>
 <p>進入對話界面後，你可以輸入 <code>/status</code> 驗證配置。當看到 <strong>Anthropic base URL</strong> 成功指向 <code>api.deepseek.com</code> 且 <strong>Model</strong> 顯示為 <code>deepseek-v4-flash/pro</code> 時，恭喜你，這套全網最極客、性價比拉滿的隨身 AI 編程工作站就徹底為你所用了！</p>
-</div>

@@ -7,7 +7,7 @@
 > 排序：13
 > 摘要：环境说明设备：Android 手机终端：Termux系统：Ubuntu（通过 proot-distro 安装）目标：用 DeepSeek API 驱动 Claude Code第一步：确认运行环境问题：Claude Code 在 Termux 里直接运行报错：Nativebinariesforlinu
 
-<div class="post-body">
+
 <hr/>
 <h2 id="_1">环境说明</h2>
 <ul>
@@ -221,4 +221,3 @@ node<span class="w"> </span>/root/proxy.js<span class="w"> </span><span class="p
          DeepSeek API
 </code></pre></div>
 <p>DeepSeek 提供了 Anthropic 兼容接口，但有两处细节差异，proxy.js 就是专门弥补这两处差异的胶水层。</p>
-</div>

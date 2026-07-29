@@ -7,7 +7,7 @@
 > 排序：12
 > 摘要：起因用了一段时间 Claude Code，总觉得少了点什么。每次要操作浏览器、搜索现有技能、或者写一篇新报道，都得反复描述上下文。Skills 系统的存在就是为了解决这个——把常用的工作流固化成可复用的命令。于是花了一个下午，一口气装了 11 个技能，覆盖四个方向。方向一：浏览器自动化Claude 
 
-<div class="post-body">
+
 <hr/>
 <h2 id="_1">起因</h2>
 <p>用了一段时间 Claude Code，总觉得少了点什么。每次要操作浏览器、搜索现有技能、或者写一篇新报道，都得反复描述上下文。Skills 系统的存在就是为了解决这个——把常用的工作流固化成可复用的命令。</p>
@@ -205,4 +205,3 @@ agent-browser<span class="w"> </span>install<span class="w">    </span><span cla
 <p><strong>Skills 的价值不在数量。</strong> 装一堆不用等于没装。今天装的这些，每个对应一个真实场景：写稿 → <code>/humanizer-zh</code>，想选题 → <code>/brainstorming</code>，查资料 → <code>/agent-browser</code>。</p>
 <p><strong>元技能的组合效应。</strong> <code>find-skills</code> 发现 + <code>skill-creator</code> 创造，再加上 <code>brainstorming</code> 来设计，这三个配合起来，等于让 Claude Code 具备了扩展自己的能力。</p>
 <p><strong>代理协议比语法重要。</strong> 读 <code>agent-browser</code> 的 SKILL.md 时印象很深——它花大量篇幅写协议流程（怎么问问题、怎么恢复、怎么报告），而不是复制 CLI 帮助文档。好的技能是在编码判断力，不只是粘贴命令。</p>
-</div>

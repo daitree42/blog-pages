@@ -8,7 +8,7 @@
 > 摘要：项目一：个人静态博客生成器难度：★☆☆☆☆ |技术栈：Python + Markdown + HTML项目说明：
 写一个命令行工具，把 Markdown 文件转换成静态 HTML 页面。支持首页文章列表、单篇文章页、简单的标签分类。练习目标：Claude Code 功能在项目中的应用Explore 
 
-<div class="post-body">
+
 <hr/>
 <h2 id="_1">项目一：个人静态博客生成器</h2>
 <p><strong>难度</strong>：★☆☆☆☆ | <strong>技术栈</strong>：Python + Markdown + HTML</p>
@@ -206,4 +206,3 @@
 <p>按这个顺序做完三个项目，你会自然掌握 Claude Code 最核心的日常功能，之后再做实际项目就顺手了。</p>
 <hr/>
 <p><em>整理于 2026-05-25</em></p>
-</div>

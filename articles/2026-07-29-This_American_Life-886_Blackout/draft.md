@@ -7,7 +7,7 @@
 > 标签：播客，This American Life，TAL
 > 摘要：本期《This American Life》记录了伊朗在美以军事打击期间，政府实施的全面互联网封锁。民众通过艰难方式传出语音，讲述战争中的日常生活、对政权的不同立场、1月抗议的镇压，以及战后互联网分层的新现实。这不仅是技术封锁，更是对人们生活的彻底抹除。
 
-<div class="post-body">
+
 <h2>开场：永远联系不上的家人</h2>
 <p>[00:00]
 来自WB Izishikago，这里是《This American Life》。我是Hana Jaffi Walt，代班Ira Glass。当Sharin Jafari年轻时移居美国，她对家乡的家人许下很多承诺：我们会随时联系，每周打电话，就像住在同一个城镇一样。在过去的20年里，她确实做到了。她与父母保持紧密联系，每天多次发信息、分享视频。然而在2月，美国和以色列攻击伊朗（她父母居住的地方）的当天，伊朗当局关闭了互联网。整个国家陷入网络黑障。电话打不通，短信和邮件全部失效。唯一能联系的方式是父母用座机打给她。当轰炸变得激烈，父母逃离城市，留下了座机。Sharin连续数天甚至数周得不到他们的消息。她深夜在社交媒体上疯狂寻找任何了解她父母的人，给所有人发信息求助。</p>
@@ -48,4 +48,3 @@ Arta还讲了一个故事。战前他曾被提供“白线”SIM卡，可以绕�
 <p><strong>来源：</strong> This American Life · 886: Blackout · <a href="https://www.thisamericanlife.org/886/transcript">原始链接</a>
 <strong>处理日期：</strong> 2026-07-29
 <strong>原始语言：</strong> en</p>
-</div>
