@@ -1,7 +1,8 @@
 # 表兄的疯狂计划：The Idiot
 
-> 栏目：播客笔记
+> 栏目：播客文字稿
 > 日期：2026-07-29
+> 排序：7
 > 阅读时间：16
 > 标签：播客，This American Life，TAL
 > 摘要：在本期节目中，主持人Ira Glass与M. Gesson讨论她的新播客系列《The Idiot》。故事围绕M. Gesson的表哥Alan展开：他带着5岁儿子从俄罗斯来到美国，疑似绑架；两年后再次绑架，最终因雇佣杀手谋杀前妻Priscilla被捕。M. Gesson起初担任双重间谍，帮助Priscilla获取信息，最终在庭审中从录音中听到Alan亲口同意杀妻。节目包含第一集完整内容、对Priscilla的访谈、法庭录音分析，以及M. Gesson与Alan的对话。这是一个关于家族秘密、背叛与正义的惊人故事。
