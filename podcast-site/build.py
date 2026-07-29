@@ -1,295 +1,244 @@
 #!/usr/bin/env python3
 """
-build.py — 播客转录站点生成器
+播客笔记 - 网站生成脚本
+======================
+用法：
+  python build.py
 
-从 shows.json 和 transcripts/ 生成静态 HTML 站点到 docs/。
+会读取：
+  data/shows.yaml      节目列表（名称/简介/分类等）
+  content/<show>/*.md  每一集的文字稿（YAML front matter + Markdown 正文）
 
-用法:
-    python build.py                    # 完整构建
-    python build.py --serve            # 构建 + 本地预览
+生成到：
+  public/               整个静态网站，把这个文件夹的内容原样推送 / 拷贝到你的
+                         GitHub Pages 仓库即可（覆盖 index.html / show/ / episode/ / static/）
+
+新增一集：在 content/<show-slug>/ 下新建一个 .md 文件（文件名随意，建议
+  "日期-短标题.md"），按下面的字段格式填写头部信息即可，然后重新运行本脚本。
 """
 
-import argparse
 import json
-import markdown as md_lib
-import os
 import re
 import shutil
 import sys
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
+
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+import frontmatter
+import markdown as md
+import yaml
 from jinja2 import Environment, FileSystemLoader
 
-# Windows 终端兼容：避免 emoji 编码错误
-if sys.platform == "win32":
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # py3.7+
+# ── 配置 ──────────────────────────────────────────────────────────
+ROOT_DIR = Path(__file__).parent
+DATA_FILE = ROOT_DIR / "data" / "shows.yaml"
+CONTENT_DIR = ROOT_DIR / "content"
+TEMPLATE_DIR = ROOT_DIR / "templates"
+STATIC_SRC_DIR = ROOT_DIR / "static"
+OUTPUT_DIR = ROOT_DIR / "public"
 
-# ── 路径 ──────────────────────────────────────────────────────────
-BASE_DIR = Path(__file__).resolve().parent
-TRANSCRIPTS_DIR = BASE_DIR / "transcripts"
-TEMPLATES_DIR = BASE_DIR / "templates"
-STATIC_DIR = BASE_DIR / "static"
-OUTPUT_DIR = BASE_DIR
-SOURCE_DIRS = {"templates", "static", "transcripts", "transcripts_raw", ".git", "docs"}
-SOURCE_FILES = {"build.py", "shows.json", ".gitignore"}
-SHOWS_FILE = BASE_DIR / "shows.json"
+# 部署到 GitHub Pages 项目页时的子路径，例如你的仓库是
+# daitree42.github.io/podcast-site/ 就填 "/podcast-site/"；
+# 如果部署在自己的根域名（例如 example.com/）就填 "/"
+BASE_PATH = "/podcast-site/"
 
-# 站点前缀（部署到 GitHub Pages 子路径时使用）
-SITE_PREFIX = "/podcast-site"
-
-# ── 模板引擎 ──────────────────────────────────────────────────────
-jinja_env = Environment(
-    loader=FileSystemLoader(str(TEMPLATES_DIR)),
-    autoescape=True,
-)
+# 首页"最近更新"区块显示几条
+RECENT_COUNT = 6
+# 多少天内算"NEW"
+NEW_DAYS = 7
+# 大约多少个字算 1 分钟阅读
+CHARS_PER_MINUTE = 400
 
 
-def load_shows() -> list[dict]:
-    """加载 shows.json"""
-    if not SHOWS_FILE.exists():
-        print("  ⚠  shows.json 不存在，返回空列表")
-        return []
-
-    with open(SHOWS_FILE, encoding="utf-8") as f:
-        shows = json.load(f)
-
-    # 统计每个节目已有几集转录
-    for show in shows:
-        slug = show["slug"]
-        show_dir = TRANSCRIPTS_DIR / slug
-        if show_dir.exists():
-            episodes = sorted(show_dir.glob("*.md"), reverse=True)
-            show["episode_count"] = len(episodes)
-        else:
-            show["episode_count"] = 0
-
-    return shows
+# ── 工具函数 ──────────────────────────────────────────────────────
+def to_date(value):
+    """把 yaml/frontmatter 里可能是 str 或 date 的字段统一转成 date 对象"""
+    if isinstance(value, datetime):
+        return value.date()
+    if isinstance(value, date):
+        return value
+    return datetime.strptime(str(value), "%Y-%m-%d").date()
 
 
-def parse_episode(filepath: Path, show_slug: str) -> dict | None:
-    """
-    解析单集转录 markdown 文件。
-
-    格式：和 blog articles/draft.md 一致
-      # 标题
-      > 栏目：播客笔记
-      > 日期：2026-07-25
-      > 摘要：...
-
-      正文……
-    """
-    try:
-        with open(filepath, encoding="utf-8") as f:
-            raw = f.read()
-    except Exception as e:
-        print(f"  ⚠  读取失败: {filepath} — {e}")
-        return None
-
-    lines = raw.split("\n")
-
-    # 标题
-    title = ""
-    for line in lines:
-        stripped = line.strip()
-        if stripped.startswith("# "):
-            title = stripped[2:].strip()
-            break
-
-    # 元数据
-    metadata = {}
-    in_meta = False
-    body_start = 0
-    for i, line in enumerate(lines):
-        stripped = line.strip()
-        if stripped.startswith("> "):
-            in_meta = True
-            content = stripped[2:]
-            if "：" in content:
-                key, value = content.split("：", 1)
-                key = key.strip()
-                value = value.strip()
-                if key == "日期":
-                    metadata["date"] = value
-                elif key == "摘要":
-                    metadata["summary"] = value
-                elif key == "阅读时间":
-                    try:
-                        metadata["reading_time"] = int(value.replace("分钟", "").strip())
-                    except ValueError:
-                        pass
-                elif key == "排序":
-                    metadata["position"] = value
-                    if key == "标签":
-                        metadata["tags"] = value
-        elif in_meta and stripped == "":
-            continue
-        elif in_meta:
-            body_start = i
-            break
-        elif not stripped.startswith("#") and in_meta:
-            body_start = i
-            break
-
-    # 正文（去掉 <div class="post-body"> 包装）
-    body_raw = "\n".join(lines[body_start:]).strip()
-    body_raw = re.sub(r'^<div\s+class="post-body">\s*', "", body_raw)
-    body_raw = re.sub(r'\s*</div>\s*$', "", body_raw)
-
-    # 转 HTML（或保留已有 HTML）
-    if body_raw.strip().startswith("<") or "<p>" in body_raw[:200]:
-        body_html = body_raw
-    else:
-        body_html = md_lib.markdown(body_raw, extensions=["fenced_code", "tables", "codehilite"])
-
-    # slug 来自文件名
-    slug = filepath.stem
-
-    return {
-        "title": title or slug,
-        "slug": slug,
-        "show_slug": show_slug,
-        "date": metadata.get("date", ""),
-        "summary": metadata.get("summary", ""),
-        "reading_time": metadata.get("reading_time", 0),
-        "body_html": body_html,
-        "source_lang": metadata.get("source_lang", ""),
-        "source_link": metadata.get("source_link", ""),
-        "filepath": str(filepath),
-    }
+def slugify(text):
+    text = re.sub(r"[^\w\u4e00-\u9fff-]+", "-", text.strip())
+    return text.strip("-")
 
 
-def load_episodes(show_slug: str) -> list[dict]:
-    """加载某个节目的所有转录"""
-    show_dir = TRANSCRIPTS_DIR / show_slug
-    if not show_dir.exists():
-        return []
-
-    episodes = []
-    for f in sorted(show_dir.glob("*.md"), reverse=True):
-        ep = parse_episode(f, show_slug)
-        if ep:
-            episodes.append(ep)
-
-    # 按日期降序
-    episodes.sort(key=lambda e: e["date"], reverse=True)
-    return episodes
+def read_minutes(raw_text):
+    char_count = len(re.sub(r"\s", "", raw_text))
+    return max(1, round(char_count / CHARS_PER_MINUTE))
 
 
-def clean_output():
-    """清空输出目录（保留源文件）"""
-    if OUTPUT_DIR.exists():
-        for item in OUTPUT_DIR.iterdir():
-            # 保留源文件/目录
-            if item.name in SOURCE_FILES:
-                continue
-            if item.name in SOURCE_DIRS:
-                continue
-            if item.is_dir():
-                shutil.rmtree(item)
-            else:
-                item.unlink()
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+def load_shows():
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        shows = yaml.safe_load(f) or []
+    return {s["slug"]: s for s in shows}, shows
 
 
-def write_file(rel_path: str, content: str):
-    """写入文件"""
-    full_path = OUTPUT_DIR / rel_path
-    full_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(full_path, "w", encoding="utf-8") as f:
-        f.write(content)
-
-
-def build():
-    print(f"🎙️  播客站点构建")
-    print(f"   {'='*40}")
-
-    # ── 加载数据 ────────────────────────────────────────
-    shows = load_shows()
-    print(f"   节目: {len(shows)} 个")
-
+def load_episodes(shows_by_slug):
+    """遍历 content/ 下所有 .md 文件，返回按 show 分组的 episode 列表"""
+    episodes_by_show = {slug: [] for slug in shows_by_slug}
     all_episodes = []
-    for show in shows:
-        show_episodes = load_episodes(show["slug"])
-        show["episodes"] = show_episodes
-        all_episodes.extend(show_episodes)
-        lang_tag = f" ({show['language']})" if show.get("language") else ""
-        print(f"   {show['name']}: {len(show_episodes)} 集{lang_tag}")
+    today = date.today()
 
-    print(f"\n🧹 清理输出目录...")
-    clean_output()
+    if not CONTENT_DIR.exists():
+        return episodes_by_show, all_episodes
 
-    # ── 复制静态文件 ─────────────────────────────────────
-    if STATIC_DIR.exists():
-        shutil.copytree(STATIC_DIR, OUTPUT_DIR / "static", dirs_exist_ok=True)
-        print(f"   ✅ 静态文件已复制")
+    for show_dir in sorted(CONTENT_DIR.iterdir()):
+        if not show_dir.is_dir():
+            continue
+        show_slug = show_dir.name
+        if show_slug not in shows_by_slug:
+            print(f"⚠️  警告：content/{show_slug}/ 在 shows.yaml 里找不到对应节目，已跳过")
+            continue
 
-    # ── 上下文 ──────────────────────────────────────────
-    ctx = {
-        "site_prefix": SITE_PREFIX,
-        "current_year": datetime.now().year,
+        show = shows_by_slug[show_slug]
+
+        for md_file in sorted(show_dir.glob("*.md")):
+            post = frontmatter.load(md_file)
+            meta = post.metadata
+            ep_date = to_date(meta["date"])
+            body_html = md.markdown(post.content, extensions=["tables", "fenced_code"])
+            stem = md_file.stem
+            url_slug = f"{show_slug}/{stem}"
+
+            ep = {
+                "title": meta.get("title", stem),
+                "date": ep_date.isoformat(),
+                "date_obj": ep_date,
+                "show_slug": show_slug,
+                "show_name": show["name"],
+                "show_color": show.get("color", "#4a90d9"),
+                "summary": meta.get("summary", ""),
+                "tags": meta.get("tags", []) or [],
+                "source_episode": meta.get("source_episode", ""),
+                "source_url": meta.get("source_url", ""),
+                "processed_date": meta.get("processed_date", ep_date.isoformat()),
+                "original_language": meta.get("original_language", show.get("language", "")),
+                "body_html": body_html,
+                "read_minutes": read_minutes(post.content),
+                "url_slug": url_slug,
+                "is_new": (today - ep_date) <= timedelta(days=NEW_DAYS),
+            }
+            days_ago = (today - ep_date).days
+            ep["days_ago_label"] = f"{days_ago} 天前" if days_ago > 0 else "今天"
+
+            episodes_by_show[show_slug].append(ep)
+            all_episodes.append(ep)
+
+    for slug in episodes_by_show:
+        episodes_by_show[slug].sort(key=lambda e: e["date_obj"], reverse=True)
+
+    all_episodes.sort(key=lambda e: e["date_obj"], reverse=True)
+    return episodes_by_show, all_episodes
+
+
+def build_show_summaries(shows_list, episodes_by_show):
+    today = date.today()
+    result = []
+    for show in shows_list:
+        eps = episodes_by_show.get(show["slug"], [])
+        last_updated = eps[0]["date_obj"] if eps else None
+        result.append({
+            **show,
+            "episode_count": len(eps),
+            "last_updated": last_updated.isoformat() if last_updated else None,
+            "last_updated_obj": last_updated,
+            "is_new": bool(last_updated) and (today - last_updated) <= timedelta(days=NEW_DAYS),
+        })
+    # 有更新的排前面（按最近更新时间倒序），没有内容的排后面（按名称）
+    with_content = sorted(
+        [s for s in result if s["last_updated_obj"]],
+        key=lambda s: s["last_updated_obj"], reverse=True,
+    )
+    without_content = sorted(
+        [s for s in result if not s["last_updated_obj"]],
+        key=lambda s: s["name"],
+    )
+    return with_content + without_content
+
+
+def build_search_index(all_episodes):
+    return [
+        {
+            "title": e["title"],
+            "show": e["show_name"],
+            "date": e["date"],
+            "summary": e["summary"],
+            "tags": " ".join(e["tags"]),
+            "url": f"{BASE_PATH}episode/{e['url_slug']}/",
+        }
+        for e in all_episodes
+    ]
+
+
+# ── 主流程 ────────────────────────────────────────────────────────
+def main():
+    if OUTPUT_DIR.exists():
+        shutil.rmtree(OUTPUT_DIR)
+    OUTPUT_DIR.mkdir(parents=True)
+
+    shows_by_slug, shows_list_raw = load_shows()
+    episodes_by_show, all_episodes = load_episodes(shows_by_slug)
+    shows = build_show_summaries(shows_list_raw, episodes_by_show)
+    categories = sorted({s["category"] for s in shows})
+
+    stats = {
+        "show_count": len(shows),
+        "episode_count": len(all_episodes),
     }
 
-    # ── 首页 ────────────────────────────────────────────
-    print(f"\n🏠 生成首页...")
-    index_ctx = {**ctx, "shows": shows}
-    html = jinja_env.get_template("index.html").render(**index_ctx)
-    write_file("index.html", html)
+    env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), trim_blocks=True, lstrip_blocks=True)
+    env.globals["root"] = BASE_PATH
+    env.globals["stats"] = stats
 
-    # ── 节目页 ──────────────────────────────────────────
+    # 首页
+    recent = all_episodes[:RECENT_COUNT]
+    index_html = env.get_template("index.html").render(
+        shows=shows,
+        categories=categories,
+        recent_episodes=recent,
+        search_index_json=json.dumps(build_search_index(all_episodes), ensure_ascii=False),
+    )
+    (OUTPUT_DIR / "index.html").write_text(index_html, encoding="utf-8")
+
+    # 更新时间线
+    updates_dir = OUTPUT_DIR / "updates"
+    updates_dir.mkdir(parents=True, exist_ok=True)
+    (updates_dir / "index.html").write_text(
+        env.get_template("updates.html").render(episodes=all_episodes), encoding="utf-8"
+    )
+
+    # 节目页 + 单集页
+    show_tpl = env.get_template("show.html")
+    ep_tpl = env.get_template("episode.html")
     for show in shows:
-        slug = show["slug"]
-        print(f"   📂 {show['name']}...")
-        show_ctx = {**ctx, "show": show, "episodes": show["episodes"]}
-        html = jinja_env.get_template("show.html").render(**show_ctx)
-        write_file(f"show/{slug}/index.html", html)
+        show_dir = OUTPUT_DIR / "show" / show["slug"]
+        show_dir.mkdir(parents=True, exist_ok=True)
+        eps = episodes_by_show.get(show["slug"], [])
+        (show_dir / "index.html").write_text(
+            show_tpl.render(show=show, episodes=eps), encoding="utf-8"
+        )
+        for ep in eps:
+            ep_dir = OUTPUT_DIR / "episode" / ep["url_slug"]
+            ep_dir.mkdir(parents=True, exist_ok=True)
+            (ep_dir / "index.html").write_text(
+                ep_tpl.render(show=show, ep=ep), encoding="utf-8"
+            )
 
-    # ── 单集页 ──────────────────────────────────────────
-    print(f"   📝 单集页 ({len(all_episodes)} 篇)...")
-    for ep in all_episodes:
-        show = next((s for s in shows if s["slug"] == ep["show_slug"]), None)
-        if not show:
-            continue
-        ep_ctx = {**ctx, "show": show, "episode": ep}
-        html = jinja_env.get_template("episode.html").render(**ep_ctx)
-        write_file(f"episode/{ep['slug']}/index.html", html)
+    # 静态资源
+    static_out = OUTPUT_DIR / "static"
+    shutil.copytree(STATIC_SRC_DIR, static_out)
 
-    # ── 写入 .nojekyll ──────────────────────────────────
+    # GitHub Pages 不要用 Jekyll 处理
     (OUTPUT_DIR / ".nojekyll").touch()
 
-    print(f"\n✅ 构建完成！共 {len(all_episodes)} 集，{len(shows)} 个节目")
-    print(f"   输出: {OUTPUT_DIR}")
-
-
-# ── 本地预览 ──────────────────────────────────────────────────────
-
-def serve(port=8000):
-    """启动本地预览"""
-    import http.server
-
-    os.chdir(str(BASE_DIR))
-
-    class Handler(http.server.SimpleHTTPRequestHandler):
-        def __init__(self, *args, **kwargs):
-            super().__init__(*args, directory=str(BASE_DIR), **kwargs)
-
-    print(f"🌐 本地预览: http://localhost:{port}{SITE_PREFIX}/")
-    print("   按 Ctrl+C 停止")
-    http.server.HTTPServer(("", port), Handler).serve_forever()
-
-
-# ── CLI ──────────────────────────────────────────────────────────
-
-def main():
-    parser = argparse.ArgumentParser(description="播客转录站点生成器")
-    parser.add_argument("--serve", action="store_true", help="构建后启动本地预览")
-    parser.add_argument("--port", type=int, default=8000, help="预览端口")
-
-    args = parser.parse_args()
-
-    build()
-
-    if args.serve:
-        serve(args.port)
+    print(f"✅ 生成完成：{stats['show_count']} 档节目，{stats['episode_count']} 篇文字稿")
+    print(f"   输出目录：{OUTPUT_DIR}")
 
 
 if __name__ == "__main__":

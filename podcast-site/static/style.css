@@ -44,7 +44,7 @@ a:hover { text-decoration: underline; }
 
 /* ── Header ──────────────────────────────────────────── */
 .site-header {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--border);
 }
@@ -59,6 +59,192 @@ a:hover { text-decoration: underline; }
   margin-bottom: 8px;
   font-size: 0.9em;
   color: var(--text-muted);
+}
+
+.top-nav {
+  margin-top: 10px;
+}
+
+.top-nav a {
+  font-size: 0.9em;
+  color: var(--text-muted);
+  margin-right: 16px;
+}
+
+.top-nav a:hover { color: var(--accent); }
+
+/* ── Section titles ──────────────────────────────────── */
+.section-title {
+  font-size: 1.05em;
+  font-weight: 700;
+  margin: 8px 0 14px;
+}
+
+section + section { margin-top: 36px; }
+
+/* ── Search ──────────────────────────────────────────── */
+.search-wrap {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 0.95em;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  color: var(--text);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  max-height: 360px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.search-results a {
+  display: block;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.search-results a:last-child { border-bottom: none; }
+.search-results a:hover { background: var(--accent-light); text-decoration: none; }
+
+.search-results .sr-show {
+  font-size: 0.78em;
+  color: var(--text-muted);
+}
+
+.search-results .sr-title {
+  font-size: 0.95em;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.search-empty {
+  padding: 14px;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+/* ── Filter chips ────────────────────────────────────── */
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.chip {
+  font: inherit;
+  font-size: 0.85em;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.chip:hover { border-color: var(--accent); color: var(--text); }
+
+.chip.active {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ── Tag pill ────────────────────────────────────────── */
+.tag-pill {
+  display: inline-block;
+  font-size: 0.78em;
+  padding: 2px 9px;
+  border-radius: 20px;
+  background: var(--accent-light);
+  color: var(--accent);
+  margin-right: 4px;
+}
+
+.tag-row { margin-top: 10px; }
+
+/* ── NEW badge ───────────────────────────────────────── */
+.badge-new {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 20px;
+  background: #e74c3c;
+  color: #fff;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+/* ── Recent updates (Home) ──────────────────────────── */
+.recent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.recent-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  color: var(--text);
+}
+
+.recent-card:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.recent-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.recent-show {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.recent-days {
+  font-size: 0.78em;
+  color: var(--text-muted);
+}
+
+.recent-title {
+  font-size: 0.98em;
+  font-weight: 600;
+}
+
+.recent-meta {
+  font-size: 0.8em;
+  color: var(--text-muted);
+  margin-top: 4px;
 }
 
 /* ── Show Cards (Home) ───────────────────────────────── */
@@ -108,7 +294,7 @@ a:hover { text-decoration: underline; }
   margin-right: 6px;
 }
 
-/* ── Episode List (Show page) ────────────────────────── */
+/* ── Episode List (Show / Updates page) ──────────────── */
 .episode-list {
   list-style: none;
 }
@@ -126,6 +312,10 @@ a:hover { text-decoration: underline; }
 .episode-item .ep-date {
   font-size: 0.85em;
   color: var(--text-muted);
+}
+
+.episode-item .recent-show {
+  margin-left: 10px;
 }
 
 .episode-item .ep-title {
@@ -265,6 +455,7 @@ a:hover { text-decoration: underline; }
   border-top: 1px solid var(--border);
   font-size: 0.85em;
   color: var(--text-muted);
+  line-height: 1.9;
 }
 
 /* ── Footer ──────────────────────────────────────────── */

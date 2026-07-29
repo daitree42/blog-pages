@@ -1,38 +1,29 @@
 {% extends "base.html" %}
-
-{% block title %}{{ episode.title }} - {{ show.name }}{% endblock %}
-
+{% block title %}{{ ep.title }} - {{ show.name }}{% endblock %}
 {% block header %}
-  <a href="{{ site_prefix }}/show/{{ show.slug }}/" class="back-link">← {{ show.name }}</a>
-  <a href="{{ site_prefix }}/" class="back-link" style="margin-left:12px;">← 所有节目</a>
+  <a href="{{ root }}show/{{ show.slug }}/" class="back-link">← {{ show.name }}</a>
+  <a href="{{ root }}" class="back-link" style="margin-left:12px;">← 所有节目</a>
 {% endblock %}
-
 {% block content %}
-  <article>
-    <header class="episode-header">
-      <div class="ep-date">{{ episode.date }}</div>
-      <h1>{{ episode.title }}</h1>
-      <div class="ep-meta">
-        {{ show.name }}
-        {% if episode.source_link %} · <a href="{{ episode.source_link }}" target="_blank">原始链接</a>{% endif %}
-        {% if episode.reading_time %} · 阅读时间 {{ episode.reading_time }} 分钟{% endif %}
-        {% if episode.source_lang and episode.source_lang != "zh" %} · 原文 {{ episode.source_lang|upper }}{% endif %}
-      </div>
-    </header>
-
-    <div class="episode-body">
-      {{ episode.body_html|safe }}
+  <div class="episode-header">
+    <div class="ep-date">{{ ep.date }}</div>
+    <h1>{{ ep.title }}</h1>
+    <div class="ep-meta">{{ show.name }} · 阅读时间 {{ ep.read_minutes }} 分钟</div>
+    {% if ep.tags %}
+    <div class="tag-row">
+      {% for t in ep.tags %}<span class="tag-pill">{{ t }}</span>{% endfor %}
     </div>
-
-    {% if episode.source_link or episode.show_name %}
-      <div class="episode-source">
-        <p>
-          <strong>来源：</strong>{{ show.name }} · {{ episode.title }}
-          {% if episode.source_link %} · <a href="{{ episode.source_link }}" target="_blank">原始链接</a>{% endif %}
-          <br>
-          <strong>处理日期：</strong>{{ episode.date }}
-        </p>
-      </div>
     {% endif %}
-  </article>
+  </div>
+
+  <div class="episode-body">
+    {{ ep.body_html|safe }}
+  </div>
+
+  <div class="episode-source">
+    <strong>来源：</strong> {{ show.name }}{% if ep.source_episode %} · {{ ep.source_episode }}{% endif %}
+    <strong> 处理日期：</strong> {{ ep.processed_date }}
+    <strong> 原始语言：</strong> {{ ep.original_language }}
+    {% if ep.source_url %}<br><strong>原始链接：</strong><a href="{{ ep.source_url }}" target="_blank">{{ ep.source_url }}</a>{% endif %}
+  </div>
 {% endblock %}

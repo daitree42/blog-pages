@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}更新时间线 - 播客笔记{% endblock %}
+{% block content %}
+  <h2 class="section-title">全部更新（按时间倒序，共 {{ episodes|length }} 篇）</h2>
+  <div class="episode-list">
+    {% for ep in episodes %}
+    <a href="{{ root }}episode/{{ ep.url_slug }}/" class="episode-item">
+      <div class="ep-date">
+        {{ ep.date }}
+        {% if ep.is_new %}<span class="badge-new">NEW</span>{% endif %}
+        <span class="recent-show" style="color:{{ ep.show_color }}">{{ ep.show_name }}</span>
+      </div>
+      <div class="ep-title">{{ ep.title }}</div>
+      <div class="ep-summary">{{ ep.summary }}</div>
+    </a>
+    {% endfor %}
+  </div>
+{% endblock %}

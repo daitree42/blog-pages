@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}播客笔记{% endblock %}</title>
-  <link rel="stylesheet" href="{{ site_prefix }}/static/style.css">
-  {% block extra_head %}{% endblock %}
+  <link rel="stylesheet" href="{{ root }}static/style.css">
 </head>
 <body>
   <div class="container">
     <header class="site-header">
       {% block header %}
-        <h1><a href="{{ site_prefix }}/" style="color:inherit;text-decoration:none;">🎙️ 播客笔记</a></h1>
+        <h1><a href="{{ root }}" style="color:inherit;text-decoration:none;">🎙️ 播客笔记</a></h1>
+        <nav class="top-nav">
+          <a href="{{ root }}">节目库</a>
+          <a href="{{ root }}updates/">更新时间线</a>
+        </nav>
       {% endblock %}
     </header>
 
@@ -20,7 +23,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>播客笔记 &middot; 个人转录存档</p>
+      <p>播客笔记 &middot; 个人转录存档 &middot; 共 {{ stats.show_count }} 档节目 · {{ stats.episode_count }} 篇文字稿</p>
     </footer>
   </div>
 </body>
