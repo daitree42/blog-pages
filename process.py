@@ -384,27 +384,56 @@ def _call_llm(system_prompt: str, user_prompt: str) -> str:
 
 
 def parse_llm_response(text: str, show_name: str, episode_title: str) -> dict:
-    """解析 LLM 返回的 JSON"""
+    """解析 LLM 返回的 JSON。兼容 DeepSeek 偶尔返回的畸变 JSON。"""
     # 去掉可能的 markdown 代码块包裹
     text = re.sub(r'^```(?:json)?\s*\n', '', text)
     text = re.sub(r'\n```\s*$', '', text)
 
+    result = None
+    # 先尝试标准 JSON 解析
     try:
         result = json.loads(text)
     except json.JSONDecodeError:
+        # 尝试提取 { ... } 区域
         m = re.search(r'\{.*\}', text, re.DOTALL)
         if m:
             try:
                 result = json.loads(m.group(0))
             except json.JSONDecodeError:
-                result = _fallback_result(text, show_name)
-        else:
-            result = _fallback_result(text, show_name)
+                pass
+
+    # 如果标准解析都失败，尝试宽松提取关键字段
+    if result is None:
+        result = _extract_json_lenient(text, show_name)
 
     result.setdefault("title", f"{show_name} {episode_title}")
     result.setdefault("summary", "")
-    result.setdefault("body_md", text)
     result.setdefault("source_lang", "zh")
+    # body_md 兜底：取 result 里已有值，否则用原始文本
+    result.setdefault("body_md", text)
+    return result
+
+
+def _extract_json_lenient(text: str, show_name: str) -> dict:
+    """
+    宽松 JSON 提取：当标准 JSON 解析失败时，
+    用正则提取 title / summary / body_md 字段。
+    """
+    result = {}
+    t = re.search(r'"title"\s*:\s*"([^"]+)"', text)
+    if t:
+        result["title"] = t.group(1)
+    s = re.search(r'"summary"\s*:\s*"([^"]+)"', text)
+    if s:
+        result["summary"] = s.group(1)
+    # body_md 可能很长且含未转义的引号/换行
+    b = re.search(r'"body_md"\s*:\s*"(.*)"\s*,\s*"', text, re.DOTALL)
+    if b:
+        raw = b.group(1)
+        raw = raw.replace('\\n', '\n').replace('\\"', '"').replace('\\\\', '\\')
+        result["body_md"] = raw
+    if not result:
+        return _fallback_result(text, show_name)
     return result
 
 

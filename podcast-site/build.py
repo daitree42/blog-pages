@@ -30,7 +30,7 @@ TRANSCRIPTS_DIR = BASE_DIR / "transcripts"
 TEMPLATES_DIR = BASE_DIR / "templates"
 STATIC_DIR = BASE_DIR / "static"
 OUTPUT_DIR = BASE_DIR
-SOURCE_DIRS = {"templates", "static", "transcripts", "transcripts_raw", ".git"}
+SOURCE_DIRS = {"templates", "static", "transcripts", "transcripts_raw", ".git", "docs"}
 SOURCE_FILES = {"build.py", "shows.json", ".gitignore"}
 SHOWS_FILE = BASE_DIR / "shows.json"
 
