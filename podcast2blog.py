@@ -721,6 +721,26 @@ def download_audio(meta) -> Optional[Path]:
 # 第三步：语音转文字
 # ═══════════════════════════════════════════════════════════════════
 
+def _find_cached_model(model_size):
+    """在本地 HuggingFace 缓存中查找 faster-whisper 模型路径"""
+    cache_dirs = [
+        Path(os.environ.get("WHISPER_MODEL_DIR", "")),
+        Path.home() / ".cache" / "huggingface" / "hub",
+        Path(os.environ.get("HF_HOME", "")) / "hub",
+    ]
+    repo = f"models--Systran--faster-whisper-{model_size}"
+    for cd in cache_dirs:
+        if not cd or not cd.exists():
+            continue
+        snapshots = cd / repo / "snapshots"
+        if not snapshots.exists():
+            continue
+        for sp in sorted(snapshots.iterdir()):
+            if (sp / "model.bin").exists():
+                return str(sp)
+    return None
+
+
 def transcribe_audio(audio_path: Path) -> Optional[dict]:
     """
     用 faster-whisper 将音频转为带时间戳的文字。
@@ -735,24 +755,31 @@ def transcribe_audio(audio_path: Path) -> Optional[dict]:
         log("error", "faster_whisper 未安装，请运行: pip install faster-whisper")
         return None
 
-    log("transcribe", "加载模型中（首次使用会下载）...")
+    # 优先使用本地缓存模型（避免 HuggingFace Hub 联网问题）
+    model_path = _find_cached_model(WHISPER_MODEL_SIZE)
+    if model_path:
+        log("transcribe", f"使用本地缓存模型: {model_path}")
+    else:
+        model_path = WHISPER_MODEL_SIZE
+        log("transcribe", "加载模型中（首次使用需联网下载）...")
     start_time = time.time()
 
-    # GPU 可用则用 GPU
-    compute_type = None
+    # GPU 可用则用 GPU，否则用 CPU
+    compute_type = "float32"
     try:
         import torch
         if torch.cuda.is_available():
             compute_type = "float16"
             log("info", "使用 GPU 加速")
         else:
-            compute_type = "int8"
-            log("info", "使用 CPU（int8 量化）")
+            log("info", "使用 CPU (float32)")
     except ImportError:
-        compute_type = "int8"
-        log("info", "使用 CPU（int8 量化）")
+        log("info", "使用 CPU (float32)")
 
-    model = WhisperModel(WHISPER_MODEL_SIZE, device="auto", compute_type=compute_type)
+    # 强制屏蔽 CUDA（避免 cublas64_12.dll 缺失导致的崩溃/卡死）
+    os.environ["CUDA_VISIBLE_DEVICES"] = ""
+
+    model = WhisperModel(model_path, device="cpu", compute_type=compute_type)
 
     log("transcribe", "转写中（这可能需要较长时间）...")
 
@@ -929,17 +956,20 @@ SYSTEM_PROMPT_CLEANUP = """你是一个专业的播客转录稿整理专家。�
 
 SYSTEM_PROMPT_TRANSLATE = """你是一个专业的播客翻译专家。将英文播客转录稿逐句翻译为中文，并整理成可读性高的博客文章。
 
+## ⚠️ 核心原则：只做"去噪"，不做"润色"或"改写"
+
+翻译时保留说话人原有的用词习惯、语气风格和口语化表达。**不要**为了让中文通顺而替换用词或改变句式。
+
 ## 翻译要求
 
 1. **逐句翻译**：不遗漏任何内容，保留原文所有信息
-2. **中文通顺**：调整语序使中文自然，但不改变原意
-3. **合理分段**：按语义划分段落，每个段落 3-5 句
-4. **去口语化**：去掉语气词、重复口误、不完整句子
-5. **加小标题**：按话题自然分段，每段加 ## 小标题
-6. **写摘要**：文章开头用一段话（200字以内）概括本期内容
-7. **保留时间戳**：关键内容旁保留 [MM:SS] 时间戳
-8. **保留说话人标记**：主持人/嘉宾标注保留
-9. **专有名词**：保留原文 + （中文翻译），如 "The Daily（每日新闻）"
+2. **专有名词**：首次出现时保留英文 + （中文翻译），如 "The Daily（每日新闻）"，后续可直接用中文
+3. **说话人标注**：每段发言前用 `**姓名：**` 标注说话人。如果转录稿中有名字则保留，否则根据上下文推断或使用 A/B 代称，前后保持一致
+4. **分段**：按说话人切换或话题自然转换分段。说话人切换时必须换行分段，段落间空一行
+5. **时间戳**：时间戳 [MM:SS] 放在对应段落最前面
+6. **只做去噪**：仅删除纯填充的语气词（嗯、啊、那个、就是说）、口误重复、卡壳半句。**不要**改写或润色说话人的表达方式
+7. **加小标题**：按大话题分组，每组加 ## 小标题
+8. **写摘要**：文章开头用一段话（200字以内）概括本期内容
 
 ## 输出格式
 
@@ -948,11 +978,14 @@ SYSTEM_PROMPT_TRANSLATE = """你是一个专业的播客翻译专家。将英文
 
 ## 小标题1
 
-中文翻译段落……[01:23]
+[MM:SS] **说话人A：** 翻译后的发言内容……
+
+[MM:SS] **说话人B：** 翻译后的发言内容……
 
 ## 小标题2
 
-中文翻译段落……[05:45]
+[MM:SS] **说话人A：** 下一段发言……
+```
 
 ---
 
