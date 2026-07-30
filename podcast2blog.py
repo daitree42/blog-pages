@@ -927,9 +927,44 @@ SYSTEM_PROMPT_CLEANUP = """你是一个专业的播客转录稿整理专家。�
 ```"""
 
 
-def cleanup_transcript(transcript: dict, meta: dict) -> Optional[str]:
+SYSTEM_PROMPT_TRANSLATE = """你是一个专业的播客翻译专家。将英文播客转录稿逐句翻译为中文，并整理成可读性高的博客文章。
+
+## 翻译要求
+
+1. **逐句翻译**：不遗漏任何内容，保留原文所有信息
+2. **中文通顺**：调整语序使中文自然，但不改变原意
+3. **合理分段**：按语义划分段落，每个段落 3-5 句
+4. **去口语化**：去掉语气词、重复口误、不完整句子
+5. **加小标题**：按话题自然分段，每段加 ## 小标题
+6. **写摘要**：文章开头用一段话（200字以内）概括本期内容
+7. **保留时间戳**：关键内容旁保留 [MM:SS] 时间戳
+8. **保留说话人标记**：主持人/嘉宾标注保留
+9. **专有名词**：保留原文 + （中文翻译），如 "The Daily（每日新闻）"
+
+## 输出格式
+
+```markdown
+> 本期摘要（200字以内）
+
+## 小标题1
+
+中文翻译段落……[01:23]
+
+## 小标题2
+
+中文翻译段落……[05:45]
+
+---
+
+*本文章由播客「节目名」转录翻译而成。*
+*原始链接：链接地址*
+```"""
+
+
+def cleanup_transcript(transcript: dict, meta: dict, do_translate: bool = False) -> Optional[str]:
     """
-    用 LLM API 整理转录稿。
+    用 LLM API 整理/翻译转录稿。
+    do_translate=True 时执行翻译模式（英文→中文），否则仅整理。
     返回整理后的 Markdown 文本。
     """
     if not transcript or not transcript.get("segments"):
@@ -941,7 +976,9 @@ def cleanup_transcript(transcript: dict, meta: dict) -> Optional[str]:
     if total_chars < 10:
         log("warn", "转录稿内容为空，跳过文本整理")
         return None
-    log("brain", f"转录稿共 {total_chars} 字，发送给 LLM 整理...")
+
+    mode_label = "翻译" if do_translate else "整理"
+    log("brain", f"转录稿共 {total_chars} 字，发送给 LLM {mode_label}...")
 
     if total_chars > 80000:
         log("warn", f"转录稿较长（{total_chars}字），处理可能需要更长时间")
@@ -950,7 +987,10 @@ def cleanup_transcript(transcript: dict, meta: dict) -> Optional[str]:
     else:
         max_tokens = 4096
 
-    user_prompt = f"""请整理以下播客转录稿为博客文章。
+    system_prompt = SYSTEM_PROMPT_TRANSLATE if do_translate else SYSTEM_PROMPT_CLEANUP
+    action = "翻译" if do_translate else "整理"
+
+    user_prompt = f"""请{action}以下播客转录稿。
 
 ## 节目信息
 - 节目：{meta.get('show_name', '')}
@@ -962,13 +1002,13 @@ def cleanup_transcript(transcript: dict, meta: dict) -> Optional[str]:
 {raw_text}
 """
 
-    log("brain", "等待 LLM 响应...")
-    result = call_llm_api(SYSTEM_PROMPT_CLEANUP, user_prompt, max_tokens)
+    log("brain", f"等待 LLM 响应...")
+    result = call_llm_api(system_prompt, user_prompt, max_tokens)
 
     if result:
-        log("ok", f"文本整理完成，共 {len(result)} 字")
+        log("ok", f"文本{mode_label}完成，共 {len(result)} 字")
         if "原始链接" not in result and meta.get("source_link"):
-            result += f"\n\n---\n\n*本文章由播客「{meta.get('show_name', '')}」转录整理而成。*\n"
+            result += f"\n\n---\n\n*本文章由播客「{meta.get('show_name', '')}」转录{mode_label}而成。*\n"
             result += f"*原始链接：{meta.get('source_link', '')}*"
         return result
     return None
@@ -978,9 +1018,11 @@ def cleanup_transcript(transcript: dict, meta: dict) -> Optional[str]:
 # 第五步：生成博客文章
 # ═══════════════════════════════════════════════════════════════════
 
-def generate_article(cleaned_text: str, meta: dict, reading_time: int = None) -> Path:
+def generate_article(cleaned_text: str, meta: dict, reading_time: int = None,
+                      raw_transcript: str = None) -> Path:
     """
     生成 articles/{slug}/draft.md 文件。
+    如果提供 raw_transcript（翻译模式），追加双语原文在 <details> 折叠中。
     返回 draft.md 路径。
     """
     title = meta["episode_title"] or f"播客：{meta['show_name']}"
@@ -1015,6 +1057,12 @@ def generate_article(cleaned_text: str, meta: dict, reading_time: int = None) ->
     if "原始链接" not in body:
         body += f"\n\n---\n\n*本文章由播客「{show_name}」转录整理而成。*\n"
         body += f"*原始链接：{source_link}*"
+
+    # 翻译模式：追加原文折叠
+    if raw_transcript:
+        body += "\n\n---\n\n## 📝 英文原文\n\n<details>\n<summary>点击展开原文</summary>\n\n"
+        body += raw_transcript
+        body += "\n\n</details>\n"
 
     # 写入 draft.md
     draft_dir = ARTICLES_DIR / slug
@@ -1085,11 +1133,32 @@ def deploy(commit_msg=None):
     return False
 
 
+def sync_to_podcast_site(draft_path: Path, show_slug: str, episode_date: str) -> bool:
+    """
+    复制 articles/{slug}/draft.md → podcast-site/transcripts/{show_slug}/ 供播客站使用。
+    返回是否成功。
+    """
+    try:
+        target_dir = BASE_DIR / "podcast-site" / "transcripts" / show_slug
+        target_dir.mkdir(parents=True, exist_ok=True)
+        slug = draft_path.parent.name
+        short_part = slug[len(episode_date) + 1:] if slug.startswith(episode_date) else slug
+        short_part = short_part[:35].rstrip("-_")
+        target_path = target_dir / f"{episode_date}-{short_part}.md"
+        shutil.copy2(draft_path, target_path)
+        log("ok", f"已同步到播客站: {target_path}")
+        return True
+    except Exception as e:
+        log("warn", f"播客站同步跳过: {e}")
+        return False
+
+
 # ═══════════════════════════════════════════════════════════════════
 # 主流程
 # ═══════════════════════════════════════════════════════════════════
 
-def process_episode(url_or_path, skip_deploy=False, skip_transcribe=False):
+def process_episode(url_or_path, skip_deploy=False, skip_transcribe=False,
+                     do_translate=False, sync_podcast_site_flag=False):
     """
     完整处理一集播客：
     1. 解析 → 2. 下载 → 3. 转写 → 4. 整理 → 5. 生成文章 → 6. 构建 → 7. 部署
@@ -1174,11 +1243,12 @@ def process_episode(url_or_path, skip_deploy=False, skip_transcribe=False):
             # 标记无内容，后续跳过文本整理
             meta["_no_content"] = True
 
-    # ── 4. Claude 文本整理 ──
-    log("step", "【第四步】Claude 文本整理")
-    cleaned = cleanup_transcript(transcript, meta)
+    # ── 4. LLM 文本整理 / 翻译 ──
+    mode_label = "翻译" if do_translate else "整理"
+    log("step", f"【第四步】LLM 文本{mode_label}")
+    cleaned = cleanup_transcript(transcript, meta, do_translate=do_translate)
     if not cleaned:
-        log("warn", "文本整理跳过，将使用原始转录稿")
+        log("warn", f"文本{mode_label}跳过，将使用原始转录稿")
         # 使用原始转录稿作为后备
         raw_lines = []
         for seg in transcript["segments"]:
@@ -1189,8 +1259,17 @@ def process_episode(url_or_path, skip_deploy=False, skip_transcribe=False):
 
     # ── 5. 生成文章 ──
     log("step", "【第五步】生成博客文章")
-    draft_path = generate_article(cleaned, meta)
+    raw_transcript_text = None
+    if do_translate and transcript and transcript.get("segments"):
+        raw_transcript_text = format_transcript_for_prompt(transcript)
+    draft_path = generate_article(cleaned, meta, raw_transcript=raw_transcript_text)
     print()
+
+    # ── 5b. 同步到播客站 ──
+    if sync_podcast_site_flag and draft_path:
+        log("step", "【第五步b】同步到播客站")
+        show_slug = slugify(meta.get("show_name", "podcast")).lower()
+        sync_to_podcast_site(draft_path, show_slug, meta.get("publish_date", ""))
 
     # ── 6. 构建站点 ──
     log("step", "【第六步】构建站点")
@@ -1214,7 +1293,7 @@ def process_episode(url_or_path, skip_deploy=False, skip_transcribe=False):
     return True
 
 
-def process_transcript_only(transcript_file, skip_deploy=False):
+def process_transcript_only(transcript_file, skip_deploy=False, do_translate=False, sync_podcast_site_flag=False):
     """
     直接用已有转录稿文件生成博客文章。
     转录稿格式：每行 [MM:SS] 文本，或纯文本。
@@ -1256,16 +1335,28 @@ def process_transcript_only(transcript_file, skip_deploy=False):
             segments.append({"start": 0, "end": 0, "text": line})
     transcript = {"segments": segments, "language": "zh", "duration": 0}
 
-    # Claude 整理
-    log("step", "文本整理...")
-    cleaned = cleanup_transcript(transcript, meta)
+    # LLM 整理/翻译
+    mode_label = "翻译" if do_translate else "整理"
+    log("step", f"LLM 文本{mode_label}...")
+    cleaned = cleanup_transcript(transcript, meta, do_translate=do_translate)
+
+    # 翻译模式：保存原文用于双语输出
+    raw_transcript_text = None
+    if do_translate:
+        raw_transcript_text = content
 
     if cleaned:
         log("step", "生成文章...")
-        draft_path = generate_article(cleaned, meta)
+        draft_path = generate_article(cleaned, meta, raw_transcript=raw_transcript_text)
     else:
         log("warn", "文本整理跳过，使用原始内容")
-        draft_path = generate_article(content, meta)
+        draft_path = generate_article(content, meta, raw_transcript=raw_transcript_text)
+
+    # 同步到播客站
+    if sync_podcast_site_flag and draft_path:
+        from pathlib import Path as P
+        show_slug = P(transcript_file).stem.split("-")[0] if "-" in P(transcript_file).stem else "podcast"
+        sync_to_podcast_site(draft_path, show_slug, date_str)
 
     if not skip_deploy:
         build_site()
@@ -1279,7 +1370,8 @@ def process_transcript_only(transcript_file, skip_deploy=False):
 # 第六步：批量处理
 # ═══════════════════════════════════════════════════════════════════
 
-def process_batch(directory, skip_deploy=False, resume=False, max_workers=3):
+def process_batch(directory, skip_deploy=False, resume=False, max_workers=3,
+                  do_translate=False, sync_podcast_site_flag=False):
     """
     批量处理目录下的所有音频文件。
     支持 --resume 跳过已有对应文章的音频。
@@ -1341,6 +1433,8 @@ def process_batch(directory, skip_deploy=False, resume=False, max_workers=3):
             str(audio_path),
             skip_deploy=True,  # 批量模式下不单独部署
             skip_transcribe=has_cache,
+            do_translate=do_translate,
+            sync_podcast_site_flag=sync_podcast_site_flag,
         )
         if result:
             log("ok", f"完成: {audio_path.name}")
@@ -1397,8 +1491,11 @@ def main():
   python podcast2blog.py https://www.youtube.com/watch?v=xxx        # YouTube 播客
   python podcast2blog.py https://www.xiaoyuzhoufm.com/episode/xxx  # 小宇宙
   python podcast2blog.py --audio ./podcast.mp3                     # 本地音频
+  python podcast2blog.py --audio ./podcast.mp3 --translate         # 本地音频 → 翻译中文
   python podcast2blog.py --transcript ./转录稿.txt                   # 已有转录稿
+  python podcast2blog.py --transcript ./en.txt --translate         # 英文稿 → 翻译中文
   python podcast2blog.py --batch-dir ./podcast_inbox/              # 批量处理目录
+  python podcast2blog.py --batch-dir ./podcast/已转/ --translate   # 批量翻译
   python podcast2blog.py --batch-dir ./podcast/已转/ --resume      # 批量+跳过已处理的
   python podcast2blog.py --build                                   # 仅构建
   python podcast2blog.py --serve                                   # 仅预览
@@ -1408,6 +1505,10 @@ def main():
     parser.add_argument("--audio", help="本地音频文件路径")
     parser.add_argument("--transcript", help="已有转录稿文件路径（跳过转写）")
     parser.add_argument("--batch-dir", help="批量处理目录下的所有音频文件")
+    parser.add_argument("--translate", action="store_true",
+                        help="翻译模式：英文播客 → 中文文章（含双语原文折叠）")
+    parser.add_argument("--podcast-site", action="store_true",
+                        help="同步文章到 podcast-site/transcripts/")
     parser.add_argument("--resume", action="store_true",
                         help="跳过已有对应文章的音频（用于批量续传）")
     parser.add_argument("--max-workers", type=int, default=3,
@@ -1438,13 +1539,23 @@ def main():
     # 批量处理模式
     if args.batch_dir:
         process_batch(args.batch_dir, skip_deploy=args.no_deploy,
-                      resume=args.resume, max_workers=args.max_workers)
+                      resume=args.resume, max_workers=args.max_workers,
+                      do_translate=args.translate,
+                      sync_podcast_site_flag=args.podcast_site)
     elif args.transcript:
-        process_transcript_only(args.transcript, skip_deploy=args.no_deploy)
+        process_transcript_only(args.transcript, skip_deploy=args.no_deploy,
+                                do_translate=args.translate,
+                                sync_podcast_site_flag=args.podcast_site)
     elif args.audio:
-        process_episode(args.audio, skip_deploy=args.no_deploy, skip_transcribe=args.no_transcribe)
+        process_episode(args.audio, skip_deploy=args.no_deploy,
+                        skip_transcribe=args.no_transcribe,
+                        do_translate=args.translate,
+                        sync_podcast_site_flag=args.podcast_site)
     elif args.url:
-        process_episode(args.url, skip_deploy=args.no_deploy, skip_transcribe=args.no_transcribe)
+        process_episode(args.url, skip_deploy=args.no_deploy,
+                        skip_transcribe=args.no_transcribe,
+                        do_translate=args.translate,
+                        sync_podcast_site_flag=args.podcast_site)
     else:
         parser.print_help()
 
