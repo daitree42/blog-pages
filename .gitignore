@@ -9,3 +9,6 @@ podcast_inbox/
 *.transcript.json
 .env
 预览-*.md
+
+# podcast-site/docs/ 是独立仓库，由 podcast-site 单独管理
+podcast-site/docs/
