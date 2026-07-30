@@ -747,7 +747,7 @@ def transcribe_audio(audio_path: Path) -> Optional[dict]:
     返回分段列表: [{start, end, text}, ...]
     """
     log("transcribe", f"转录音频: {audio_path.name}")
-    log("transcribe", f"模型: {WHISPER_MODEL_SIZE}，语言: zh")
+    log("transcribe", f"模型: {WHISPER_MODEL_SIZE}，自动检测语言")
 
     try:
         from faster_whisper import WhisperModel
@@ -785,7 +785,7 @@ def transcribe_audio(audio_path: Path) -> Optional[dict]:
 
     segments, info = model.transcribe(
         str(audio_path),
-        language="zh",
+        language=None,          # None = 自动检测语言
         beam_size=5,
         vad_filter=True,        # 过滤静音段
         vad_parameters=dict(min_silence_duration_ms=500),
@@ -965,8 +965,8 @@ SYSTEM_PROMPT_TRANSLATE = """你是一个专业的播客翻译专家。将英文
 1. **逐句翻译**：不遗漏任何内容，保留原文所有信息
 2. **专有名词**：首次出现时保留英文 + （中文翻译），如 "The Daily（每日新闻）"，后续可直接用中文
 3. **说话人标注**：每段发言前用 `**姓名：**` 标注说话人。如果转录稿中有名字则保留，否则根据上下文推断或使用 A/B 代称，前后保持一致
-4. **分段**：按说话人切换或话题自然转换分段。说话人切换时必须换行分段，段落间空一行
-5. **时间戳**：时间戳 [MM:SS] 放在对应段落最前面
+4. **合并连贯**：将同一说话人的连续发言合并为完整的段落，避免一句一段。多个说话人交替时，按说话人切换分段
+5. **不要时间戳**：不要输出 [MM:SS] 时间戳，专注于文字内容本身的流畅性
 6. **只做去噪**：仅删除纯填充的语气词（嗯、啊、那个、就是说）、口误重复、卡壳半句。**不要**改写或润色说话人的表达方式
 7. **加小标题**：按大话题分组，每组加 ## 小标题
 8. **写摘要**：文章开头用一段话（200字以内）概括本期内容
@@ -978,15 +978,14 @@ SYSTEM_PROMPT_TRANSLATE = """你是一个专业的播客翻译专家。将英文
 
 ## 小标题1
 
-[MM:SS] **说话人A：** 翻译后的发言内容……
+**说话人A：** 翻译后的发言内容……同一说话人的后续发言合并为一段。
 
-[MM:SS] **说话人B：** 翻译后的发言内容……
+**说话人B：** 翻译后的发言内容……
 
 ## 小标题2
 
-[MM:SS] **说话人A：** 下一段发言……
+**说话人A：** 下一段发言……
 ```
-
 ---
 
 *本文章由播客「节目名」转录翻译而成。*
