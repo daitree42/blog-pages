@@ -62,7 +62,9 @@ ARTICLES_DIR = BASE_DIR / "articles"
 PODCAST_INBOX_DIR = BASE_DIR / "podcast_inbox"
 
 # Whisper 模型大小: tiny / base / small / medium / large-v3
-WHISPER_MODEL_SIZE = "medium"
+# CPU 推荐: tiny (~6min/h) | small (~15min/h) | medium (~30min/h)
+# 默认 small — 速度与准确率的最佳平衡
+WHISPER_MODEL_SIZE = "small"
 
 # ── LLM API 配置 ──────────────────────────────────────────────────
 # 支持多种后端，按优先级自动选择:
@@ -1139,10 +1141,16 @@ def process_episode(url_or_path, skip_deploy=False, skip_transcribe=False):
         log("ok", f"文本稿已保存: {text_path}")
         print()
     else:
-        # 尝试加载已有转录稿
+        # 尝试加载已有转录缓存（优先 JSON，保留真实时间戳）
+        json_path = audio_path.with_suffix(".transcript.json")
         txt_path = audio_path.with_suffix(".txt")
-        if txt_path.exists():
-            log("info", f"使用已有转录稿: {txt_path}")
+        if json_path.exists():
+            log("info", f"使用已有转录缓存: {json_path.name}")
+            with open(json_path, "r", encoding="utf-8") as f:
+                transcript = json.load(f)
+            log("ok", f"加载 {len(transcript.get('segments', []))} 个语音段")
+        elif txt_path.exists():
+            log("info", f"使用已有转录稿（无时间戳）: {txt_path.name}")
             with open(txt_path, "r", encoding="utf-8") as f:
                 raw = f.read()
             # 构造伪 segments
@@ -1267,6 +1275,117 @@ def process_transcript_only(transcript_file, skip_deploy=False):
     return True
 
 
+# ═══════════════════════════════════════════════════════════════════
+# 第六步：批量处理
+# ═══════════════════════════════════════════════════════════════════
+
+def process_batch(directory, skip_deploy=False, resume=False, max_workers=3):
+    """
+    批量处理目录下的所有音频文件。
+    支持 --resume 跳过已有对应文章的音频。
+    支持并行处理（max_workers 控制并发数）。
+    """
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    audio_dir = Path(directory)
+    if not audio_dir.exists():
+        log("error", f"目录不存在: {audio_dir}")
+        return False
+
+    # 查找音频文件
+    audio_exts = (".mp3", ".m4a", ".wav", ".ogg", ".aac", ".flac")
+    files = sorted([f for f in audio_dir.iterdir() if f.suffix.lower() in audio_exts])
+
+    if not files:
+        log("warn", f"目录中没有音频文件: {audio_dir}")
+        return False
+
+    # --resume 模式：检查文章是否已存在
+    if resume:
+        before = len(files)
+        existing_slugs = {d.name for d in ARTICLES_DIR.iterdir() if d.is_dir()}
+        files = [f for f in files
+                 if not any(slug in f.stem for slug in existing_slugs)
+                 and not any(f.stem in slug for slug in existing_slugs)]
+        skipped = before - len(files)
+        if skipped:
+            log("info", f"--resume 模式：跳过 {skipped} 个已有文章的文件")
+
+    log("step", f"批量处理 {len(files)} 个音频文件 (并发 {max_workers})")
+
+    if not files:
+        log("ok", "全部文件已处理完毕")
+        return True
+
+    success = 0
+    failed = 0
+    start_time = time.time()
+
+    # 缓存转录稿检查
+    def check_transcript_cache(audio_path):
+        txt_path = audio_path.with_suffix(".txt")
+        json_path = audio_path.with_suffix(".transcript.json")
+        if txt_path.exists() and json_path.exists():
+            log("info", f"使用已有转录缓存: {txt_path.name}")
+            return True
+        return False
+
+    def process_one(audio_path):
+        log("step", f"\n{'='*40}")
+        log("step", f"处理: {audio_path.name}")
+
+        # 检查缓存
+        has_cache = check_transcript_cache(audio_path)
+
+        result = process_episode(
+            str(audio_path),
+            skip_deploy=True,  # 批量模式下不单独部署
+            skip_transcribe=has_cache,
+        )
+        if result:
+            log("ok", f"完成: {audio_path.name}")
+            return True
+        else:
+            log("error", f"失败: {audio_path.name}")
+            return False
+
+    if max_workers > 1 and len(files) > 1:
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = {executor.submit(process_one, f): f.name for f in files}
+            for future in as_completed(futures):
+                name = futures[future]
+                try:
+                    if future.result():
+                        success += 1
+                    else:
+                        failed += 1
+                        log("error", f"处理失败: {name}")
+                except Exception as e:
+                    failed += 1
+                    log("error", f"处理异常: {name} — {e}")
+    else:
+        for f in files:
+            if process_one(f):
+                success += 1
+            else:
+                failed += 1
+
+    elapsed = time.time() - start_time
+    log("step", f"\n{'='*40}")
+    log("ok", f"批量处理完成: {success} 成功, {failed} 失败, 用时 {elapsed/60:.1f} 分钟")
+
+    # 统一构建 + 部署
+    if not skip_deploy:
+        log("step", "\n统一构建站点...")
+        build_site()
+        deploy()
+    else:
+        log("step", "\n构建站点...")
+        build_site()
+
+    return failed == 0
+
+
 # ── CLI ─────────────────────────────────────────────────────────────
 
 def main():
@@ -1275,22 +1394,29 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 使用示例:
-  python podcast2blog.py https://www.youtube.com/watch?v=xxx     # YouTube 播客
-  python podcast2blog.py https://www.xiaoyuzhoufm.com/episode/xxx # 小宇宙
-  python podcast2blog.py --audio ./podcast.mp3                    # 本地音频
-  python podcast2blog.py --transcript ./转录稿.txt                  # 已有转录稿
-  python podcast2blog.py --build                                  # 仅构建
-  python podcast2blog.py --serve                                  # 仅预览
+  python podcast2blog.py https://www.youtube.com/watch?v=xxx        # YouTube 播客
+  python podcast2blog.py https://www.xiaoyuzhoufm.com/episode/xxx  # 小宇宙
+  python podcast2blog.py --audio ./podcast.mp3                     # 本地音频
+  python podcast2blog.py --transcript ./转录稿.txt                   # 已有转录稿
+  python podcast2blog.py --batch-dir ./podcast_inbox/              # 批量处理目录
+  python podcast2blog.py --batch-dir ./podcast/已转/ --resume      # 批量+跳过已处理的
+  python podcast2blog.py --build                                   # 仅构建
+  python podcast2blog.py --serve                                   # 仅预览
         """,
     )
     parser.add_argument("url", nargs="?", help="播客分享链接")
     parser.add_argument("--audio", help="本地音频文件路径")
     parser.add_argument("--transcript", help="已有转录稿文件路径（跳过转写）")
+    parser.add_argument("--batch-dir", help="批量处理目录下的所有音频文件")
+    parser.add_argument("--resume", action="store_true",
+                        help="跳过已有对应文章的音频（用于批量续传）")
+    parser.add_argument("--max-workers", type=int, default=3,
+                        help="批量并行数（默认: 3）")
     parser.add_argument("--no-deploy", action="store_true", help="跳过部署步骤")
     parser.add_argument("--no-transcribe", action="store_true", help="跳过转写步骤")
     parser.add_argument("--whisper-model", default=None,
                         choices=["tiny", "base", "small", "medium", "large-v3"],
-                        help="Whisper 模型大小（默认: medium）")
+                        help="Whisper 模型大小（默认: small）")
     parser.add_argument("--build", action="store_true", help="仅构建站点")
     parser.add_argument("--serve", action="store_true", help="本地预览")
 
@@ -1309,8 +1435,11 @@ def main():
         run_cmd([sys.executable, str(BASE_DIR / "publish.py"), "serve"], "预览")
         return
 
-    # 判断输入类型
-    if args.transcript:
+    # 批量处理模式
+    if args.batch_dir:
+        process_batch(args.batch_dir, skip_deploy=args.no_deploy,
+                      resume=args.resume, max_workers=args.max_workers)
+    elif args.transcript:
         process_transcript_only(args.transcript, skip_deploy=args.no_deploy)
     elif args.audio:
         process_episode(args.audio, skip_deploy=args.no_deploy, skip_transcribe=args.no_transcribe)
