@@ -1,0 +1,597 @@
+# Wild Ideas Worth Living：从投行到环球骑行46,000英里的冒险
+
+> 栏目：未分类
+> 日期：2026-07-30
+> 标签：播客
+> 排序：0
+> 阅读时间：11
+> 摘要：> 本期摘要：来自马萨诸塞州布鲁克莱恩的Samar Abuhamad，在2022年至2025年间，用三年半时间骑行46,000英里穿越61个国家。他曾是纽约摩根士丹利的银行职员，新冠疫情期间反思人生后辞职，从自家门口出发，一路骑行至阿根廷，又先后完成了从挪威北角到南非、从澳大利亚到黎巴嫩的旅程。本期
+
+> 本期摘要：来自马萨诸塞州布鲁克莱恩的Samar Abuhamad，在2022年至2025年间，用三年半时间骑行46,000英里穿越61个国家。他曾是纽约摩根士丹利的银行职员，新冠疫情期间反思人生后辞职，从自家门口出发，一路骑行至阿根廷，又先后完成了从挪威北角到南非、从澳大利亚到黎巴嫩的旅程。本期播客中，Samar分享了他的旅程缘起、日常骑行生活、最糟糕和最美好的日子，以及他从冒险中领悟到的“打破大目标”、“适应性与韧性”和“人类连接的力量”等重要人生教训。
+
+## 从银行职员到环球骑行者
+
+**Shelby Stanger：** Samar Abuhamad，欢迎来到《值得活的狂野想法》，非常高兴能和你连线，你现在在波士顿对吧？
+
+**Samar Abuhamad：** 是的，感谢你邀请我，Shelby，很期待和你聊聊。
+
+**Shelby Stanger：** 从2022年到2025年，你有一个相当疯狂的狂野想法。跟我们说说这个想法，然后我很好奇你是怎么想到的。
+
+**Samar Abuhamad：** 好的。2022年，我带着自行车离开了位于波士顿地区的家，当时的计划只是骑到巴塔哥尼亚，到达阿根廷的最南端。那花了一年时间，然后演变成了一段三年半的旅程，我骑遍了除了南极洲以外的所有大洲。我是怎么开始的？是很多因素共同作用的结果，但我认为真正启动这一切的是新冠疫情。在疫情之前，我在企业界工作。我每天穿着西装，在纽约市的一家银行上班。我认为新冠像对很多人一样，迫使我们反思生活和我们真正想从生活中得到什么。至少对我而言是这样。所以我最终辞掉了那份工作。我开始非常热衷于骑行。我做了一年的非营利工作。然后我读了一本英国探险家Alistair Humphrey的书。
+
+**Shelby Stanger：** 哦，他来过我们的播客。他很棒。
+
+**Samar Abuhamad：** 哦，是这样。他那本关于2000年到2004年环球四年旅行的书，让我对这类环球旅行大开眼界，而自行车是一种不仅能覆盖州或城镇，还能覆盖大陆的方式。我一直热爱旅行，也一直热爱运动。我觉得自行车旅行完美地结合了这两种爱好。所以，就像我说的，我从波士顿开始了第一次旅行，然后它就成了我的人生。
+
+**Shelby Stanger：** 你在纽约市哪里工作？
+
+**Samar Abuhamad：** 我在一家叫摩根士丹利的银行工作。我在那里工作。哦，我想我们都知道摩根士丹利。
+
+**Shelby Stanger：** 我不是那个意思，但你问了。
+
+**Samar Abuhamad：** 是的，我做房地产相关的工作，比如评估贷款。和现在完全不同。
+
+**Shelby Stanger：** 所以你在摩根士丹利工作，应该赚很多钱，可能每周工作68个小时？
+
+**Samar Abuhamad：** 大概60个小时吧。
+
+**Shelby Stanger：** 好吧。
+
+**Samar Abuhamad：** 但就像我之前说的，新冠真的让我震惊，迫使我重新思考生活。我总说，如果新冠没发生，我可能还在做那份工作，过着那种正常的人生轨迹，升职加薪。我现在可能已经结婚生子了。差不多吧，或者也许不是，但我当时就是走在那样一条路上。当新冠疫情发生时，我搬回了波士顿的家，开始远程工作。我感觉自己像一只被关在笼子里的动物。我发现自己看YouTube，工作上拖延。我意识到，当你把工作的社交元素、和办公室里的人在一起的部分去掉，只剩下我和屏幕时，我意识到这其实不是我想做的事。我看着我的老板们，他们看起来都很快乐、很成功，但我也觉得，哇，我们都在做同样的事。我们走进同一个办公室。我就想，是的，我真的想在30年后还做这个吗？
+
+## 从帮助黎巴嫩重建到骑行世界的起点
+
+**Shelby Stanger：** Samar在2020年9月辞职时25岁。他搬到了他父母老家黎巴嫩，帮助在当年8月贝鲁特港大爆炸后进行重建。他以为只会待几个月，最终却在那里为非营利组织工作了一年半。在空闲时间，Samar开始骑着自行车探索这个国家。黎巴嫩是一个很小的国家。三个黎巴嫩才等于一个马萨诸塞州，所以非常小。但在这个小国里，有万英尺高的山脉和美丽的海岸线。所以它非常适合骑行。就在那里，我感叹道，哇，我通过自行车发现了黎巴嫩，但用自行车去看看其他地方也很酷。
+
+**Shelby Stanger：** 第二年，Samar在看环法自行车赛时决定亲自去现场观看，并进行一些自己的骑行。那次旅行播下了一颗种子。
+
+**Samar Abuhamad：** 我想知道，你去了法国，进行了为期两周的旅行，然后你是如何计划和决定，好吧，我要去做——因为你的狂野想法实际上就是从阿拉斯加到阿根廷，对吧？
+
+**Shelby Stanger：** 是的，或者说从波士顿到阿根廷。我喜欢从我家门口出发的想法。不过传统的泛美路线，人们通常会从阿拉斯加的Prudhoe Bay骑到乌斯怀亚。但这是我的起点。我觉得从波士顿骑到阿根廷更酷。跟我说说，这个想法是怎么来的，然后你是如何把它变成现实的。你需要解决的后勤问题有哪些，比如装备、路线规划。
+
+**Samar Abuhamad：** 我刚才提到了那本书，我喜欢Alastair Humphreys书中的想法，我喜欢进行一个大洲际旅行的想法。然后我就只是说，我喜欢从自家门口出发的想法。从后勤上讲，直接从家门口出发很容易，不用坐飞机。还有一部分原因是，嘿，如果我能先横穿美国，这对我旅程的开端来说是一个很好的试验场。那是熟悉的地方，大家都说英语。所以在我脑子里，我想的是，我先横穿美国。这在我进入墨西哥和中美洲继续前进之前，是一个很好的试验场。这就是我最初的路线计划。在计划、装备和后勤方面，第一步是支付那辆自行车的押金。那是一辆砾石公路车，钢架的。我认为在长途旅行中，钢架很重要，因为如果出了任何问题，你在世界任何一个角落都能找到焊工。它是11速的。我选择砾石公路车是因为它很好地兼顾了性能和在不平路面上行驶的能力。支付了自行车押金之后，那钱就算花出去了。我就想，好吧，我现在真的要做了。
+
+**Shelby Stanger：** 无论好坏，Samar将他其余的准备工作保持在最低限度，只规划了一个粗略的路线草图。由于他不需要预订航班前往起点，2022年4月2日，Samar只是走出他的前门，开始骑行。
+
+## 第一天与应对挑战
+
+**Shelby Stanger：** 你还记得第一天吗？
+
+**Samar Abuhamad：** 我记得第一天。我记得我的自行车和所有东西都干干净净。而且我记得，就像我说的，我走出家门，我爸爸陪我骑了一小段。我妈妈在哭。我也强忍着泪水。再次强调，我没有任何计划。我甚至不知道那天晚上我会睡在哪里。而且我甚至以前都没搭过帐篷，这说出来可能不太好。我记得第一天早上我就收拾行李。所以我之前从未真正打包过所有东西并试骑过一次，我建议人们这么做，但出于某种原因我直接上路了。我想我当时在拖延。但总之，是的，第一天我骑了大约60英里。我记得天开始下雨了。所以我找到了一个州立公园，它已经关闭露营了，但我偷偷溜了进去。
+
+**Shelby Stanger：** 是的，结果还行。所以，这也是骑行的学习之一，因为我在进行自行车旅行，但你学得很快。它大概是40%的骑行，60%的日常解决问题和适应。所以就像，我在哪里吃饭？我在哪里睡觉？我在哪里停车？哦，我的自行车出了点问题。我需要修理这个，或者，当我进入其他国家时，就像，哦，我的护照用完了。我怎么才能拿到新护照？或者去这个国家在哪里办签证？或者我怎样才能携带足够的水通过这段漫长的路程？所以你学得很快。显然，我是在进行自行车旅行，但自行车实际上只是旅行的工具。就是每天想办法、解决问题。
+
+**Shelby Stanger：** 那么一开始，有没有过那种“哦，天哪”的时刻？比如“哦，我的天。我在干什么？我把自己卷入了什么？这太蠢了。”
+
+**Samar Abuhamad：** 实际上，有，那种时刻在很早的时候就出现了。我记得有一次坐在堪萨斯的玉米地里，我看着地图，心想，嘿，我离阿根廷还有很长很长的路要走。这感觉有点让人不知所措。但我很快就从中学到了一些东西，并在后来的旅行中一直采用，那就是，设定一个大目标很好，但你要把它分解成一个个小节点。所以，与其坐在堪萨斯说，“哦，我要去阿根廷”，不如想成“嘿，先到科罗拉多。我们先到丹佛。到了丹佛，嘿，我们再去下一个州犹他，然后是亚利桑那。”你就像一块块地堆叠砖块，然后退后一步，就能看到你盖好的房子。我认为这种心态或者说经验教训，帮助我走完了剩下的旅程，一天一天地来，一个节点一个节点地来，不要一开始就担心那个巨大的目标，因为如果你把足够多的节点堆在一起，你最终会实现那个目标。
+
+## 典型的骑行日
+
+**Shelby Stanger：** 典型的一天是什么样子的？从早餐到睡觉，从起床到睡觉，你一天骑多少英里？
+
+**Samar Abuhamad：** 我认为，日常有些事情会根据你周围的环境和所在的国家而有所不同，但假设我露营的话，一天会是这样的：起床，烧水，煮咖啡和燕麦片，同时打包装备，然后上路。通常我会骑行……整个旅程的平均值，如果综合所有骑行天数的话，我每天大约骑73英里。所以有时多，有时少。然后，老实说，没有计划。我就是随风而去。通常前一天晚上，我会看看地图，对第二天想去哪里有个概念。然后我会朝着那个每日目标前进，但事情总是在变。如果我累了，我就提前停下来；如果我感觉很好，我就继续骑。所以通常一天中，我会一直骑，大约在下午中段，我会重新评估，比如，嘿，我能到达我想去的地方吗？我感觉好吗？我想骑更远吗？然后，通常在太阳开始下山时，我就想，好吧，我现在睡哪里？这取决于情况。在一些国家，比如美国，或者更“发达”的国家，我会通过一些应用程序联系别人。有一个叫Warm Showers的App，试着协调住宿。或者在另一些国家，我会看地图，比如，嘿，我今晚在哪里露营？有很多资源可以利用。有WhatsApp群组，其他骑行者和其他旅行者会在里面。或者有一个叫iOverlander的旅行App，其他旅行者会把他们的露营地点标在地图上。有时我只是在谷歌地图上找绿地，有时这也就足够露营了。在一些国家，比如东南亚或西非，酒店很便宜，我会毫不犹豫地找一间不错的10美元的房间，给所有电子设备充电，晚上在室内好好睡一觉。所以这真的取决于你在哪里。在南美洲，大部分是野外露营，因为我基本沿着安第斯山脉的脊线骑行，所以每晚都是野外露营的天堂。所以这真的取决于我在哪里，情况会有所变化，但通常就是起床，骑车。如果我感觉好，就骑远点；感觉不好，就骑少点。但我想这就是独自骑行和旅行的好处之一，你真的是自己的老板，你做的每一个决定都是你自己的决定。
+
+## 关于最糟糕和最美好的日子
+
+**Shelby Stanger：** 我想听一些故事。最糟糕的一天是哪天？是哪天你觉得“这太蠢了”？最好的那天呢？
+
+**Samar Abuhamad：** 好吧，有几天。通常你在困境中觉得“这糟透了，这太难了，快带我离开这里”的日子，事后往往会成为最好的回忆。我相信最难的路会通向最美的地方。这比喻着骑行的有时，也是字面意思和心灵上的。但是，先说故事。最糟糕的日子，我可以选很多个。我脑海中第一个想到的是在厄瓜多尔。我被狗咬了。那真的很糟糕。我喜欢狗。我当时正骑着车，一条狗过来咬了我。我需要去缝针。但是，厄运变成了好事。一个很棒的路人来了，在路边接上我，带我返回到最近的医院。然后他收留了我三天。所以，虽然被狗咬、缝针很糟，但它变成了一个美好的故事，我遇到了这个帮助我的好人。另一个最糟糕的情况发生在墨西哥。我刚进入提华纳。那是我离开美国的第一天，或者说是前三天，因为那是一连串的坏事。我的变速器坏了，这对自行车来说很糟糕。我停在高速路边，心想，哦，老兄，我的旅程是不是要因此延误了？特别是当时，新冠之后自行车零件还有积压。所以我当时真的很担心。第二天，我完全丢了一个包，里面有我所有的冬季装备，我吓坏了。更糟的是，接下来那天我的膝盖开始疼。所以我心想，哦，天哪，我丢了包，膝盖又疼。也许我该掉头回美国的圣地亚哥。我感到不知所措。但那天晚上我找了一家旅馆，好好睡了一觉。这一觉通常能解决很多问题。很多时候你会觉得“这糟透了，我在干嘛？”但通常好好睡一觉就足以让大脑重启，至少对我来说是这样。其他时候，当你觉得糟糕想放弃时，通常你正在某个鸟不拉屎的地方。你甚至没法放弃，对吧？你需要到达下一个城镇。所以就算你想放弃，在后勤上也做不到。通常，当你挺过艰难时刻，到最后你会感觉好多了。我给了你一些后勤上的艰难时刻。但也有身体上的困难。比如穿越澳大利亚内陆。有一段240公里的路什么都没有。所以我带了13升水。我是在11月初去的，那时是他们的夏天，非常热。我就想，我在干嘛？但当你到达休息站时，你会觉得，哇，水就是我获得幸福所需要的一切。那让你更珍惜那杯水，对吧？
+
+**Shelby Stanger：** 那最美好的时刻呢？无论是物理上的美景，还是让人敬畏的时刻，或者某个人非常友善。
+
+**Samar Abuhamad：** 有很多。说到美景，我想起的一个最喜欢的地方是秘鲁的骑行。当你在山里时，我走了一条叫“秘鲁分水岭”的路线。它会带你沿着碎石路上上下下。路上车很少。你拐个弯，就能看到明信片般的景色，两万英尺高的山峰。羊驼比人多。所以在秘鲁骑行是一个梦想。另一个一下子想到的地方是帕米尔公路，它在中亚的塔吉克斯坦。具体是帕米尔公路上，我走了一个支线，通过一个叫Bartang Valley的山谷。那五天没有村庄，地形极其崎岖。我经常回想那段时光，因为我在那个山谷里和几个牧羊人有几次精彩的邂逅。我完全没想到会碰到任何人。我走进一个泥屋，有个牧羊人在里面。他不会说英语，我不会说俄语或塔吉克语。我们就只是坐在那里，用手势交流。他给了我他羊群的新鲜牛奶做的茶。我们得以在没有任何共同语言的情况下分享了一个时刻。当你好几天都是独自一人时，哪怕只是感觉被人看见了，有时候就是你所需要的全部。
+
+## 抵达终点与回家的挑战
+
+**Shelby Stanger：** Samar与当地人的相遇留下了深刻的印象。他遇到过一个摩托车手帮他解决了在叙利亚的爬坡问题，还有沙特阿拉伯的司机在他晚上骑车避开高温时，从车窗里递出水瓶。2025年8月11日，Samar到达了贝鲁特。这座城市是他第一次爱上骑行的地方。
+
+**Shelby Stanger：** 所以你在2025年8月结束了整个旅程？
+
+**Samar Abuhamad：** 是的。
+
+**Shelby Stanger：** 终点线是什么样子的？
+
+**Samar Abuhamad：** 终点线，我是说，结束的那天并没有那么情绪化。但我知道最后三四天非常难过。也不是难过。我只是在反思我所经历的一切才走到这一步。特别是倒数第二天，我骑上了黎巴嫩的最高点。那是我在黎巴嫩时爬过很多次的山。所以它真的很让人动情。我记得在最后一天爬坡时，我知道这很老套，但所有的艰难时刻都在我脑海中闪过。所以我知道最后几天我哭了很多次。但真正抵达的那一刻，挺有趣的。我旅程的最后一段，我提过，是穿越那些中东国家，正值盛夏，非常热。在那些时刻，我等不及要结束，对吧？但旅程结束一个月后，我又觉得，哇，我现在宁愿回到路上。所以，这次回家比我前两次更难，因为我不一定还有下一个巨大的目标。我有几个想法在酝酿。但这一次，我想适当地消化所有的一切，着手一些项目，并希望能激励其他人也去进行他们自己的冒险。因为即使我不在旅途中，如果这能激励别人去旅行，去完成像这样的大挑战，某种程度上，我也能通过他们来旅行。
+
+**Shelby Stanger：** 我们来深入聊一下。终点线可能很棘手。
+
+**Samar Abuhamad：** 百分之百。它们可能真的很虎头蛇尾。你有一个单一的、专注的目标。每天你要做的就是，不是“要做”的“做”，而是很难。你起床，骑上自行车，前往某个地方，你真的可以物理地移动到某个地方。一切都是新的、刺激的、新的食物。你的多巴胺水平很高。我是说，会有生理上的回落和情绪上的回落。对于像我这样的人来说，没有目标真的很难，可能也像你，但对于大多数收听这个播客的人来说，这就是为什么我们要做难事。回家有点困难。
+
+**Shelby Stanger：** 是的，肯定如此。
+
+**Samar Abuhamad：** 我认为你说到了点子上。在三年半的旅程中，我每天都有一个目标。我真的觉得自己在朝着我的目标前进。然后我完成了目标，然后就是，“现在呢？”对我来说那是一个巨大的“现在呢？”时刻。对于骑行，我非常喜欢的一点是，进步的反馈非常具体，对吧？因为每天我都从A点去到B点。你可以用英里来丈量这种进步。我能看到自己每天都在前进。
+
+**Shelby Stanger：** 那很酷。
+
+**Samar Abuhamad：** 现在轮到我。我能在地图上看到自己离目标越来越近。我认为现在的挑战是转变心态，认识到进步可能没有那么具象，但要相信，如果我每天都在朝着目标做我该做的事，那么我现在播下的种子终将会开始生长。在我回家六七个月后的现在，它们已经开始生长了。我提到我在计划下一次旅行，但同时我也在尝试做公众演讲，到学生、学校和不同的组织面前，分享我的一些经验和故事。很多人联系我，计划他们自己的旅行。所以我在帮助别人踏上他们自己的冒险中也获得了很大的满足感。因为即使我不在旅行，分享这些经验、帮助别人，也让我感到非常充实。
+
+## 从旅程中学到的四大教训
+
+**Shelby Stanger：** 我提到过这次旅行分为三章。你从每一章中学到了什么？
+
+**Samar Abuhamad：** 有几件事。很难把每个教训都归到具体的章节。
+
+**Samar Abuhamad：** 但如果要我总结成四个主要教训，其中有些我们已经提到过。第一就是"开始行动"。如果你有目标，理想的情况是——别再拖延了，你必须开始行动。这是第一条。第二条，我认为设定远大目标很重要，但要将其分解细化。这是第二条。第三条是，一旦你设定了那个远大目标，道路绝不会是直线型的。所以旅程本身同样关乎适应性和韧性。你需要找到克服障碍的方法，这些障碍会出现在你面前，同时要明白在开始之前，这条路就不会是笔直的。我认为这也有帮助，因为这样你就能保持适应能力，在过程中随机应变。第四条就是人际联结的力量。我认为这是我旅程的秘诀——被陌生人的善意、互动以及人们每天欢迎我融入他们日常生活所推动。这确实是我每天前进的动力。在科技日新月异、人工智能不断发展的世界里，记住我们是社会性生物很重要，没有什么能取代人际联结，取代我们此刻的对话，取代沿途遇到的人——没有任何东西能真正复制这种体验。
+
+**Shelby Stanger：** 那你呢？这次旅程如何改变了你这个人？
+
+**Samar Abuhamad：** 我认为我的童年和成长经历真的非常美好，对此我充满感激。我的父母都很成功，看到他们如此成功，给了我如此美好的生活——我上了私立学校，他们支付了我的大学学费，我有一份不错的工作。可以说我的成长过程几乎没有创伤。在某种程度上，这次自行车之旅是我反抗这一切、寻求苦难的方式。因为我认为你需要经历苦难才能找到快乐。我想这就是我实现这一目标的方式。
+
+---
+
+*本文章由播客「本地播客」转录翻译而成。*
+*原始链接：https://www.rei.com/podcast/wild-ideas-worth-living*
+
+---
+
+## 📝 英文原文
+
+<details>
+<summary>点击展开原文</summary>
+
+[00:03] In September of 2025, Samar Abuhamad liked into Bay Route Lebanon.
+[00:11] This was the final stop of a three year journey to bike around the world.
+[00:15] He started just outside his family's home in Brookline, Massachusetts.
+[00:19] By the time he reached Bay Route, Samar had peddled 46,000 miles through 61 countries.
+[00:26] He crossed no covered mountain ranges, survived food poisoning, and bike through political
+[00:31] unrest.
+[00:33] Some are usually brod alone, and most of these, he woke up not knowing where he would sleep
+[00:37] that night.
+[00:38] The trip showed him the true happiness can be a glass of water, a moment to rest, or help
+[00:43] from a stranger on the road.
+[00:45] I'm Shelby Stanger, and this is wild ideas worth living.
+[00:49] An REI-Clawped Studios production presented by Capital One and the REI-Clawped Mastercard.
+[00:59] Samar Abuhamad welcomed a wild idea worth living, very excited to talk to your Boston right
+[01:05] now, right?
+[01:06] I am, thanks for having me Shelby, excited to chop it up with you.
+[01:10] So between 2022 to like 2025, you had a pretty insane wild idea.
+[01:20] Tell us that wild idea, and then I'm really curious how you even came up with it.
+[01:25] Yeah, so in 2022, I left my home in the Boston area with my bicycle, and my plan at the
+[01:32] time was just to bike to Patagonia and get to the southern point of Argentina, and that ended
+[01:38] up taking a year, and that turned into a three and a half year trip where I bike
+[01:42] across all the continents except Antarctica.
+[01:46] And how did I start that?
+[01:48] It's a combination of a lot of things, but I would say the thing that really kick started
+[01:53] it was COVID.
+[01:54] You know, prior to COVID, I was working in the corporate world.
+[01:57] I was wearing a suit every day, working at a bank in New York City, and COVID just, I think
+[02:03] like a lot of people forced us to reflect on life and what we really wanted out of life.
+[02:09] I at least did for me.
+[02:11] And so I ended up quitting that job.
+[02:12] I got really into biking.
+[02:14] I did a year of nonprofit work.
+[02:16] And then I read a book from a British adventurer named Alistair Humphrey.
+[02:21] Oh, yeah, he's been on the podcast.
+[02:22] He's great.
+[02:23] Oh, there you go.
+[02:24] His books about his four-year trip around the world between 2000 and 2004 really opened
+[02:31] up my mind to this kind of world trip, and the bicycle has a way to cover not just states
+[02:38] or towns, but continents.
+[02:39] And so I've always loved traveling, and I've always loved sports.
+[02:43] And I think bike travel is like the perfect intersection of those two passions of mine.
+[02:49] And so I did, like I said, I left on that first trip from Boston, and they just turned
+[02:53] into my life, I guess.
+[02:56] So where were you working in New York City?
+[02:58] I was at a bank called Morgan Stanley.
+[03:01] I was walking here.
+[03:02] Sorry, I think we know Morgan Stanley is.
+[03:04] Oh, I didn't mean to like that, but you asked.
+[03:07] And yeah, I was working in real estate, like evaluating loans, you know, like totally different
+[03:13] than where I'm at now.
+[03:15] So you were making like good money working in Morgan Stanley, probably working 68 hours
+[03:23] a week, I don't know.
+[03:24] Yeah, like 60.
+[03:26] Okay.
+[03:27] But yeah, I think like I said earlier, like COVID really was like shook me out and like
+[03:31] forced me to rethink life.
+[03:33] I always say like if COVID didn't happen, I probably would still be at that job and like
+[03:37] stay on kind of the normal course of life, you know, like job promotion.
+[03:42] I'd probably be married with a kid now.
+[03:44] Like so, or maybe not, but I was kind of on that path.
+[03:48] And you know, when COVID happened, I moved back to my home in Boston, and I was working
+[03:53] remotely.
+[03:54] And I just felt like a caged animal.
+[03:56] And I was found myself watching YouTube and procrastinating on work.
+[04:01] And I realized that like when you take out the social element of work and being in an
+[04:06] office with people and it was just me and a screen, I realized that like this isn't actually
+[04:11] what I want to do.
+[04:12] And I, you know, I looked at my bosses and they all seemed happy and successful, but I also
+[04:17] was like, wow, we're all just doing the same thing.
+[04:19] We're going into the same office.
+[04:21] And I was like, yeah, do I really want to be doing this in 30 years?
+[04:29] Samar is 25 when he quit his job in September of 2020.
+[04:32] He moved to Lebanon where his parents are from, to help rebuild after the explosion,
+[04:37] the tore through Bayeritz port in August of that year.
+[04:40] He thought he would stay a few months, but he ended up working with the non-profit there
+[04:44] for a year and a half.
+[04:47] In his free time, Samar began to explore the country from the saddle of his bike.
+[04:53] The plan on is a really small country.
+[04:55] It's three Lebanon's equals one Massachusetts, so really small country.
+[04:59] But in that small country, there's 10,000 feet mountain ranges and a beautiful coastline.
+[05:05] And so it lent itself really well for biking.
+[05:07] And so then that's where I was like, wow, I discovered Lebanon by a bike, but it'd be
+[05:10] cool to see other places by bike too.
+[05:15] The next year, Samar was watching the Tour de France when he decided to go see the event
+[05:20] in person and do some cycling of his own.
+[05:23] That trip planted a seed.
+[05:29] I just want to understand, like, you went to France, you did this two-week trip, and then
+[05:33] like, how did you plan and decide, okay, I'm going to do, because your wild idea really
+[05:38] was just Alaska to Argentina, right?
+[05:41] Yeah, our Boston to Argentina.
+[05:42] I like the idea of leaving from my front door, but it's true that the traditional Pan American
+[05:48] route people do Prudeau Bay Alaska to Ushwaya.
+[05:51] So this is my toy store.
+[05:52] I think that's even cooler to do Boston to Argentina.
+[05:57] So tell me, like, how that idea came, and then how you went from idea to reality.
+[06:03] What were the logistics that you had to dial it, you had to get gear, you had to plan
+[06:07] your route.
+[06:09] So I referenced the book, and so I liked the idea of Alastairam free's book, and so I liked
+[06:16] the idea of doing a big cross-continental trip.
+[06:19] And then, like, I kind of just said, I liked the idea of just leaving from my front door.
+[06:23] It made it logistically easy to just leave from my front door, no flights.
+[06:27] And also part of it was, hey, like, if I could cross-CUS first, it's kind of a nice testing
+[06:32] ground for the beginning of my trip.
+[06:34] I'll make familiar territory, everyone speaks English.
+[06:37] So it was kind of like, in my head, I was like, I'll cross-CUS.
+[06:40] This would be a good testing ground before I enter Mexico and Central American, continue.
+[06:45] So that's kind of how I like planned, like, that is my first route.
+[06:50] In terms of planning and gear and logistics, the first step was putting the deposit on that
+[06:55] bike.
+[06:56] It's a gravel bike, it's steel.
+[06:58] So I think steel is important on a long trip because if anything goes wrong, you
+[07:02] could find a welder in any corner of the world, and it's in 11 speed.
+[07:07] And I picked a gravel bike because it's kind of a nice mix between performance, but also
+[07:14] allows you to kind of go on, on rougher terrain.
+[07:18] And once I put the deposit on the bike, you know, that was like money down.
+[07:22] And I was like, all right, now I'm actually doing it.
+[07:27] For better or for worse, Samarit kept the rest of his preparation pretty minimal, creating
+[07:32] a loose sketch of a route.
+[07:34] Since he didn't need to book a flight to get to the starting line, on April 2nd, 2022,
+[07:39] Samarit simply walked out his front door and started writing.
+[07:49] Do you remember day one?
+[07:50] Yeah, I remember day one.
+[07:54] I remember all my bike and stuff was really clean.
+[07:57] And I remember like I said, I left my front door, my dad bike,
+[08:01] go me a bit.
+[08:02] My mom was crying.
+[08:04] I was holding back tears too.
+[08:06] And again, I had no plans.
+[08:08] I had no idea where I was going to sleep that first night too.
+[08:11] And so I had never even set up my tent before, you know, and which is probably not a
+[08:16] good thing to admit.
+[08:17] I remember I packed my stuff the first morning.
+[08:19] So I had never actually even packed all my stuff and taken the test ride, which I would
+[08:24] recommend to people, but you know, I did it for whatever reason.
+[08:26] I think I was procrastinating and, but so yeah, that first day I biked about 60 miles.
+[08:32] And I remember starting to rain.
+[08:34] And so I found a state park, which was closed for camping, but I kind of snuck myself in.
+[08:42] And yeah, it worked out.
+[08:43] And so, you know, that's one of the things too, with biking you learn, you know, because
+[08:47] it was a bike trip that I was on, but you learn pretty quickly.
+[08:50] It's maybe like 40% biking, 60% just problem solving and adapting every day.
+[08:56] So it's like, where am I going to eat?
+[08:57] Where am I going to sleep?
+[08:58] Where am I going to stop?
+[09:00] Oh, my something went wrong with that bike.
+[09:02] I need to fix this or, you know, as I got into other countries, it's like, oh, my
+[09:07] passport ran out.
+[09:08] Like, how am I going to get a new passport?
+[09:09] Or where am I going to get the visa for this country?
+[09:12] Or how am I going to hold enough water to get me through this long section?
+[09:15] So you learn pretty quick.
+[09:16] Like, obviously, I'm on a bike trip, but it's the bike really is a vehicle for the
+[09:21] travel.
+[09:22] And it's just figuring stuff out and problem solving every day.
+[09:25] So in the beginning, was there ever an OF moment?
+[09:30] Like, oh, my God.
+[09:31] What am I doing?
+[09:32] What did I get myself into?
+[09:34] This was stupid.
+[09:36] Actually, there was, yeah, those exactly one of those pretty early on.
+[09:40] I remember sitting in the cornfields of Kansas, and I was looking at a map, and I was like,
+[09:45] hey, am I still have a long, long way to go to Argentina.
+[09:48] And it kind of felt overwhelming.
+[09:50] But something I learned from that pretty quick and something I adopted for the rest of my
+[09:54] travels is, you know, it's good to set up big goal, but you got to like break it down into
+[10:00] checkpoints.
+[10:01] And so instead of sitting in Kansas and saying, oh, I'm going to Argentina, it's like,
+[10:05] hey, get to Colorado.
+[10:07] Let's get to Denver.
+[10:08] From Denver, hey, let's get to the next state Utah, then Arizona.
+[10:12] And you know, you kind of stacking up with those bricks, and then you step back, and then
+[10:16] you could see the house you built.
+[10:17] And so I think that mentality or kind of lesson is something that helped and carry me
+[10:24] on the rest of my travels to, to take a day by day, check point by checkpoint, and don't
+[10:28] worry about that massive goal right away, because if you stack enough checkpoints together,
+[10:32] you'll end up hitting that goal.
+[10:34] What was a typical day like, like, breakfast, sleeping, waking up to sleeping, and how
+[10:40] many miles are you right today?
+[10:42] Yeah, I think it, you know, some of those day to day stuff in various based on your
+[10:47] surrounding and which country you're in, but, you know, assuming I was camping a day would
+[10:53] be wake up, boil some water, make coffee and oatmeal, as I'm packing up my, my gear,
+[11:02] and then just hitting the road.
+[11:05] Usually I would bike my average for the whole trip.
+[11:08] If you do all my days bike, it was like 73 miles bike per day.
+[11:12] So some days more, some days less.
+[11:16] And then yeah, honestly, like no plan.
+[11:18] I would just go with where the wind blow me.
+[11:20] Like usually the night before, I look at my map and I have an idea of where I'm trying to get
+[11:25] to the next day.
+[11:26] And so, you know, I'll work towards that daily goal, but things change all the time.
+[11:31] So if I'm feeling tired, I'll stop before, or if I'm feeling great, I'll just keep going.
+[11:35] And so usually all my day, I'll just keep going and usually around mid afternoon, I'll
+[11:40] reassess like, hey, will I get to where I'm trying to get to or am I feeling good or
+[11:44] am I trying to get further?
+[11:46] And yeah, usually as a sun starts a set, I'm like, okay, where am I going to sleep now?
+[11:51] So it depends, you know, in some countries like in the US or more, quote, unquote, developed
+[11:55] countries, I would reach out to some of the people on apps.
+[12:00] There's an app called One Shower and try to coordinate a place to get hosted or on some
+[12:05] countries, I'm looking at a map like, hey, where am I going to try to camp tonight?
+[12:10] And so there's a bunch of resources for that too.
+[12:12] What's app groups, where other cyclists and other travelers are in there, or there's a traveling
+[12:17] app called Ioverlander, which is other travelers will put places on a map they camped,
+[12:23] or sometimes I'm just going on Google Maps looking for a green space and that's enough
+[12:26] to camp sometimes.
+[12:28] We're in some countries like Southeast Asia or West Africa where hotels are cheap,
+[12:34] I wouldn't hesitate to get a nice $10 room sometimes, charge all my electronics, get a
+[12:39] good night's sleep indoors.
+[12:41] So it kind of really depends where you are in South America with a lot of wild camping,
+[12:45] because I kind of followed the spine of the Andes, so like every night was wild camping
+[12:49] paradise.
+[12:50] So it really depends like where I was, retain the shift a bit, but yeah, usually it's
+[12:55] just like wake up in bike, you know, if I'm feeling good, bike far, if I'm feeling less
+[13:00] good, bike less, but I guess that's one of the benefits of biking and traveling alone
+[13:05] is like your really your own boss and every decision you make is your decision.
+[13:19] The sunshine is back and I'm planning to spend the next few months outside, catching waves,
+[13:24] camping and hacking the trails all around San Diego.
+[13:28] If you're somewhere plans also involve spending as much time outside as possible, the
+[13:33] RAI caught MasterCard offers rewards and benefits that support your love of the outdoors.
+[13:39] It's just for RAI caught members and earns card rewards on every purchase at RAI and everywhere
+[13:46] else MasterCard is accepted.
+[13:48] What I love is that rewards are available in one to two days, so all of those stops on
+[13:52] the way to the adventure from fuel for the drive to last minute gear runs it all adds up.
+[13:59] See if you're pre-approved with no risk to your credit score.
+[14:02] To learn more about the RAI caught MasterCard program, head to RAI.com slash mastercard-podcast
+[14:10] that's RAI.com slash mastercard-podcast.
+[14:14] Terms apply.
+[14:21] When you're moving fast, covering ground and chasing a wild adventure, the gear you carry
+[14:26] matters.
+[14:27] That's where Benchmade comes in.
+[14:29] Headquartered in Oregon City, Benchmade has been building purpose-driven knives since 1987.
+[14:37] Their tools are designed to show up when it counts and lasts a lifetime.
+[14:41] Every Benchmade knife comes with a lifetime warranty and free life-sharp service, which
+[14:46] means free-sharpening forever.
+[14:49] I love gear that's in it for the long haul.
+[14:52] For nearly a decade, the Bugout knife has been the standard for ultra-light carry.
+[14:57] Be for the trail, camp, and everyday utility.
+[15:01] The new Bugout vapor takes that further with a slimmer, more refined build.
+[15:06] Made to move fast without extra weight.
+[15:09] And now exclusively at RAI, you can find the Bugout 535BK-2504.
+[15:17] It's the same trusted performance with a bold outdoor look that feels just as good at
+[15:22] camp as it does back home.
+[15:24] Check out Benchmade knives at your local RAI or RAI.com.
+[15:37] In April of 2022, Samara Abu-Humman left his home in Brooklyn, Massachusetts and began
+[15:43] a three-year cycling journey around the world.
+[15:46] He split the trip into three chapters.
+[15:48] First he rode from Boston to Argentina.
+[15:51] Then in 2023 he rode from North Cape Norway down to South Africa.
+[15:56] In 2024 he rode across Australia through Indonesia, China, and the Middle East ending
+[16:02] in the Bay Route Lebanon.
+[16:04] Between each chapter Samara came home to Boston for three or four months.
+[16:08] During this time, he worked construction during the day and drove a petty cab by night.
+[16:14] These jobs helped fund the next leg of his trip and kept him in really good shape.
+[16:19] As soon as he saved enough money, Samara got back on the road.
+[16:25] I want to hear some stories.
+[16:27] What was the worst day?
+[16:28] What was the day when you were like, this is so stupid.
+[16:31] And what was the best day?
+[16:33] Well there's a few days.
+[16:35] Usually the days where you're in it, this sucks, this is so hard, get me out of here.
+[16:41] Those had done being the best memories.
+[16:43] I believe that the hardest roads lead to the most beautiful places.
+[16:48] Figuratively with biking sometimes, but also literally and mentally.
+[16:53] But anyway, so stories, my worst day, I could pick a bunch.
+[16:57] Like the first one that came to my mind was in Ecuador.
+[17:01] I got bit by a dog.
+[17:03] And so that kind of sucked.
+[17:04] I was just like, you know, I love dogs.
+[17:07] And so I was just biking and some dog came and bit me.
+[17:10] I needed to go get stitches.
+[17:13] And you know what?
+[17:15] But the negative turned into a positive.
+[17:17] Like some awesome stranger came, picked me up on the side of the road, took me back
+[17:20] backtrack to the closest hospital.
+[17:22] And then he ended up hosting me for three days.
+[17:25] And so again, like it sucks getting bit by dog and getting stitches.
+[17:29] But you know, it turned into a nice story where I met this awesome guy who helped me out.
+[17:34] But another worst day situation actually is in Mexico.
+[17:41] And I had just crossed into Tijuana.
+[17:43] So this is like my first day leaving the US or the first three days because it was kind
+[17:47] of a series of bad events.
+[17:49] My derailer brooks, which is pretty bad for a bike.
+[17:52] And so I was on the side of the highway and I was like, oh man, is my trip about to be
+[17:56] like delayed because also especially during that time, it was a backlog of bike parts after
+[18:01] COVID.
+[18:02] So I was pretty worried for a second.
+[18:03] And then the next day I lost one of my bags completely and I had all my winter gear
+[18:09] and I was like freaking out.
+[18:12] And then on top of that, that next day my knee started hurting.
+[18:16] So I was like, oh my god, I lost my bag, my knee hurts.
+[18:20] Maybe I should just turn back to San Diego in the US border and I kind of felt overwhelmed.
+[18:27] But then I just got a hotel room that night and got a good night sleep.
+[18:31] And that's usually enough to cure a lot.
+[18:35] You know, there's a lot of times where you're like, this sucks.
+[18:38] What am I doing?
+[18:39] But usually just getting a good night sleep is enough to kind of reset the brain,
+[18:43] at least for me.
+[18:44] And then other times where it sucks and you want to quit, usually you're in the middle
+[18:48] of nowhere.
+[18:49] You can't even quit, right?
+[18:50] You need to get to the next town too.
+[18:52] So you can't even quit logistically if you wanted to.
+[18:55] And so usually by the time you push through the hard moment, you feel better by the end,
+[18:59] I think.
+[19:00] And so I kind of gave you some hard moments logistically.
+[19:02] But there's also physically hard moments.
+[19:04] I had to encounter too, like crossing the Australian outback.
+[19:08] You know, there's sections of 150 miles with nothing.
+[19:12] And so I'm carrying 13 liters of water.
+[19:14] And I was there in the beginning of November.
+[19:16] So it's their summer.
+[19:18] So it's like so hot.
+[19:19] And I'm like, what am I doing?
+[19:20] Like, but then you get to the rest stop.
+[19:24] And you're like, wow, water is all I need for happiness.
+[19:26] It makes you appreciate that water so much more, right?
+[19:29] Well, that's one of the most beautiful moments.
+[19:31] Whether they were like physical beauty or something that evoked awe,
+[19:36] or someone was just so kind.
+[19:39] There are many off the top of my head for physical beauty.
+[19:44] One of my favorite countries in terms of physical beauty was biking in Peru.
+[19:48] Because when you're out in the mountains,
+[19:51] I follow the route called the Peru divide.
+[19:53] But it takes you basically up and down through gravel roads.
+[19:58] There aren't much, not very well-trafficked.
+[20:00] And you'll just round a corner.
+[20:02] And you have like a postcard views in 20,000 foot peaks.
+[20:06] And llamas more than humans.
+[20:08] So biking through Peru was a dream.
+[20:10] And then I guess one more place that comes to mind right off the bat
+[20:13] is the premier highway, which is in Central Asia and to Gixtain.
+[20:18] And specifically in the premier highway,
+[20:20] I kind of did a side quest through this valley called the Bartang Valley.
+[20:24] And that was five days with no villages and super rugged terrain.
+[20:28] And so those are moments I look back on a lot
+[20:31] because I had some amazing encounters in that valley
+[20:35] with a couple of shepherds where I'm not expecting to see anyone.
+[20:41] And you go into this mud hut and there is this shepherd there.
+[20:44] And he speaks no English, I speak no Russian or Tajik.
+[20:49] And we just kind of sit there and are doing hand-signals to communicate.
+[20:53] And he gave me tea with fresh cow milk from his herd.
+[20:57] And you know, we're able to share a moment again without any language.
+[21:01] But you know, even just kind of feeling seen from someone
+[21:05] when you've been alone for a few days, it's like all you need sometimes.
+[21:16] Samars encounters with locals made a lasting impression.
+[21:20] He met a motorcycle who towed him up a climb in Syria and drivers in Saudi Arabia
+[21:26] who handed water bottles through their car windows as he biked it night to avoid the heat.
+[21:32] On August 11, 2025, Samars made it to be root.
+[21:37] The city where he first fell in love with cycling.
+[21:45] So you finished this whole trip in August 2025?
+[21:49] Yeah.
+[21:50] What was a finished line like?
+[21:52] The finish line was, I mean, the day finishing wasn't like that emotional.
+[21:59] But I know like the last three or four days was pretty sad.
+[22:04] Or not sad.
+[22:05] I was just reflecting on everything I'd gone through to get to where I was.
+[22:12] And specifically the second to last day, I went up the the highest point in to Lebanon
+[22:18] to climb.
+[22:20] That was a climb I had done many times when I was living in Lebanon.
+[22:23] So it really was like emotional.
+[22:24] I remember climbing up that last day and I know it's cliche.
+[22:27] Like everything was flashing through my mind all the hard moments.
+[22:31] And so I know I cried a lot last few days.
+[22:34] But actually arriving, I mean, it's interesting.
+[22:38] Like the last leg of my trip I kind of mentioned it was going through those middle
+[22:41] eastern countries in the middle summer.
+[22:43] So it was really hot.
+[22:44] And in those moments, I couldn't wait to be done, right?
+[22:47] But after a month of being done, it's also like, wow, I think I'd rather be back
+[22:50] on the road now.
+[22:52] So yeah, coming back home this last trip has been harder than the first two times
+[22:56] because I don't necessarily have that next huge target yet.
+[23:00] I have a couple ideas I'm working on.
+[23:03] But this time around, I was like, I want to properly process everything, work
+[23:09] on a few projects and hopefully inspire others to go on their own adventures too.
+[23:14] Because even if I'm not traveling, if that inspires someone to travel and do a
+[23:19] big challenge like this, in a way I'm able to travel through them, you know,
+[23:23] well, it's dive a little deeper.
+[23:25] Finish lines can be tricky.
+[23:27] 100%.
+[23:28] They can be really anti-climactic.
+[23:31] You had this like single pointed goal.
+[23:33] Every day all you had to do is like, not all you had to do is hard.
+[23:36] You'd get up right your bike, go somewhere and you could physically go somewhere.
+[23:39] It was new, stimulating, new food.
+[23:42] Your dopamine levels are high.
+[23:44] I mean, there's like a physical come down and there's an emotional come down and not having
+[23:48] purpose is really hard for someone like me, probably for someone like you, but for most
+[23:54] that people listening to this podcast, that's why we do hard things.
+[23:58] It had a difficult coming home a little bit.
+[24:00] Yeah, it definitely is.
+[24:02] I think you hit the nail on the head with everything you just said.
+[24:05] It's like for the three and a half years on this trip, I had a purpose every day.
+[24:11] I really felt like I was moving towards my purpose and then you're right.
+[24:15] I finished my goal and it was like, what now?
+[24:19] It was a huge what now moment for me.
+[24:21] I think with the biking, one thing that I loved so much about it is the progress felt
+[24:27] so concrete, right?
+[24:28] Because each day I was going from A to B.
+[24:31] And you could measure that progress in miles, literally.
+[24:34] I was seeing that as you are every day.
+[24:37] Literally, well, that's cool.
+[24:39] It's not my turn.
+[24:40] I could see on a map like getting closer to the goal.
+[24:45] I think it's also shifting the mindset here that the progress isn't as concrete, but
+[24:51] having faith that if I'm doing the things I'm supposed to be doing every day towards
+[24:55] the goal, that eventually the seeds that I'm planting now will start watering.
+[25:01] They already have now that I've been home six, seven months.
+[25:04] I mentioned that I am planting the next trip, but it's also like I've been trying to do
+[25:09] public speaking and getting to front of students and schools and different organizations
+[25:14] and sharing some of the lessons and stories with me.
+[25:17] You know, lots of people have reached out as they plan their own trips.
+[25:20] And so I've been getting a lot of fulfillment in helping others as they embark on their own
+[25:25] adventures too because even if I'm not traveling, like sharing some of those lessons and
+[25:30] helping others, you have been very fulfilling too.
+[25:39] I told you that this trip was divided in a three chapters.
+[25:42] What did you learn from each chapter?
+[25:44] Well, there's a few things.
+[25:46] I mean, it's hard to assign each lesson to each chapter.
+[25:52] But I would say, if I had to boil it down to four major lessons, it would be in some
+[26:00] of them we've touched on.
+[26:02] But it's just start.
+[26:03] If you have this goal, it's ideal.
+[26:05] Stop putting it off.
+[26:07] You just got to start.
+[26:08] That's the first one.
+[26:10] The second one, like I think it's important to set big goals, but breaking them down.
+[26:15] So that's number two.
+[26:16] Number three is, you know, once you set that big goal, it's not going to be a linear path.
+[26:23] And so the trip becomes just as much about adaptability and resilience.
+[26:30] And so finding ways to overcome obstacles that are going to present themselves to you
+[26:36] and understanding that it's not going to be a linear before you start something.
+[26:40] I think also help because then you're able to be adaptable and figure stuff out along
+[26:46] the way.
+[26:47] And then the fourth is just like the power of human connection.
+[26:51] I think that was a secret sauce for my trip, you know, just being propelled by the kindness
+[26:58] of strangers and interactions and people welcoming me into their daily lives every day.
+[27:03] It really is what propelled me forward every day.
+[27:06] And I think in the world of technology and like ever growing AI, it's important to remember
+[27:12] like we're social creatures and nothing can replace human connection or this conversation
+[27:17] we're having and meeting people along the way, like nothing could actually replicate that.
+[27:22] What about you?
+[27:23] Like how did this trip change you as a person?
+[27:26] I think I really had like a really good childhood and upbringing and I'm like so grateful
+[27:32] for that.
+[27:33] Like both my parents are successful and seeing them be so successful and like give me
+[27:38] such a good life.
+[27:39] Like I went to a private school, they paid for my college.
+[27:43] I had this good job right.
+[27:45] And I would say I had a pretty like trauma free upbringing.
+[27:50] And I think in a way, this bike trip was a way for me to like revolt against that in
+[27:56] a way and like suffer.
+[27:58] Because I think you need suffering to find joy.
+[28:00] And I think this was my way of doing that, I guess.
+[28:08] To see videos from Samar's Time on the Road, check out his Instagram at Samar.bikes.
+[28:15] That's SAMER.biKES.
+[28:20] You can also learn more on his website, SamarBikes.com.
+[28:25] While ideas were living as part of the REI podcast network, it's hosted by me, Shelby Stanger,
+[28:32] produced by Annie Fastler, Sylvia Thomas, and Sam Pierce Nitsburg of Puddle Creative.
+[28:37] Our senior producer is Jenny Barber.
+[28:40] Our executive producers are Palo Motela and Joe Crossby.
+[28:44] Thank you again to our partner, capital 1 and the REI Coat Mastercard.
+[28:49] As always, we love it when you follow the show, take time to raid it, and write a review
+[28:54] wherever you listen.
+[28:55] And remember, some of the best adventures happen when you follow your wildest ideas.
+
+</details>
+

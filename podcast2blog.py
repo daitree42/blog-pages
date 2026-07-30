@@ -33,6 +33,8 @@ LLM 后端（文本整理）:
 import argparse
 import json
 import os
+# 无 GPU 机器：尽早屏蔽 CUDA 避免 cublas64_12.dll 崩溃
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
 import re
 import shutil
 import subprocess
@@ -62,9 +64,9 @@ ARTICLES_DIR = BASE_DIR / "articles"
 PODCAST_INBOX_DIR = BASE_DIR / "podcast_inbox"
 
 # Whisper 模型大小: tiny / base / small / medium / large-v3
-# CPU 推荐: tiny (~6min/h) | small (~15min/h) | medium (~30min/h)
-# 默认 small — 速度与准确率的最佳平衡
-WHISPER_MODEL_SIZE = "small"
+# 本机 CPU 无 GPU，默认 tiny（只缓存了 tiny，加载即用）
+# 其他模型需要下载且 CPU 上极慢
+WHISPER_MODEL_SIZE = "tiny"
 
 # ── LLM API 配置 ──────────────────────────────────────────────────
 # 支持多种后端，按优先级自动选择:
@@ -776,9 +778,6 @@ def transcribe_audio(audio_path: Path) -> Optional[dict]:
     except ImportError:
         log("info", "使用 CPU (float32)")
 
-    # 强制屏蔽 CUDA（避免 cublas64_12.dll 缺失导致的崩溃/卡死）
-    os.environ["CUDA_VISIBLE_DEVICES"] = ""
-
     model = WhisperModel(model_path, device="cpu", compute_type=compute_type)
 
     log("transcribe", "转写中（这可能需要较长时间）...")
@@ -786,7 +785,7 @@ def transcribe_audio(audio_path: Path) -> Optional[dict]:
     segments, info = model.transcribe(
         str(audio_path),
         language=None,          # None = 自动检测语言
-        beam_size=5,
+        beam_size=1,            # CPU 上 beam=1 最快，5 只适合 GPU
         vad_filter=True,        # 过滤静音段
         vad_parameters=dict(min_silence_duration_ms=500),
     )
@@ -1543,13 +1542,13 @@ def main():
                         help="同步文章到 podcast-site/transcripts/")
     parser.add_argument("--resume", action="store_true",
                         help="跳过已有对应文章的音频（用于批量续传）")
-    parser.add_argument("--max-workers", type=int, default=3,
-                        help="批量并行数（默认: 3）")
+    parser.add_argument("--max-workers", type=int, default=1,
+                        help="批量并行数（CPU 建议 1，默认: 1）")
     parser.add_argument("--no-deploy", action="store_true", help="跳过部署步骤")
     parser.add_argument("--no-transcribe", action="store_true", help="跳过转写步骤")
     parser.add_argument("--whisper-model", default=None,
                         choices=["tiny", "base", "small", "medium", "large-v3"],
-                        help="Whisper 模型大小（默认: small）")
+                        help="Whisper 模型大小（默认: tiny，只有 tiny 缓存了）")
     parser.add_argument("--build", action="store_true", help="仅构建站点")
     parser.add_argument("--serve", action="store_true", help="本地预览")
 
