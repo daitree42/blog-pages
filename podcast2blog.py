@@ -1401,12 +1401,12 @@ def process_transcript_only(transcript_file, skip_deploy=False, do_translate=Fal
 # 第六步：批量处理
 # ═══════════════════════════════════════════════════════════════════
 
-def process_batch(directory, skip_deploy=False, resume=False, max_workers=3,
+def process_batch(directory, skip_deploy=False, force=False, max_workers=1,
                   do_translate=False, sync_podcast_site_flag=False):
     """
     批量处理目录下的所有音频文件。
-    支持 --resume 跳过已有对应文章的音频。
-    支持并行处理（max_workers 控制并发数）。
+    默认跳过已有对应文章的音频（只增加新文章）。
+    --force 可强制重跑已有文章。
     """
     from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -1423,8 +1423,8 @@ def process_batch(directory, skip_deploy=False, resume=False, max_workers=3,
         log("warn", f"目录中没有音频文件: {audio_dir}")
         return False
 
-    # --resume 模式：检查文章是否已存在
-    if resume:
+    # 默认跳过已有对应文章的文件（除非 --force）
+    if not force:
         before = len(files)
         existing_slugs = {d.name for d in ARTICLES_DIR.iterdir() if d.is_dir()}
         files = [f for f in files
@@ -1432,7 +1432,7 @@ def process_batch(directory, skip_deploy=False, resume=False, max_workers=3,
                  and not any(f.stem in slug for slug in existing_slugs)]
         skipped = before - len(files)
         if skipped:
-            log("info", f"--resume 模式：跳过 {skipped} 个已有文章的文件")
+            log("info", f"跳过 {skipped} 个已有文章的文件（用 --force 强制重跑）")
 
     log("step", f"批量处理 {len(files)} 个音频文件 (并发 {max_workers})")
 
@@ -1525,9 +1525,9 @@ def main():
   python podcast2blog.py --audio ./podcast.mp3 --translate         # 本地音频 → 翻译中文
   python podcast2blog.py --transcript ./转录稿.txt                   # 已有转录稿
   python podcast2blog.py --transcript ./en.txt --translate         # 英文稿 → 翻译中文
-  python podcast2blog.py --batch-dir ./podcast_inbox/              # 批量处理目录
-  python podcast2blog.py --batch-dir ./podcast/已转/ --translate   # 批量翻译
-  python podcast2blog.py --batch-dir ./podcast/已转/ --resume      # 批量+跳过已处理的
+  python podcast2blog.py --batch-dir ./podcast_inbox/              # 批量处理目录（自动跳过已有）
+  python podcast2blog.py --batch-dir ./podcast/已转/ --translate   # 批量翻译（自动跳过已有）
+  python podcast2blog.py --batch-dir ./podcast/已转/ --force       # 强制重跑所有音频
   python podcast2blog.py --build                                   # 仅构建
   python podcast2blog.py --serve                                   # 仅预览
         """,
@@ -1540,8 +1540,8 @@ def main():
                         help="翻译模式：英文播客 → 中文文章（含双语原文折叠）")
     parser.add_argument("--podcast-site", action="store_true",
                         help="同步文章到 podcast-site/transcripts/")
-    parser.add_argument("--resume", action="store_true",
-                        help="跳过已有对应文章的音频（用于批量续传）")
+    parser.add_argument("--force", action="store_true",
+                        help="强制重跑已有文章的音频（默认跳过已有，只处理新文件）")
     parser.add_argument("--max-workers", type=int, default=1,
                         help="批量并行数（CPU 建议 1，默认: 1）")
     parser.add_argument("--no-deploy", action="store_true", help="跳过部署步骤")
@@ -1570,7 +1570,7 @@ def main():
     # 批量处理模式
     if args.batch_dir:
         process_batch(args.batch_dir, skip_deploy=args.no_deploy,
-                      resume=args.resume, max_workers=args.max_workers,
+                      force=args.force, max_workers=args.max_workers,
                       do_translate=args.translate,
                       sync_podcast_site_flag=args.podcast_site)
     elif args.transcript:
