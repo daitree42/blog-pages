@@ -87,6 +87,13 @@ WHISPER_MODEL_SIZE = "tiny"
 #   export API_BASE_URL=https://api.deepseek.com/v1
 #   export API_MODEL=deepseek-chat
 
+# 加载 .env（若存在），便于从 DEEPSEEK_API_KEY / OPENAI_API_KEY 读取 key
+try:
+    from dotenv import load_dotenv
+    load_dotenv(BASE_DIR / ".env")
+except ImportError:
+    pass
+
 LLM_PROVIDER = "none"  # 自动检测: anthropic / openai / none
 LLM_API_KEY = ""
 LLM_BASE_URL = ""
@@ -110,6 +117,14 @@ if _ok and LLM_PROVIDER == "none":
 elif _ok and LLM_PROVIDER == "openai":
     # 同时设了两个 key，用 OpenAI 的但复用已检测到的 base_url/model
     LLM_API_KEY = _ok
+
+# 检测 DeepSeek 专用 key（未设通用 key 时自动用 DeepSeek 后端）
+_dk = os.environ.get("DEEPSEEK_API_KEY", "").strip()
+if _dk and LLM_PROVIDER == "none":
+    LLM_PROVIDER = "openai"
+    LLM_API_KEY = _dk
+    LLM_BASE_URL = os.environ.get("API_BASE_URL", "https://api.deepseek.com/v1").rstrip("/")
+    LLM_MODEL = os.environ.get("API_MODEL", "deepseek-chat")
 
 # 日志
 LOG_PREFIX = {

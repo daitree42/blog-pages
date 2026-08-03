@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>播客 -- 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/bo-ke-bi-ji/" class="nav-link">播客笔记</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+
+<section class="article-list">
+    
+    <article class="article-item article-featured">
+        
+        <div class="featured-badge">播客笔记</div>
+        <h2 class="article-title featured-title">
+            <a href="/blog-pages/posts/2026-08-03-It_Could_Happen_Here-The_End_of_the_United_States_of_America/">美利坚合众国的终结</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-08-03">2026年8月3日</time>
+            <span class="reading-time">36 分钟</span>
+        </div>
+
+        <p class="article-description featured-description">本期播客通过虚构叙事与历史反思，探讨美国可能面临的第二次内战及其全球性灾难后果，并呼吁从基层行动改变政治现状以避免崩溃。</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/Can_We_Trust_Election_Prediction_Markets/">Can_We_Trust_Election_Prediction_Markets</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-07-30">2026年7月30日</time>
+            <span class="reading-time">8 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">播客</span>
+            
+        </div>
+        
+        <p class="article-description">&gt; 本期摘要：本期播客探讨了预测市场（如Polymarket和Calci）如何影响美国政治选举。记者Liam Vaughn讲述了加州州长候选人Matt Mahan的案例：一笔匿名大额投注在Polymarket上将他的胜率从12%推高至96%，引发媒体关注，尽管最终未改变选举结果。节目分析了预测市场的</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/Wild_Ideas_Worth_Living_环球骑行/">Wild Ideas Worth Living：从投行到环球骑行46,000英里的冒险</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-07-30">2026年7月30日</time>
+            <span class="reading-time">11 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">播客</span>
+            
+        </div>
+        
+        <p class="article-description">&gt; 本期摘要：来自马萨诸塞州布鲁克莱恩的Samar Abuhamad，在2022年至2025年间，用三年半时间骑行46,000英里穿越61个国家。他曾是纽约摩根士丹利的银行职员，新冠疫情期间反思人生后辞职，从自家门口出发，一路骑行至阿根廷，又先后完成了从挪威北角到南非、从澳大利亚到黎巴嫩的旅程。本期</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/2026-07-29-This_American_Life-890_Maximal_Americanness/">极致的美国特色</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-07-29">2026年7月29日</time>
+            <span class="reading-time">3 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">播客</span>
+            
+            <span class="tag">This American Life</span>
+            
+            <span class="tag">TAL</span>
+            
+        </div>
+        
+        <p class="article-description">本期节目为美国250周年纪念特辑，探讨最具美国特色的事物。从棒球引入机器人裁判但保留人类挑战系统，到警察问“你还好吗？”的深层含义；从游客挑战密歇根沙丘的倔强，到《幸存者》按种族分队的戏剧性；从蓝背拼写书如何成为奴隶学习读写工具，到国歌演唱中自由发挥的传统。这些故事展现了美国人既追求正义又渴望发泄、既叛逆又自我怀疑的矛盾特质，以及种族议题、个人主义与集体传承的复杂交织。</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/2026-07-29-This_American_Life-889_Theres_Something_Abou/">万福玛丽：孤注一掷的绝境</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-07-29">2026年7月29日</time>
+            <span class="reading-time">2 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">播客</span>
+            
+            <span class="tag">This American Life</span>
+            
+            <span class="tag">TAL</span>
+            
+        </div>
+        
+        <p class="article-description">本节目讲述三个关于“万福玛丽”式绝境求生的故事：一位长期被不明疾病折磨的年轻女子奥拉，在常规治疗无效后，冒险接受一种未经证实甚至可能致命的静脉注射疗法（双氧水），症状奇迹消失；死刑辩护律师格雷格在仅剩12周内，为被指控六起谋杀的戴维·伍德寻找新证据，接触可疑证人与被忽视线索，试图阻止执行；移民拘留中心外，家属和志愿者通过喊话、扔瓶子等方式，与被困恶劣条件下的被拘留者保持联系，传递希望。这些故事展现了走投无路时人们孤注一掷的勇气与挣扎。</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/2026-07-29-This_American_Life-888_Not_Today_Hades/">凡人挑战众神：三个现代神话</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-07-29">2026年7月29日</time>
+            <span class="reading-time">7 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">播客</span>
+            
+            <span class="tag">This American Life</span>
+            
+            <span class="tag">TAL</span>
+            
+        </div>
+        
+        <p class="article-description">本期节目讲述三个现代人挑战命运与权威的故事。华盛顿记者帕布罗·曼里克斯（Pablo Manriquez）收到一套画具后，立志成为首都唯一的油画家，甚至试图将作品挂进国会大厦，却被同行投票否决。社保局员工杰里迈亚·斯科菲尔德（Jeremiah Scofield）目睹国土安全部要求将270万疑似非法移民的社保记录标记为死亡，意图通过制造生活混乱迫使他们“自我驱逐”，他最终辞职并提起举报。作家丹尼尔·阿拉尔孔（Daniel Alarcon）采访球王梅西（Lionel Messi）时遭遇冷遇、等待和失败，意识到凡人永远无法真正接近神祇。</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/2026-07-29-This_American_Life-887_Two_Is_One_One_Is_Non/">当计划遇上巨变：两个家庭的故事</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-07-29">2026年7月29日</time>
+            <span class="reading-time">28 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">播客</span>
+            
+            <span class="tag">This American Life</span>
+            
+            <span class="tag">TAL</span>
+            
+        </div>
+        
+        <p class="article-description">本期节目讲述两个家庭面对巨变的故事。第一个故事中，跨性别海军军官加勒特和妻子克丽丝在特朗普军事禁令下，用电子表格规划所有可能性，从移民德国到医疗退休，最终以出乎意料的方式获得保障。第二个故事是雷切尔·康的短篇小说，上帝决定消灭人类，每人在30天内选择变成一种动物，两位挚友在分离与不舍中做出选择。</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/2026-07-29-This_American_Life-886_Blackout/">伊朗黑障：被切断的声音</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-07-29">2026年7月29日</time>
+            <span class="reading-time">5 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">播客</span>
+            
+            <span class="tag">This American Life</span>
+            
+            <span class="tag">TAL</span>
+            
+        </div>
+        
+        <p class="article-description">本期《This American Life》记录了伊朗在美以军事打击期间，政府实施的全面互联网封锁。民众通过艰难方式传出语音，讲述战争中的日常生活、对政权的不同立场、1月抗议的镇压，以及战后互联网分层的新现实。这不仅是技术封锁，更是对人们生活的彻底抹除。</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/2026-07-29-This_American_Life-885_Bless_This_Mess/">被抹去的超级明星罗伯逊</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-07-29">2026年7月29日</time>
+            <span class="reading-time">6 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">播客</span>
+            
+            <span class="tag">This American Life</span>
+            
+            <span class="tag">TAL</span>
+            
+        </div>
+        
+        <p class="article-description">播客《This American Life》第885集讲述了保罗·罗伯逊（Paul Robeson）和埃斯兰达·罗伯逊（Eslanda Robeson）这对曾经辉煌的黑人巨星夫妇。保罗曾是运动员、演员、律师，埃斯兰达则是一位科学家、人类学家。两人在哈莱姆文艺复兴时期相遇，保罗在埃斯兰达支持下成为世界级明星，但因支持苏联和民权运动，遭到美国政府打压、抹去历史。故事还穿插了乔丹·安德森（Jordan</p>
+        
+    </article>
+    
+    <article class="article-item">
+        
+        <h2 class="article-title">
+            <span class="card-emoji">📝</span>
+            <a href="/blog-pages/posts/2026-07-29-This_American_Life-884_The_Idiot/">表兄的疯狂计划：The Idiot</a>
+        </h2>
+        <div class="article-meta">
+            <time class="article-date" datetime="2026-07-29">2026年7月29日</time>
+            <span class="reading-time">16 分钟</span>
+        </div>
+        
+        <div class="article-tags">
+            
+            <span class="tag">播客</span>
+            
+            <span class="tag">This American Life</span>
+            
+            <span class="tag">TAL</span>
+            
+        </div>
+        
+        <p class="article-description">在本期节目中，主持人Ira Glass与M. Gesson讨论她的新播客系列《The Idiot》。故事围绕M. Gesson的表哥Alan展开：他带着5岁儿子从俄罗斯来到美国，疑似绑架；两年后再次绑架，最终因雇佣杀手谋杀前妻Priscilla被捕。M. Gesson起初担任双重间谍，帮助Priscilla获取信息，最终在庭审中从录音中听到Alan亲口同意杀妻。节目包含第一集完整内容、对Priscilla的访谈、法庭录音分析，以及M. Gesson与Alan的对话。这是一个关于家族秘密、背叛与正义的惊人故事。</p>
+        
+    </article>
+    
+</section>
+
+
+<nav class="pagination">
+    
+    <a href="/blog-pages/tag/播客/" class="pagination-btn pagination-prev">← 上一页</a>
+    
+    <span class="pagination-info">2 / 3</span>
+    
+    <a href="/blog-pages/tag/播客/page/3/" class="pagination-btn pagination-next">下一页 →</a>
+    
+</nav>
+
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>

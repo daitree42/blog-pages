@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>这可能在这里发生预告片 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/bo-ke-bi-ji/" class="nav-link">播客笔记</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-bo-ke-bi-ji">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">播客笔记</div>
+            <h1 class="post-title">这可能在这里发生预告片</h1>
+            <div class="post-meta">
+                <time datetime="2026-08-03">2026年8月3日</time>
+                <span class="reading-time">2 分钟</span>
+            </div>
+
+            <div class="post-tags">
+                
+                <span class="tag">It Could Happen Here</span>
+                
+                <span class="tag">播客</span>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="post-body">
+        <h2>战区的清晨</h2>
+<p>你在闹钟响之前就醒了。窗外没有一丝阳光透进来，天还太早。你困惑了片刻，然后听到又一声爆炸。它在夜色中回荡，震得你公寓的墙壁和窗户都在颤抖。这不是你听到的第一声炸弹，而且听起来距离够远，你知道危险不在眼前。</p>
+<p>这让你有点意外——你居然能分辨出它并不近。你意识到，自己已经听过足够多的爆炸声，对它们有了相当敏锐的判断力，也知道什么时候近到需要担心。生活在战区变成只是生活，这变化快得让人感到诡异。</p>
+<p>你起身，再睡也没意义了。你跌跌撞撞走到厨房去磨咖啡，这时听到步枪射击的噼啪声。它很遥远，远到听起来几乎像鞭炮，但你知道那不是。你摸到磨豆机，盖上盖子按下去，什么都没发生。</p>
+<p>你后知后觉地意识到——在你睡意朦胧的大脑里——又停电了。你琢磨着，可能是你所在州那十几个叛军或叛乱组织中的哪一个干的。你甚至懒得掏出手机看新闻。那其实无所谓，你还有事要办。</p>
+<h2>日常的战争</h2>
+<p>外面天还黑着，既然你已经醒了，不如趁这机会，赶在人群之前去杂货店。你关上门并锁好，尽量不去理会不远处枪声的砰砰和碎裂声。有些日子你确实想做点什么，也许加入朋友们的行列，但大多数日子，比如今天，你有事要办。</p>
+<p>这是选举年。每个候选人都竭尽全力不把这叫做它本来的样子——内战。不过你在街上越来越多地听到这个说法。你走到一个十字路口，绿灯亮起时开始过马路。你的目光被一辆巨大的警用装甲车吸引，它正与你平行地缓缓驶过街道。</p>
+<p>一个人坐在上面的炮塔里，手放在一挺机枪上，枪口暂时朝上指着天空。他盯着你，你尽量不去回看他。你匆匆赶往超市，问自己那个过去三年里几乎每天都会问的问题：事情怎么会糟到这个地步？</p>
+<h2>现实的可能性</h2>
+<p>这听起来牵强吗？离谱吗？如果是的话，让我试着向你展示，为什么上面那段描述很可能在不久的将来成为数百万美国人的现实——如果不采取行动的话。第二次美国内战对我来说听起来不像一个疯狂而遥远的可能性，而且已经有一阵子不是了。</p>
+<p>我是罗伯特·埃文斯，我的工作就是帮你看到我所看到的东西。2016年是我第一次开始认真考虑第二次美国内战可能性的那一年。那一年，我报道了围绕现代美国历史上最具争议选举的重大抗议活动。</p>
+<p>我在共和党全国代表大会和民主党全国代表大会现场，两处都看到了巨大的仇恨在展示。我还在2016年去了伊拉克，报道摩苏尔围城战。但那年我在那里看到的、在任何地方看到的任何东西，都没有比在共和党全国代表大会第一天看着亚历克斯·琼斯讲话更让我害怕。这些人不是自由派。</p>
+<h2>节目预告</h2>
+<p>欢迎收听《It Could Happen Here》（这可能发生在这里）。这档播客每一季我都会选取一个离奇而不太可能的情景，解释它如何可能发生，为什么它可能比你想象的更近，以及当它到来时——如果它到来的话——会是什么样子。</p>
+<p>请订阅，在I Heart Radio应用或你收听播客的任何地方都可以。</p>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/2026-08-03-It_Could_Happen_Here-The_Second_American_Civil_War/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">第二次美国内战</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/892_Trapped_on_a_Bus/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">892：困在巴士上</span>
+    </a>
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>
