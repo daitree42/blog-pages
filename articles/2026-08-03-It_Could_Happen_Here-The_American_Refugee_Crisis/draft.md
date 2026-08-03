@@ -2,7 +2,7 @@
 
 > 栏目：播客笔记
 > 日期：2026-08-03
-> 排序：10
+> 排序：19
 > 标签：It Could Happen Here，播客
 > 摘要：本期节目通过虚构叙事与真实案例，探讨美国若爆发第二次内战将引发的难民危机，分析世界对美国人的刻板印象及难民潮对全球的影响。
 
@@ -91,3 +91,7 @@ CBS那篇关于世界对美国刻板印象的文章中，受访者之一是多�
 ## 节目信息
 
 你可以在推特上找到我，账号是 I right。好的，你可以在推特上找到这个节目，账号是 happen here Pod，你也可以在线上找到这个节目，网址是 it could happen here pod dot com。我们的音乐一如既往，来自 Four Fists（四拳）。
+
+---
+
+📄 **英文原文对照**：[English version](/blog-pages/posts/2026-08-03-It_Could_Happen_Here-The_American_Refugee_Crisis-EN/)

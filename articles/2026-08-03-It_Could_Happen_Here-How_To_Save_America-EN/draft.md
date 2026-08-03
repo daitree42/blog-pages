@@ -1,0 +1,195 @@
+# Episode 5 · How To Save America
+
+> 栏目：播客笔记
+> 日期：2026-08-03
+> 排序：10
+> 标签：It Could Happen Here，播客，英文
+> 摘要：In this intermission episode, the host reflects on the podcast's success and its terrifying impact, then offers practical advice on building solidarity across the political divide, while criticizing harmful platforming of extremists by figures like Joe Rogan and Logan Paul.
+
+## Reflecting on the Podcast's Success
+
+**Speaker 1：** The first several episodes of this podcast have gotten a more enthusiastic reaction than I could have ever guessed. I'm very grateful for that. My motivation for doing the show comes out of a very deep fear I feel towards where this country is headed and what might happen if our present destructive course is not somehow arrested and averted. So I'm glad that this has gone the podcast equivalent of viral. I'm proud that so many people have reached out to tell me the impact it's had on them.
+
+But I'm also troubled by some things, and I hope you'll indulge me in a little bit of creative narcissism as I analyze my own work, because the success thus far of it could happen here has also given me a very clear understanding of some of its flaws. For one thing, it's become very clear to me that this show has terrified an awful lot of people. To some extent. That was my goal from the beginning. I've been scared about this for a long time, and I wanted political moderates and liberals to see the dangers I see.
+
+But a number of people have reached out to me and expressed feelings of hopelessness and an ear panicked feeling that there is nothing they can do to stop This was my plan to build to an episode about, you know, things people could do to help make the Second American Civil War less likely and in this series on an optimistic note. Uh, there's certainly more than a little bit of narcissism in that as well. But from a storytelling standpoint, it makes sense to keep building tension right up until the end and then close out on a hopeful note.
+
+However, this is not just an exercise in storytelling. It's a work of journalism, and given the kind of emotional impact podcasts have on their listeners, I think it would be irresponsible to go that long without providing some suggestions for how folks might stop all of this. There's more darkness to come in this series, I will promise you that, but I've decided this little mini episode should act as an intermission to provide some practical advice on how to make everything I've talked about so far a little bit less likely to happen.
+
+## Building Solidarity Across the Divide
+
+Now. The key to that is this, we have to get better at building solidarity across our political divide. I want to make a couple of things clear before we get deeper into this. There is a right way and a wrong way to foster communication between the right and the left. Many primetime television journalistic hats than the way to do this is to provide a platform to hate mongering nationalists like Candice Owens. Others think debate is the sav for all of our wounds. NPR recently published an article titled keeping it Civil. How to talk politics without letting things turn ugly now.
+
+NPR shared this article on Twitter, and the first response was from my friend Molly. She said, simply, no others shared the same sentiment. Molly is a fan of my work, as I am a fan of her activism, and I understand her reaction. She was deeply intimately impacted by the violence at the Unite the Right rally in two thousand seventeen, and she has literal Nazis threatened to kill her on a near daily basis. She's one of the people I was talking about in the first episode of this series when I mentioned that for some of us, the Second American Civil War has already started.
+
+So I want to make it clear that I'm not saying The solution to all of this is for us to have polite debates with people we disagree with. I think debate is useless. That's why assholes like Stephen Crowder and Ben Shapiro spend their lives trying to have public debates where they can destroy people they disagree with and of course sell more leftist tears mugs. In fact, I think some of the most dangerous people in our society right now, the people lurching us ever closer to bloody, bullet riddled calamity, are fools with large platforms who provide a bullhorn for the most hateful among us and justify it by saying that they're just having conversations.
+
+## Criticizing Harmful Platforming
+
+Joe Rogan and Logan Paul come most immediately to mind. Both men recently hosted Alex Jones on their popular podcast and YouTube channel, respectively. Rogan has continued to platform Jones after the latter repeatedly threatened to expose and destroy him in a series of Unhinged Info Wars rants. Joe Rogan does this because he considers Alex Jones a friend and because he has built a career off of hosting unhinged conspiracy theorists. Rogan paints himself is just a simple, open minded guy willing to listen to anyone. I think if he were here right now, he'd say he doesn't see the harm and just talking to someone with different opinions.
+
+Logan Paul would probably admit, if pressed, that he hosted Alex Jones because he thought it was funny and because he saw how incredibly popular Rogan's recent five hour podcast with Alex Jones was. As of the writing of this episode, that podcast has been watched nearly thirteen million times on YouTube alone. Thankfully, Paul's platforming of Jones was less productive.
+
+## Alex Jones Targets Drag Queen Story Hour
+
+That YouTube video was at around four hundred and fifty three thousand views right now, but it still helped introduce Alex Jones to a much younger demographic, some of whom will follow him back to in full Wars. Speaking of infull Wars, Within a couple of days of that Logan Paul appearance, Alex Jones dedicated the better part of an episode of his show to an unhinged rant against the drag Queen's Story Hour.
+
+Now. This is an advocacy organization all over the US and in several other countries based around having drag queens read story books to kids at local libraries. The goal is to introduce these kids to the idea that queer people exist in the world and are members of their communities too, like anyone else. At least that's how most sane people interpret it.
+
+To Alex Jones, it's part of a violent conspiracy to rape and murder children. These drag queens stand ins for all queer people are just trying to get children used to their presence so they don't fight back when they're abduct it and ritually murdered. That's an inductee right there. That's
+
+**Speaker 1：** rim Field, a demon posing as a woman, a woman that gives life, that nurtures babies, And these poor babies. The last thing they see when the inner hell is men dressed as women. The last thing they see is they're hacked up and torn into pieces, and as their blood is slobbingly delict into the mouths, and no men
+
+## The Wrong Way to Talk
+
+**Speaker 1：** will stand against them. And unless we convince ourselves that, no one really listens to Alex Jones when he says this crazy ship. Here's a clip from later in the episode, when a caller who identifies himself as a cop talks about his desire to murder drag queens without consequence. One thing you say that I like is you don't need orders from headquarters, well as of the civilian, a parent or a legal guardian doesn't need the police. In my eyes, I've being the cop to go to school and grab that drag queen and drag him out the parking lot and dispose of them. If you're in that school and you're in kids, and somebody's not stopping it, I should have the legal right to go in and and put you down. And we're already percussions. Thanks to Dan from the Knowledge Fight podcast for both of those clips.
+
+So I think I've made it clear at this point that there is absolutely a wrong way to talk to the other side of the aisle. We do not need to talk to Alex Jones or Miloianopolis or Richard Spencer or Candice Owens. Ben Shapiro does not need to be debated about his racist claim that eight hundred million Muslims are dangerous radicals. None of these people deserve to be platformed or debated. They need to be ignored.
+
+## Talking to Our Fellow Citizens
+
+The people we need to talk to the people. We cannot ignore our fellow citizens. They are people who may have fallen under the spells of some of these demagogues or of Trump himself, but many of them are fundamentally decent human beings acting based on their imperfect knowledge of the world. In episode two of this series, I talked about the revenge of rural America. I tried and perfectly, I'm sure, to make the point that these people have legitimate grievances before detailing how they could bring this country to its knees if pushed far enough.
+
+I think it's important for liberals to understand this because a lot of the rhetoric I've seen from scorn Clinton supporters towards conservative America is extremely dangerous. Here's one example. In March of two thousand nineteen, the news dropped that an Ohio g implant was shutting down Trumpet campaign in the area on the promise that he would keep this factory open. Many liberals reacted jubilantly at seeing their political enemies take a hit. The first comment I found on one article about the story read quote to all of the union members that placed an X beside that nazi bastard's name, you got what you deserved.
+
+## The Electoral College Debate
+
+Since Trump's upset victory, there's been a lot of talk on the left about eliminating the electoral College. Now, I'm not going to defend that institution because it's just super dumb, But I don't think people who urge its destruction really think about the implications of what they're suggesting. Yes, it is unjust that three million more people voted for Hillary Clinton and she's still laws, But it's also unjust to say fuck it, we enlightened city dwellers should get to decide everything for rural Americans and funk what they want if they disagree with us. That impulse right there will lead us to a civil war as surely as anything else.
+
+Now, the good news is that the vast, vast majority of rural Americans don't want to become violent insurgents. They don't want to kill you. They do want their world to stop falling apart. They want to stop being ignored and written off as hicks by people in the cities. More than anything, they want to have hope for the future.
+
+## Finding Common Ground
+
+There are many committed, bone deep Trump supporters out in rural America, but those people are outnumbered by the folks who just voted for him because they saw no hope for politics as usual. To deal with the crippling opioid problems in their communities, the collapse of rural infrastructure, and the utter lack of hope they see on the faces of their children. That sense of terror at what comes next is actually one area where we can all find common ground. I know this because I've seen it on the faces of many urban liberals and leftists as we digest the latest heart wrenching story about climate change or read about the concentration camps our government has built in El Paso.
+
+Once we start talking, we may find that we have more points we can agree on than we thought. We should not be debating each other. We should be focusing on finding solutions to the problems that we can all see. Climate change is actually a good example. Eight and ten Americans believe the climate is changing, bringing with it more extreme weather conditions. This includes more than sixty percent of Republicans. A healthy majority of Americans consider climate change a serious problem.
+
+Just this spring, South Dakota, Nebraska, and southern Minnesota experienced apocalyptic mud slides after unprecedented spring rains. The mud did billions of dollars in damage and obliterated many local economies. These mud slides in the north and Midwest, echo equally apocalyptic mud slides experienced by Californians in early two thousand eighteen. Solidarity is a word with a long and confusing ideological pedigree.
+
+## Solidarity's Rise in Political Discourse
+
+It crept into popular political discourse in the eighteen forties, as socialism began to take off around the world and utopian experiments where launched throughout the West. By nine hundred, the concept of solidarity was so widely understood that it would be fair to call it the global cornerstone of progressive politics.
+
+Around the turn of the century, the great sociologist Emil Durkheim explained, quote, the sense of solidarity is the foundation of morality, since it is necessary to show the young that human beings are by no means isolated within themselves, but are part of a totality from which they cannot be separated other than in their thoughts, that society lives and operates in them and represents the best aspect of their own. Nature.
+
+## Fascist Political Success
+
+Of fascist political success
+
+## The Danger of Isolation
+
+**Speaker 1：** relies wholly on separation. The people who want to raise the temperature in our society and provoke open, bloody violence between left and right thrive when the rest of us isolate ourselves. Their ideas metastasized when rural Americans hide on their farms and in their small towns, and urban Americans preached to each other from the safety of their ideological bubbles.
+
+A two thousand fourteen Pew survey found that thirty one percent of consistent conservatives and forty four percent of consistent liberals have muted or unfriended a follower based on political disagreements. During the two thousand sixteen election, seventy five percent of Clinton voters did not have a single Trump supporter in their network. More than half of Trump and Clinton voters reported not regularly discussing politics with someone who disagreed with them. Only about twenty percent of voters on either side had truly mixed social networks and discussed politics regularly with people they didn't agree with.
+
+When we don't talk to each other at all, we miss opportunities for solidarity. I've been fortunate enough to spend a lot of my life as a leftist in deeply read territory, so I'd like to expand on another opportunity for solidarity.
+
+## The End of the Billionaire Class
+
+The end of the billionaire Class. Dan Riffle, Alexandria Accacio Cortes's senior policy adviser made the news recently when he changed his Twitter name to every billionaire is a policy failure. Now, this is not a statement you're likely to get most conservatives on board with if you phrase it that way, But when you get into the meat of what Accassio, Cortes and other Democrats suggest in order to reduce income inequality, there's actually less daylight between right and left than you might suspect.
+
+Seventy six percent of registered voters want the wealthiest Americans to pay more in taxes. Sixty one percent of us support the sort of wealth tax proposed by Elizabeth Warren, which boosts the taxes on those with a net worth of over fifty million dollars. Forty five percent of Americans support Alexandria Acasio Cortes's seventy percent top marginal tax rate on people who make more than ten million dollars. Across the political spectrum, Americans increasingly agree that the rich are not paying their fair share and that they ought to.
+
+Hammer and simple flags and talk of guillotines will not convert anyone to supporting a higher marginal tax rate, but you might see some success in talking to them about the Sackler family. The Sacklers are the billionaire clan behind Perdue Pharmaceuticals. Starting in nineteen ninety five and running right up until the present day, they conducted a fraudulent advertising campaign to hide the addictiveness of their most profitable product, OxyContin, and get it into the bodies of as many Americans as possible.
+
+Because of the Sacklers, opiate pain killers went from something only the seriously ill were prescribed to something commonly handed out for the kind of chronic pain they do not help with. As a result, more than two hundred thousand Americans have died of prescription pain killer overdoses. Whole towns in rural America have been decimated, in some cases nearly wiped out by a plague of addiction. And while small town Americans have died in their thousands, the Sacklers have increased their net worth from tens of millions of dollars to around fourteen billion dollars.
+
+They've spent a tidy chunk of that Monday funding a number of radical anti Muslim organizations dedicated to stoking right wing fears of Islam. I don't know about you, but I like the idea of fighting a war against the billionaires through the ballot box alongside conservatives more than I like the idea of fighting conservatives with bullets while the Sacklers and their ilk fleeted compounds in New Zealand.
+
+## Finding Common Ground on Guns
+
+There are other opportunities for cross political solidarity. Some of them are nestled in the things that seem most frightening about our current political climate. In episode one, I talked about the increased prevalence of left wing gun advocacy groups. This can be seen as a proto insurgency situation, something that leads to more fear and division and eventually violence, but it could also be another opportunity to find common ground.
+
+I've spent a lot of time in Los Angeles gun stores. There's some of the only places in this city where you're regularly run into vocal Republicans. I also recently went out to a shooting range with a John Brown Gun Club, a leftist gun organization. In both places and surrounded by both groups of people, I heard a lot of the same complaints about California's confusing and often unproductive gun laws.
+
+In the weeks since the first episode of this podcast launch, dozens upon dozens of liberals and leftists have reached out to me asking if they should buy firearms. Many told me they were already in the process of buying their first guns.
+
+## Left-Wing Gun Culture Emerges
+
+I realized that these people on the left were starting to feel something that many on the right have felt for a while, the desire to arm up in the face of an uncertain future. I do worry that all these guns might wind up being used in violence, absolutely I do. But I also have hope at the presence of a left wing gun culture might foster some productive conversations across the political chasm, because the current conversations we're having about guns in this country are not productive.
+
+This is embodied well by a message Eric Swawell, a Democratic representative from California, recently received from a furious gun nuts. Eric's all, well, here's a little duty for you. Thirty round clip. You're all gonna drop and I'll give up anymore. Your mother, I think you've got some new young motherfucker going to take over the constitution. You want to go to war, We're going to war, and you're going to be a mother. Now. That's obviously terrifying and fucked up, and I'm afraid that reperative. Swallow's response only made it worse. Immediately after playing that audio, he played this text on screen. We recently passed background check bills in the House. We must ban and buy back assault weapons next.
+
+Now, this probably sounds reasonable to many of you, and I'm not trying to talk you out of whatever your views on this issue are. But I also see it as another escalation, taking this nuts violent rhetoric and giving him exactly what he wants, a left wing boogeyman coming for his guns.
+
+## Gun Ownership Trends and Polarization
+
+Of American households own a gun, and the A R fifteen is by far the most common single firearm in this nation. Gun ownership in America is on a significant upward trend. After dropping form much of the nineteen nineties, it's ticked steadily higher in the twenty first century. Drawing a hard political line by saying fuck you, We're going to take your weapons is not nearly as bad as threatening murder, obviously, and I'm not trying to equate the two, but it is not a productive step forward either, because most gun owners are not literal madman like the guy who threatened. Representative Swallow of n r A members support comprehensive background checks.
+
+Not only is that number nice, it shows widespread support for an into unregulated face to face sales, what some pundits referred to as the gun show loophole. Seventy eight percent of non n r A gun owners like myself support universal background checks. Now when we tell about other gun control measures like gun violence restraining orders, raising the age required to purchase firearms, and implementing waiting periods in more states, things get more controversial. But still half of American gun owners support a national firearms Purchased database.
+
+## Room for Common Ground
+
+There is clearly room for conversation and for real progress on these issues. The n r A and certain politicians stand the most extreme versions of their respective policies, but most American voters, including gun owning voters, can be convinced to support more nuanced policies that still have a real impact on gun violence. I've been shooting since I was seven years old, and I own what most people would describe as a funkload of firearms, and I can tell you that much of the frustration rational gun owners feel towards politicians like Representative Swallow comes from the fact that most gun control laws are written by people who don't understand firearms.
+
+Some laws make objective sense to me, waiting periods are sane and sensible. I can get behind banning people under twenty one from purching semi automatic weapons, But then there's California's assault weapons ban. Most liberals probably think it means I can't own air fifteens or a K forty sevens, but I own both in the city of Los Angeles. The largest means that I've had to stick as silly and very easily removable plastic flipper on the pistol grip of my rifle, so it doesn't technically count as a pistol grip.
+
+## Path to Better Gun Policy
+
+This is part of why I think more firearms ownership among the left could lead to more effective gun control if the people writing those laws know what they're talking about, and if gun owners on the right see broad support for a reasonable interpretation of the Second Amendment. If they see a lot of people on the other side of the aisle also own firearms and are trying to take their guns, they might be more open to talking about common sense gun control policies.
+
+I think one of Barack Obama's biggest mistakes during his first presidential campaign was referring to rural Americans as people who cling to their guns and Bibles. If you live in a major urban area, don't regularly go to church, and have never fired a gun. Obama's words probably rang true. They jelled with what you believed, especially about rural Americans. But think about how those words would feel from the perspective of someone whose town has an unemployment rate more than double the national average. Someone who has lost multiple friends and family members to opiate addiction.
+
+## The Rural Perspective
+
+Someone for whom the center of their social life is church on Sunday. Someone from whom access to a firearm is the best way to get affordable meat. Someone who's best memories of their granddad, father, or uncle involved learning how to shoot.
+
+To that person, Barack Obama's words sounded less like an apt diagnosis and more like a slap to the face. We don't all right. None of this is an apologia.
+
+## Taking Action Against Radicalization
+
+**Speaker 1：** for the literal Nazis among the right wing people like that gang of fascists arrested in Florida with a rocket launcher earlier this year. Fuck those people. But most conservatives are not those people. And if we can reach out to them in solidarity over the problems we share, if they can be shown they have cause and pain in common with poor people, in inner city America. If they can see that the socialists yelling about billionaires are pissed at the same people whose poison pills killed their mom, well, that presents a path forward, and to be honest, it's the only path I can see that isn't drenched in blood.
+
+So this brings us to the question of what you, the listener, can start doing right now to help with this. The bad actors in our society, people like doctor Jordan Peterson, don't want you to do anything. Dr Peterson, who was also platformed into the mainstream by Joe Rogan, says this quote. The proper way to fix the world isn't to fix the world. There's no reason to assume that you're even up to such a task. But you can fix yourself. You'll do no one any harm by doing so, and in that matter, at least you will make the world a better place.
+
+I think that's horseship. Self improvement is all well and good, but we are heading towards a gaping precipice of murder right now. The world and the country needs you to get out there and try to unfunck this nation more than it needs you to clean your room and do sit ups. Martin Luther King Junior cheated on his wife. Mahatma Gandhi was a racist with a terrible temper. Both men made the world a measurably better through their activism. You don't have to be perfect to help build a more perfect world.
+
+## Volunteering for Rural Outreach
+
+So what do I recommend? What can you do right now? If you live in Oregon, I'd suggest volunteering and donating to the Rural Organizing Project. The r o P evolved out of a fight against a rural far right political insurgency based around anti gay politics and turned into an aggressive counter messaging campaign aimed at de radicalizing rural conservatives and helping to show them areas like environmental protection and an opposition to foreign wars where they agree with their progressive urban cousins.
+
+Another group you might consider donating to or volunteering with is Light upon Light. They focus on de radicalizing extremists of all types. They currently have a go fund me set up that is badly in need of support. In episode two, I talked about the role literal neo Nazis and other such violent criminals play in raising the temperature high enough to allow for a civil war. Light upon Light in other groups with similar missions, like Life After Hate, dedicate themselves to lowering that temperature. Their work is important. It buys all of us more time to fix the underlying causes of this budding civil war.
+
+## Providing Medical and Educational Support
+
+If you have emergency medical experience, you might consider volunteering your time time with Remote Area Medical. This is a volunteer medical charity that provides healthcare options to people in impoverished, underserved rural communities. They are not a political group, but the work they do is invaluable, and letting rural Americans know they aren't forgotten or abandoned by the rest of us, that too, lowers the temperature.
+
+Another important way to lower the temperature is education, connecting people to good information about the world to push back against the bullshit pedled by the Alex Joneses and Joe's Rogan of the world. Many small, impoverished rural towns lack convenient access to libraries. Of rural Americans say they have not read a book in the last year, compared to twenty three percent of city dwellers. Bookmobiles exist to fight back against this problem. Now, the number of active bookmobiles has declined in recent years, but that trend seems to be changing, and you can be a part of that by donating money or by volunteering your time to create a book mobile of your own.
+
+## Building Solidarity Through Disaster Relief
+
+Mutual Aid Disaster Relief is a nationwide volunteer organization geared towards supporting disaster survivors in the immediate term with food and medical aid, and in the long term through education on things like permaculture. Their motto is solidarity not charity, and they represent a method of spreading leftist principles and building class consciousness through something that works a hell of a lot better than handing out pamphlets direct action.
+
+Thanks to climate change, nightmarish natural disasters are only going to grow more common in the coming years. If you are someone who has been deeply worried by the things I've talked about on this podcast, you should really consider volunteering with Mutual Aid Disaster Relief. Not only can the actions of a group like this help to de radicalize and lower the temperature in parts of the country, but if fighting does spark off, it will be handy to already be in contact with a group of activists who have practical experience dealing with calamity. And then, of course there's political action.
+
+## The Stakes of the Election
+
+I don't think it's hyperbolic to say that the election will be the most important election of our lifetimes, and may in fact be the most important election in this nation's history. Even a narrow Democratic victory could be disastrous, as it would give President Trump an opportunity to deny the legitimacy of his defeat. We will not insure a healthy margin of victory and reduce the odds of a violent right wing insurgency just by preaching to our bubbles about how much we hate Trump.
+
+We need to get out in rural communities and talk to these people, like Leslie Cockburn did. In two thousand eighteen, Leslie was the Democratic candidate in Virginia's fifth district. She did much of her campaigning in rural and small town Virginia, talking to conservatives whose minds were not closed to the possibility of voting for a Democrat.
+
+## Lessons from Rural Outreach
+
+Now, Leslie did not win her election, but that doesn't mean her outreach and the outreach of her campaign's workers and volunteers was useless. She lost by under seven points. For comparison, the Democratic candidate in two thousand sixteen in Virginia's fifth district lost by seventeen points. Leslie's defeat is evidence of serious progress.
+
+While she was campaigning, she said this to the Intercept quote, if you talk to people in these rural areas, you find out that there are a huge number of very what I call just mainstream, old fashioned Democrats. It's simple basic. They believe in a living way age, they believe in collective bargaining. They believe in decent health care for everyone.
+
+## Misperceptions Across the Aisle
+
+I think a lot of people listening to this episode we're probably surprised by the fact that most conservatives now accept the reality of climate change finally, and that most gun owners actually support more gun control regulations. In the same way, many Republicans are shocked to realize how many liberals and leftists are devoutly religious, own firearms, or agree that raising taxes on gasoline and middle income Americans is a dumb idea.
+
+There's quite a lot of evidence that Democrats and Republicans are very, very bad at understanding what the other people on the other side of the aisle, not the politicians, but the people look like and believe. A few research center Pole last year backs this up. It found that Republicans estimated LGBT people made up thirty eight percent of the Democratic Party actual number six percent, and that Democrats estimated forty four percent of Republicans made more than a quarter of a million dollars a year actual number two percent.
+
+Five thirty eight summarized the research by saying, in short, the parties in our heads are not the parties in real life. The question everyone hearing this should ask is this, if we're getting all this basic stuff wrong about the other side, what else might we be missing. Is it possible that a lot of this division, which seems to be inching inexorably closer to violence, is the result of bad actors in the media and shiphead politicians rather than truly insurmountable visions of the world.
+
+## Finding Common Ground
+
+I want to be clear here. I'm not saying that, say, racism and anti LGBT bigotry on the right is not a problem. Nor am I saying that there aren't political disagreements in our country where there isn't room for compromise. But there are things we can agree on and other things we can compromise on, And if we work on those things without compromising things like trans rights, racial justice, or abortion, we might be able to build enough goodwill to reduce some of this pressure.
+
+Working together to say, tax billionaires and fight the opiate crisis and reduce the impact of climate change doesn't just help with those problems. It helps to quench the hatreds that have been building for years. It might stop us from going over the edge. I think it's worth a shop, and I know it's better than shooting h I'm Robert
+
+**Speaker 1：** Evans and I'm just exhausted from reading all of that. You can find me on Twitter at I right, okay. You can find this show on Twitter at happen here pod, and you can find the show online at it could happen here pod dot com. Our music, as always, is from Four Fists
+
+---
+
+📄 **中文翻译**：[中文翻译](/blog-pages/posts/2026-08-03-It_Could_Happen_Here-How_To_Save_America/)

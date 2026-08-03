@@ -2,7 +2,7 @@
 
 > 栏目：播客笔记
 > 日期：2026-08-03
-> 排序：6
+> 排序：11
 > 标签：It Could Happen Here，播客
 > 摘要：本期节目探讨美国军队介入国内城市冲突的历史与未来可能性，分析军事规划者将城市视为战场的趋势，以及叛乱分子可能利用民用技术对抗军队的现实威胁。
 
@@ -211,3 +211,7 @@
 美国军队为许多不同情况做好了准备，但它没有准备在美国城市作战，也没有准备应对第二次美国内战会带来的冲突规模。它能对付外国军队，它勉强能对付阿富汗的叛乱分子，但我不认为它能对付“回旋镖”的冲击——对我来说是这样。
 
 **Speaker 1：** 我是Robert Evans，光是读那些东西就已经让我精疲力尽了。你可以在Twitter上找到我。好了，你可以在Twitter上找到这个节目，账号是@HappenHerePod，也可以在网站itCouldHappenHerePod.com上找到我们。我们的音乐一如既往来自Four Fists（四拳组合）。《It Could Happen Here》（这可能发生在这里）是I Heart Radio（爱心电台）出品的节目。想收听更多I Heart Radio的播客，可以在I Heart Radio应用、Apple Podcasts，或者任何你收听喜爱节目的平台上找到我们。
+
+---
+
+📄 **英文原文对照**：[English version](/blog-pages/posts/2026-08-03-It_Could_Happen_Here-How_The_American_People_Can_Beat_The_American_Military-EN/)

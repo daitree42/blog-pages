@@ -2,7 +2,7 @@
 
 > 栏目：播客笔记
 > 日期：2026-08-03
-> 排序：3
+> 排序：5
 > 标签：It Could Happen Here，播客
 > 摘要：本期探讨美国乡村与城市之间的政治分裂，分析乡村美国可能成为右翼叛乱温床的潜力，以及枪支管控等议题如何可能点燃这一冲突。
 
@@ -267,3 +267,7 @@
 我们从手机上看这一切，更换我们的Facebook头像，自我祝贺，紧张地开着玩笑、窃窃私语。但短信在犯罪，而评论一直在倾听。不知道这……
 
 我读那些东西真是精疲力竭。你可以在Twitter上找到我，用户名是I right，好的。你可以在Twitter上找到这个节目，用户名是Happen Here Pod，你也可以在网站上找到这个节目，网址是itcouldhappenherepod.com。我们的音乐一如既往来自Four Fists。
+
+---
+
+📄 **英文原文对照**：[English version](/blog-pages/posts/2026-08-03-It_Could_Happen_Here-The_Revenge_of_Rural_America-EN/)

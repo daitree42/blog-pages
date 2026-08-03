@@ -2,7 +2,7 @@
 
 > 栏目：播客笔记
 > 日期：2026-08-03
-> 排序：2
+> 排序：3
 > 标签：It Could Happen Here，播客
 > 摘要：本期节目探讨第二次美国内战爆发的可能性，通过虚构场景和现实政治暴力案例，分析美国极右翼可能引发的武装冲突及其导火索。
 
@@ -246,3 +246,7 @@
 无论你从这个节目中得到什么，我希望你记住一件事。第二次美国内战对每个人来说都不是理论上的。对某些人来说，它已经开始了。他们只是在等我们其他人跟上。
 
 我是Robert Evans，读这些内容让我精疲力尽。你可以在推特上找到我，用户名是I Right，好的。你可以在推特上找到这个节目，用户名是happen here pod，你也可以在网站上找到这个节目，网址是it could happen here pod dot com。我们的音乐一如既往来自Four Fists。
+
+---
+
+📄 **英文原文对照**：[English version](/blog-pages/posts/2026-08-03-It_Could_Happen_Here-The_Second_American_Civil_War-EN/)

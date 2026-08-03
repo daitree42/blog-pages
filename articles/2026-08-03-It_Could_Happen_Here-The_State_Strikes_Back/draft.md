@@ -2,7 +2,7 @@
 
 > 栏目：播客笔记
 > 日期：2026-08-03
-> 排序：4
+> 排序：7
 > 标签：It Could Happen Here，播客
 > 摘要：本期节目探讨美国在面临内部叛乱和分裂威胁时，政府可能采取的镇压手段，以及军事化警察和退伍军人在这场潜在冲突中的角色。
 
@@ -157,3 +157,7 @@
 在这一点上，很多人可能会觉得暴力会很快结束。毕竟，拿着燃烧瓶的抗议者和端着AR-15的叛乱分子不可能在美国军队释放全部力量下撑太久。在下一集中，我会告诉你为什么你不该这么确定。
 
 我是罗伯特·埃文斯，读完这些内容我已经精疲力尽了。你可以在Twitter上找到我，账号是I Right Okay。你可以在Twitter上找到这个节目，账号是Happen Here Pod，也可以在网站上找到它，网址是It Could Happen Here Pod.com。我们的音乐一如既往来自Four Fists。
+
+---
+
+📄 **英文原文对照**：[English version](/blog-pages/posts/2026-08-03-It_Could_Happen_Here-The_State_Strikes_Back-EN/)

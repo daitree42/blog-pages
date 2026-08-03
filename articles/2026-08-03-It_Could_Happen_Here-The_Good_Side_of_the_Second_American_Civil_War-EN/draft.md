@@ -1,0 +1,235 @@
+# Episode 7 · The Good Side of the Second American Civil War
+
+> 栏目：播客笔记
+> 日期：2026-08-03
+> 排序：14
+> 标签：It Could Happen Here，播客，英文
+> 摘要：This episode explores the unexpected positive outcomes of a fictional Second American Civil War, focusing on community rebuilding after government withdrawal and the surprising psychological relief war can bring, as illustrated by historical examples like the London Blitz.
+
+## The Day the Government Left
+
+One day the state was there, and the next it wasn't. The cops and soldiers those who were left all pulled out in the night. Even now, months later, you weren't really sure why they left. The rumor mill called it a strategic retreat, brought on by heavy losses from insurgent attacks in the hills and the fighting in the capital. For whatever reason, the government considered your city dispensable.
+
+You heard their trucks that night, armored vehicles and tanks rolling out towards the highway. Most of the police evacuated with their families, scared of reprisals. You assume they'll be rehomed somewhere in regime controlled territory. The first morning after the government left was weird and kind of scary. You and your surviving neighbors all gathered together on the roof of your building to see if anything was burning down. You expected looting, mass of violence, some form of chaos. But that first day was quiet, and so was the second day and the third.
+
+## The Separatists Arrive
+
+It wasn't until the fourth day that representatives from the separatist side of town made it to your neighborhood. Some of them looked like the private military. Contrast, actors that the government had hired before, burly bearded dudes with huge black rifles and tattooed arms, but most of them just looked like regular civilians. They brought food with them, the first fresh produce you'd seen in months. Someone told you they'd converted a couple of the old bank buildings downtown into urban farms.
+
+You also heard they'd struck a deal with some of the separatists out in the country, sending them manufactured drone parts in exchange for eggs and potatoes. The food did a lot to buy your goodwill, but it came with strings attached. You were told, rather matter of factly that your neighborhood was now part of their municipal alliance, and you'd be expected to take part in a weekly local council. You figured it'd be boring as hell, like a forced PTA meeting, but now a few weeks in, you kind of like it.
+
+## A New Normal Life
+
+Most of you had been technically unemployed for a while, but now everyone had something to do, preparing food, keeping the lights on, scavenging equipment from abandoned office buildings. For the first time since the fighting started, some semblance of normal life returned. The power was more regular. Some of the cafes and restaurants reopened. A few people with projectors set up regular movie and TV nits. Now folks gather to watch old episodes of the Office or Marvel movies, rather than doing it alone in their apartments.
+
+There's less food than there was before the war, of course, but no one's starving anymore. Coffee is still a distant memory, but a few of your neighbors busted into an old energy drink factory and liberated several crates of the stuff, so at least you have caffeine again, And right as you start to feel optimistic about the world, once more, mortars start landing just a few blocks from your door.
+
+## The New Threat
+
+You and your neighbors take to the rooftops again. As the angry chatter of gunfire pops up once more, you're able to spot the culprits, not the government forces as you'd expected. It appears to be another militia driving up armored pickup trucks and captured police vehicles. You don't know who they are, but they're pushing into your town from the suburbs. With your neighbor's telescope, you could just barely make out the logo and blastomed on their vehicles, a single fiery cross war as health.
+
+That's obvious, right. We've all seen horrifying videos of air strikes and street to street fighting in places like Syria, Leveled cities and hollow wide refugees. It's undeniably terrible. Here's the thing, though, War doesn't always make everything worse, or at least it doesn't make everything worse for everybody.
+
+## War as Psychological Relief
+
+Do you struggle with depression, anxiety, overwhelming and almost crippling self loading, there is a shockingly good chance that war might actually come as a relief. In the years before World War Two, military planners all around the world realized that the bombing of cities by airplanes was going to be a major feature of the next war. As the British government watched Nazi Germany rise and rise and boil over its borders into Western Europe, they knew the Luftwaffa would soon fly over their shores, and that meant that war was coming to London.
+
+Aside from a few blimp attacks in the last war, no modern state had ever dealt with the problem of a dense civilian population being suddenly exposed to the inferno of total war. Most planners instantly assumed it would be a nightmarish disaster. People would be driven instantly mad from the bombing. They expected four million people at least would suffer from complete psychiatric breakdown in the face of the horrors of war. Instead, literally the opposite happened. Roughly two Londoners per week showed up in hospitals with cases of bomb neuroses. The people they had worried about the most, the chronically ill, and the fragile often reported feeling better than ever.
+
+## War and Mental Health
+
+According to Sebastian Younger's Tribe quote, psychiatrists watched and puzzlement as long standing patients saw their symptoms subside during the period of intense air raids. Voluntary admissions to psychiatric wards noticeably declined, and even epileptics reported having fewer seizures. Chronic neurotics of peacetime now drive ambulances, one doctor remarked. Another ventured to suggest that some people actually did better during wartime.
+
+The positive effects of war on mental health were first noticed by the great sociologist Emil Durkheim, who found that when European countries went to war, suicide rates dropped. Psychiatric wards in Paris were strangely empty during both World Wars, and that remained true even as the German army rolled into the city. In nineteen forty. Researchers documented a similar phenomenon during the Civil Wars in Spain, Algeria, Lebanon, and Northern Ireland.
+
+In Germany, where millions of teachers, in patricians and bakers and waitresses and children suddenly found themselves subjected to the burning hell of daily Allied bombardment, the same phenomenon rang true. Normal people with no military experience held up incredibly well under the horrors of conflict.
+
+## Research on Disaster Resilience
+
+Charles fitz, a captain with the United States Army Air Corps, was posted in England during the war. He saw a lot of this first hand, and it inspired him to put together a massive study after the war. By nineteen fifty nine, fits in a team of n o RC researchers had collected testimonies for more than nine thousand people and studied every piece of data they could find on the mental health impacts of other large scale disasters. He used this data to put together a paper in nineteen sixty one, Disasters and Mental Health Therapeutic Principles drawn from disaster research. It opened with the line why do large scale disasters produce such mentally healthy conditions?
+
+Fits His conclusions, all rooted in hard data and impeccable science, found that disasters created what he called a community of sufferers. Rather than being made worse by the rigors of war, the violence and starvation and suffer ring people banded together with their neighbors to find food, dig survivors from rubble, and make sure everyone had a place to sleep at night. He concluded, quote as social animals, people perhaps come closer to fulfilling their basic human needs and the aftermath of a disaster than at any other time, because they develop a form of life highly compatible with these needs. This conception of the fulfillment of the utopian prototypic image of society helps to explain many otherwise inexplicable phenomena of disaster behavior.
+
+## Community and Meaning
+
+Time and time again over the decades, sociologists and disaster researchers have come to the same conclusions as Charles fitz In his book Tribe, which I can't recommend enough. Sebastian Younger quotes from a nineteen seventy nine paper by an Irish psychologist named Lands. He found that during the Belfast riots in nineteen sixty nine and seventy suicide rates fell by and the paper Lions published on his research. He noted, quote, when people are actively engaged in a cause, their lives have more meaning with resulting improvement in mental health. It would be irresponsible to suggest violence as a means of improving mental health, but the Belfast findings suggest that people will feel better psychologically if they have more involvement in their community.
+
+Now, this is something you have to talk carefully about. The last thing I want to do is suggest second Civil War as treatment for all of our ongoing mental health issues. But there is a good chance that many people would find life during that conflict to be more meaningful than their current day to day existence.
+
+## Modern Isolation and Depression
+
+On May tenth, two thousand eighteen, NBC published an article based on Blue Cross Blue Shield data on the reach of major depression nationwide. The title pretty accurately sums up the information major depression on their rise among everyone. NBC interviewed doctor Laurel Williams, chief of psychiatry at Texas Children's Hospital. Williams explained, quote, many people are worried about how busy they are. There's a lack of community there's the amount of time that we spend in front of screens and not in front of other people. If you don't have a community to reach out to, then your hopelessness doesn't have any place to go.
+
+Now. I've asked you all to imagine quite a lot over the course of this podcast, but I don't think it will be a struggle for many of you to imagine working at a job you don't really love, living alone in a small apartment and feeling disconnected from many of the people around you. If you've ever gone a few weeks without seeing your friends or family socially because you just had so much ship to do, you get how easily that can contribute to depression.
+
+## Finding Meaning in Conflict
+
+If that's your life, too much time alone at work, in a pervasive feeling that an awful lot of what you do doesn't matter, well, then our hypothetical civil war might present you with an opportunity for some meaning.
+
+You don't have to be a fanatic on one side or the other out of strong political beliefs you're willing to die for and Kiev, the Maidan protest camp was kept alive by a network of activists who provided food, medical supplies, and other perishables to the activists in the camp.
+
+I've mentioned this before, but I'd like you to imagine what it would feel like to be involved in something like that. You wouldn't need to support one side or the other in the civil war. You just need to have friends over there, hungry and scared and fighting against the state that feels less worth supporting every single day. Sometimes it would be terrifying, but it might be fun too.
+
+## A Personal Story from Ukraine
+
+My friend Alexander, a young Ukrainian man whose prior relevant experience included volunteering to help set up burning Man at night after night delivering hot soup to activists manning barricades meant to block police from directly assaulting the main camp. He described it as immensely satisfying work, a clear and moral choice he could make in the midst of a confusing and frightening conflict.
+
+Alexander didn't set out to be a revolutionary, but on one of those visits out to provide soup to the troops, he wound up fighting against a line of heavily armored riot police. A decision to cook soup for his hungry friends led to him taking up arms against the state and ultimately helping to overthrow his nation's head of state. We don't imagine finding yourself gradually, through
+
+## Anarchy in the Wake of Disaster
+
+**Speaker 1：** bits and pieces of minor activism, drawn into an armed and fortified camp of activists resisting the government. You may believe wholeheartedly in their demands, or you might just think the violence the police and soldiers have deployed against protesters is unconscionable. Regardless of why you'd do it, you probably would find it more fulfilling than another day at the office.
+
+But what if you're further from the action, in a town or city that doesn't wind up an open rebellion against the state? For a while, your life might not change, at least not for the better. Food would grow more expensive, of course, law enforcement would become more authoritarian. But if this thing keeps going, if separatist succeed in choking the food supply, if the economy collapses, if the state is pushed to the brink, you might actually see the government retreat from your life.
+
+There are only so many cops and soldiers, and only so much money in the government store box. After two or three years of escalating conflict, perhaps even less, you and your neighbors might find yourselves sitting outside the state's protection. That probably sounds terrifying to you. During the Blitz, Londoners still had the government functioning, trying its best to protect them. What would happen without that?
+
+## Lessons from Hurricane Katrina
+
+We have relatively few examples that might tell us how a large group of modern day Americans would react to the temporary collapse of organized government. One of the few clear case studies would have to be Hurricane Katrina. If you just followed the mainstream news during that whole mess, you probably know it wasn't exactly the state's finest hour. Most reports at the time described the city after the hurricane as a lawless waste land.
+
+On September one, two five, the Associated Press wrote, quote, storm victims were raped and beaten, fights and fires broke out, corpses lay out in the open, and rescue helicopters and law enforcement officers were shot at. As flooded out New Orleans descended into anarchy. Today, news anchors described hotels is overrun with gangs. New Orleans police chief at a compass, stood before the cameras and told lurid stories of desperate gunfights between overwhelmed cops, dangerous gangsters, and mad snipers.
+
+For a very long time, it was taken as a given that Hurricane Katrina had brought anarchy in its wake, and actually that is sort of true, But the reality of the situation is that anarchy isn't always terrible.
+
+## The Superdome Reality
+
+Louisiana National Guard Colonel Thomas Barron showed up at the Superdome five days after Katrina made landfall. He'd been primed by dozens of horrifying headlines to expect piles and piles of corpses. His convoy included a refrigerated eighteen wheeler and three doctors to work as a makeshift Morgan process the dead. He arrived expecting at least two hundred bodies. He found six. Four had died of natural causes, one from an overdose and the other from a suicide. No one had been killed inside the Superdome. There was very little evidence of any violence there at all.
+
+I found this in a great rite up by NOLA dot com. They interviewed a National Guard sergeant who commented on the stories of nightmarish violence in the wake of Katrina. Quote, I think it is bullshit. Don't get me wrong. Bad things happened, but I didn't see any killing and raping and cutting of throats or anything of the people in the dome were very well behaved.
+
+Orleans Parish d a Eddie Jordan confirmed four murders in the aftermath of Hurricane Katrina. This meant that nightmarish week was no more violent than normal week in the city. Those stories the police chief told about cops getting into multiple gunfights with gangsters that never happened either.
+
+## Misconceptions and Cooperation
+
+Quote. Security was non existent at the convention Center, which was never designated as a shelter. Authorities provided no food, water, or medical care until troops secured the building a Friday after the storm. While the convention Center saw plenty of mischief, including massive loot in an isolated gunfire, and many inside coward and fear, the hordes of evacuees, for the most part, did not resort to violence as legend has it.
+
+There was quite a lot of looting, of course, both of food and alcohol, but Jimmy four, one of the few government employees who stayed in the Superdome, did not see a single violent crime committed. There was one report of a man trying to sexually assault a young girl one report, but he was beaten up by civilians and turned into the police.
+
+There were a number of gangsters at the Superdome, of course, but according to Major David Baldwin, they tended to help rather than hinder the rescue work. He noted that once the convoy arrived and started treating people and handing out supplies, quote, some of these guys look like thugs with pants hanging down around their asses, but they were working their asses off, grabbing litters, and running with people to the New Orleans Arena.
+
+## Disaster Response Reality
+
+That reality is very much out of line with what the mainstream media might lead you to expect. But the simple fact of the matter is that most people in most situations want things to be nice and reasonable. Even when resources are strained, when danger lurks at every corner, and when all familiar forms of order collapse, the majority of human beings are more likely to work together than turn into shrieking, violent madmen raping their way through post apocalyptic ruins.
+
+There is an extraordinary amount of data on this phenomenon. I found a study published by the International Institute for Environment and Development back in two thousand seventeen. It gathered data from disasters all around the world and showed Fitz's findings have not gotten any less relevant over the years. Most current research suggests that if you find yourself in the wake of a calamity, spontaneously organized civilian groups won't be more likely to help you out than the state, local, or federal government.
+
+## Evidence from Global Disasters
+
+Here's a quote from that two thousand seventeen report quote. In Kathmandu, after the April two thousand fifteen earthquake, local residents were the first responders, rescuing family members and neighbors from collapsed buildings, erecting temporary tent shelters for those who had lost their homes, providing food to survivors, distributing relief packages when these arrived, and raising funds online.
+
+In the first days after the nineteen Marmor earthquake in Turkey, which killed more than seventeen thousand people and caused widespread damage and disruption, state and other official agencies were initially unable to deliver or core innate humanitarian assistance. Relief and rescue activities were carried out mainly by neighbors, relatives, spontaneously formed volunteer groups, and some NGOs. In one survey, thirty four percent of earthquake victims interviewed said that they received most help immediately after the earthquake from family members and neighbors, as well as through their own efforts. Only ten point three percent mentioned help from state authorities.
+
+There is also evidence of such emergent activity in several countries after the two thousand four Indian Ocean tsunami, Surveys in Indonesia and Sri Lanka showed the predominant influence of private citizens and local communities and relief assistants such as rescue, burying of the dead, and provision of food, water, and clothing. In Sri Lanka and Thailand, almost all life saving and immediate relief activity in the first one two days after the tsunami was by local people from neighboring areas.
+
+## Debunking Panic Myths
+
+Now. This report also noted that while media tends to focus on panic and looting in the wake of disasters, and emergency planners generally assumed that's how folks will react, that kind of behavior, while not unknown, is not typical. Quote groups and individuals typically become more unified, cohesive, and ultru whist dick in such events.
+
+It is also a myth that affected communities essentially are passive in disasters, waiting for help from emergency organizations and are unwilling to become involved in response work. Disasters put enormous strain on societies and organizations, but they also stimulate civilians to halt their everyday activities and take on new roles and responsibilities in relief and recovery. The desire to help any crisis is very strong. It is often a compelling need to do something.
+
+## Individual Choices in Crisis
+
+When do you think you'd feel compelled to do something? The answer to that question is different for everyone listening. Some of you would take to the streets as soon as the protests started. Others would be like my friend Alexander, sympathetic to one side or the other at the beginning, but only gradually dragged from providing moral support to actively resisting the state. It's hard to predict when any given individual will do when chaos and war up into the routines of daily life.
+
+I'm going to guess that most of you would not choose to take up arms, one way or the other. Most people in most countries during most civil wars do not take it upon themselves to fight, But past a certain point, there would be no staying truly neutral either, especially if you happen to reside in a part of the country where government control collapsed and or a rebel group took control.
+
+## Civilian Governance in Syria
+
+Millions of Syrians have already found themselves in that exact situation. Some group, like the Free Syrian Army or job At al Nusra would wind up in control of their neighborhood. Generally, constellations of loosely allied and often conflicting groups wound up running a city or a province, roughly equivalent to a state. Being militant groups, the rebels sort of had their hands full fighting against their dictator and against each other. In many parts of Syria, this left the responsibility for governing in the hands of the area's civilians. Enter the local councils next time.
+
+## Local Councils in Syria
+
+Going to quote from an International Review article on this phenomenon, quote, individuals have sought to provide basic needs and stability to their communities by creating local councils. Local councils mostly exist in rural towns, but have also formed around neighborhoods, in cities and at the governorate level. Estimates for the number of local councils in Syria vary from four hundred sixteen in late two thousand fifteen to four d twenty seven in early two thousand sixteen to four hundred four following the fall of Aleppo.
+
+According to a two thousand sixteen survey by the Omran Center for Strategic Studies of a hundred and five local councils and opposition held territory, fifty seven percent of local councils were formed through consensus and thirty eight percent were formed through elections, with lack of security and legal expertise cited as the major reasons why more elections were not held. This claim is supported by other surveys as well. The majority of these councils were created in two thousand, twelve and thirteen and go through restructuring on average once a year now.
+
+These local councils handled most of the day to day work necessary for keeping an area livable. Big of US an idea of how American communities might handle the retreat of the state. In some cases, councils and their work were funded by wealthy expats and foreign aid organizations. In other areas, councils became dominated or heavily influenced by elected officials who represented various rebel groups, from extremest Islamist organizations like r R al Sham to more secular groups like the f s A.
+
+## Potential American Parallels
+
+Obviously Islamist Shura councils aren't the sort of thing we'd likely see in the United States, but in many communities, the most powerful non governmental organizations are churches. In urban areas, churches are often own the largest, most solid legal real estate in the area. They also tend to be the sort of buildings that military forces and extremists would be less likely to target from an optics point of view.
+
+On the benevolent end of things, it's not hard to imagine many churches and local religious organizations taking the responsibility for helping to feed and provide basic medical care to people in their area of influence. I can picture churches, particularly large networks of cash rich churches, as able to provide potential islands of sanity and compassion through the food shortages, electrical outages, and people hit are made homeless in the crossfire. But I can also picture things getting darker in some parts of the country we don't.
+
+## Christian Dominionists and Their Goals
+
+**Speaker 1：** Christian dominionists believe that the entire nation should be run by and according to the rules of a very specific subset of Christian Pentecostalism. Raphael Cruz, father of Ted Cruz, is one prominent American dominionist, according to a political research Associal Each report on the dominionist movement.
+
+Quote during a sermon at the New Beginnings Church in Bedford, Texas in two thousand twelve, Rafael had described his son senate campaign as the fulfillment of biblical prophecy that God would anoint Christian kings to preside over an in time transfer of wealth from the wicked to the righteous.
+
+According to his father, New Beginnings pastor Larry hutch Ted Cruz is anointed by God to help Christians and their efforts to go to the market place and occupy the land and take dominion over it. Rafael continued, this in time transfer of wealth will relieve Christians of all financial woes, allowing true believers to ascend to a position of political and cultural power in which they can build a Christian civilization. When this Christian nation is in place or back in place, Jesus will return.
+
+Now, it's hard to say how large the dominionist movement is precisely right now, they mostly focus on gaining power in legitimate ways by election. But if legitimate power collapses in large areas, what then? I can't imagine Ted cruze taking up arms and ruling as some sort of bearded warlord. Although I will admit that premise would make a great graphic novel.
+
+But dominionists are heavily represented among the American militia movement. Power hungry adherence to that belief system would try to build their violent fiefdoms. Some of them would succeed.
+
+## Potential Chaos and Local Councils
+
+Now, if Sirious experiences any kind of guide, these extremist groups would probably have trouble exercising total control over a very large area, especially if they're engaged in regular struggle with the state. Many Americans would find themselves forced into the kind of devil's bargain. Millions of Syrians know all too well co operating with violent extremists in order to protect themselves from an even worse fate. This often means working with people who you know are doing something terrible just not to you, or it can just be sort of awkward and weird.
+
+I found an article on pbs dot com that included interviews with a bunch of Syrians living and participating in these local councils. One of these subjects, a fellow identified as Yasin Kasam, said this, there are members who are liberals and Democrats, and then the more moderate sort of Islamist as well has been involved, and then nationalists and ex bothists and so on, but in a way it's not been so important.
+
+In general, they're non ideal, logical bodies, particularly at the local level, which in a way looks like a way forward. It doesn't matter if one guy is a leftist and the guy next to him as an Islamist. They're there because one of them knows something about how to get the water system working, and another knows something about education, and they're working about practical things for the sake of the community.
+
+## The Rojava Model
+
+Now, the best case scenario, and the event that the state falls where you happen to live probably looks something like Rohava in northern Syria. Roughly three million people live in the region, and they manage their affairs with a system called democratic confederalism. At the local level, it looks sort of like the best case scenario with local councils. Their word for these structures translates roughly to commune or municipality.
+
+Three thousand issue of these councils handle basic services and security for most of the three million people in Rohava. These bodies do a lot of the basic grunt level work of what we rely on the government for here, but they cannot legislate. Higher level administrative functions are performed by the Northern Democratic Federation of Syria or in DFS, an umbrella organization created by the p y D or the Democratic Union Party of Syria.
+
+The p y D was originally a political party, although it was essentially formed out of aspects of a very old Kurdish separatist and militant tradition that existed in the region, just not in Syria. You're not here for Syrian politics, and I'm not an expert in them. The important thing is there are aspects of the Rahavan phenomenon that are inherently rooted in Kurdish culture and local history, and there are big aspects of it that could potentially be replicated in the United States Democratic confederalism.
+
+The ideology behind the ind f S and Rohava was cooked up by a guy named Abdola Oshlon Ashlan is by most descriptions, a terrorist, although he's one of those terrorists that an awful lot of people would rather call a freedom fighter. You can make a strong case for both. He's been in a Turkish prison for a while now, but he's been able to keep writing books. Ashlon did not dream up democratic confederalism entirely on his own, though his work was based partly on the ideas of an American anarchist philosopher, Murray book Chin. Now.
+
+## Local Governance in Rojava
+
+Extreme participatory local government is the idea that undergirds Rohava. These communes contribute council members to coordinate functions on a higher level and manage the lives of millions alongside the region's military force, the YPG. The YPG or People's Protection Units, are the largest chunk of the Syrian democratic forces, who are the folks the US has thrown most of its recent military aid and Syria towards.
+
+One reason I find Rohava fascinating is that for the most of the Syrian Civil War, they haven't directly opposed the government, and in fact, they've received a lot of criticism from other groups in the area for working with the Assad regime at times. But I think Rohava represents the kind of movement that would have better odds of capturing the sentiments of millions of Americans than a hardcore communist or religious extremist movement.
+
+In fact, Rohava first came to world prominence and established itself as a power in the region when it carried out a desperate and ultimately successful battle against its local religious extremists. Isis most people listening to this would probably be more likely to find themselves swept up in a movement like this as opposed to something more extreme and initially ideological.
+
+## Community Response in America
+
+If it started in America, it would start with a lot of people volunteering to keep their local communities safe. Not taking up arms against the state, but manning barricades and chef points to ensure bad actors don't enter the area and people's safety is respected. Coordinating with other neighborhoods to grow and transport food, pooling medical knowledge, and defensive resources in order to keep things as nice as possible while the government retreats and the extremists make their bids for power.
+
+It's probably not a huge stretch to imagine yourself taking part in something like this, at least is a short term thing. If you watched footage of the flooding in Houston in two thousand seventeen, you saw lots of examples of community members organizing search parties and gathering food and supplies for each other spontaneously. As I stated earlier, overwhelming evidence says this is normal human behavior in the face of any kind of calamity.
+
+Organization on a larger than neighborhood scale is just sort of a given if things last long enough that the state loses enough power. Most people don't live in areas where it's possible to grow enough food to sustain the population, at least not in the immediate term, although a number of urban planners have noted that the increasingly vacant big box stores that litter America's urban and suburban spaces could be turned into giant indoor farms with a sufficient amount of elbow grease.
+
+## Food and Regional Cooperation
+
+But in the immediate term, America's urban and suburban areas where most of us live, would be unable to feed themselves without extensive, wide ranging cooperation with their neighbors, including the rural communities that provide most of our food In the North and Northeast United States, roughly eighty percent of food is important areas like the rural Midwest in the Pacific Northwest would be less vulnerable to starvation, But any kind of conflict, particularly one that saw Central California's water supply throttled, even temporarily, would lead to soaring food prices.
+
+Urban and rural America currently have pretty extreme political divides, but both also have a lot of things that the other wants and needs. The benefit of a system like the one in Rohava is that it would allow local areas to handle their own ship and live their own way, while still cooperating on a larger scale to make sure food and goods get where they need to go.
+
+In Syria, where this system actually does work, albeit imperfectly, local communities there have still have massive religious and cultural differences. Political radicals who evangelize a shared far left, radically egalitarian ideology are able to coexist and mostly cooperate with deeply religious tribal communities of different races and religions.
+
+## Practical Structure in Syria
+
+According to an Atlantic Council report on Rohava and the in d f S quote, the structure allows for some local autonomy, but within the confines of INDIFS control and SDF command. Essentially, the p y D and its affiliates have introduced an entirely new political system to ensure the security of areas they have taken from Isis, While the underlying socio political dimensions of these localities remain unchanged for now.
+
+The best chance for Arabs to gain political access within the Kurdish dominated structure appears to be to run for local councils at the commune level, join municipal civilian protection units, or join the SDF, which is increasingly recruiting Arabs. Revolutionary politics, particularly of the far left valariety, often rely too much on pie in the sky visions of complete social reorganization, the kind of thing that can only be achieved by a mass revolution an enormous top down state control see the U S s R.
+
+## The Rohavan Model and Municipalized Economy
+
+The reason I think the Rohavan model might be popular in parts of the United States is that it allows for substantial local autonomy will still getting shipped done on a larger scale. This model of economic organization doesn't require are everyone to read a lot of political theory. It's what we call a municipalized economy.
+
+Janet Beale, a political theorist who wrote a book on libertarian municipalism, explained it this way. Libertarian municipalism advances a form of public ownership that is truly public. The political economy it proposes is one that is neither privately owned, nor broken up into small collectives, nor nationalized. Rather, it is one that is municipalized, placed under community ownership and control.
+
+Could you organize the economic lives of tens or hundreds of millions of people this way? Nobody really knows, but it's worked for a couple of million people for several years so far, And in my opinion, the impulses that lead people to organize such as system are instinctive and basic enough that I could see big chunks of this country that are more inherently able to sustain themselves, like the Northwest and Midwest, and chunks of the South and Southeast embracing similar situations in order to make up for the retreat or collapse of federal power.
+
+## Preparing for a New World
+
+There are people in the United States right now who are preparing for this world too. While there are dominionist militiamen preparing to fight for what they believe in, groups like Mutual Aid Disaster Relief have started building national networks dedicated to community self defense, making sure people have the things they need in the wake of hurricanes and tornadoes.
+
+Mutual Aid Disaster Relief has its genesis in a group called the Common Ground Clinic, which provided necessary medical care. In the immediate wake of Hurricane Katrina. Common Ground was a complex organization. There were stories of FBI infiltration and things got kind of messy.
+
+But as I talked about in the first episode, the more than ten years since this have led to a lot of growth and evolution in America's protest and resistance infrastructure. Mutual aid disaster relief is just one outgrowth of that. There are hundreds of people around the country right now who are learning to coordinate and communicate to make sure at risk communities have the supplies they need.
+
+It's a seed like the DOMINIONUS preppers loading a rs and carving crosses in the butt stocks of their rifles. It's possible neither of those seeds will sprout. It's also possible that both will rain but
+
+---
+
+📄 **中文翻译**：[中文翻译](/blog-pages/posts/2026-08-03-It_Could_Happen_Here-The_Good_Side_of_the_Second_American_Civil_War/)

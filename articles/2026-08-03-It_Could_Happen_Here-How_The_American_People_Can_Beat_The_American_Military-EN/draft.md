@@ -1,0 +1,281 @@
+# Episode 6 · How The American People Can Beat The American Military
+
+> 栏目：播客笔记
+> 日期：2026-08-03
+> 排序：12
+> 标签：It Could Happen Here，播客，英文
+> 摘要：This episode explores the historical precedent of the U.S. military being deployed against American citizens, framing it as a backdrop for discussing how civilians might resist such actions.
+
+## Historical Military Deployments
+
+**Speaker 1：** Welcome to It could happen here a production of iHeart Radio.
+
+**Speaker 1：** The decision to send American soldiers into an American city to restore order would be a momentous one, but it would not be unprecedented. In nineteen fifty seven, President Eisenhower sent the one hundred and first Airborne into Arkansas to oppose that state's National Guard, who had been ordered by the governor to not let black students into Little Rocks Central High School.
+
+In nineteen sixty seven, members of Detroit's all white police force arrested several black men at a drinking club, which sparked riots that left forty three people dead. The violence so overwhelmed the city's police that several thousand Army troops and National guardsmen were brought in.
+
+In nineteen sixty eight, after Martin Luther King Junior was assassinated, riots broke out in the city of Chicago. The police tried and failed to suppress the violence. Nine people died the first night. The Army was again sent in to store order. More than thirteen thousand soldiers were called into Washington, d c. To protect the capital from spreading unrest and violence. Six people died in rioting in Baltimore. The National Guard was deployed there as well.
+
+## The Holy Week Uprising
+
+I don't know about you, but I never heard much about all that when I was in school. I think I remember a vague mention of rioting people protesting and such, but certainly no more detail than that. But what happened in the wake of Martin Luther King Jr's murder was not simple rioting. It was a goddamn uprising.
+
+The Holy Week Uprising is actually the name given to the ten days of violence that followed doctor King's assassination. Almost two hundred American cities experienced simultaneous rioting, arson,
+
+## The Holy Week Uprisings as a Blueprint
+
+**Speaker 1：** sniper attacks, and massive property damage. Peter Levy, author of The Great Uprising, writes that during this week quote, the United States experienced its greatest wave of social unrest since the Civil War. The uprisings injured thirty five hundred, killed forty three, and to twenty seven thousand arrests. It took a total of fifty eight thousand National guardsmen and Army soldiers to contain the violence.
+
+Many of those involved on the side of the protesters absolutely saw the uprisings as the prelude to a revolution. When h Rap Brown, an organizer with the Student Non Violent Coordinating Committee was arrested by the FBI. He told them, quote, we stand on the eve of the Black Revolution with eye for eye and life. The current rebellions were just a dress rehearsal for the real revolution.
+
+Now, the Holy Week uprisings did not, of course lead to a revolution, but they certainly provide a blueprint of how we could expect the federal government and the military to respond to a series of uprisings in multiple major American cities. Once the police failed to contain the unrest, as we talked about in the last episode, the army and the National Guard would inevitably move in.
+
+In the decades since nineteen sixty eight, American military thinkers have grown more comfortable and adept at thinking of American cities as just another battle space, as cities under siege notes quote Lessons learned. Reports drawn up after military deployments whose goal was to contain the Los Angeles riots of nineteen two credit the success of the mission to the fact that the enemy the local population, was easy to out maneuver given their simple battle tactics and strategies.
+
+## The Genesis of Urban Warfare Thinking
+
+Now I've referred back to cities under siege by Stephen Graham several times in this podcast. I think it's developed a vaguely prophetic feel to me. I first read through parts of it in two thousand sixteen, after David Colcolan recommended I read it. But it was published back in two thousand ten, and it had its genesis in a conference the author attended shortly after nine eleven. Here's Stephen Graham telling that story.
+
+In two thousand and two, I was invited with Simon Lawn course of the Spinfing Evanism book to a conference in Israel title War in the City in the twenty one Century. We were I meing and eying a little bit about how whether to go, and we ended up going. It was in Haifa University, and we turned up expecting a sort of academic debate.
+
+We were surrounded for a few days by guys wearing camouflage and carrying machine guns and talking about the city as the new battle ground, as the new frontier, as the new space of of struggle for for militaries and for security forces. And we were quite shocked and astonished to discover this enormous world of sort of urban research that was going on in a sort of parallel universe to the more familiar worlds to us anyway of social science discussions about cities.
+
+So we're back in the day before the invasion of Iraq. Military planners in the United States were already taking it for granted that the wars of the future would be fought in cities. The last eighteen years have proven that prediction accurate. For Luja, RockA, Marawi, and Mosl are just the most spectacular EXAs amples.
+
+## A Dinner in Mosul
+
+On my second trip out to Mosel, we billeted with some soldiers from Iraq's Golden Division, the US Train and Equipped Special Forces Unit, and what had once been a wealthy family's house in western Mosle. The man who had previously lived there had risen high in Isis his ranks not because he was a great warrior or a devious terrorist mastermind, but because he did a fantastic job of managing a factory that produced metal tubing. These tubes had been used for a variety of tube based commercial purposes back in peacetime, but now that Mosell was at war, Isis had repurposed the tubes to produce giant custom mortars.
+
+My videographer, my fixers, and I all shared one of the most bizarre dinners of my life with an Iraqi colonel and what had once been that tube making man's daughter's bedroom. The walls were brightly painted with reasonable facsimiles of Disney princesses. Since isis was Isis, their eyes had been blotted out with great, big blotches of red. The purpose of that was to sort of disrupt the drawings features enough that it didn't violate fundamentalist Muslin prohibitions against depicting the human form. It had the effect of making Ariel snow white and Pocahontas look red eyed and vaguely demonic.
+
+As I sat there, my eyes flitting from the paintings on the wall, to the bullet holes in the ceiling, to the old colonel happily eating lamb, I remembered a quote by Sultan Barakat, a professor at the University of York. Today wars are fought not in trenches and fields, but in living rooms, schools, and supermarkets. The First American Civil War had battles with names like bull Run, Gettysburg, and the Battle of the Wilderness.
+
+## Urban Battlefields
+
+The battles of the Second American Civil War will more likely have names like the Battle of Boyle Heights, the Battle of Manhattan, and the Battle of Portland. As doctor Graham noted, this is not particularly controversial thinking among military planners. It's been well accepted doctrine for decades that future war fighting will take place in cities. Mega cities, urban areas with a popular lation of more than ten million are particular areas of concern for military planners.
+
+The United States has four mega cities. I found a Military Times article published in two thousand eighteen that interviewed Army Chief of Staff General Mark Milly about this quote. Milly has said that the Army is not ready to fight in mega cities. He has characterized recent and current urban operations, including fighting and Aleppo in Syria and Fellujah and Mosle in Iraq, as previews of future conflict. Those fights, while bloody, costly, and destructive, hardly reached the scale of a mega city. Mosle is not equal to a neighborhood and soul, Milly has said.
+
+Now, two of America's mega cities, Los Angeles and New York, also hosted huge occupy contingents back in two thousand eleven. If we're looking at potential hotspots, cities that might declare themselves autonomous zones. These both fit the bill.
+
+## Los Angeles as a Flashpoint
+
+Now, if your experience in the City of Angels is limitted to walking the Santa Monica Peer or catching a movie at Man's Chinese Theater, the idea of l A as a center of violent resistance to the state probably seems absurd. It's felt that way to me more than a few times as I walk around my lovely palm lined neighborhood on the West Side, enjoying cool breezes and watching smiling couples walk their ridiculous tiny dogs. And when I start to convince myself that my experiences in this pleasant chunk of the city mean more than they do, I think back to the Nineto riots.
+
+Those riots were kicked off, of course by the brutal police beating of Rodney King and the fact that the officers responsible were acquitted, But those riots did not arise in a vacuum. Unrest had been growing in the city and among black urban populations in the United States for quite some time. A tremendous amount of rap and hip hop from the late eighties and pre riot nineties referenced the widespread feeling that something was about to go down. I actually found a fun Rolling Stone article that picks out fifteen of these songs. It's an interesting read. Quote on ghetto Boys City under Siege,
+
+## The Legacy of Urban Unrest
+
+**Speaker 1：** bushwick Bill plays tribute to Ida Delaney, a black woman who was shot to death by a drunken off duty police officer in nineteen eighty nine. Unlike the four cops received not guilty verdicts for assaulting Rodney King, Alex Gonzalez was initially convicted of manslaughter, but the decision was overturned on appeal. Meanwhile, Scarface and Willie D. Mock then President George H. W. Bush's nineteen ninety invasion of Panama to capture former CIA stooge Manuel Noriega and corrupt government officials who hypocritically enabled drug pushers while publicly lambasting them.
+
+Their final analysis, Everything's corrupt, fux school, fuck curfew, fuck homework, and mother fuck a damn cop rails Bushwick Bill with the kind of nihilism fervor that occasionally sets cities in flames. Now, I find it interesting that bushwick Bill's City under Siege has almost the exact same title as a seminal work of military theory published twenty years later.
+
+Anyway, if the l a police in ninety two were overwhelmed by a group of largely unarmed and inexperienced, disobedient citizens. Well, that can happen again. Individual states have been forced to use the army to pacify cities in recent memory. What hasn't happened ever, in this nation's history is the army being overwhelmed by a civilian uprising.
+
+That would be unprecedented, and it seems particularly unlikely in light of the fact that our military has spent much of the last twenty years fighting in cities and planning to fight in more cities. But I have come to believe that it is in fact possible for American insurgents to defeat, or at least hold their own against the American military.
+
+## The Mosul Weapons Factories
+
+The explanation for why I feel this way also starts back in that little girl's bedroom, and mosle I mentioned her father, the home's former owner, had a job making tubes for ISIS mortars. Much was said about the American weapons ISIS captured in Syria and Iraq. Less has been said about the open source, modular, and easyly replicable weapon factories they created in mosl ISIS was infamous for using a weird bespoke one hundred and nineteen point five millimeter mortar round These were very big shells, and I can say from terrifying experience that they made much larger booms than the standard eighty one millimeter mortars used by American soldiers.
+
+These machines of war, like many of ICE's deadliest armaments, were crafted entirely from things you can find in any city on Earth. The average mechanic in any American city can build one of Dasha's mortars. There's mortar rounds and all ices. Explosive devices were built with modularity in mind. ISIS had schematics for a standard detonator which could be slotted into rockets or grenades or suicide belts or gigantic vehicle based I e. D s and then used to blast holes in Iraqi Army and Kurdish defensive lines.
+
+In other words, ISIS invented a plug and play arsenal. With the open source designs, Isis dreamed up any moderately intelligent engine near could throw together basically any purpose built device he wanted to build.
+
+## The Terror Industrial Complex
+
+There's a fantastic Wired article about this, the Terror Industrial Complex. Its author follows a European investigator named Splitters as he travels around i Rack to recently liberated IIS factories, trying to figure out how they kept arming themselves once the entire city of Mozle had been cut off from the rest of the caliphate. Quote. Iraq's oil fields provided the industrial base tool and dye sets, high end saws, injection molding machines, and skilled workers who knew how to quickly fashion intricate parts to spec Raw materials came from cannibalizing steel pipe and melting down scrap.
+
+ISIS engineers forged new fuses, new rockets and launchers, and new bomblets to be dropped by drones, all assembled using instruction plans drawn up by ISIS officials. The aluminum paste in the bucket, for example, which ISIS craftsmen mixed with ammonium nitrate to make a potent main charge from mortars and rocket warheads. Splitters discovered the same buckets from the same manufacturers and chemical distributors in Fallujah, to Crete and Mosle.
+
+I like to see the same stuff in different cities, he tells me, since these repeat sightings allow him to identify and describe different steps in isis's supply chain. It confirms my theory that this is the industrial revolution of terrorism, and for that they need raw material and industrial quantities. If Iraq was the site
+
+## The Iron Pipeline and Urban Insurgency
+
+**Speaker 1：** of terrorisms industrial revolution, American cities might wind up being its proving ground. For one thing, there are already millions of civilians in this country with access to many of the basic tools and ingredients needed to manufacture similar armaments. You can buy gunpowder in every state that deliver it to your door. In many parts of this fair land they deliver tannerite to ammonium nitrate, which provided the charge for isis as. Explosives can also be derived from tannerite.
+
+Back when I lived in Texas, I'd ordered twenty pounds of the stuff At a time it cost around two hundred dollars. It actually seems to be a little cheaper nowadays. If you're on a budget, five pounds is just forty two dollars. This might be news to urban liberals, but trust me, every left and right wing gun nut in America already knows about this stuff. They sell it in sporting goods stores.
+
+In my mind, a city life Portland is one of the easiest places to imagine a serious revolutionary movement kicking off. It's got the right mix of seriously dedicated, experienced left wing activists and politically active far right extremists. It also has a prevalent gun culture, including numerous left wing gun clubs. But even cities like New York and Los Angeles, which restrict explosives, gunpowder, and firearms much more rigorously, are large and porous enough that it would be easy to imagine weaponry flowing there from other parts of the country.
+
+In two thousand fifteen, a South Carolina man's home was busted with five thousand illegal firearms. Investigators suspect this home was a nexus point in what's known as the Iron Pipeline, a network of gun smugglers who ensure cities with strict gun control still enjoy access to the same deadly weapons as people in Fuck Off Texas.
+
+## Smuggling in the Automaidon
+
+And this brings me to the Automaidon in keV. During the Maidan Uprising, it became necessary to smuggle weaponry, fireworks, sticks, shields, et cetera into the protest camp. As the fighting escalated from the standard shoving matches between police and protesters to something more akin to urban warfare. Members of the Automaidon arranged distraction cars to draw police attention away, while other volunteers drove their supplies into occupied sections of town.
+
+Much of what was smuggled in was food or medical supplies, but as the fighting wore on, rifles and ammunition and armor became increasingly common. I imagine the same thing happening in America as activists and occupied chunks of cities use encrypted communication apps to coordinate with their friends and government controlled territory. As the fighting grows more serious, the equipment smuggled in will change from milk of magnesia for tear gas helmets, shields, and sticks to kevlar vests, a R fifteens, bullets and explosives.
+
+The same sort of thing, with a different cast of characters will occur in separatist chunks of rural America. Some of these smugglers will be enterprising young mercenaries just looking for a way to make a buck. Others will be true believers, and many may actually be leftist separatists willing to make a deal with right wing separatists, handing over tools and raw materials derived from the industrial base of the cities in exchange for food and firearms. Civil wars make strange bedfellows. Just ask any Syrian.
+
+## Drones and the ISIS Model
+
+And I imagine one of the things those right wing separatists will most once smuggled out from the cities are over the counter civilian drones. And this brings me back to Isis and Mosel See Dash wasn't just making mortar rounds in their homebrew factories. They also made bomblets with injection molded plastic bodies and handmade tail kits. Some of these literally looked like grenades with shuttlecocks attached.
+
+They'd take little servo motors, simple remote controlled claus and attach those two perfectly legal drones. The most popular model seemed to be the d j I Phantom, which currently retails for between five hundred and fifteen hundred dollars depending on options. You can pick one up at your local best Buy today. Outfitting a drone in this manner requires very little. You can order all the necessary parts off of Amazon dot com.
+
+Given enough time, anyone listening to this podcast could figure it all out. The only thing Amazon won't provide are the bomblets themselves. I'm not going to go into detail about how exactly those are constructed, but if you know someone who built their own computer. You probably know someone who could figure it out. Bomb science is not rocket science. With twenty or thirty thousand dollars in funding, a group of insurgents could have everything they would need to start putting together a small air force. And in case you're wondering, yes, weaponized commercial drones are effective terrifyingly so. On my second
+
+## Drone Warfare in Mosul
+
+**Speaker 1：** trip in the Moosle, I talked to Major Mezer Sadoun. Mezer had been the captain of the Mosel swat team before Isis invaded. He was famous for being the last cop in town as Isis took over the city, and when the Iraqi army invaded Mosele to oust Isis, he formed an elite unit of men who had all lost family to Islamic terrorists and one revenge. They spent months at the front of the advance.
+
+Mezer survived multiple car bombings and suicide belt detonations. He's probably the most frightening man I will ever meet. I only saw him express anything close to fear once, and it's when I asked him about fighting Isis's drones. I remember the way he shook his head as he explained to me how nearly impossible it was to hit one of those little fuckers, even for experienced veterans with machine guns.
+
+There were a lot of drones over Mosle, and many of them were d j I phantoms. The Iraqi army, taking a leaf out of Isis's book, built their own drone fleet along almost identical lines. I have a video on my hard drive of one of these drones killing US sniper. I've also seen videos online of ISIS using these little drones to blow up armored hum vies.
+
+Nick Waters, a journalist with the investigative platform Belling Cat, analyzed hundreds of ISIS drone strikes and found that twenty two point two percent of them hit hum vs, But tanks and other armored vehicles like cougars and self propelled cannons were also attacked and destroyed by weaponized civilian drones. Vehicle armor is not as thick at the top, because why would it be.
+
+I've even seen at least one video where ISIS dropped a grenade inside an armored vehicle through an opened top hatch. It and the soldiers inside were basically atomized. Nothing scared the Iraqi soldiers I was embedded with more than the distinctive hum of tiny drones, and it really was terrifying to know that out there and the sky around you, this little robotic gnat might be about to drop a bomb on your head.
+
+These drones are like two feet across. Most of them are white. When they move fast, they're damn near invisible in the sky. Once you heard that buzz, you knew that a bomb could land in a second, or a mortar, because ISIS also used unarmed drones as spotters for their pocket artillery.
+
+## The Spread of ISIS Knowledge
+
+I like to quote from that Wired article again at a place where the author makes the point that isis's defeat and Mosele did not mean that all their knowledge and capability died out. Quote their intellectual capital, their weapon designs, the engineering challenges they've solved, their industrial processes, blueprints and schematics still constitute a major threat. That's the really scary part.
+
+To the extent that the ISIS model proliferates, says Matt Schrader, a senior researcher at the Small Arms Survey, the Geneva Base think tank. Much of the international structure that prevents weapons trafficking is rendered useless if ISIS can simply upload and share their designs and manufacturing processes with affiliates in Africa and Europe who also have access to money and machinery.
+
+Joshua Pierce, an engineering professor in Michigan Tech University, is an expert in open source hardware. He descried ribes ISIS manufacturing as a very twisted maker culture. In this future, weapons schematics can be downloaded from the dark Web or simply shared via popular encrypted social media services like WhatsApp.
+
+In the previous episode, I talked about Adam Often and their obsessive love of ISIS propaganda and tactics. Most Americans haven't heard of isis's open source munition factories. The people who have are probably an even mix of military veterans, journalists, and budding terrorists.
+
+Those files will spread, and they will wind up in the hands of domestic extremists, not just ISIS. And because technology works the way it does, the weapons made will only get more efficient and deadlier as different groups produce them, work out kinks, and upload their improved designs to the Internet. This is not a cat that can be put back in its bag.
+
+## A Hypothetical Civil War
+
+So let's think back to our hypothetical civil war. We've got rural uprisings and cities that have Barrick Hated themselves away from federal control. After many, many deaths and injuries, it's become clear that the police have failed. The point at which army and marine infantry start moving in to say, put down the state of Jefferson uprising in northern California and liberate Wall Street from the leftist mob occupying it.
+
+At that point, many people would expect this to be where things end rather quickly, but I believe it would be the point in which Fukau's boomerang hits our nation square in the face. One of the things that really struck me about that Wired article was the comparison between ISIS weapon shops and maker culture. I have a lot of friends who are into that sort of stuff. One Guyane builds motorcycles out of scrap metal and garbage.
+
+## Urban Insurgent Arsenal
+
+People with those skills, the kind of people every city has thousands of, are perfectly capable of constructing these kinds of arsenals where they motivated and angry enough to want to do so. Now, what I've been talking about so far is how a hypothetical American insurgency could arm as Elf with the kind of weapons that would allow it to compete with the U. S. Military, not in an open field, obviously, but in an urban battleground.
+
+At this point, you may be asking yourselves, what good are a bunch of mortars in tiny drones against tanks and artillery. Well, I have a couple of responses to that. First, it took the coalition nine months of brutal door to door fighting to kick Isis out of Mosele. And second, the federal government would never get away with deploying the same kind of force against an American city that they did against Mosle, at least not at first.
+
+## Political Limits on Force
+
+Well, the official death toll in Mosele, according to the US government, is only around a thousand civilians or so. Literally, no one who's fought there, reported there, or lives there believes that they will be digging corpses out of collapsed buildings in that city for the next twenty years. Some estimates put the real death toll at well over twenty five thousand. It could even be several times that.
+
+Try and imagine the political reaction to watching a section of Chicago or Dallas just turned in to powder. It's one thing for the U. S. Air Force to murder a bunch of foreigners five thousand miles away. It's another thing entirely to do it in America. We're not going to be dropping bombs and launching missiles in American cities. U S troops will be sent in mounted in light armored vehicles. Mortars and bomblets can do a lot of damage to those.
+
+## Insurgent Choices in Cities
+
+The urban insurgents will have a couple of choices once the soldiers move in. Their first option would be to seed the protest camp to the military and disperse into the crowd. This would carry a huge number of tactical benefits, but it would also mean losing hold on territory, which for any kind of rebel movement would be a huge blow.
+
+It's one thing to say we're occupying Wall Street until these changes are made, and another to go from defending your barricades into a dispersed, violent insurgency. I don't think American leftists would take that tack. I can see them trying to defend their autonomous zone, and I can see it the American military hard pressed to dislodge them without committing war crimes. It would be a slow grinding fight. The work of snipers, drones, vehicle based i e. D s, and home brewed heavy weapons.
+
+## Rural Insurgency Dynamics
+
+Things would be different in rural America. Let's go back to our hypothetical state of Jefferson doing its damnedest to strangle California's water supply. I think the military would get involved pretty quickly there, and I think a rural insurgency would absolutely melt into the trees at the first sight of any significant American military presence. There would certainly be Afghan war veterans among the insurgents, and they would know exactly how to bleed and occupying army.
+
+I'd like to quote now from War, a fantastic book by famed conflict journalist Sebastian Younger. He spent months embedded with an army platoon in the Corengall Valley, by far the most dangerous posting in all of Afghanistan. Most of what these soldiers experienced on a day to day basis was not the kind of face to face gunfight Hollywood loves to depict.
+
+Most nights, some young Afghan kid would crawl up a mountain in the darkness with an old, cheap bolt action rifle and fire a few rounds towards the American outpost or cop. Here's Younger quote. Once I was at the operations center when single shots started coming in and first Sergeant called Well headed for the door to deal with it. On his way out, I asked him what was going on, some jackass waste in our time? He said that jackass was probably a local teenager who was paid by one of the insurgent groups to fire off a magazine's worth of AMMO at the cop The going rate was five dollars a day. He could fire at the base until mortars started coming back at him, and then he could drop off the backside of the ridge and be home in twenty minutes.
+
+## Guerilla Warfare Fundamentals
+
+Mobility has always been the default choice of guerilla fighters because they don't have access to the kinds of heavy weapons that would slow them down. The fact that networks of highly mobile amateurs can confound even defeat a professional army is the only thing that has prevented empires from completely determining the course of history. Whether that is a good thing or not depends on what amateurs you're talking about or what empires, but it does mean that you can't predict the outcome of a war simply by looking at the numbers.
+
+For every technological advances held by the Americans. The Taliban seem to have an equivalent or a countermeasure. Apache helicopters have thermal imaging that reveals body heat on the mountain side, so Taliban fighters disappear by covering themselves in a blanket on a warm rock.
+
+## Friction in War
+
+The Americans use unmanned drones to pinpoint the enemy, but the Taliban can do the same thing by watching the flocks of crows that circle American soldiers looking for scraps of food.
+
+The Americans have virtually unlimited firepower, so the Taliban send only one guy to take on an entire fire base. Whether or not he gets killed, he will have succeeded in coming up the machine for yet one more day.
+
+Everything in war is simple, but the simplest thing is difficult. The military theorist Carl von Klauswitz wrote in the twenties, the difficulties accumulate an end by producing a sort of friction. We now friction.
+
+## The Promise of Drones
+
+**Speaker 1：** coming up the sheen That is exactly the root any group of smart insurgents would need to take in order to defeat the United States military. We've all seen the posers who love to flex with their air fifteens on social media and talk about how they need their assault rifles to fight tyranny. I'm not going to make a pro or anti gun argument here, but I do want to point out that from the point of view of a rebel group, an old, rusty bolt action rifle can be just as effective at gumming up the machine as a thirty dollar tactical black rifle with lasers and rails and ship.
+
+In fact, you don't even need the rifle or the human volunteer. Armed drones can accomplish a similar goal without risking a life. The reality, of course, is that a variety of tactics would be used, some groups sending out lone snipers, others fielding drones with occasional raids and assaults by combat units. But I suspect in terms of their sheer ability to produce friction, no current product has as much promise as drones.
+
+## A Real-World Example
+
+On the eighth of January two thousand eighteen, the Russian Ministry of Defense released a statement that the Cammingam Air Base and Syria had been attacked by sudden mortar fire, killing two servicemen. Had this been true, the attack would have been hardly newsworthy, But the reality which came out weeks later after intensive open source investigation by journalists is that the Cammingam air Base was assaulted on at least three separate occasions by successive waves of handmade attack drones. These drones killed at least two Russian soldiers, but also damaged and grounded an unknown number of jets.
+
+We have pictures of at least one of them. While the drones were all destroyed by Russian defenses, many of them were able to effectively loose their payloads, and the attacks effectively grounded the entire air base for the better part of a week. There are pictures of these drones. I'll have a few uploaded to the site. But to describe them, if you ever built one of those styrofoam model planes, the giant ones with like a four foot wingspan that you tossed into the sky, well, these looked a lot like that, but with a motor and an engine and pylons on the bottom that you can attack bombs too.
+
+So these drones didn't even require someone have the cash to afford a d j I Phantom. Handmade drones crafted from literally balsa wood and styrofoam grounded a Russian air base filled with multimillion dollar fighter jets. The bombs, in case you're wondering, are basically big plastic tubes filled with gunpowder and babies. That's all you need. It turns out to kill people and puncture airplane gas tanks.
+
+I encourage you to take a look at the picture I'll post and see just how rudimentary these weapons are. Most people listening to this podcast could probably build one with minor guidance given the right equipment. At least eighteen drones were used in three successive attack waves. It's hard to say exactly how much these costs to prepare, but just looking at them, I wouldn't be surprised if the whole attack cost twenty dollars or less. That's a pretty good rate of return when it comes to silencing an entire modern air base for a week.
+
+Air power is traditionally one of, if not the biggest advantages the United States takes to war. Think of the disastrous morale impact of knowing your helicopters and jets were grounded, knowing your air support had been reduced or even knocked out because some hillbilly redneck rigged together an air force for the cost of a Masdamiata and everything we've talked about so far, all these potential tactics and weapons has mostly ignored the fact that the United States is filled with three D printers.
+
+## The Threat of 3D Printing
+
+I know individual people who own those things, and they get more common and more effective every year. You've probably read a few hysterical articles over the years about the terrible threat of three D printed guns. Let me tell you those things are the very least of your worries. A shitty pistol that explodes in your hand half the time is not nearly as scary as the suicide drones that terrorist groups have already made using machines that cost a few thousand dollars.
+
+In November of two seventeen, one such group in Syria bombed the Kaffer Home refugee camp with a device that looked like a tiny bomb with an engine, and that is essentially what it was. That picture will be up on the site as well. Eagle Lie investigators quickly realized that the drone was constructed using the telltale honeycomb pattern of a low end three D printer.
+
+According to all three D p quote, these homemade drones and guided bombs offer terrorist organizations a number of advantages over missile strikes. These drones can evade missile warning receivers, can't be decoyed away from their target, and can be launched from anywhere. In other words, because mass produced drones like the d g I Phantom are legal products and stuff, there are ways to disable them, backdoors and known weaknesses governments can exploit.
+
+## 3D-Printed Weapons and Armor
+
+A home built drone is much more difficult to counter, and drones are not the only thing you can build with a three D printer. I'd like to quote now from an article in National Interest. Army researchers have devised a method to produce ceramic body armor lightweight but strong from a three D printer, except that three D printers are meant to print out knickknacks, not flak jackets, which means that engineers had to hack the printer to get the job done.
+
+Lionel Vargus Gonzalez, a researcher at the Army Research Laboratory, sees three D printer ceramics as the next avenue for armor because we're going to be able to in theory, design armor in a way that we can attach multiple materials together to a single armor plate and be able to provide ways for the armory to perform better than it can be just based on material alone.
+
+## A New Era of Warfare
+
+The Industrial Revolution forever put an end to the era in which settled, so called civilized people's had to worry about invasions from nomadic warrior people throughout all of recorded history up until that point, every few centuries, some new tribe of horse mounted warriors would trot down from the Asian steps and funk up an empire or three. Now we're crossing into a new era where any group of sufficiently motivated people can produce military grade weaponry via infrastructure small enough to fit into the average house.
+
+And maybe now understanding that, it's easier to understand how even the mighty US military could be overwhelmed by an insurgency or, as I'm theorizing several insurgencies, the most U S troops ever deployed to a Rack during the occupation was a hundred and sixty six thousand men. These soldiers will tell you they were nearly always under manned. In fact, the only thing that made the occupation possible was an equal number of contractors, many from Bangladesh and other poor countries, doing dangerous jobs like driving supply trucks down booby trapped roads in lieu of U S servicemen and women.
+
+## Comparing Iraq to America
+
+Less than forty million people live in Iraq. The country is a hundred and sixty eight thousand, seven hundred and fifty four square miles. There are more than three hundred and twenty million Americans spread out over more than three point seven million square miles. If one American city rose up against the federal government, ten or twenty thousand soldiers could suppress the rebellion without mass destruction. If one rural chunk of one state, like northern California, broke out in a bloody insurgency, it might take longer to suppress, but our armed forces would certainly have the manpower.
+
+But what about four or five cities and counties in a dozen American states? What if it spread even more widely than that. For most of the occupation in Iraq, US forces were chronically short of manpower. In two thousand seven, the army was desperate enough to massively reduce their recruitment standards. This had predictable consequences.
+
+## Lowered Recruitment Standards
+
+From a CBS article at the time, quote, the number of incoming soldiers with prior felony arrests or convictions has more than tripled in the past five years. This year alone, the army accepted and estimated eight thousand recruits with rap sheets, reports CBS News correspondent Kimberly Dozier. Most are guilty of misdemeanors, but around a hundred in the past year had felony convictions. Burglaries and narcotics are probably are two top categories, according to Colonel Sheila Hickman.
+
+Now, I'd like to read an excerpt from a Politico article written by a Vet named John Spencer. He's one of the officers who had to deal with the consequences of this major manpower shortage. In two thousand and eight, when I was an infantry company commander in charge of over a hundred and forty soldiers in Baghdad, I saw firsthand how the declining number of volunteers is hurting the military. Thirty six of my men were forced to deploy, even though their terms of service were up, a controversial military policy known as stop loss or at the back door draft.
+
+To meet the bare minimum number of soldiers in a unit, my unit took men who were medically unfit to fight. I had soldiers that could not leave our compound because they were medically prohibited from wearing body armor or classified as mentally unfit. I had soldiers taking antidepression, sleeping anxiety, and other drugs. I had a mentally unstable private viciously attacked as sergeant, causing lifelong damage, and multiple other problem soldiers that detracted from the combat performance of my unit. This was symptomatic throughout the Army.
+
+## A Damning Military Report
+
+I found an even more damning account in the U. S. Army War College's report on the Iraq War, which you can all download and read for free right now if you'd like. This section concerns a National Guard unit from California sent into Iraq in a desperate attempt to deal with the crippling manpower shortage.
+
+## Abuse and Poor Leadership
+
+Quote by summer, accusation surface that the battalion's leaders had condoned illegal activities with prisoners, and US officers found a video of unit non commissioned officers abusing seven prisoners by kicking them in their genitals and shocking them with a taser. The initial investigation into detaining abuse uncovered systematic problems with the battalion, leading to at least ten other investigations that revealed a negative command climate.
+
+The battalion commander Lieutenant Colonel Patrick Frey was an eccentric officer who had first fought in Vietnam before fighting as a mercenary in Rhodesia. In Iraq, he carried a tomahawk that he cleared at clearing barrels and used to night soldiers during promotion ceremonies. Frey tolerated other similar eccentric behavior and his subordinates, such as allowing soldiers to carry samurai swords on patrol.
+
+As the investigations expanded, investigators discovered that Frey had almost been relieved to command during the battalion's pre deployment training, and one of the generals responsible for training the unit had predicted Frey would get soldiers killed. Frey had also been accused of mistreating his own troops during mobilization training, placing some of them in a survival school style isolation to toughen them and causing a near mutiny that came to the attention of the Los Angeles Times.
+
+The pattern of abuses and poor leadership had continued in Iraq. Battalian leaders had interpreted rules of engagement aggressively, leading one investigator to describe Frey and his men as trying to fight World War three. It was them, it's the world.
+
+## Consequences of Lower Standards
+
+Lower standards mean we're soldiers, soldiers who might be more willing to loot or rape, or lose their temper after a sniper attack and take it out on civilians. That, of course, would fuel the insurgency and make the task of the soldiers even harder. Our military has been in this situation constantly for almost twenty years, and we still don't have a great handle on the problem.
+
+The manpower needs and emotional stressors of fighting a war on American soil would be even greater. Our military right now is facing a major manpower shortage. It's not quite a crisis, but it's an issue for our forces at their current state of activity.
+
+The day before we recorded this episode, the news dropped that Commandant of the Marine Corps, General Robert Neller, had just allowed some of his own emails to leak to the press. He did this because he was deeply worried about the impact President Trump's deployment of the military to the border has had on the readiness of his troops. Quote the combat readiness of second Marine Expeditionary Force, one third of the combat power of the Marine Corps is degraded and will continue to degrade.
+
+## Risk of Insurgency
+
+Given current conditions, a series of widespread and violent insurgencies could very, very quickly overtax the U. S. Military. If it happens, it will occur so much quicker than most Americans, who view our military as all but omnipotent, would ever expect. That's the consequence of two decades of incessant warfare.
+
+Now, this does not mean an insurgency would be able to defeat our military on the battlefield. I'm not imagining U. S. Soldiers in full flight, waving white flags and surrendering to some army of gun toting Bubba's or Antifa. That's not how this kind of war works.
+
+Instead, I'm imagining a situation that looks a lot more like Afghanistan now or a Rack before the surge, where the U. S. Military control certain areas islands of stability, but are forced to pull back and at least temporarily seed control of chunks of the country to separatists and insurgents. The amount of America that can be controlled and governed will be dictated by the military's manpower. It will ebb a little more each day soldiers die, an operational capath city is degraded more and more.
+
+## Military Limitations
+
+The United States military is ready from many different situations, but it is not prepared to fight in American cities, nor is it prepared for the scale of conflict a second American Civil War would bring. It can handle foreign militaries, It can sort of handle insurgeons in Afghanistan, but I don't think it can handle Whoko's boomerang to me?
+
+**Speaker 1：** Robert Evans and I'm just exhausted from reading all of that. You can find me on Twitter. I right, okay. You can find this show on Twitter at happen Here pod, and you can find the show online at it could Happen here pod dot com. Our music, as always is from four Fists. It could Happen Here is a production of I Heart Radio. For more podcasts from my heart Radio, listen to the I Heart Radio app, Apple podcast, or ever you listen to your favorite shows.
+
+---
+
+📄 **中文翻译**：[中文翻译](/blog-pages/posts/2026-08-03-It_Could_Happen_Here-How_The_American_People_Can_Beat_The_American_Military/)

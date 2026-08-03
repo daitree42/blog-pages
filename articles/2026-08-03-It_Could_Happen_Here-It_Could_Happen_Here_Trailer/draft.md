@@ -37,3 +37,7 @@
 欢迎收听《It Could Happen Here》（这可能发生在这里）。这档播客每一季我都会选取一个离奇而不太可能的情景，解释它如何可能发生，为什么它可能比你想象的更近，以及当它到来时——如果它到来的话——会是什么样子。
 
 请订阅，在I Heart Radio应用或你收听播客的任何地方都可以。
+
+---
+
+📄 **英文原文对照**：[English version](/blog-pages/posts/2026-08-03-It_Could_Happen_Here-It_Could_Happen_Here_Trailer-EN/)
