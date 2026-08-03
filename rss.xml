@@ -217,6 +217,13 @@
     </item>
     
     <item>
+        <title>播客转录发布完整流水线：从 VTT 到中英对照双站</title>
+        <description>以 It Could Happen Here 第一季（11 集）为实战，记录播客转录发布到博客+播客站两个站点的完整流水线：VTT 转英文稿、DeepSeek 翻译中文、中英文整理加标题分段、生成中英对照文章并发布，附全部命令、脚本与踩坑经验。</description>
+        <link>/blog-pages/posts/2026-08-03-Podcast_Transcript_Pipeline/</link>
+        <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
         <title>Can_We_Trust_Election_Prediction_Markets</title>
         <description>&gt; 本期摘要：本期播客探讨了预测市场（如Polymarket和Calci）如何影响美国政治选举。记者Liam Vaughn讲述了加州州长候选人Matt Mahan的案例：一笔匿名大额投注在Polymarket上将他的胜率从12%推高至96%，引发媒体关注，尽管最终未改变选举结果。节目分析了预测市场的</description>
         <link>/blog-pages/posts/Can_We_Trust_Election_Prediction_Markets/</link>

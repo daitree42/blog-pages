@@ -149,6 +149,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://daitree42.github.io/blog-pages/posts/2026-08-03-Podcast_Transcript_Pipeline/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://daitree42.github.io/blog-pages/posts/Can_We_Trust_Election_Prediction_Markets/</loc>
     <priority>0.8</priority>
   </url>
@@ -377,6 +381,14 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/播客转录/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daitree42.github.io/blog-pages/tag/工作流/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daitree42.github.io/blog-pages/tag/This American Life/</loc>
     <priority>0.6</priority>
   </url>
@@ -474,10 +486,6 @@
   </url>
   <url>
     <loc>https://daitree42.github.io/blog-pages/tag/skills/</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daitree42.github.io/blog-pages/tag/工作流/</loc>
     <priority>0.6</priority>
   </url>
   <url>

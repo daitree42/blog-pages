@@ -317,6 +317,17 @@
     "excerpt": "A dystopian future where the United States has collapsed, a border control officer in the Pacific Northwest denies entry to a refugee family from Alabama, haunted by memories of war and climate devastation."
   },
   {
+    "title": "播客转录发布完整流水线：从 VTT 到中英对照双站",
+    "url": "posts/2026-08-03-Podcast_Transcript_Pipeline/",
+    "date": "2026年8月3日",
+    "tags": [
+      "播客转录",
+      "工作流"
+    ],
+    "category": "播客笔记",
+    "excerpt": "以 It Could Happen Here 第一季（11 集）为实战，记录播客转录发布到博客+播客站两个站点的完整流水线：VTT 转英文稿、DeepSeek 翻译中文、中英文整理加标题分段、生成中英对照文章并发布，附全部命令、脚本与踩坑经验。"
+  },
+  {
     "title": "Can_We_Trust_Election_Prediction_Markets",
     "url": "posts/Can_We_Trust_Election_Prediction_Markets/",
     "date": "2026年7月30日",

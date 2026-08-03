@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));</script>
+    <title>播客转录发布完整流水线：从 VTT 到中英对照双站 — 树</title>
+    <link rel="stylesheet" href="/blog-pages/static/style.css">
+    <link rel="alternate" type="application/rss+xml" title="树" href="/blog-pages/rss.xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-brand">
+                <h1 class="site-title"><a href="/blog-pages/">🌲&nbsp;树</a></h1>
+                <p class="site-tagline">漫游，一种生活</p>
+            </div>
+            <div class="header-social">
+                <a href="https://github.com/daitree42" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:oytree@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="/blog-pages/rss.xml" class="social-link" aria-label="RSS">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+
+            <nav class="site-nav">
+                <a href="/blog-pages/" class="nav-link active">全部</a>
+                
+                <a href="/blog-pages/category/ai-ji-shu/" class="nav-link">Ai技术</a>
+                
+                <a href="/blog-pages/category/ri-chang-zou-zou/" class="nav-link">日常走走</a>
+                
+                <a href="/blog-pages/category/du-shu-guan-cha/" class="nav-link">读书观察</a>
+                
+                <a href="/blog-pages/category/bo-ke-bi-ji/" class="nav-link">播客笔记</a>
+                
+                <a href="/blog-pages/category/uncategorized/" class="nav-link">未分类</a>
+                
+                <a href="/blog-pages/archive/" class="nav-link">存档</a>
+            </nav>
+
+        </div>
+    </header>
+    <div class="search-bar container">
+        <input id="search-input" class="search-input" type="text" placeholder="搜索文章…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+    </div>
+    <script>var PREFIX = "/blog-pages";</script>
+    <main class="container">
+        
+
+<div class="progress-bar" id="progressBar"></div>
+
+<article class="post post-category-bo-ke-bi-ji">
+    <div class="post-cover">
+        <div class="post-cover-inner">
+            <div class="post-breadcrumb">播客笔记</div>
+            <h1 class="post-title">播客转录发布完整流水线：从 VTT 到中英对照双站</h1>
+            <div class="post-meta">
+                <time datetime="2026-08-03">2026年8月3日</time>
+                <span class="reading-time">2 分钟</span>
+            </div>
+
+            <div class="post-tags">
+                
+                <span class="tag">播客转录</span>
+                
+                <span class="tag">工作流</span>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="post-body">
+        <h2>概述</h2>
+<p>本文记录从播客音频（VTT 字幕文件）到发布中英对照文字稿到 <strong>博客 + 播客站</strong> 两个 GitHub Pages 站点的完整流水线，以 It Could Happen Here 第一季（11 集）为实战案例。后续处理新播客时，直接照本文复现。</p>
+<h2>目录结构与脚本</h2>
+<div class="codehilite"><pre><span></span><code>C:\cc\blog-pages\podcast\It Could Happen Here\
+├── vtt_convert.py      # ① VTT → 英文转录稿（season1/*.md）
+├── season1\            # 英文原稿
+│   ├── 001.md ~ 011.md
+│   ├── 中文\           # ② DeepSeek 翻译的中文稿
+│   │   └── 整理版\     # ③ 中文整理稿（# 标题 + 摘要 + ## 小标题 + 分段）
+│   └── English\整理版\ # ④ 英文整理稿（# 标题 + Summary + ## 小标题 + 分段）
+├── translate_zh.py     # ② 英文 → 中文翻译
+├── format_zh.py        # ③ 中文加标题/分段/摘要
+├── format_en.py        # ④ 英文加标题/分段/摘要
+├── generate_posts.py   # ⑤ 中文整理稿 → 博客文章 + 播客站文稿
+└── add_en_versions.py  # ⑥ 英文版生成 + 中英互链 + 交错排序
+</code></pre></div>
+
+<h2>关键配置</h2>
+<ul>
+<li><strong>翻译后端</strong>：DeepSeek（<code>deepseek-chat</code>），API Key 在 <code>C:\cc\blog-pages\.env</code>，脚本自动加载（<code>load_key()</code> 读 <code>.env</code>），无需手动设环境变量</li>
+<li><strong>博客</strong>：<code>C:\cc\blog-pages\</code>，<code>publish.py build</code> 构建，<code>bash deploy.sh "提交信息"</code> 部署</li>
+<li><strong>播客站</strong>：生成器 <code>C:\Users\张小树\Downloads\podcast-site-generator\podcast-site-src\</code>，<code>python build.py</code> → <code>public/</code> → 复制到 <code>C:\cc\podcast-site\</code> → git push</li>
+<li><strong>转写</strong>（如需）：faster-whisper CPU 模式，脚本已固化 <code>CUDA_VISIBLE_DEVICES=""</code> + <code>compute_type="float32"</code> + 本地缓存 tiny 模型</li>
+</ul>
+<h2>逐步操作</h2>
+<h3>① VTT → 英文转录稿</h3>
+<div class="codehilite"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;C:/cc/blog-pages/podcast/It Could Happen Here&quot;</span>
+python<span class="w"> </span>vtt_convert.py<span class="w">        </span><span class="c1"># season1/*.vtt → season1/*.md</span>
+</code></pre></div>
+
+<p>要点：cue 合并阈值 <code>merge_gap=6.0</code>（太小会断句，如 "through / your window" 被拆开）。输出格式 <code>**[MM:SS]** **Speaker 1：** 文本</code>。</p>
+<h3>② 英文 → 中文翻译</h3>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>translate_zh.py<span class="w">                </span><span class="c1"># 全部（跳过已有）</span>
+python<span class="w"> </span>translate_zh.py<span class="w"> </span>--only<span class="w"> </span><span class="m">001</span><span class="w">     </span><span class="c1"># 只处理 001</span>
+python<span class="w"> </span>translate_zh.py<span class="w"> </span>--overwrite<span class="w">    </span><span class="c1"># 覆盖已有</span>
+</code></pre></div>
+
+<ul>
+<li>中文版规范（用户指定）：<strong>不要时间戳</strong>、按话题自然分段、说话人标注 <code>**Speaker 1：**</code>、只去噪不润色</li>
+<li>分块翻译 <code>CHUNK_MAX_CHARS=7000</code>，超长单段按句子拆分，防截断</li>
+<li>每批之间 <code>sleep(1.5)</code> 降低连接被重置概率</li>
+</ul>
+<h3>③ 中文整理（加标题/分段/摘要）</h3>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>format_zh.py<span class="w">                   </span><span class="c1"># → season1/中文/整理版/*.md</span>
+</code></pre></div>
+
+<p>DeepSeek 按话题添加 <code>## 小标题</code>（≤15 字）、把长段拆成 100-250 字自然段、第一块输出 <code>摘要：</code> 行。<strong>忠实保留全部内容</strong>，只加标题分段不删改。</p>
+<h3>④ 英文整理（对照版）</h3>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>format_en.py<span class="w">                   </span><span class="c1"># → season1/English/整理版/*.md</span>
+</code></pre></div>
+
+<p>与中文整理同一套逻辑，输出 <code>Summary:</code> 行 + 英文小标题 + 60-150 词分段。<strong>去掉时间戳</strong>（用户确认），保留 <code>**Speaker 1：**</code> 标注。</p>
+<h3>⑤ 生成中文版文章（博客 + 播客站）</h3>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>generate_posts.py
+</code></pre></div>
+
+<ul>
+<li><strong>博客</strong>：<code>articles/2026-08-03-It_Could_Happen_Here-{EpSlug}/draft.md</code></li>
+<li><code>&gt; 栏目：播客笔记</code>、<code>&gt; 标签：It Could Happen Here，播客</code>、<code>&gt; 排序：1~11</code></li>
+<li><strong>播客站</strong>：<code>content/it-could-happen-here/{slug}.md</code>（YAML frontmatter + 纯 Markdown 正文）</li>
+<li>正文是纯 Markdown（<code>## 小标题</code> + 段落），<strong>不要包 <code>&lt;div class="post-body"&gt;</code></strong></li>
+</ul>
+<h3>⑥ 生成英文版 + 中英对照</h3>
+<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>add_en_versions.py
+</code></pre></div>
+
+<p>一次性完成三件事：
+1. <strong>生成英文版</strong>：博客 <code>{slug}-EN/draft.md</code> + 播客站 <code>{slug}-EN.md</code>，标题 <code>Episode N · 英文原标题</code>（标注集数）
+2. <strong>交错排列</strong>：中文排序改为奇数（1,3,5…21），英文排序为偶数（2,4,6…22），每集中文后紧跟对应英文版
+3. <strong>双向互链</strong>：中文版末尾加「英文原文对照」链接，英文版末尾加「中文翻译」链接</p>
+<h3>⑦ 播客站 show 定义（新播客才需要）</h3>
+<p>在 <code>podcast-site-src/data/shows.yaml</code> 追加：</p>
+<div class="codehilite"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">slug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">it-could-happen-here</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">It Could Happen Here</span>
+<span class="w">  </span><span class="nt">desc</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<span class="w">  </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://www.iheart.com/podcast/it-could-happen-here</span>
+<span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EN</span>
+<span class="w">  </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">叙事故事</span>
+<span class="w">  </span><span class="nt">color</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#8e44ad&quot;</span>
+</code></pre></div>
+
+<h3>⑧ 构建 + 部署</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 博客</span>
+<span class="nb">cd</span><span class="w"> </span>C:/cc/blog-pages
+python<span class="w"> </span>publish.py<span class="w"> </span>build
+bash<span class="w"> </span>deploy.sh<span class="w"> </span><span class="s2">&quot;deploy: 发布 It Could Happen Here 第一季（11集）&quot;</span>
+
+<span class="c1"># 播客站</span>
+<span class="nb">cd</span><span class="w"> </span>C:/Users/张小树/Downloads/podcast-site-generator/podcast-site-src
+python<span class="w"> </span>build.py
+cp<span class="w"> </span>-r<span class="w"> </span>public/*<span class="w"> </span>C:/cc/podcast-site/
+<span class="nb">cd</span><span class="w"> </span>C:/cc/podcast-site
+git<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;deploy: ...&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+
+<h2>关键经验与坑</h2>
+<ol>
+<li><strong>DeepSeek 网络不稳定</strong>（ConnectionResetError 10054、DNS 失败）：<code>call_deepseek</code> 做 <strong>5 次重试 + 指数退避</strong>（<code>min(5*2^n, 60)</code>）+ <code>requests.Session()</code> 复用连接 + 单文件 try/except 容错（失败跳过续传）+ 批间 <code>sleep(1.5)</code>。偶发失败重跑即可续传。</li>
+<li><strong>whisper 幻觉段</strong>：音频末尾音乐/静音被识别成无意义乱码（如 "We could show sleep time..."），DeepSeek 无法自动判断，需人工识别清理（段级删除 + 段内字符串替换）。</li>
+<li><strong>VTT 合并阈值</strong>：<code>merge_gap=6.0</code>，2.5 会导致句子被拆断。</li>
+<li><strong>摘要提取 bug</strong>：正则提取摘要行必须用 <code>flags=re.M</code> + <code>count=1</code>，否则正文残留摘要行导致重复。</li>
+<li><strong>博客正文自动转 HTML</strong>：<code>publish.py</code> 判断 Markdown 正文自动用 <code>md_lib.markdown()</code> 转 HTML，<strong>无需手动转 HTML 或包 post-body div</strong>。</li>
+<li><strong>播客站正文必须纯 Markdown</strong>：包 <code>&lt;div class="post-body"&gt;</code> 会让 <code>**说话人：**</code> 不被解析成 <code>&lt;strong&gt;</code>、段落不生成 <code>&lt;p&gt;</code>。</li>
+<li><strong>中英对照排序</strong>：博客 <code>position</code> 字段是整数，同日期内按 position 升序稳定排列，用奇数/偶数实现交错；<code>publish.py</code> 先按 position 升序、再按 date 降序（稳定排序保序）。</li>
+<li><strong>脚本幂等</strong>：生成脚本检查输出存在即跳过、检查链接 marker 避免重复追加，可安全重跑。</li>
+<li><strong><code>deploy.sh</code> 用 <code>git add -A</code></strong>：会把 <code>podcast/</code> 下的转换脚本、中文稿源文件也提交进博客仓库作备份（保留即可）。</li>
+<li><strong>英文转录稿保留 whisper 原始识别误差</strong>（如 "shipped to do"、"r n C"）——忠实原文不清理，如需可单独去噪。</li>
+</ol>
+<h2>新播客快速复现清单</h2>
+<ol>
+<li>准备 VTT 字幕到 <code>season1/</code>，跑 <code>vtt_convert.py</code></li>
+<li><code>translate_zh.py</code> 翻译 → <code>format_zh.py</code> 整理中文</li>
+<li>检查中文稿质量：幻觉段、译文完整性、标题/文件名</li>
+<li><code>generate_posts.py</code> 生成中文版文章</li>
+<li>如需英文对照：<code>format_en.py</code> → <code>add_en_versions.py</code></li>
+<li><code>shows.yaml</code> 加 show 定义（新播客）</li>
+<li><code>publish.py build</code> + <code>deploy.sh</code>（博客）；<code>build.py</code> + 复制 + push（播客站）</li>
+<li>线上验证：tag 页交错排列、播客站 episode 页、互链可跳转</li>
+</ol>
+    </div>
+</article>
+
+<nav class="post-prev-next">
+    
+    <a href="/blog-pages/posts/Can_We_Trust_Election_Prediction_Markets/" class="prev-next-link prev">
+        <span class="prev-next-direction">← 上一篇</span>
+        <span class="prev-next-title">Can_We_Trust_Election_Prediction_Markets</span>
+    </a>
+    
+    
+    <a href="/blog-pages/posts/2026-08-03-It_Could_Happen_Here-The_End_of_the_United_States_of_America-EN/" class="prev-next-link next">
+        <span class="prev-next-direction">下一篇 →</span>
+        <span class="prev-next-title">Episode 11 · The End of the United States of America</span>
+    </a>
+    
+</nav>
+
+<script>
+(function() {
+    var bar = document.getElementById('progressBar');
+    if (!bar) return;
+    function update() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? Math.min(scrollTop / docHeight * 100, 100) : 0;
+        bar.style.width = pct + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
+
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026</p>
+        </div>
+    </footer>
+    <script>document.getElementById('themeToggle')?.addEventListener('click',function(){var t=document.documentElement.getAttribute('data-theme'),n=t==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});</script>
+    <script src="/blog-pages/static/search.js"></script>
+    <script>initSearch("search-input", "search-results");</script>
+</body>
+</html>
